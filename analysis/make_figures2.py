@@ -444,6 +444,22 @@ def fig_framework_self():
     b.append(T(40, H - 20, "自反一致性：框架对自己用了同一把尺子，没有豁免在外。", 13, GREY))
     return wrap(W, H, "\n".join(b))
 
+
+def fig_reflexivity():
+    W, H = 1000, 480
+    b = [title("图 U.1　诊断的反身循环：观察者改变系统")]
+    b.append(box(80, 150, 250, 90, "框架 / 观察者", "区分：C-A-T", BLUE, "#eef3f8", 18))
+    b.append(box(670, 150, 250, 90, "被诊断系统", "行为与配置", GREEN, "#eefaf4", 18))
+    b.append(arrow(330, 175, 670, 175, GOLD))
+    b.append(T(500, 165, "诊断（一次区分）", 14, GOLD, "middle", "600"))
+    b.append(arrow(670, 215, 330, 215, RED))
+    b.append(T(500, 245, "行为改变（诊断即干预）", 14, RED, "middle", "600"))
+    b.append(f'<path d="M 205 240 C 205 380 795 380 795 240" fill="none" stroke="{GREY}" '
+             'stroke-width="2" stroke-dasharray="7,6" marker-end="url(#ar)"/>')
+    b.append(T(500, 360, "新的观察 → 框架更新  M_{t+1} = Update(M_t, E_t)", 15, GREY, "middle"))
+    b.append(T(40, H - 20, "Goodhart 定律 · 自我实现预言 · 反身性：诊断不是被动测量。", 13, GREY))
+    return wrap(W, H, "\n".join(b))
+
 # ---------------------------------------------------------------- 附录
 def fig_psi():
     W, H = 1000, 420
@@ -542,6 +558,7 @@ FIGS = {
     "fig31-math-unification.svg": fig_math_unification,
     "fig32-conflict-migration.svg": fig_conflict_migration,
     "fig33-framework-self.svg": fig_framework_self,
+    "fig34-reflexivity.svg": fig_reflexivity,
 }
 
 

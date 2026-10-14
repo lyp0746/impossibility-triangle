@@ -58,7 +58,8 @@ BACK = [("结语　从寻求大一统到自觉管理权衡", "back_epilogue.html
         ("附录 Q　知识演化的定量指标与历史年表", "appendix_q_indicators.html", "apxQ"),
         ("附录 R　演化视角的三角：生物、文化与技术", "appendix_r_evolution.html", "apxR"),
         ("附录 S　三角失效的边界案例：系统为何崩溃", "appendix_s_boundary.html", "apxS"),
-        ("附录 T　根本质疑与回应：C、A、T 真的独立吗", "appendix_t_closure.html", "apxT")]
+        ("附录 T　根本质疑与回应：C、A、T 真的独立吗", "appendix_t_closure.html", "apxT"),
+        ("附录 U　诊断的哲学基础：观察者、选择、边界与失败", "appendix_u_philosophy.html", "apxU")]
 
 
 def load_json(p, default=None):

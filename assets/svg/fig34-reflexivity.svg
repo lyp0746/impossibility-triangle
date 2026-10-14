@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 480"><rect width="1000" height="480" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 U.1　诊断的反身循环：观察者改变系统</text>
+<rect x="80" y="150" width="250" height="90" rx="10" fill="#eef3f8" stroke="#3a6ea5" stroke-width="2"/><text x="205.0" y="189.0" font-size="18" fill="#3a6ea5" text-anchor="middle" font-weight="600">框架 / 观察者</text><text x="205.0" y="215.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">区分：C-A-T</text>
+<rect x="670" y="150" width="250" height="90" rx="10" fill="#eefaf4" stroke="#009E73" stroke-width="2"/><text x="795.0" y="189.0" font-size="18" fill="#009E73" text-anchor="middle" font-weight="600">被诊断系统</text><text x="795.0" y="215.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">行为与配置</text>
+<line x1="330" y1="175" x2="670" y2="175" stroke="#b8862f" stroke-width="2" marker-end="url(#ar)"/>
+<text x="500" y="165" font-size="14" fill="#b8862f" text-anchor="middle" font-weight="600">诊断（一次区分）</text>
+<line x1="670" y1="215" x2="330" y2="215" stroke="#c94f4f" stroke-width="2" marker-end="url(#ar)"/>
+<text x="500" y="245" font-size="14" fill="#c94f4f" text-anchor="middle" font-weight="600">行为改变（诊断即干预）</text>
+<path d="M 205 240 C 205 380 795 380 795 240" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="7,6" marker-end="url(#ar)"/>
+<text x="500" y="360" font-size="15" fill="#666" text-anchor="middle" font-weight="normal">新的观察 → 框架更新  M_{t+1} = Update(M_t, E_t)</text>
+<text x="40" y="460" font-size="13" fill="#666" text-anchor="start" font-weight="normal">Goodhart 定律 · 自我实现预言 · 反身性：诊断不是被动测量。</text></svg>
