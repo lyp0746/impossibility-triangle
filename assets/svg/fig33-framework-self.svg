@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560"><rect width="1000" height="560" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 23.2　把三角用到框架自身</text>
+<line x1="500" y1="90" x2="130" y2="540" stroke="#c9c9c9" stroke-width="2"/>
+<line x1="130" y1="540" x2="870" y2="540" stroke="#c9c9c9" stroke-width="2"/>
+<line x1="870" y1="540" x2="500" y2="90" stroke="#c9c9c9" stroke-width="2"/>
+<rect x="390" y="30" width="220" height="70" rx="10" fill="#eef3f8" stroke="#3a6ea5" stroke-width="2"/><text x="500.0" y="59.0" font-size="17" fill="#3a6ea5" text-anchor="middle" font-weight="600">C 覆盖广</text><text x="500.0" y="85.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">医疗/教育/组织/数学</text>
+<rect x="110" y="532" width="200" height="70" rx="10" fill="#eefaf4" stroke="#009E73" stroke-width="2"/><text x="210.0" y="561.0" font-size="17" fill="#009E73" text-anchor="middle" font-weight="600">A 可跨域套用</text><text x="210.0" y="587.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">模块化诊断</text>
+<rect x="690" y="532" width="200" height="70" rx="10" fill="#fdeeee" stroke="#c94f4f" stroke-width="2"/><text x="790.0" y="561.0" font-size="17" fill="#c94f4f" text-anchor="middle" font-weight="600">T 实践传递弱</text><text x="790.0" y="587.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">需工具补偿</text>
+<text x="500" y="370" font-size="18" fill="#1a1a1a" text-anchor="middle" font-weight="600">本书选择 C+A：给覆盖与诚实，让出实践传递</text>
+<text x="500" y="408" font-size="15" fill="#666" text-anchor="middle" font-weight="normal">这就是为什么它附带诊断手册、制度模板与案例数据库</text>
+<text x="40" y="540" font-size="13" fill="#666" text-anchor="start" font-weight="normal">自反一致性：框架对自己用了同一把尺子，没有豁免在外。</text></svg>

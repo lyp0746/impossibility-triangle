@@ -429,6 +429,21 @@ def fig_conflict_migration():
     b.append(T(40, H - 20, "结论：知识进步把冲突从一条边推到另一条边，但不把它从系统中移除（除非扩大 K）。", 13, GREY))
     return wrap(W, H, "\n".join(b))
 
+
+def fig_framework_self():
+    W, H = 1000, 560
+    b = [title("图 23.2　把三角用到框架自身")]
+    Cx, Cy, Ax, Ay, Tx, Ty = 500, 90, 130, 540, 870, 540
+    for (x1, y1), (x2, y2) in [((Cx, Cy), (Ax, Ay)), ((Ax, Ay), (Tx, Ty)), ((Tx, Ty), (Cx, Cy))]:
+        b.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#c9c9c9" stroke-width="2"/>')
+    b.append(box(Cx - 110, Cy - 60, 220, 70, "C 覆盖广", "医疗/教育/组织/数学", BLUE, "#eef3f8", 17))
+    b.append(box(Ax - 20, Ay - 8, 200, 70, "A 可跨域套用", "模块化诊断", GREEN, "#eefaf4", 17))
+    b.append(box(Tx - 180, Ty - 8, 200, 70, "T 实践传递弱", "需工具补偿", RED, "#fdeeee", 17))
+    b.append(T(500, 370, "本书选择 C+A：给覆盖与诚实，让出实践传递", 18, INK, "middle", "600"))
+    b.append(T(500, 408, "这就是为什么它附带诊断手册、制度模板与案例数据库", 15, GREY, "middle"))
+    b.append(T(40, H - 20, "自反一致性：框架对自己用了同一把尺子，没有豁免在外。", 13, GREY))
+    return wrap(W, H, "\n".join(b))
+
 # ---------------------------------------------------------------- 附录
 def fig_psi():
     W, H = 1000, 420
@@ -526,6 +541,7 @@ FIGS = {
     "fig30-ml-timeline.svg": fig_ml_timeline,
     "fig31-math-unification.svg": fig_math_unification,
     "fig32-conflict-migration.svg": fig_conflict_migration,
+    "fig33-framework-self.svg": fig_framework_self,
 }
 
 
