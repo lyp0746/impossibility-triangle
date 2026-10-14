@@ -1,0 +1,80 @@
+{
+  "Physics": {
+    "1990": {
+      "works": 12,
+      "refs_known": 275,
+      "cross_field_share": 0.251,
+      "mean_per_work": 0.265
+    },
+    "2000": {
+      "works": 22,
+      "refs_known": 822,
+      "cross_field_share": 0.204,
+      "mean_per_work": 0.229
+    },
+    "2010": {
+      "works": 21,
+      "refs_known": 896,
+      "cross_field_share": 0.141,
+      "mean_per_work": 0.146
+    },
+    "2020": {
+      "works": 20,
+      "refs_known": 914,
+      "cross_field_share": 0.253,
+      "mean_per_work": 0.284
+    }
+  },
+  "Computer Science": {
+    "1990": {
+      "works": 19,
+      "refs_known": 475,
+      "cross_field_share": 0.421,
+      "mean_per_work": 0.425
+    },
+    "2000": {
+      "works": 20,
+      "refs_known": 549,
+      "cross_field_share": 0.25,
+      "mean_per_work": 0.202
+    },
+    "2010": {
+      "works": 23,
+      "refs_known": 674,
+      "cross_field_share": 0.276,
+      "mean_per_work": 0.245
+    },
+    "2020": {
+      "works": 24,
+      "refs_known": 949,
+      "cross_field_share": 0.164,
+      "mean_per_work": 0.15
+    }
+  },
+  "Neuroscience": {
+    "1990": {
+      "works": 19,
+      "refs_known": 818,
+      "cross_field_share": 0.392,
+      "mean_per_work": 0.365
+    },
+    "2000": {
+      "works": 25,
+      "refs_known": 1077,
+      "cross_field_share": 0.378,
+      "mean_per_work": 0.388
+    },
+    "2010": {
+      "works": 25,
+      "refs_known": 1107,
+      "cross_field_share": 0.288,
+      "mean_per_work": 0.3
+    },
+    "2020": {
+      "works": 24,
+      "refs_known": 1115,
+      "cross_field_share": 0.462,
+      "mean_per_work": 0.47
+    }
+  }
+}

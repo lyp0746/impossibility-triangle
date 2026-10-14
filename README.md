@@ -60,6 +60,9 @@ python analysis/linux_kernel_probe.py --n 200
 # 1d) arXiv 文献探针（附录 Y.2）
 python analysis/arxiv_crossfield.py --per-year 300
 
+# 1e) OpenAlex 引用层面探针（附录 Y.2b，O36）
+python analysis/openalex_fission.py
+
 # 1b) 复现前沿随规模变化（n 至 200，图 2.2）
 python analysis/frontier_scaling.py
 

@@ -48,16 +48,44 @@
 <b>（b）量度测不准：</b>cross-listing 是<b>作者自选标签</b>，且 arXiv 类别数随 cs 领域扩张而增加——它测的是"声明式的跨领域"，不是"实际的知识传递（引用耦合）"。<br>
 <b>本书倾向于（b），但这需要一个引用层面的量度来裁决（登记为 O36）。</b>在裁决之前，第 12 章的分裂主张应被视为<b>未被实证支持</b>。</div>
 
+<h3>Y.2b　引用层面的分裂检验（OpenAlex，O36 第一次执行）</h3>
+
+<p>cross-listing 是"声明式"标签。本节改用<b>引用层面</b>的量度：一篇论文的参考文献中，有多少属于<b>不同的 top-level 领域</b>。</p>
+
+<div class="define"><span class="bt">设计（脚本 <code>analysis/openalex_fission.py</code>）</span>
+<b>对象：</b>OpenAlex API。固定三个领域（物理 31 / 计算机 17 / 神经科学 28）与四个年份（1990/2000/2010/2020）。<br>
+<b>操作化：</b>每个 (领域, 年份) 抽 25 篇论文，取参考文献（每篇≤50 条），批次查询其领域；计算<b>跨领域引用占比</b>。<br>
+<b>复现：</b><code>python analysis/openalex_fission.py</code>。</div>
+
+<table class="nat">
+<caption class="cap"><b>表 Y.2b　跨领域引用占比随时间的变化（OpenAlex）</b></caption>
+<tr><th class="l">领域</th><th class="l">1990</th><th class="l">2000</th><th class="l">2010</th><th class="l">2020</th><th class="l">趋势</th></tr>
+<tr><td class="l">物理</td><td class="l">0.25</td><td class="l">0.20</td><td class="l">0.14</td><td class="l">0.25</td><td class="l">U 形（无下降）</td></tr>
+<tr><td class="l">计算机</td><td class="l">0.42</td><td class="l">0.25</td><td class="l">0.28</td><td class="l"><b>0.16</b></td><td class="l"><b>下降（支持分裂）</b></td></tr>
+<tr><td class="l">神经科学</td><td class="l">0.39</td><td class="l">0.38</td><td class="l">0.29</td><td class="l"><b>0.46</b></td><td class="l">无下降（2020 反弹）</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>实证结果，等级 <b>C1</b>（字段归类有误差、早期引文覆盖不全、样本小）。<b>数据：</b><code>analysis/results/openalex_fission.json</code>。</div>
+
+<img class="fig" src="assets/svg/fig37-openalex-fission.svg" alt="跨领域引用比例随时间的变化">
+
+<div class="cap"><b>图 Y.2　跨领域引用比例随时间的变化（OpenAlex）</b>。三条曲线不一致：CS 下降、物理 U 形、神经科学 2020 反弹。</div>
+
+<div class="warning"><span class="bt">结果判读：分裂主张只在一个领域被支持</span>
+<b>（1）计算机科学</b>的跨领域引用占比持续下降（0.42 → 0.16）——<b>支持"学科分裂"</b>。<br>
+<b>（2）物理是 U 形</b>（2020 回升到 1990 水平），<b>神经科学甚至在 2020 反弹</b>（0.46）——<b>不支持单调分裂</b>。<br>
+<b>（3）与 Y.2 的对照：</b>arXiv 的"声明式"跨领域标签<b>全面上升</b>，而 OpenAlex 的"引用式"跨领域耦合<b>只在 CS 下降</b>。<b>两个量度给出不同图像——分裂主张在文献层面既不稳健、也不一致。</b></div>
+
 <h3>Y.3　三次探针的综合</h3>
 
 <table class="nat">
-<caption class="cap"><b>表 Y.3　三次真实探针的综合</b></caption>
+<caption class="cap"><b>表 Y.3　四次真实探针的综合</b></caption>
 <tr><th class="l">探针</th><th class="l">量度</th><th class="l">结果</th><th class="l">对假设的意义</th></tr>
 <tr><td class="l">Linux（commit）</td><td class="l">author→committer 时延</td><td class="l">r=−0.10, p=0.17</td><td class="l">不可判（量度混淆）</td></tr>
 <tr><td class="l">nodejs/node（pull）</td><td class="l">PR merge latency</td><td class="l">r=+0.25, p=0.0003</td><td class="l"><b>支持</b>（跨子系统更慢）</td></tr>
 <tr><td class="l">arXiv（cross-list）</td><td class="l">跨分类占比</td><td class="l">0.17→0.54（上升）</td><td class="l"><b>反驳</b>朴素分裂预测</td></tr>
+<tr><td class="l">OpenAlex（引用）</td><td class="l">跨领域引用占比</td><td class="l">CS 降；物理/神经 不降</td><td class="l"><b>仅 CS 支持分裂</b></td></tr>
 </table>
-<div class="datasrc"><b>性质：</b>综合表，等级 B2／C。<b>读法：</b>一个支持、一个不可判、一个相反——<b>这不是"框架被验证"，而是"框架的某些假设可被透明地检验，且结果不一"。</b></div>
+<div class="datasrc"><b>性质：</b>综合表，等级 B2／C。<b>读法：</b>一个支持、一个不可判、两个相反/混合——<b>这不是"框架被验证"，而是"框架的某些假设可被透明地检验，且结果不一"。</b></div>
 
 <h3>Y.4　方法学自检</h3>
 
@@ -77,11 +105,18 @@
 <div class="define"><span class="bt">自检 Y.4　为什么先做软件与文献</span>
 选择它们，因为数据最公开、周期最短、可复现成本最低。<b>但这个选择有"赌徒逻辑"的风险：</b>若在这里失败，我们可能误判框架——而失败也许只源于量度选错（如 Y.1 所示）。<b>因此正确的做法不是"单次赌注"，而是"探针集 + 分层对照"</b>——这正是本附录的形态。</div>
 
+<div class="warning"><span class="bt">自检 Y.4b　赌徒逻辑的显式风险（收尾前的自我交代）</span>
+先做软件与文献，因为数据最公开、周期最短。但这个选择有明确风险：<br>
+<b>（1）</b>若医疗数据将来支持框架，而现在停笔，会显得"避开了难题"；<br>
+<b>（2）</b>若教育数据将来反驳框架，现在的结论需要修改；<br>
+<b>（3）</b>但<b>这正是学术诚实：不预支未来，只以现有证据说话。</b><br>
+<b>停笔时刻的判据：实证已启动、方向已清晰、样本已足量、但不期望完全验证。</b>本书在这一判据上收尾。</div>
+
 <h3>Y.5　下一步</h3>
 
 <div class="define"><span class="bt">三个可执行方向</span>
 <b>O35（软件，修订）：</b>原假设"跨子系统更慢"过于笼统。三个候选解释——<b>（i）架构复杂性（K_comp/K_desc）/（ii）多维护者分权（代理权力）/（iii）跨模块改动天然稀少</b>。设计分层对照（核心 vs 驱动、内部 vs 外部贡献者、补丁大小分层），用 PR 型项目做对照，以区分三者。<br>
-<b>O36（文献，新）：</b>用<b>引用层面</b>的量度（OpenAlex/Crossref）替代 cross-listing，检验"跨领域引用比例"而非"标签数"——这才是"知识传递"的可测代理。<br>
+<b>O36（文献，已执行第一次）：</b>用 OpenAlex 引用量度替代 cross-listing（见 Y.2b）——结果<b>混合</b>（CS 降、物理/神经不降）。<b>下一步：扩到更多领域与更长时段，并控制引文覆盖偏差。</b><br>
 <b>O37（多源三角）：</b>同一领域同时用三类数据（代码 / 文献 / 事件）交叉验证，看三角诊断是否稳健。</div>
 
 <div class="warning"><span class="bt">本附录的诚实定位</span>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520"><rect width="1000" height="520" fill="#ffffff"/>
+<style>text{font-family:"Microsoft YaHei","SimHei",Arial,sans-serif;}</style>
+<text x="40" y="46" font-size="24" font-weight="700">图 Y.2　跨领域引用比例随时间的变化（OpenAlex）</text>
+<circle cx="110" cy="345" r="4.5" fill="#3a6ea5"/>
+<circle cx="387" cy="359" r="4.5" fill="#3a6ea5"/>
+<circle cx="663" cy="378" r="4.5" fill="#3a6ea5"/>
+<circle cx="940" cy="344" r="4.5" fill="#3a6ea5"/>
+<polyline points="110,345 387,359 663,378 940,344" fill="none" stroke="#3a6ea5" stroke-width="2.4"/>
+<circle cx="110" cy="294" r="4.5" fill="#009E73"/>
+<circle cx="387" cy="345" r="4.5" fill="#009E73"/>
+<circle cx="663" cy="337" r="4.5" fill="#009E73"/>
+<circle cx="940" cy="371" r="4.5" fill="#009E73"/>
+<polyline points="110,294 387,345 663,337 940,371" fill="none" stroke="#009E73" stroke-width="2.4"/>
+<circle cx="110" cy="302" r="4.5" fill="#b8862f"/>
+<circle cx="387" cy="307" r="4.5" fill="#b8862f"/>
+<circle cx="663" cy="334" r="4.5" fill="#b8862f"/>
+<circle cx="940" cy="281" r="4.5" fill="#b8862f"/>
+<polyline points="110,302 387,307 663,334 940,281" fill="none" stroke="#b8862f" stroke-width="2.4"/>
+<text x="110" y="446" text-anchor="middle" font-size="14">1990</text>
+<text x="387" y="446" text-anchor="middle" font-size="14">2000</text>
+<text x="663" y="446" text-anchor="middle" font-size="14">2010</text>
+<text x="940" y="446" text-anchor="middle" font-size="14">2020</text>
+<line x1="700" y1="120" x2="740" y2="120" stroke="#3a6ea5" stroke-width="2.5"/>
+<text x="748" y="125" font-size="14">Physics</text>
+<line x1="700" y1="146" x2="740" y2="146" stroke="#009E73" stroke-width="2.5"/>
+<text x="748" y="151" font-size="14">Computer Science</text>
+<line x1="700" y1="172" x2="740" y2="172" stroke="#b8862f" stroke-width="2.5"/>
+<text x="748" y="177" font-size="14">Neuroscience</text>
+<text x="40" y="500" font-size="13" fill="#888">纵轴＝跨领域引用占比。数据：OpenAlex API 实时抓取。局限：字段归类误差、早期引文覆盖不全。</text></svg>
