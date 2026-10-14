@@ -186,3 +186,35 @@
 <div class="define"><span class="bt">一个例子：碳预算该标几级？</span>
 IPCC AR6 对 1.5°C 的剩余碳预算给出一个区间（不同情景、不同概率水平下差异可观）。<br>
 <b>结论：</b>应标为 <b>B3</b>——方向可靠（预算有限且正在耗尽），但点值（500 Gt）在情景间偏差较大。<b>正确用法是"约 500 Gt 量级（B3）"，而不是"恰好 500 Gt"。</b></div>
+
+<h3>A.12　三种交互惩罚的测量进展</h3>
+
+<p>附录 A.7 把交互惩罚分解为 <span class="s">ψ_desc</span>、<span class="s">ψ_comp</span>、<span class="s">ψ_res</span>。三者的测量成熟度很不相同，这一不对称必须写出来。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 A.6　交互惩罚的测量进展</b></caption>
+<tr><th class="l">交互惩罚</th><th class="l">理论形式</th><th class="l">现有测量</th><th class="l">缺失的测量</th><th class="l">位置</th></tr>
+<tr><td class="l">ψ_desc</td><td class="l">子模性折扣</td><td class="l">✓ 心理学/信息论实验</td><td class="l">跨领域换算率</td><td class="l">第 5 章</td></tr>
+<tr><td class="l">ψ_comp</td><td class="l">计算复杂度/不可约性</td><td class="l">△ 仅模型与理论</td><td class="l">✗ 真实系统的定量</td><td class="l">第 4.5 节、N.1</td></tr>
+<tr><td class="l">ψ_res</td><td class="l">时间错配 τ</td><td class="l">✓ 社会系统（序数）</td><td class="l">个体、组织尺度的标定</td><td class="l">第 7、9 章</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>进展表，等级 B／乙。<b>读法：</b>本书对 <span class="s">ψ_desc</span> 与 <span class="s">ψ_res</span> 有较多证据，对 <span class="s">ψ_comp</span> 基本只有理论。这决定了第 4.5 节的论证强度低于第 5、7 章。<b>把三者混为一谈，会高估计算论部分的经验支持。</b></div>
+
+<h3>A.13　模型 T 的代表性与泛化</h3>
+
+<p>附录 A.6 与 A.10 的模型 T 需要回答一个质疑：<b>它凭什么代表真实系统？</b>本节给出它的"最小性"论证，以及一个反方向的开放问题。</p>
+
+<div class="define"><span class="bt">模型 T 的最小性论证</span>
+模型 T 在以下意义上被刻意做<b>最简单</b>：<br>
+<b>（1）分辨率只有三值</b>（0/1/2），没有中间态；<br>
+<b>（2）交互惩罚取最简单形式</b>（预算 + 归一化常数），没有高阶交互；<br>
+<b>（3）无随机性、无时变性</b>（静态分配）。<br>
+<b>论证：</b>若在最简模型里取舍已经出现，则更复杂的模型只会增加约束（更多交互项、更多资源竞争），不会凭空产生"三满格"的可能。<b>因此最简模型的结果是"下界式"的证据——它给出的是取舍的必要性，而非充分性。</b></div>
+
+<div class="warning"><span class="bt">警告 A.3　这个论证有一个漏洞，必须承认</span>
+"更复杂只增加约束"不严格成立：<b>增加维度有时会创造新的自由度，使原本不可能的取舍变得可能。</b>例如，引入时间维度后，系统可以"先保 C 再保 T"（分时切换），从而在时间平均意义上绕过静态三选二。<b>这正是第 11 章三阶段模式的来源。</b>因此模型 T 只说明"静止、单次分配"下的取舍，不说明动态系统。<b>把它当作动态系统的结论，是过度外推。</b></div>
+
+<div class="define"><span class="bt">开放问题 O2 的补充陈述</span>
+是否存在一个模型架构，使可达域 <span class="s">R(K)</span> 包含大量靠近 <span class="s">(1,1,1)</span> 的点？<br>
+<b>已知线索：</b>（a）预算充分（α→2）时，模型 T 的三点可同时接近 1（A.10）；（b）动态/分时切换可能进一步放宽；（c）引入外部资源（外包、工具）可把部分坐标移出共享预算（第 5.3 节的反例一）。<br>
+<b>待答：</b>是否存在一个<b>有限、静态、无外部资源</b>的架构，使 <span class="s">(1,1,1)</span> 可达？<b>若存在，命题 2.1 被证伪。</b></div>

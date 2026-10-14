@@ -15,7 +15,7 @@
       "first": "ch02.html"
     },
     "选择": {
-      "total": 264,
+      "total": 269,
       "by_chapter": [
         [
           "ch01.html",
@@ -47,11 +47,11 @@
         ],
         [
           "ch09.html",
-          10
+          13
         ],
         [
           "ch10.html",
-          10
+          12
         ],
         [
           "ch11.html",
@@ -547,7 +547,7 @@
       "first": "ch01.html"
     },
     "诊断": {
-      "total": 143,
+      "total": 144,
       "by_chapter": [
         [
           "ch01.html",
@@ -583,7 +583,7 @@
         ],
         [
           "ch09.html",
-          13
+          14
         ],
         [
           "ch10.html",
@@ -659,7 +659,7 @@
       "first": "ch10.html"
     },
     "范式": {
-      "total": 40,
+      "total": 43,
       "by_chapter": [
         [
           "ch05.html",
@@ -675,7 +675,7 @@
         ],
         [
           "ch08.html",
-          1
+          3
         ],
         [
           "ch09.html",
@@ -683,7 +683,7 @@
         ],
         [
           "ch10.html",
-          1
+          2
         ],
         [
           "ch11.html",
@@ -801,7 +801,7 @@
       "first": "ch12.html"
     },
     "三阶段": {
-      "total": 21,
+      "total": 26,
       "by_chapter": [
         [
           "ch03.html",
@@ -816,8 +816,12 @@
           1
         ],
         [
-          "ch10.html",
+          "ch08.html",
           3
+        ],
+        [
+          "ch10.html",
+          5
         ],
         [
           "ch11.html",
@@ -957,6 +961,8 @@
     "11": [
       "ch05.html",
       "ch06.html",
+      "ch08.html",
+      "ch10.html",
       "ch11.html",
       "ch12.html",
       "ch13.html",
@@ -1330,6 +1336,7 @@
       "ch18.html"
     ],
     "18.5": [
+      "ch10.html",
       "ch18.html"
     ],
     "18.6": [
@@ -2140,7 +2147,7 @@
     {
       "chapter": "ch10.html",
       "word": "必然",
-      "snippet": "顶点就被让出了——这不是管理者短视，而是换顶点的必然。\n\n10.8　本站诊断：成长就是换掉被让出的顶"
+      "snippet": "顶点就被让出了——这不是管理者短视，而是换顶点的必然。\n\n驱动力在哪里？组织创新范式的迁移与市场规模"
     },
     {
       "chapter": "ch11.html",

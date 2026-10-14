@@ -54,7 +54,8 @@ BACK = [("结语　从寻求大一统到自觉管理权衡", "back_epilogue.html
         ("附录 N　计算、涌现与系统论：三角的上游", "appendix_n_upstream.html", "apxN"),
         ("附录 O　意识、人工智能与三角：三个前沿", "appendix_o_frontiers.html", "apxO"),
         ("附录 P　延伸战场速览：按三条标准试诊断", "appendix_p_extended.html", "apxP"),
-        ("附录 Q　知识演化的定量指标与历史年表", "appendix_q_indicators.html", "apxQ")]
+        ("附录 Q　知识演化的定量指标与历史年表", "appendix_q_indicators.html", "apxQ"),
+        ("附录 S　演化视角的三角：生物、文化与技术", "appendix_s_evolution.html", "apxS")]
 
 
 def load_json(p, default=None):
