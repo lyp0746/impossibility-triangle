@@ -1,0 +1,1889 @@
+{
+  "A1_terms": {
+    "不可能三角": {
+      "total": 2,
+      "by_chapter": [
+        [
+          "ch02.html",
+          1
+        ],
+        [
+          "ch04.html",
+          1
+        ]
+      ],
+      "first": "ch02.html"
+    },
+    "选择": {
+      "total": 238,
+      "by_chapter": [
+        [
+          "ch01.html",
+          5
+        ],
+        [
+          "ch02.html",
+          4
+        ],
+        [
+          "ch04.html",
+          10
+        ],
+        [
+          "ch05.html",
+          4
+        ],
+        [
+          "ch06.html",
+          20
+        ],
+        [
+          "ch07.html",
+          9
+        ],
+        [
+          "ch08.html",
+          16
+        ],
+        [
+          "ch09.html",
+          9
+        ],
+        [
+          "ch10.html",
+          9
+        ],
+        [
+          "ch11.html",
+          3
+        ],
+        [
+          "ch12.html",
+          16
+        ],
+        [
+          "ch13.html",
+          17
+        ],
+        [
+          "ch14.html",
+          7
+        ],
+        [
+          "ch15.html",
+          23
+        ],
+        [
+          "ch16.html",
+          16
+        ],
+        [
+          "ch17.html",
+          20
+        ],
+        [
+          "ch18.html",
+          16
+        ],
+        [
+          "ch19.html",
+          6
+        ],
+        [
+          "ch20.html",
+          13
+        ],
+        [
+          "ch21.html",
+          1
+        ],
+        [
+          "ch22.html",
+          7
+        ],
+        [
+          "ch23.html",
+          7
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "完备性": {
+      "total": 21,
+      "by_chapter": [
+        [
+          "ch01.html",
+          3
+        ],
+        [
+          "ch02.html",
+          7
+        ],
+        [
+          "ch03.html",
+          1
+        ],
+        [
+          "ch04.html",
+          2
+        ],
+        [
+          "ch05.html",
+          1
+        ],
+        [
+          "ch06.html",
+          1
+        ],
+        [
+          "ch07.html",
+          1
+        ],
+        [
+          "ch11.html",
+          1
+        ],
+        [
+          "ch14.html",
+          2
+        ],
+        [
+          "ch15.html",
+          1
+        ],
+        [
+          "ch23.html",
+          1
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "可组合性": {
+      "total": 18,
+      "by_chapter": [
+        [
+          "ch01.html",
+          3
+        ],
+        [
+          "ch02.html",
+          5
+        ],
+        [
+          "ch04.html",
+          1
+        ],
+        [
+          "ch05.html",
+          3
+        ],
+        [
+          "ch06.html",
+          1
+        ],
+        [
+          "ch07.html",
+          1
+        ],
+        [
+          "ch14.html",
+          2
+        ],
+        [
+          "ch15.html",
+          1
+        ],
+        [
+          "ch23.html",
+          1
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "传递性": {
+      "total": 26,
+      "by_chapter": [
+        [
+          "ch01.html",
+          3
+        ],
+        [
+          "ch02.html",
+          7
+        ],
+        [
+          "ch03.html",
+          1
+        ],
+        [
+          "ch04.html",
+          3
+        ],
+        [
+          "ch05.html",
+          3
+        ],
+        [
+          "ch06.html",
+          2
+        ],
+        [
+          "ch07.html",
+          1
+        ],
+        [
+          "ch11.html",
+          1
+        ],
+        [
+          "ch12.html",
+          1
+        ],
+        [
+          "ch14.html",
+          1
+        ],
+        [
+          "ch16.html",
+          1
+        ],
+        [
+          "ch19.html",
+          1
+        ],
+        [
+          "ch23.html",
+          1
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "子模性": {
+      "total": 28,
+      "by_chapter": [
+        [
+          "ch01.html",
+          2
+        ],
+        [
+          "ch03.html",
+          3
+        ],
+        [
+          "ch04.html",
+          6
+        ],
+        [
+          "ch05.html",
+          14
+        ],
+        [
+          "ch21.html",
+          2
+        ],
+        [
+          "ch23.html",
+          1
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "时间错配": {
+      "total": 8,
+      "by_chapter": [
+        [
+          "ch01.html",
+          3
+        ],
+        [
+          "ch04.html",
+          1
+        ],
+        [
+          "ch06.html",
+          1
+        ],
+        [
+          "ch07.html",
+          1
+        ],
+        [
+          "ch20.html",
+          1
+        ],
+        [
+          "ch21.html",
+          1
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "容量级联": {
+      "total": 9,
+      "by_chapter": [
+        [
+          "ch01.html",
+          1
+        ],
+        [
+          "ch05.html",
+          8
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "分离曲率": {
+      "total": 5,
+      "by_chapter": [
+        [
+          "ch01.html",
+          2
+        ],
+        [
+          "ch12.html",
+          2
+        ],
+        [
+          "ch21.html",
+          1
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "离散": {
+      "total": 13,
+      "by_chapter": [
+        [
+          "ch01.html",
+          6
+        ],
+        [
+          "ch03.html",
+          1
+        ],
+        [
+          "ch12.html",
+          4
+        ],
+        [
+          "ch21.html",
+          2
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "连续": {
+      "total": 23,
+      "by_chapter": [
+        [
+          "ch01.html",
+          4
+        ],
+        [
+          "ch02.html",
+          1
+        ],
+        [
+          "ch03.html",
+          1
+        ],
+        [
+          "ch05.html",
+          1
+        ],
+        [
+          "ch10.html",
+          1
+        ],
+        [
+          "ch11.html",
+          2
+        ],
+        [
+          "ch12.html",
+          2
+        ],
+        [
+          "ch14.html",
+          1
+        ],
+        [
+          "ch15.html",
+          3
+        ],
+        [
+          "ch16.html",
+          1
+        ],
+        [
+          "ch19.html",
+          1
+        ],
+        [
+          "ch21.html",
+          1
+        ],
+        [
+          "ch23.html",
+          4
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "优雅降级": {
+      "total": 9,
+      "by_chapter": [
+        [
+          "ch17.html",
+          1
+        ],
+        [
+          "ch18.html",
+          8
+        ]
+      ],
+      "first": "ch17.html"
+    },
+    "失效阈值": {
+      "total": 7,
+      "by_chapter": [
+        [
+          "ch15.html",
+          1
+        ],
+        [
+          "ch17.html",
+          1
+        ],
+        [
+          "ch20.html",
+          4
+        ],
+        [
+          "ch21.html",
+          1
+        ]
+      ],
+      "first": "ch15.html"
+    },
+    "分层有效性": {
+      "total": 1,
+      "by_chapter": [
+        [
+          "ch16.html",
+          1
+        ]
+      ],
+      "first": "ch16.html"
+    },
+    "被让出的顶点": {
+      "total": 28,
+      "by_chapter": [
+        [
+          "ch01.html",
+          2
+        ],
+        [
+          "ch03.html",
+          1
+        ],
+        [
+          "ch04.html",
+          1
+        ],
+        [
+          "ch06.html",
+          1
+        ],
+        [
+          "ch10.html",
+          4
+        ],
+        [
+          "ch11.html",
+          1
+        ],
+        [
+          "ch15.html",
+          5
+        ],
+        [
+          "ch17.html",
+          1
+        ],
+        [
+          "ch18.html",
+          3
+        ],
+        [
+          "ch19.html",
+          1
+        ],
+        [
+          "ch20.html",
+          4
+        ],
+        [
+          "ch23.html",
+          4
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "诊断": {
+      "total": 91,
+      "by_chapter": [
+        [
+          "ch01.html",
+          10
+        ],
+        [
+          "ch02.html",
+          2
+        ],
+        [
+          "ch03.html",
+          11
+        ],
+        [
+          "ch04.html",
+          4
+        ],
+        [
+          "ch05.html",
+          3
+        ],
+        [
+          "ch06.html",
+          12
+        ],
+        [
+          "ch07.html",
+          6
+        ],
+        [
+          "ch08.html",
+          5
+        ],
+        [
+          "ch09.html",
+          6
+        ],
+        [
+          "ch10.html",
+          6
+        ],
+        [
+          "ch12.html",
+          1
+        ],
+        [
+          "ch13.html",
+          1
+        ],
+        [
+          "ch15.html",
+          1
+        ],
+        [
+          "ch16.html",
+          2
+        ],
+        [
+          "ch18.html",
+          1
+        ],
+        [
+          "ch19.html",
+          4
+        ],
+        [
+          "ch20.html",
+          9
+        ],
+        [
+          "ch21.html",
+          4
+        ],
+        [
+          "ch23.html",
+          3
+        ]
+      ],
+      "first": "ch01.html"
+    },
+    "知识系统": {
+      "total": 15,
+      "by_chapter": [
+        [
+          "ch04.html",
+          1
+        ],
+        [
+          "ch10.html",
+          1
+        ],
+        [
+          "ch11.html",
+          3
+        ],
+        [
+          "ch12.html",
+          1
+        ],
+        [
+          "ch14.html",
+          1
+        ],
+        [
+          "ch15.html",
+          2
+        ],
+        [
+          "ch23.html",
+          6
+        ]
+      ],
+      "first": "ch04.html"
+    },
+    "范式": {
+      "total": 23,
+      "by_chapter": [
+        [
+          "ch11.html",
+          3
+        ],
+        [
+          "ch13.html",
+          3
+        ],
+        [
+          "ch14.html",
+          16
+        ],
+        [
+          "ch23.html",
+          1
+        ]
+      ],
+      "first": "ch11.html"
+    },
+    "飞地": {
+      "total": 19,
+      "by_chapter": [
+        [
+          "ch10.html",
+          3
+        ],
+        [
+          "ch13.html",
+          7
+        ],
+        [
+          "ch15.html",
+          6
+        ],
+        [
+          "ch16.html",
+          2
+        ],
+        [
+          "ch23.html",
+          1
+        ]
+      ],
+      "first": "ch10.html"
+    },
+    "权衡矩阵": {
+      "total": 6,
+      "by_chapter": [
+        [
+          "ch17.html",
+          5
+        ],
+        [
+          "ch23.html",
+          1
+        ]
+      ],
+      "first": "ch17.html"
+    },
+    "可证伪": {
+      "total": 5,
+      "by_chapter": [
+        [
+          "ch02.html",
+          1
+        ],
+        [
+          "ch03.html",
+          4
+        ]
+      ],
+      "first": "ch02.html"
+    },
+    "证据等级": {
+      "total": 2,
+      "by_chapter": [
+        [
+          "ch03.html",
+          2
+        ]
+      ],
+      "first": "ch03.html"
+    },
+    "断言标记": {
+      "total": 3,
+      "by_chapter": [
+        [
+          "ch02.html",
+          1
+        ],
+        [
+          "ch03.html",
+          2
+        ]
+      ],
+      "first": "ch02.html"
+    },
+    "跨顶点翻译": {
+      "total": 4,
+      "by_chapter": [
+        [
+          "ch12.html",
+          1
+        ],
+        [
+          "ch15.html",
+          3
+        ]
+      ],
+      "first": "ch12.html"
+    },
+    "三阶段": {
+      "total": 15,
+      "by_chapter": [
+        [
+          "ch03.html",
+          2
+        ],
+        [
+          "ch10.html",
+          3
+        ],
+        [
+          "ch11.html",
+          6
+        ],
+        [
+          "ch21.html",
+          1
+        ],
+        [
+          "ch22.html",
+          2
+        ],
+        [
+          "ch23.html",
+          1
+        ]
+      ],
+      "first": "ch03.html"
+    }
+  },
+  "A1_definitions": {
+    "2.1": "ch02.html",
+    "2.2": "ch02.html",
+    "2.3": "ch02.html",
+    "3.1": "ch03.html",
+    "3.2": "ch03.html",
+    "3.3": "ch03.html",
+    "8.1": "ch08.html",
+    "10.1": "ch10.html",
+    "15.1": "ch15.html",
+    "22.1": "ch22.html"
+  },
+  "A2_formulas_defined": [],
+  "A2_formula_refs": {},
+  "A2_refs_missing_def": [],
+  "A2_continuity": {},
+  "A3_tables_defined": [
+    "1.1",
+    "10.1",
+    "10.2",
+    "11.1",
+    "12.1",
+    "12.2",
+    "13.1",
+    "13.2",
+    "13.3",
+    "14.1",
+    "14.2",
+    "14.3",
+    "15.1",
+    "15.2",
+    "16.1",
+    "16.2",
+    "17.1",
+    "17.2",
+    "17.3",
+    "17.4",
+    "18.1",
+    "18.2",
+    "19.1",
+    "20.1",
+    "20.2",
+    "21.1",
+    "21.2",
+    "21.3",
+    "22.1",
+    "23.1",
+    "3.1",
+    "4.1",
+    "4.2",
+    "4.3",
+    "5.1",
+    "6.1",
+    "6.2",
+    "7.1",
+    "7.2",
+    "7.3",
+    "8.1",
+    "8.2",
+    "9.1",
+    "9.2",
+    "9.3"
+  ],
+  "A3_figures_defined": [
+    "11.1",
+    "2.1",
+    "3.1"
+  ],
+  "A3_table_refs_missing_def": [],
+  "A3_figure_refs_missing_def": [],
+  "A3_tables_unreferenced": [],
+  "A3_figures_unreferenced": [],
+  "A4_c_grade": [
+    {
+      "chapter": "ch22.html",
+      "snippet": "［纲领，C／丙］"
+    }
+  ],
+  "A5_chapter_refs": {
+    "1": [
+      "ch01.html",
+      "ch02.html",
+      "ch04.html",
+      "ch07.html",
+      "ch08.html",
+      "ch09.html"
+    ],
+    "10": [
+      "ch10.html"
+    ],
+    "11": [
+      "ch11.html",
+      "ch12.html",
+      "ch13.html",
+      "ch14.html",
+      "ch15.html",
+      "ch22.html"
+    ],
+    "12": [
+      "ch11.html",
+      "ch12.html",
+      "ch13.html",
+      "ch15.html",
+      "ch19.html"
+    ],
+    "13": [
+      "ch12.html",
+      "ch13.html"
+    ],
+    "14": [
+      "ch11.html",
+      "ch14.html"
+    ],
+    "15": [
+      "ch08.html",
+      "ch11.html",
+      "ch13.html",
+      "ch14.html",
+      "ch15.html",
+      "ch16.html"
+    ],
+    "16": [
+      "ch16.html",
+      "ch17.html"
+    ],
+    "17": [
+      "ch16.html",
+      "ch17.html",
+      "ch18.html"
+    ],
+    "18": [
+      "ch17.html",
+      "ch18.html",
+      "ch20.html"
+    ],
+    "19": [
+      "ch19.html"
+    ],
+    "2": [
+      "ch01.html",
+      "ch02.html",
+      "ch04.html",
+      "ch22.html"
+    ],
+    "20": [
+      "ch16.html",
+      "ch18.html",
+      "ch19.html",
+      "ch20.html",
+      "ch23.html"
+    ],
+    "21": [
+      "ch01.html",
+      "ch03.html",
+      "ch21.html",
+      "ch22.html"
+    ],
+    "22": [
+      "ch04.html",
+      "ch21.html",
+      "ch22.html"
+    ],
+    "23": [
+      "ch22.html",
+      "ch23.html"
+    ],
+    "3": [
+      "ch02.html",
+      "ch03.html",
+      "ch11.html",
+      "ch19.html",
+      "ch21.html"
+    ],
+    "4": [
+      "ch01.html",
+      "ch02.html",
+      "ch04.html"
+    ],
+    "5": [
+      "ch02.html",
+      "ch05.html",
+      "ch06.html"
+    ],
+    "6": [
+      "ch05.html",
+      "ch06.html",
+      "ch12.html",
+      "ch17.html",
+      "ch19.html"
+    ],
+    "7": [
+      "ch02.html",
+      "ch06.html",
+      "ch07.html",
+      "ch17.html",
+      "ch18.html"
+    ],
+    "8": [
+      "ch08.html",
+      "ch14.html",
+      "ch17.html"
+    ],
+    "9": [
+      "ch07.html",
+      "ch08.html",
+      "ch09.html",
+      "ch17.html",
+      "ch20.html"
+    ]
+  },
+  "A5_chapter_refs_invalid": [],
+  "A5_section_refs": {
+    "1.1": [
+      "ch01.html"
+    ],
+    "1.2": [
+      "ch01.html"
+    ],
+    "1.3": [
+      "ch01.html"
+    ],
+    "1.4": [
+      "ch01.html"
+    ],
+    "1.5": [
+      "ch01.html"
+    ],
+    "1.6": [
+      "ch01.html"
+    ],
+    "1.7": [
+      "ch01.html"
+    ],
+    "10.1": [
+      "ch10.html"
+    ],
+    "10.2": [
+      "ch10.html"
+    ],
+    "10.3": [
+      "ch10.html",
+      "ch13.html"
+    ],
+    "10.4": [
+      "ch10.html"
+    ],
+    "10.5": [
+      "ch10.html"
+    ],
+    "10.6": [
+      "ch10.html"
+    ],
+    "10.7": [
+      "ch10.html"
+    ],
+    "11.1": [
+      "ch11.html"
+    ],
+    "11.2": [
+      "ch11.html",
+      "ch15.html",
+      "ch23.html"
+    ],
+    "11.3": [
+      "ch11.html"
+    ],
+    "11.4": [
+      "ch11.html"
+    ],
+    "11.5": [
+      "ch11.html"
+    ],
+    "11.6": [
+      "ch11.html"
+    ],
+    "11.7": [
+      "ch11.html"
+    ],
+    "12.1": [
+      "ch12.html"
+    ],
+    "12.2": [
+      "ch12.html"
+    ],
+    "12.3": [
+      "ch12.html"
+    ],
+    "12.4": [
+      "ch12.html"
+    ],
+    "12.5": [
+      "ch02.html",
+      "ch12.html",
+      "ch16.html",
+      "ch21.html"
+    ],
+    "12.6": [
+      "ch12.html"
+    ],
+    "12.7": [
+      "ch12.html"
+    ],
+    "13.1": [
+      "ch13.html"
+    ],
+    "13.2": [
+      "ch13.html"
+    ],
+    "13.3": [
+      "ch13.html"
+    ],
+    "13.4": [
+      "ch13.html"
+    ],
+    "13.5": [
+      "ch13.html"
+    ],
+    "13.6": [
+      "ch13.html"
+    ],
+    "13.7": [
+      "ch13.html"
+    ],
+    "14.1": [
+      "ch14.html"
+    ],
+    "14.2": [
+      "ch14.html"
+    ],
+    "14.3": [
+      "ch14.html"
+    ],
+    "14.4": [
+      "ch14.html"
+    ],
+    "14.5": [
+      "ch14.html"
+    ],
+    "14.6": [
+      "ch14.html"
+    ],
+    "14.7": [
+      "ch14.html"
+    ],
+    "15.1": [
+      "ch15.html"
+    ],
+    "15.2": [
+      "ch15.html"
+    ],
+    "15.3": [
+      "ch12.html",
+      "ch15.html",
+      "ch23.html"
+    ],
+    "15.4": [
+      "ch15.html"
+    ],
+    "15.5": [
+      "ch15.html"
+    ],
+    "15.6": [
+      "ch15.html"
+    ],
+    "15.7": [
+      "ch15.html"
+    ],
+    "16.1": [
+      "ch16.html"
+    ],
+    "16.2": [
+      "ch16.html"
+    ],
+    "16.3": [
+      "ch16.html"
+    ],
+    "16.4": [
+      "ch16.html"
+    ],
+    "16.5": [
+      "ch16.html"
+    ],
+    "16.6": [
+      "ch16.html"
+    ],
+    "16.7": [
+      "ch16.html"
+    ],
+    "17.1": [
+      "ch17.html"
+    ],
+    "17.2": [
+      "ch17.html"
+    ],
+    "17.3": [
+      "ch17.html"
+    ],
+    "17.4": [
+      "ch17.html"
+    ],
+    "17.5": [
+      "ch17.html"
+    ],
+    "17.6": [
+      "ch17.html",
+      "ch23.html"
+    ],
+    "17.7": [
+      "ch17.html"
+    ],
+    "18.1": [
+      "ch18.html"
+    ],
+    "18.2": [
+      "ch18.html"
+    ],
+    "18.3": [
+      "ch18.html"
+    ],
+    "18.4": [
+      "ch18.html"
+    ],
+    "18.5": [
+      "ch18.html"
+    ],
+    "18.6": [
+      "ch18.html"
+    ],
+    "18.7": [
+      "ch18.html"
+    ],
+    "19.1": [
+      "ch19.html"
+    ],
+    "19.2": [
+      "ch19.html"
+    ],
+    "19.3": [
+      "ch19.html"
+    ],
+    "19.4": [
+      "ch19.html"
+    ],
+    "19.5": [
+      "ch19.html"
+    ],
+    "19.6": [
+      "ch19.html",
+      "ch22.html"
+    ],
+    "19.7": [
+      "ch19.html"
+    ],
+    "2.1": [
+      "ch02.html",
+      "ch03.html"
+    ],
+    "2.2": [
+      "ch02.html"
+    ],
+    "2.3": [
+      "ch02.html"
+    ],
+    "2.4": [
+      "ch02.html"
+    ],
+    "2.5": [
+      "ch02.html"
+    ],
+    "2.6": [
+      "ch02.html"
+    ],
+    "2.7": [
+      "ch02.html"
+    ],
+    "20.1": [
+      "ch20.html"
+    ],
+    "20.2": [
+      "ch20.html"
+    ],
+    "20.3": [
+      "ch20.html"
+    ],
+    "20.4": [
+      "ch20.html"
+    ],
+    "20.5": [
+      "ch20.html"
+    ],
+    "20.6": [
+      "ch20.html"
+    ],
+    "20.7": [
+      "ch20.html"
+    ],
+    "21.1": [
+      "ch21.html"
+    ],
+    "21.2": [
+      "ch21.html"
+    ],
+    "21.3": [
+      "ch21.html"
+    ],
+    "21.4": [
+      "ch21.html"
+    ],
+    "21.5": [
+      "ch21.html",
+      "ch23.html"
+    ],
+    "21.6": [
+      "ch21.html",
+      "ch22.html",
+      "ch23.html"
+    ],
+    "21.7": [
+      "ch21.html"
+    ],
+    "22.1": [
+      "ch22.html"
+    ],
+    "22.2": [
+      "ch22.html"
+    ],
+    "22.3": [
+      "ch22.html"
+    ],
+    "22.4": [
+      "ch22.html"
+    ],
+    "22.5": [
+      "ch22.html"
+    ],
+    "22.6": [
+      "ch22.html"
+    ],
+    "23.1": [
+      "ch23.html"
+    ],
+    "23.2": [
+      "ch23.html"
+    ],
+    "23.3": [
+      "ch23.html"
+    ],
+    "23.4": [
+      "ch23.html"
+    ],
+    "23.5": [
+      "ch23.html"
+    ],
+    "3.1": [
+      "ch03.html"
+    ],
+    "3.2": [
+      "ch03.html"
+    ],
+    "3.3": [
+      "ch03.html"
+    ],
+    "3.4": [
+      "ch03.html"
+    ],
+    "3.5": [
+      "ch03.html"
+    ],
+    "3.6": [
+      "ch03.html"
+    ],
+    "3.7": [
+      "ch03.html"
+    ],
+    "4.0": [
+      "ch01.html"
+    ],
+    "4.1": [
+      "ch04.html"
+    ],
+    "4.2": [
+      "ch04.html"
+    ],
+    "4.3": [
+      "ch04.html"
+    ],
+    "4.4": [
+      "ch04.html"
+    ],
+    "4.5": [
+      "ch04.html"
+    ],
+    "4.6": [
+      "ch04.html"
+    ],
+    "4.7": [
+      "ch04.html"
+    ],
+    "5.1": [
+      "ch05.html",
+      "ch20.html",
+      "ch21.html"
+    ],
+    "5.2": [
+      "ch05.html",
+      "ch21.html"
+    ],
+    "5.3": [
+      "ch05.html"
+    ],
+    "5.4": [
+      "ch05.html"
+    ],
+    "5.5": [
+      "ch05.html"
+    ],
+    "5.6": [
+      "ch05.html"
+    ],
+    "5.7": [
+      "ch05.html"
+    ],
+    "5.8": [
+      "ch05.html"
+    ],
+    "6.1": [
+      "ch06.html",
+      "ch17.html"
+    ],
+    "6.2": [
+      "ch06.html"
+    ],
+    "6.3": [
+      "ch06.html"
+    ],
+    "6.4": [
+      "ch06.html"
+    ],
+    "6.5": [
+      "ch06.html"
+    ],
+    "6.6": [
+      "ch06.html"
+    ],
+    "6.7": [
+      "ch06.html"
+    ],
+    "7.1": [
+      "ch07.html",
+      "ch20.html"
+    ],
+    "7.2": [
+      "ch07.html"
+    ],
+    "7.3": [
+      "ch07.html"
+    ],
+    "7.4": [
+      "ch07.html"
+    ],
+    "7.5": [
+      "ch07.html"
+    ],
+    "7.6": [
+      "ch07.html"
+    ],
+    "7.7": [
+      "ch07.html"
+    ],
+    "8.1": [
+      "ch08.html"
+    ],
+    "8.2": [
+      "ch08.html"
+    ],
+    "8.3": [
+      "ch08.html"
+    ],
+    "8.4": [
+      "ch08.html"
+    ],
+    "8.5": [
+      "ch08.html"
+    ],
+    "8.6": [
+      "ch08.html"
+    ],
+    "8.7": [
+      "ch08.html"
+    ],
+    "9.1": [
+      "ch09.html"
+    ],
+    "9.2": [
+      "ch09.html",
+      "ch20.html"
+    ],
+    "9.3": [
+      "ch09.html"
+    ],
+    "9.4": [
+      "ch09.html"
+    ],
+    "9.5": [
+      "ch09.html",
+      "ch17.html"
+    ],
+    "9.6": [
+      "ch09.html"
+    ],
+    "9.7": [
+      "ch09.html"
+    ]
+  },
+  "A6_cited": {
+    "IPCC": [
+      "2023"
+    ],
+    "OECD": [
+      "2019"
+    ],
+    "WEF": [
+      "2020"
+    ]
+  },
+  "A6_defined": {
+    "Abbott": [
+      "2001"
+    ],
+    "Acemoglu": [
+      "2016"
+    ],
+    "Allen": [
+      "1982"
+    ],
+    "Anderson": [
+      "1972"
+    ],
+    "Argyris": [
+      "1978"
+    ],
+    "Arrow": [
+      "1951"
+    ],
+    "Autor": [
+      "2015"
+    ],
+    "Bernanke": [
+      "1997"
+    ],
+    "Bloom": [
+      "2007"
+    ],
+    "Bourdieu": [
+      "1975"
+    ],
+    "Box": [
+      "1976"
+    ],
+    "Breiman": [
+      "2001"
+    ],
+    "Brewer": [
+      "2000"
+    ],
+    "Christensen": [
+      "1997"
+    ],
+    "Cohen": [
+      "1990"
+    ],
+    "Colander": [
+      "2004"
+    ],
+    "Collins": [
+      "2015"
+    ],
+    "Cover": [
+      "2006"
+    ],
+    "Cowan": [
+      "2001"
+    ],
+    "DiMasi": [
+      "2016"
+    ],
+    "Dupr": [
+      "1993"
+    ],
+    "Eisenhardt": [
+      "1989"
+    ],
+    "Feyerabend": [
+      "1975"
+    ],
+    "Fleck": [
+      "1935"
+    ],
+    "Fleming": [
+      "1962"
+    ],
+    "Fortunato": [
+      "2018"
+    ],
+    "Gawande": [
+      "2009"
+    ],
+    "Gell-Mann": [
+      "1994"
+    ],
+    "Gibbons": [
+      "2012"
+    ],
+    "Gilbert": [
+      "2002"
+    ],
+    "Goodhart": [
+      "1975"
+    ],
+    "Guyatt": [
+      "1992"
+    ],
+    "Healy": [
+      "2018"
+    ],
+    "Henderson": [
+      "1990"
+    ],
+    "Hicks": [
+      "2015"
+    ],
+    "Holland": [
+      "1995"
+    ],
+    "Hollnagel": [
+      "2006"
+    ],
+    "IPCC": [
+      "2023"
+    ],
+    "Kahneman": [
+      "2011"
+    ],
+    "Kitcher": [
+      "1982"
+    ],
+    "Klein": [
+      "1998"
+    ],
+    "Kolmogorov": [
+      "1965"
+    ],
+    "Kuhn": [
+      "1962"
+    ],
+    "Lakatos": [
+      "1978"
+    ],
+    "Laughlin": [
+      "2000"
+    ],
+    "Levinthal": [
+      "1993"
+    ],
+    "Li": [
+      "2008"
+    ],
+    "Liu": [
+      "2024"
+    ],
+    "March": [
+      "1991"
+    ],
+    "McClelland": [
+      "1995"
+    ],
+    "Meehl": [
+      "1978"
+    ],
+    "Merton": [
+      "1942"
+    ],
+    "Miller": [
+      "1956"
+    ],
+    "Mingers": [
+      "2015"
+    ],
+    "Mintzberg": [
+      "1979"
+    ],
+    "Mitchell": [
+      "2009"
+    ],
+    "Mundell": [
+      "1963"
+    ],
+    "Nemhauser": [
+      "1978"
+    ],
+    "Nonaka": [
+      "1994"
+    ],
+    "Nordhaus": [
+      "1975",
+      "2017"
+    ],
+    "Nosek": [
+      "2018"
+    ],
+    "OECD": [
+      "2019"
+    ],
+    "Olson": [
+      "1965"
+    ],
+    "Ostrom": [
+      "1990",
+      "2005"
+    ],
+    "Perrow": [
+      "1984"
+    ],
+    "Pindyck": [
+      "2013"
+    ],
+    "Planck": [
+      "1949"
+    ],
+    "Polanyi": [
+      "1958"
+    ],
+    "Popper": [
+      "1959"
+    ],
+    "Price": [
+      "1963"
+    ],
+    "Reason": [
+      "1990"
+    ],
+    "Reinhart": [
+      "2009"
+    ],
+    "Sackett": [
+      "1996"
+    ],
+    "Sahlberg": [
+      "2011"
+    ],
+    "Savage": [
+      "1954"
+    ],
+    "Shannon": [
+      "1948"
+    ],
+    "Shmueli": [
+      "2010"
+    ],
+    "Simon": [
+      "1955",
+      "1969"
+    ],
+    "Stern": [
+      "2007"
+    ],
+    "Subramanian": [
+      "2017"
+    ],
+    "Taleb": [
+      "2012"
+    ],
+    "Tonegawa": [
+      "2003"
+    ],
+    "Tufte": [
+      "1983"
+    ],
+    "Tulving": [
+      "1972"
+    ],
+    "WEF": [
+      "2020"
+    ],
+    "Weitzman": [
+      "2009"
+    ],
+    "Williamson": [
+      "1985"
+    ],
+    "Wilson": [
+      "1971"
+    ],
+    "Wimsatt": [
+      "2007"
+    ],
+    "Wolpert": [
+      "1997"
+    ],
+    "Wu": [
+      "2019"
+    ],
+    "Zadeh": [
+      "1965"
+    ],
+    "Zhao": [
+      "2009"
+    ],
+    "Ziman": [
+      "2000"
+    ]
+  },
+  "A6_cited_not_defined": [],
+  "A7_images_missing": [],
+  "A8_eq_malformed": [],
+  "A9_debug_strings": [],
+  "A10_version_labels": [],
+  "A11_fatalism": [
+    {
+      "chapter": "ch04.html",
+      "word": "必然",
+      "snippet": "杂的证明，而是因为它们在极简的假设下指出了取舍的必然。\n\n这提示我们：\"不可能\"往往不是某个领域的特"
+    },
+    {
+      "chapter": "ch04.html",
+      "word": "必然",
+      "snippet": "在同时满足全部性质的解；选择满足其中两个，第三个必然以某种方式失效。这个模板不保证第三个的失效有统一"
+    },
+    {
+      "chapter": "ch05.html",
+      "word": "必然",
+      "snippet": "同源的理由。\n\n信息论理由：有限通道容量下，编码必然有损。若表示 Z 的容量小于输入 X 的熵，则"
+    },
+    {
+      "chapter": "ch05.html",
+      "word": "必然",
+      "snippet": "数据锁死。\n\n两种理由指向同一件事：遗忘是压缩的必然伴随物。真正的问题不是\"要不要遗忘\"，而是\"遗忘"
+    },
+    {
+      "chapter": "ch06.html",
+      "word": "必然",
+      "snippet": "。这不是 EBM 的缺陷，而是它选择 A+T 后必然的账单。\n\n警告 6.1　平均数不是个体预测\n把"
+    },
+    {
+      "chapter": "ch06.html",
+      "word": "必然",
+      "snippet": "C（个体完备）与 A（可组合的标志物组合），因而必然在 T 上或 C 的档位上付账。\n\n现实中的折中"
+    },
+    {
+      "chapter": "ch08.html",
+      "word": "必然",
+      "snippet": "A）。评估坍缩不是官僚惰性，而是 A+T 选择的必然账单。\n\n8.6　本站诊断：A+T 的制度代价"
+    },
+    {
+      "chapter": "ch09.html",
+      "word": "必然",
+      "snippet": "比较、可投票）与一个对长期负责的追踪机制（T），必然在\"对当前的完备预测\"（C）上留白。\n\n9.2"
+    },
+    {
+      "chapter": "ch10.html",
+      "word": "必然",
+      "snippet": "，不是一个可以被管理技巧消除的谜题，而是换顶点时必然产生的账。［诊断，B／乙］\n\n10.1　导论：R"
+    },
+    {
+      "chapter": "ch10.html",
+      "word": "不可避免",
+      "snippet": "受外部创新威胁，需要定期转向。\n关键：阶段转变是不可避免的；问题不是阻止转变，而是管理好转折点。\n\n10"
+    },
+    {
+      "chapter": "ch11.html",
+      "word": "必然",
+      "snippet": "旧方法已经处理的一切，门槛更高。\n第二，循环不是必然：有的领域在危机后分裂成两个子领域（第 12 章"
+    },
+    {
+      "chapter": "ch16.html",
+      "word": "必然",
+      "snippet": "偏 A+T。一个方案若同时承诺三者，按三角命题它必然在某处食言。［框架，B／乙］\n\n16.1　导论："
+    },
+    {
+      "chapter": "ch16.html",
+      "word": "必然",
+      "snippet": "若方案同时承诺预测、解释、控制三者满格，按三角它必然在某个未声明的地方食言。\n\n16.6　三个领域的"
+    },
+    {
+      "chapter": "ch16.html",
+      "word": "必然",
+      "snippet": "各自的账单不同，保质期不同。把三者混为一谈的方案必然在某处食言。下一章把这一逻辑推进到制度设计：组织"
+    },
+    {
+      "chapter": "ch20.html",
+      "word": "必然",
+      "snippet": "个数量级（第 9 章的金融—实体），时间错配几乎必然出现。\n\n20.3　第二步：定位当前被让出的顶点"
+    }
+  ],
+  "A12_duplicate_headings": []
+}

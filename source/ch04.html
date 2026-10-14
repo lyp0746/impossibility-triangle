@@ -1,0 +1,103 @@
+<h2 class="chapter">第 4 章　与已有理论的对话：不可能定理的家族</h2>
+
+<p class="lead">"不可能三角"不是本书的发明。经济学、分布式系统、社会选择理论、项目管理里各有一个著名的"三难"或"不可能"。<b>本章逐条对照它们，既借它们的权威，也划清本书与它们的界限：本书不是在说"一切皆三角"，而是在问这些结果共享的是一个什么结构。</b></p>
+
+<div class="scenario"><span class="bt">本章主张</span>
+已有的不可能定理（CAP、Arrow、Mundell–Fleming、无免费午餐等）各自成立于一个特定领域，但它们共享一个更抽象的形状：<b>有限的、必须被分配的资源，在若干理想性质之间的取舍。</b>本书的三角是同一形状的一个更抽象的版本。［论证，B／乙］</div>
+
+<h3>4.1　导论：不可能定理为什么反复出现</h3>
+
+<p>一个耐人寻味的现象是：不可能定理论证往往出奇地短。CAP 定理的核心论证可以用三句话说完；Arrow 定理的核心是一个投票悖论的构造；Mundell–Fleming 的核心是一个利率平价方程。<b>它们之所以强大，不是因为有复杂的证明，而是因为它们在极简的假设下指出了取舍的必然。</b></p>
+
+<p>这提示我们："不可能"往往不是某个领域的特殊困难，而是<b>资源约束下的普遍现象</b>。如果资源必须被分配，而理想性质各自需要资源，那么"不能同时满格"就是自然的。本章要看的，正是这个自然现象在不同领域的表现。</p>
+
+<h3>4.2　CAP 与分布式系统的三难</h3>
+
+<p>CAP 定理（Brewer 2000；Gilbert &amp; Lynch 2002）断言：一个分布式数据系统在网络可能分区（Partition）的前提下，不能同时保证一致性（Consistency）与可用性（Availability）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 4.1　CAP 与本书三角的对照</b></caption>
+<tr><th class="l">CAP</th><th class="l">本书三角</th><th class="l">对照</th></tr>
+<tr><td class="l">一致性 C</td><td class="l">完备性 C</td><td class="l">名字巧合，含义不同：CAP 的 C 指所有节点看到同一份数据</td></tr>
+<tr><td class="l">可用性 A</td><td class="l">可组合性 A</td><td class="l">不同：CAP 的 A 指每个请求都得到响应</td></tr>
+<tr><td class="l">分区容忍 P</td><td class="l">传递性 T</td><td class="l">形似：都是在"跨节点/跨尺度能否贯通"上取舍</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>对照表。<b>注意：</b>三对缩写相同但含义不同，不可混用；对照的只是结构，不是内容。</div>
+
+<p><b>结构上的相似：</b>CAP 也在说"三选二"，而且那个被让出的顶点（通常选 <span class="s">AP</span> 或 <span class="s">CP</span>）决定了系统在故障时的行为。<b>内容上的不同：</b>CAP 的资源是网络同步能力，本书的资源是描述能力；CAP 的取舍是设计选择，本书的取舍可能连选择者都不自知。</p>
+
+<p>CAP 给本书的最大启示是：<b>不可能定理的用处不在于哀叹，而在于给出一个设计坐标系。</b>工程师不会因为 CAP 而放弃分布式系统，他们会在 <span class="s">CP</span> 与 <span class="s">AP</span> 之间根据业务显式选择。本书希望的，是让知识系统也能这样做。</p>
+
+<h3>4.3　Arrow 与 Mundell–Fleming：选择即失去</h3>
+
+<p><b>Arrow 不可能定理</b>（1951）说：一个满足若干"合理"公理的集体排序规则不存在（非独裁的前提下）。它同样是一个取舍：若要有序、要尊重个体偏好、要非独裁，则三者不可兼得。</p>
+
+<p><b>Mundell–Fleming 三难</b>（1960s）说：一个开放经济体不能同时拥有固定汇率、资本自由流动与独立货币政策，只能选两个。这是国际经济学里最著名的"选择即失去"。</p>
+
+<div class="define"><span class="bt">共同形状</span>
+这三个定理都满足同一个模板：<b>给定一组理想性质 <span class="s">{P₁, P₂, P₃}</span> 与有限资源，不存在同时满足全部性质的解；选择满足其中两个，第三个必然以某种方式失效。</b>这个模板不保证第三个的失效有统一的机制——它只保证取舍存在。</div>
+
+<p>本书与它们的区别在于：<b>Arrow 与 Mundell–Fleming 是定理（在公理前提下已证），本书的三角是框架。</b>本书能做的，是把它们的"选择即失去"姿态借来，用在那些还没有被严格定理化的领域，同时诚实地标注：在那些领域，取舍是"论证/假说"，不是"已证"。</p>
+
+<h3>4.4　子模性与 NP 困难：能力不能相加</h3>
+
+<p>第 1 章的第一处症状是子模性。<b>子模性是优化与信息论中普遍存在的结构</b>：特征选择里边际收益递减；博弈论里 Shapley 值的边际贡献递减；生态学里物种多样性与生态功能的非线性关系。</p>
+
+<p>与子模性相邻的是计算复杂性。许多"能力组合"问题（如组合优化、验证）是 NP 困难的：<b>你可以写出完备的目标函数（C），却找不到可组合的求解算法（¬A）。</b>这不是工程问题，而是复杂性类的问题。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 4.2　能力不能相加的三种表现</b></caption>
+<tr><th class="l">领域</th><th class="l">表现</th><th class="l">机制</th></tr>
+<tr><td class="l">信息论</td><td class="l"><span class="s">I(Z;X₁∪X₂) ≤ ΣI</span></td><td class="l">条件互信息非负</td></tr>
+<tr><td class="l">优化</td><td class="l">边际收益递减</td><td class="l">子模函数</td></tr>
+<tr><td class="l">计算</td><td class="l">组合问题难解</td><td class="l">NP 困难（在 P≠NP 前提下）</td></tr>
+</table>
+
+<p>本书的贡献不是重复这些结果，而是指出：<b>它们都是"选择 C+T、让出 A"这一行账在不同领域的记账方式。</b>注意到这一点，可以让人在遇到新的子模性现象时，立刻想到"这里是否也在为传递性或完备性付账"。</p>
+
+<h3>4.5　重正化群与尺度分离：被默认的前提</h3>
+
+<p>理论物理里最强大的尺度工具是重正化群。它允许我们从一个尺度上的有效理论推演出另一个尺度上的有效理论。<b>但它的前提是"尺度分离"</b>：快过程可以被积分掉，慢过程近似恒定。</p>
+
+<p>当尺度分离成立时，传递性 <span class="s">T₁</span> 可以很强。当它不成立时——强耦合、记忆效应、非马尔可夫——重正化群的干净结论失效。<b>本书的第三处症状（时间错配）正是尺度分离不成立的社会版本。</b>金融与政治没有足够的时间差来"积分掉"对方。</p>
+
+<div class="warning"><span class="bt">警告 4.1　被默认的前提往往最贵</span>
+一个理论越成功，它的前提越容易被遗忘。重正化群的"尺度分离"、经济学模型的"代表性代理人"、医学指南的"平均病人"——这些前提一旦失效，结论的失效会以最意想不到的方式出现。<b>三角诊断的很大一部分工作，就是把被默认的前提重新写成可见的取舍。</b></div>
+
+<h3>4.6　本书与它们的区别：诊断，而非同一</h3>
+
+<p>必须直说：<b>本书不是要宣布"CAP、Arrow、Mundell–Fleming 都是三角的特例"。</b>那样做会把它们的严格性拉低到框架的严格性，是一种降格。本书的正确姿态是相反的：把它们的严格性作为标杆，同时承认三角（在它们之外）的严格性更低。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 4.3　本书与已有不可能定理的关系</b></caption>
+<tr><th class="l">维度</th><th class="l">已有定理</th><th class="l">本书三角</th></tr>
+<tr><td class="l">严格性</td><td class="l">已证（在公理前提下）</td><td class="l">框架（部分见证可证）</td></tr>
+<tr><td class="l">资源</td><td class="l">领域特定（同步、偏好、货币）</td><td class="l">描述能力（抽象）</td></tr>
+<tr><td class="l">作用</td><td class="l">设计坐标</td><td class="l">诊断坐标</td></tr>
+<tr><td class="l">证伪方式</td><td class="l">公理矛盾</td><td class="l">领域反例 / 见证复算失败</td></tr>
+</table>
+
+<p>如果一定要说本书与它们的关系，最准确的说法是：<b>本书把"不可能"从一个又一个领域定理，抽象成一种可以在新领域里先行施加的诊断姿态；<b>这个抽象降低了严格性，换来了覆盖面。</b>读者应该清楚这笔交易的方向。</p>
+
+<h3>4.7　本章小结</h3>
+
+<p>已有的不可能定理共享一个形状：有限资源在理想性质之间的取舍。CAP、Arrow、Mundell–Fleming 是领域定理，本书三角是更抽象、更弱、但覆盖更广的框架。它们的共同启示是：<b>不可能定理的用处不是哀叹，而是给出坐标。</b>下一章进入第一个战场：生命系统里的记忆与遗忘。</p>
+
+<div class="note"><b>本章清单</b>
+<ul>
+<li><b>⊕ 有论证（B）：</b>已有不可能定理的共同形状；本书与它们的区别与取舍方向。</li>
+<li><b>⊗ 可引用（A）：</b>CAP、Arrow、Mundell–Fleming、子模性、NP 困难均为已知结果（在各自前提下）。</li>
+<li><b>○ 启发（C）：</b>三角可以覆盖尚无定理的领域。</li>
+<li><b>？ 未解决：</b>是否存在一个统一形式化，使这些定理成为它的实例——留待第 22 章。</li>
+<li><b>↔ 连接：</b>本章是第 2 章三角的外部校准；附录 I 给出更细的逐条对照。</li>
+</ul></div>
+
+<h3>本章参考文献</h3>
+<div class="refs">
+<p>Brewer, E. (2000). Towards Robust Distributed Systems. <i>PODC Keynote</i>.</p>
+<p>Gilbert, S., &amp; Lynch, N. (2002). Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services. <i>ACM SIGACT News</i>, 33(2), 51–59.</p>
+<p>Arrow, K. J. (1951). <i>Social Choice and Individual Values</i>. Wiley.</p>
+<p>Mundell, R. A. (1963). Capital Mobility and Stabilization Policy under Fixed and Flexible Exchange Rates. <i>Canadian Journal of Economics and Political Science</i>, 29(4), 475–485.</p>
+<p>Fleming, J. M. (1962). Domestic Financial Policies under Fixed and Floating Exchange Rates. <i>IMF Staff Papers</i>, 9, 369–379.</p>
+<p>Nemhauser, G. L., Wolsey, L. A., &amp; Fisher, M. L. (1978). An Analysis of Approximations for Maximizing Submodular Set Functions. <i>Mathematical Programming</i>, 14(1), 265–294.</p>
+</div>

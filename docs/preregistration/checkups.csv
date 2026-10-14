@@ -1,0 +1,4 @@
+test_id,check_date,checker,status,indicator,value,unit,source,vintage,triggered,note
+P2,2026-10-15,author,baseline,离散分离曲率恒等式（引用既有结果）,1,cited,"《区分的演化》第 12.6 节",2026,no,解析证明；本仓库未重跑
+P3,2026-10-15,author,checkup,n=12 K=15 坐标和上界,2.16,ratio,analysis/triangle_frontier.py,2026,no,模型内支持；普适上界被证伪
+P9,2026-10-15,author,checkup,反例是否存在,0,count,全领域检索与自检,2026,no,未找到反例（非证明）

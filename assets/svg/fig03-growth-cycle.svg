@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640"><rect width="1000" height="640" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}.s{font-family:'Times New Roman',Georgia,serif;}</style><text x="40" y="46" font-size="24" font-weight="700">图 11.1　三阶段成长与危机：连续换顶点</text>
+<rect x="70" y="150" width="250" height="110" rx="10" fill="#ffffff" stroke="#3a6ea5" stroke-width="2"/><text x="195.0" y="197.0" text-anchor="middle" font-size="22" font-weight="600" fill="#3a6ea5">范式建立</text><text x="195.0" y="225.0" text-anchor="middle" font-size="15" fill="#666">C + T</text>
+<text x="195" y="300" text-anchor="middle" font-size="15" fill="#666">代价：难教学、依赖个人</text>
+<line x1="325" y1="205" x2="390" y2="205" stroke="#c94f4f" stroke-width="3" marker-end="url(#ar)"/>
+<rect x="400" y="150" width="250" height="110" rx="10" fill="#ffffff" stroke="#009E73" stroke-width="2"/><text x="525.0" y="197.0" text-anchor="middle" font-size="22" font-weight="600" fill="#009E73">教学化</text><text x="525.0" y="225.0" text-anchor="middle" font-size="15" fill="#666">A + T</text>
+<text x="525" y="300" text-anchor="middle" font-size="15" fill="#666">代价：丢失精妙与边界</text>
+<line x1="655" y1="205" x2="720" y2="205" stroke="#c94f4f" stroke-width="3" marker-end="url(#ar)"/>
+<rect x="730" y="150" width="250" height="110" rx="10" fill="#ffffff" stroke="#b8862f" stroke-width="2"/><text x="855.0" y="197.0" text-anchor="middle" font-size="22" font-weight="600" fill="#b8862f">工程化</text><text x="855.0" y="225.0" text-anchor="middle" font-size="15" fill="#666">C + A</text>
+<text x="855" y="300" text-anchor="middle" font-size="15" fill="#666">代价：失去“为什么”</text>
+<path d="M 900 205 C 960 205 960 470 500 470 C 250 470 195 470 195 300" fill="none" stroke="#c94f4f" stroke-width="2.6" stroke-dasharray="8,6" marker-end="url(#ar)"/>
+<text x="560" y="456" text-anchor="middle" font-size="17" fill="#c94f4f" font-weight="600">危机：旧三边碎裂 → 重返 C+T</text>
+<text x="40" y="540" font-size="15" fill="#888">箭头表示“被让出的顶点的转移”，不是水平提高。此模式是组织方式，不是历史定律。</text>
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#c94f4f"/></marker></defs></svg>

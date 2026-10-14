@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520"><rect width="1000" height="520" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}.s{font-family:'Times New Roman',Georgia,serif;}</style><text x="40" y="46" font-size="24" font-weight="700">图 3.1　三层结构与各自的证伪方式</text>
+<rect x="70" y="80" width="560" height="100" rx="10" fill="#ffffff" stroke="#009E73" stroke-width="2"/><text x="350.0" y="122.0" text-anchor="middle" font-size="22" font-weight="600" fill="#009E73">硬核层 A</text><text x="350.0" y="150.0" text-anchor="middle" font-size="15" fill="#666">信息子模性 · 离散曲率恒等式 · 模型 T</text>
+<text x="650" y="122" font-size="15" fill="#666">证伪方式：</text>
+<text x="650" y="150" font-size="16" fill="#1a1a1a">反例 / 复算失败</text>
+<rect x="70" y="210" width="560" height="100" rx="10" fill="#ffffff" stroke="#3a6ea5" stroke-width="2"/><text x="350.0" y="252.0" text-anchor="middle" font-size="22" font-weight="600" fill="#3a6ea5">诊断框架层 B</text><text x="350.0" y="280.0" text-anchor="middle" font-size="15" fill="#666">三角命题 · 四战场诊断 · 三阶段模式</text>
+<text x="650" y="252" font-size="15" fill="#666">证伪方式：</text>
+<text x="650" y="280" font-size="16" fill="#1a1a1a">领域反例</text>
+<rect x="70" y="340" width="560" height="100" rx="10" fill="#ffffff" stroke="#b8862f" stroke-width="2"/><text x="350.0" y="382.0" text-anchor="middle" font-size="22" font-weight="600" fill="#b8862f">可选工具层 C</text><text x="350.0" y="410.0" text-anchor="middle" font-size="15" fill="#666">诊断手册 · 制度模板 · 降级清单</text>
+<text x="650" y="382" font-size="15" fill="#666">证伪方式：</text>
+<text x="650" y="410" font-size="16" fill="#1a1a1a">不好用（不承载真值）</text>
+<line x1="350" y1="180" x2="350" y2="210" stroke="#c94f4f" stroke-width="2.4"/>
+<line x1="350" y1="310" x2="350" y2="340" stroke="#c94f4f" stroke-width="2.4"/>
+<text x="70" y="490" font-size="15" fill="#666">三层之间只有单向依赖：读者可只接受其中一层。</text></svg>

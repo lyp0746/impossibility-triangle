@@ -1,0 +1,85 @@
+<h2 class="chapter">附录 A　形式化补充：不可能三角的陈述与三个见证</h2>
+
+<p class="lead">本附录把正文中的形式定义集中起来，供需要核对细节的读者使用。它包含：三档定义、三角命题的精确陈述、三个见证的推导或来源、说明性模型 T 的完整定义与数值结果。</p>
+
+<h3>A.1　三档定义</h3>
+
+<div class="define"><span class="bt">定义 A.1　完备性</span>
+<span class="s">C₁</span> 描述完备：存在有限基元集，使每个子系统的相关现象可由基元组合刻画。<br>
+<span class="s">C₂</span> 计算完备：存在有限算法从初值计算未来的相关状态。<br>
+<span class="s">C₃</span> 预测完备：对感兴趣的量，模型预测落在可接受误差内。<br>
+<span class="s">C₁ ⇒ C₂ ⇒ C₃</span>（在相应定义域内）。</div>
+
+<div class="define"><span class="bt">定义 A.2　可组合性</span>
+<span class="s">A₁</span> 线性可组合：<span class="s">f(x₁ ∘ x₂) = f(x₁) + f(x₂)</span>。<br>
+<span class="s">A₂</span> 关系可组合：组合不产生新的关系类型。<br>
+<span class="s">A₃</span> 代数可组合：组合在描述空间上封闭且满足明确代数结构。</div>
+
+<div class="define"><span class="bt">定义 A.3　传递性</span>
+<span class="s">T₁</span> 尺度传递：<span class="s">λ₁ → λ₂</span> 的结论可严格推导，误差不随尺度数累积。<br>
+<span class="s">T₂</span> 时间传递：多时间尺度由同一演化方程描述。<br>
+<span class="s">T₃</span> 因果传递：微观因果链可无损累积为宏观结果。</div>
+
+<h3>A.2　三角命题的精确陈述</h3>
+
+<div class="define"><span class="bt">命题 A.1（三角命题，启发式）</span>
+设系统 <span class="s">Σ</span> 具有有限描述复杂度 <span class="s">K</span>，运行在多个尺度上。则不存在分配使 <span class="s">(C, A, T)</span> 同时取到各自最强档位。<br>
+<b>弱形式（可被 O7 证伪）：</b><span class="s">(C₁, A₁, T₁) ∉ R(K)</span> 对一切有限 <span class="s">K</span> 成立。<br>
+<b>强形式（本书不主张）：</b>存在函数 <span class="s">g</span>，使 <span class="s">C + A + T ≤ g(K)</span>，且 <span class="s">g(K) &lt; 3</span> 对所有有限 <span class="s">K</span> 成立。<br>
+<b>状态：</b>弱形式为框架主张（C／丙）；强形式未定义（<span class="s">g</span> 未知）。</div>
+
+<h3>A.3　见证 Ⅰ：信息子模性（可证）</h3>
+
+<div class="define"><span class="bt">定理 A.1（子模性）［A／甲］</span>
+对任意随机变量 <span class="s">Z, X₁, X₂</span>：
+<div class="eq"><span class="body">I(Z; X₁, X₂) = I(Z; X₁) + I(Z; X₂ | X₁)</span></div>
+由条件互信息非负，<span class="s">I(Z;X₂|X₁) ≥ 0</span>；又因条件不增加信息量，<span class="s">I(Z;X₂|X₁) ≤ I(Z;X₂)</span>。故
+<div class="eq"><span class="body">I(Z; X₁, X₂) ≤ I(Z; X₁) + I(Z; X₂)</span></div>
+即"能力不能线性相加"。</div>
+
+<p><b>对应三角：</b>若系统要保住 C（每个尺度有完备的信息论描述）与 T（尺度间因果链），则它在 A（多项能力线性叠加）上付账。第 5 章给出记忆系统的实例。</p>
+
+<h3>A.4　见证 Ⅱ：离散—连续缺口（恒等式可证，缺口开放）</h3>
+
+<div class="define"><span class="bt">定理 A.2（离散分离曲率）［A／甲］</span>
+对有限图 <span class="s">G</span>，取热核 <span class="s">ρ(t) = e<sup>−tL</sup>/Z(t)</span>，von Neumann 熵 <span class="s">S(t) = −tr(ρ log ρ)</span>。定义
+<div class="eq"><span class="body">κ_info(G) := −(1/2) S″(0⁺)</span></div>
+则 <span class="s">κ_info(G) = (1/2) Var(λ)</span>，其中 <span class="s">λ</span> 取遍拉普拉斯谱。</div>
+
+<p><b>缺口：</b>热核展开给出 <span class="s">κ = R/6</span>（<span class="s">R</span> 为标量曲率），而二维 Gauss–Bonnet 定理给出一个与 <span class="s">R/6</span> 相差因子 <span class="s">1/3</span> 的关系。这个 <span class="s">1/3</span> 无法由离散情形代数消去。作者在《区分的演化》中尝试过轨形解释与等变指标解释，两次失败于同一点（带不动点）。<b>缺口当前状态：开放问题 O4。</b>［缺口 B／乙］</p>
+
+<p><b>对应三角：</b>离散情形保住 C（局部完备）与 A（可加组合），连续极限让出 T（传递性），账单是 <span class="s">1/3</span>。</p>
+
+<h3>A.5　见证 Ⅲ：时间错配（命题可证，诊断依赖假设）</h3>
+
+<div class="define"><span class="bt">命题 A.2（时间错配）［A／甲］</span>
+设 <span class="s">T_min</span> 为动员适应能力所需最短时间，<span class="s">T_available</span> 为可用反应时间。定义
+<div class="eq"><span class="body">τ = T_min / T_available，　C_ctl = 1 / τ</span></div>
+当 <span class="s">τ ≤ 1</span>，存在适应窗口；当 <span class="s">τ &gt; 1</span>，适应窗口不足，系统必须依赖预先减小暴露或降级。<b>（"τ 增大时诊断置信区间发散"是经验诊断，等级 B／乙。）</b></div>
+
+<p><b>对应三角：</b>多尺度社会系统保住 A（干预可组合）与 T（长期追踪），让出 C（对单个情形的精确完备预测）。</p>
+
+<h3>A.6　说明性模型 T 的完整定义与结果</h3>
+
+<div class="define"><span class="bt">定义 A.4　模型 T</span>
+<span class="s">n</span> 个单元排成一条尺度线，分辨率 <span class="s">r_i ∈ {0,1,2}</span>，预算 <span class="s">Σ r_i ≤ K</span>。<br>
+<b>C</b> = #{i: r_i = 2} / n<br>
+<b>A</b> = 1 − #{i: r_i ≠ r_{i+1}} / (n−1)<br>
+<b>T</b> = #{i: r_i ≥ 1 且 r_{i+1} ≥ 1} / (n−1)</div>
+
+<table class="nat">
+<caption class="cap"><b>表 A.1　模型 T 的数值结果（n=12, K=15, 473721 种分配）</b></caption>
+<tr><th class="l">量</th><th class="l">值</th></tr>
+<tr><td class="l">max C（单独）</td><td class="l">0.58</td></tr>
+<tr><td class="l">max A（单独）</td><td class="l">1.00</td></tr>
+<tr><td class="l">max T（单独）</td><td class="l">1.00</td></tr>
+<tr><td class="l">C≥0.5 且 A≥0.5 ⇒ T ≤</td><td class="l">0.73</td></tr>
+<tr><td class="l">A≥0.5 且 T≥0.5 ⇒ C ≤</td><td class="l">0.58</td></tr>
+<tr><td class="l">C≥0.5 且 T≥0.5 ⇒ A ≤</td><td class="l">0.91</td></tr>
+<tr><td class="l">A=1 且 T=1 ⇒ C =</td><td class="l">0.00</td></tr>
+<tr><td class="l">坐标和上界</td><td class="l">2.16</td></tr>
+<tr><td class="l">Pareto 前沿点数</td><td class="l">7</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>模型 C／丙。结果可复算：<code>python analysis/triangle_frontier.py</code>。<b>限制：</b>模型是说明性构造，不是对任何真实系统的测量；坐标和上界 2.16 依赖 n、K 的选取，不代表普适常数。</div>
+
+<p><b>模型说明了什么、不说明什么。</b>它说明：在预算约束下，三个顶点不能同时逼近 1，且不同"选两个"的组合各自留下可量化的缺口。它不说明：真实系统服从同样的数字；存在一个普适的坐标和上界；或三角命题成立。后两者正是第 21 章的开放问题。</p>

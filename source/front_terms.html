@@ -1,0 +1,75 @@
+<h2 class="chapter">术语、记号与断言分级速查</h2>
+
+<p class="lead">这一页是工具页：读正文时随时翻回，用来核对一个记号、一个术语或一个等级的含义。<b>它不含论证，只含定义。</b></p>
+
+<h3>记号表</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 0.6　本书记号</b></caption>
+<tr><th class="l">记号</th><th class="l">名称</th><th class="l">含义</th></tr>
+<tr><td class="l"><span class="s">C</span></td><td class="l">完备性</td><td class="l">每个子系统有自洽、可用、强到能预测的内部描述</td></tr>
+<tr><td class="l"><span class="s">A</span></td><td class="l">可组合性</td><td class="l">部分的组合不产生新的非线性项；能力可线性叠加</td></tr>
+<tr><td class="l"><span class="s">T</span></td><td class="l">传递性</td><td class="l">不同尺度的结论可无损互推；因果链可累积</td></tr>
+<tr><td class="l"><span class="s">Σ</span></td><td class="l">系统</td><td class="l">被诊断的对象（一个知识系统、一个制度、一个模型）</td></tr>
+<tr><td class="l"><span class="s">λ</span></td><td class="l">尺度</td><td class="l">系统运行的时空分辨率或层级</td></tr>
+<tr><td class="l"><span class="s">τ</span></td><td class="l">时间错配</td><td class="l"><span class="s">T_min / T_available</span>，动员适应所需时间与可用时间之比</td></tr>
+<tr><td class="l"><span class="s">I(·;·)</span></td><td class="l">互信息</td><td class="l">两个量共享的信息量</td></tr>
+<tr><td class="l"><span class="s">H(·)</span></td><td class="l">熵</td><td class="l">不确定性；也用作描述长度的下界</td></tr>
+<tr><td class="l"><span class="s">κ</span></td><td class="l">分离曲率</td><td class="l">区分结构随尺度变化的局部率</td></tr>
+<tr><td class="l"><span class="s">[·]</span></td><td class="l">证据等级</td><td class="l">A／B／C，见第 3 章</td></tr>
+<tr><td class="l"><span class="s">［·］</span></td><td class="l">断言标记</td><td class="l">已知／论证／假说／待验证</td></tr>
+</table>
+
+<h3>核心术语</h3>
+
+<div class="define"><span class="bt">完备性（Completeness, C）</span>
+一个子系统"内部说得清"的程度。三档：<b>C₁ 描述完备</b>（有限基元可刻画全部现象）；<b>C₂ 计算完备</b>（有限算法可从初值算未来）；<b>C₃ 预测完备</b>（对感兴趣的量给出可用预测）。日常写作中用"完备"泛指，具体档位在需要时标明。</div>
+
+<div class="define"><span class="bt">可组合性（Composability, A）</span>
+部分拼成整体时"不额外生事"的程度。三档：<b>A₁ 线性可组合</b>（<span class="s">f(x₁+x₂)=f(x₁)+f(x₂)</span>）；<b>A₂ 关系可组合</b>（组合不产生新类型的关系）；<b>A₃ 代数可组合</b>（组合满足封闭的代数结构）。</div>
+
+<div class="define"><span class="bt">传递性（Transferability, T）</span>
+结论"跨得过去"的程度。三档：<b>T₁ 尺度传递</b>（<span class="s">λ₁→λ₂</span> 可严格推导）；<b>T₂ 时间传递</b>（多时间尺度由单一演化方程描述）；<b>T₃ 因果传递</b>（微观因果链可无损累积为宏观结果）。</div>
+
+<div class="define"><span class="bt">不可能三角（Impossibility Triangle）</span>
+本书的经验命题：一个有限复杂度的系统不能同时把 C、A、T 都推到满格；至多同时满足两个。三角是<b>组织坐标</b>，不是对世界的测量。［框架，B／乙］</div>
+
+<div class="define"><span class="bt">被让出的顶点（The Conceded Vertex）</span>
+在具体系统中，被牺牲、降到低档或留下缺口的那一个性质。诊断的核心动作就是把它指出来。</div>
+
+<div class="define"><span class="bt">优雅降级（Graceful Degradation）</span>
+预先承认哪个顶点会先碎，并设计好当它碎掉时按什么顺序转向另一种选择。<b>不是全有或全无。</b></div>
+
+<h3>断言分级速查</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 0.7　分级与标记的组合读法</b></caption>
+<tr><th class="l">写法</th><th class="l">意思</th><th class="l">可以怎么用</th></tr>
+<tr><td class="l">定理 A／甲</td><td class="l">可证明或可复算</td><td class="l">可直接引用</td></tr>
+<tr><td class="l">命题 A／甲</td><td class="l">在声明前提下成立</td><td class="l">连同前提一起引用</td></tr>
+<tr><td class="l">论证 B／乙</td><td class="l">有推理，依赖未证前提</td><td class="l">作为方向，不作业界共识</td></tr>
+<tr><td class="l">诊断 B／乙</td><td class="l">有来源的定性判断</td><td class="l">作为假设，标注来源</td></tr>
+<tr><td class="l">模型 C／丙</td><td class="l">说明性构造</td><td class="l">只用于展示结构</td></tr>
+<tr><td class="l">假说 C／丙</td><td class="l">可检验但证据不足</td><td class="l">去附录 E 查登记与核验条件</td></tr>
+</table>
+
+<h3>附录导览</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 0.8　附录内容与用途</b></caption>
+<tr><th class="l">附录</th><th class="l">内容</th><th class="l">什么时候看</th></tr>
+<tr><td class="l">A</td><td class="l">形式化补充与四个见证的陈述</td><td class="l">想核对定义与不等式</td></tr>
+<tr><td class="l">B</td><td class="l">案例总表：四个战场的 C-A-T 选择</td><td class="l">想做横向比较</td></tr>
+<tr><td class="l">C</td><td class="l">参考文献</td><td class="l">追来源</td></tr>
+<tr><td class="l">D</td><td class="l">术语表</td><td class="l">查词</td></tr>
+<tr><td class="l">E</td><td class="l">可证伪登记簿</td><td class="l">想看哪些主张可被推翻</td></tr>
+<tr><td class="l">F</td><td class="l">证据与数据缺口清单</td><td class="l">想知道哪儿还缺东西</td></tr>
+<tr><td class="l">G</td><td class="l">诊断手册与工具包</td><td class="l">要在自己领域动手</td></tr>
+<tr><td class="l">H</td><td class="l">制度设计模板库</td><td class="l">要设计分层制度</td></tr>
+<tr><td class="l">I</td><td class="l">与已有不可能定理的对照</td><td class="l">想比较 CAP、Arrow 等</td></tr>
+<tr><td class="l">J</td><td class="l">失败记录：一次被证伪的强主张</td><td class="l">想看我出过错</td></tr>
+</table>
+
+<h3>引用建议</h3>
+
+<p>若引用本书的硬核，请引第 5 章的子模性论证与第 12.5 节的离散—连续缺口，并注明其等级。若引用三角框架本身，请注明它是<b>组织坐标（B／乙）</b>，而非定理，并说明你所在领域对它的检验结果。<b>请不要把 C 级的方向判断引用为经验结论。</b></p>

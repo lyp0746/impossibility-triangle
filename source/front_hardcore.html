@@ -1,0 +1,81 @@
+<h1>先读这一页　三条可检验的诊断</h1>
+
+<p class="lead">如果你只读一本书的一小部分，读这几页。<b>本书的可信度不来自它的三角画得有多整齐，而来自它先给出三条可以被独立检查、也可以被独立反驳的诊断。</b>三条诊断分别来自作者此前三本书中三处真实的失败；把它们并排放，才显出同一个形状。三角框架（第二部分）是对这三条的抽象；其余部分是对它的推广、应用与边界。先看诊断，再看抽象。</p>
+
+<div class="scenario"><span class="bt">如何复现这一页的数字</span>
+依赖：Python 3.9+、NumPy、SciPy。说明性模型（见证 Ⅳ）与 Pareto 前沿可用一条命令复算：<br>
+<code>python analysis/triangle_frontier.py</code><br>
+本页只承诺：三条诊断中，凡标 <b>A／甲</b> 者为可复算或可证明的结果；凡标 <b>B／乙</b> 者为有论证、有来源但依赖一个未证前提的解读。完整分级见第 3 章与附录 A。</div>
+
+<h2>见证 Ⅰ　能力不能相加：有限容量下的子模性　［定理，A／甲］</h2>
+
+<div class="define"><span class="bt">定理 Ⅰ（信息子模性）</span>
+设 <span class="s">Z</span> 是任意通道的输出，<span class="s">X₁, X₂</span> 是两个待描述的量。则互信息满足
+<div class="eq"><span class="body">I(Z; X₁ ∪ X₂) ≤ I(Z; X₁) + I(Z; X₂)</span></div>
+等价地，<span class="s">I(Z; X₁, X₂) − I(Z; X₁) ≤ I(Z; X₂)</span>：第二条信息带来的增益，不超过它单独带来的增益。<b>这是香农信息论的基本不等式，可由条件互信息非负性直接证明。</b></div>
+
+<p>它的意义在于：<b>当容量有限时，"把两种能力都装进去"不是把两次收获相加，而是要打一个折扣。</b>一个信息通道同时描述两个相关对象，其总收益严格低于分别描述之和。这就是子模性：边际收益递减。</p>
+
+<p>由此得到第一条诊断：<b>一个系统若坚持"每个尺度上的描述都完整"（完备性 C），又坚持"结论可以逐尺度推下去"（传递性 T），那么它必然在"多项能力可以线性叠加"（可组合性 A）上付账。</b>记忆的干扰、注意的竞争、多目标优化的次可加性，都是这张账的不同分录。详见第 5 章。</p>
+
+<h2>见证 Ⅱ　离散完备，连续不再：一个 1/3 缺口　［恒等式 A／甲；缺口 B／乙］</h2>
+
+<div class="define"><span class="bt">定理 Ⅱ（离散分离曲率）</span>
+设 <span class="s">G</span> 为有限图，拉普拉斯谱为 <span class="s">0=λ₁≤⋯≤λₙ</span>。定义热核的分离曲率
+<div class="eq"><span class="body">κ_info(G) := −(1/2) S″(0⁺),　S(t)=−tr(ρ(t) log ρ(t)),　ρ(t)=e<sup>−tL</sup>/Z(t)</span></div>
+则恒有
+<div class="eq"><span class="body">κ_info(G) = (1/2) Var(λ)</span></div>
+即离散分离曲率等于拉普拉斯谱方差的一半。［证明见《区分的演化》第 12.6 节］</div>
+
+<p>在有限图（离散）上，对象、分离与乘积是<b>代数完备且可组合</b>的：谱相加、分离可精确计算、相变结构可直接从因子读出。一旦走向光滑流形（连续），同样的构造<b>不再保持可组合性</b>：把热核展开的 <span class="s">κ=R/6</span> 与二维 Gauss–Bonnet 定理对照，会留下一个因子 <span class="s">1/3</span> 的缺口，无法由离散情形代数地消去。</p>
+
+<p>由此得到第二条诊断：<b>一个系统若坚持"局部描述完备"（C）又坚持"部分可精确组合"（A），那么它在"跨尺度/跨范畴无损传递"（T）上付账。</b>离散与连续之间那道缝，不是理论不成熟，而是选择 C+A 的账单。详见第 12.5 节与第 21 章。</p>
+
+<h2>见证 Ⅲ　时间错配：诊断随尺度发散　［命题 A／甲；诊断 B／乙］</h2>
+
+<div class="define"><span class="bt">命题 Ⅲ（时间错配与可控性）</span>
+设系统动员适应能力所需的最短时间为 <span class="s">T_min</span>，威胁给出可用的反应时间为 <span class="s">T_available</span>。定义时间错配
+<div class="eq"><span class="body">τ = T_min / T_available，　C_ctl = 1 / τ</span></div>
+则当 <span class="s">τ ≤ 1</span> 时，框架给出精确、可用的诊断；当 <span class="s">τ ≈ 1</span> 时，置信区间急剧扩大；当 <span class="s">τ ≫ 1</span>（第三个应用情景中 <span class="s">τ ≈ 30</span>）时，置信区间由 <span class="s">±0.10</span> 扩大到 <span class="s">±0.60</span>，框架退化为方向性判断，<b>对具体失控时刻的预测失效</b>。［《错位的时间》第 11、14 章］</div>
+
+<p>社会系统不是一个钟，而是一组转速不同的钟：金融以秒计、政治以周计、社会信心以年计、生态以十年计。它们无法被同一机制协调。由此得到第三条诊断：<b>一个系统若坚持"多种干预可组合"（A）又坚持"长期效应可传递"（T），那么它在"对单个情形的精确、完备预测"（C）上付账。</b>τ 越大，C 的账单越贵。详见第 7、9 章。</p>
+
+<h2>见证 Ⅳ　一个说明性的三角前沿　［模型，C／丙］</h2>
+
+<p>前三条见证各来自一个具体机制。为了<b>把三角本身画出来</b>，本书另给一个完全透明、可复算的说明性模型：<span class="s">n</span> 个单元排成一条尺度，系统用有限预算 <span class="s">K</span> 为每个单元分配分辨率（0＝不描述，1＝粗捆绑，2＝精确）。三项分数定义为</p>
+
+<div class="define"><span class="bt">模型 T（说明性，不是定理）</span>
+<b>完备性</b> <span class="s">C</span> ＝ 被精确描述的单元比例。<br>
+<b>可组合性</b> <span class="s">A</span> ＝ 1 −（相邻分辨率不一致的边界数）/(n−1)。<br>
+<b>传递性</b> <span class="s">T</span> ＝ 相邻两个单元都被覆盖的比例（支持沿尺度推断）。<br>
+预算约束 <span class="s">Σ r_i ≤ K</span>（精确描述比粗描述贵一倍）。对所有分配做精确搜索，得到可达域与 Pareto 前沿。</div>
+
+<p>计算结果（<span class="s">n=12, K=15</span>，473721 种分配，脚本 <code>analysis/triangle_frontier.py</code>）：<span class="s">max C = 0.58</span>、<span class="s">max A = 1.00</span>、<span class="s">max T = 1.00</span>。三个坐标不能同时逼近 1：<b>在 <span class="s">C≥0.5 且 A≥0.5</span> 时，<span class="s">T ≤ 0.73</span>；在 <span class="s">A≥0.5 且 T≥0.5</span> 时，<span class="s">C ≤ 0.58</span>；在 <span class="s">C≥0.5 且 T≥0.5</span> 时，<span class="s">A ≤ 0.91</span>。</b>最极端的是：若同时把 <span class="s">A</span> 与 <span class="s">T</span> 推到 1，则 <span class="s">C = 0</span>——均匀可组合又连续可传递时，不能有任何精确描述。坐标和的上界约为 <span class="s">2.16</span>。<b>本模型只是把三角的直觉变成一个可看见的曲面，不承担任何经验预测。</b>［C／丙］</p>
+
+<img class="fig" src="assets/svg/fig00-triangle-frontier.svg" alt="说明性模型给出的三角前沿">
+
+<div class="cap"><b>图 0.1　三角的可达前沿（说明性模型）</b>。三个坐标分别为完备性 C、可组合性 A、传递性 T。深蓝为全部 47 万个可达点，金色为 Pareto 前沿。<b>注意：这是模型 T 的数值结果，不是对现实系统的测量；它展示的是预算约束下三个顶点不能同时满格，而不是对任何真实系统的测量。</b></div>
+
+<h2>三条诊断的强度与位置</h2>
+
+<table class="nat">
+<caption class="cap"><b>表 0.1　三条见证与一个模型</b></caption>
+<tr><th class="l">见证</th><th class="l">机制</th><th class="l">让出的顶点</th><th class="l">强度</th><th class="l">位置</th></tr>
+<tr><td class="l">Ⅰ</td><td class="l">有限容量下的子模性</td><td class="l">A</td><td class="l">定理 A／甲</td><td class="l">第 5 章</td></tr>
+<tr><td class="l">Ⅱ</td><td class="l">离散完备 / 连续缺口</td><td class="l">T</td><td class="l">恒等式 A／甲 + 缺口 B／乙</td><td class="l">第 12.5 节</td></tr>
+<tr><td class="l">Ⅲ</td><td class="l">多尺度时间错配</td><td class="l">C</td><td class="l">命题 A／甲 + 诊断 B／乙</td><td class="l">第 7、9 章</td></tr>
+<tr><td class="l">Ⅳ</td><td class="l">说明性分配模型</td><td class="l">可见的前沿</td><td class="l">模型 C／丙</td><td class="l">附录 A / 脚本</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>硬核总表。Ⅰ 可证明，Ⅱ、Ⅲ 的恒等式/命题可复算，Ⅳ 可复算但不是定理。<b>复现：</b><code>python analysis/triangle_frontier.py</code>。</div>
+
+<h2>三角是抽象，不是前提</h2>
+
+<p>三条见证讨论的是不同对象——信息通道、图与流形、多尺度社会系统——但它们的账单有同一个形状：<b>有限的描述能力在"完备、组合、传递"三者之间分配，必然有一处被让出。</b>第二部分的三角，就是对这个共同形状的抽象——<b>它是从见证反推出来的组织方式，而不是先验的公理。</b></p>
+
+<div class="scenario"><span class="bt">推荐的读法（硬→软）</span>
+<b>第一步（信任）：</b>本页 + 第 5 章（子模性）+ 第 12.5 节 + 第 21 章。这些是可证明或可复算的结果与它们的诚实边界。<br>
+<b>第二步（抽象）：</b>第 2 章——三条见证共同的结构如何被写成一个三角。<br>
+<b>第三步（诊断）：</b>第二部分（第 5—10 章）——把三角用到生命、物理、社会、人工四个战场。<br>
+<b>第四步（课题）：</b>第三部分（第 11—15 章）——知识系统如何形成、演化、更新。<br>
+<b>第五步（行动）：</b>第四部分（第 16—20 章）——分层有效性与优雅降级。<br>
+<b>如果你走完第一步就停下来，本书仍然成立</b>——你获得的是三条独立的诊断和它们的边界。这正是本书希望达到的最低标准。</div>

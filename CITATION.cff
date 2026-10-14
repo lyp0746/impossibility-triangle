@@ -1,0 +1,47 @@
+cff-version: 1.2.0
+message: "若使用本书，请按以下格式引用。"
+title: "选择的代价：完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新"
+abstract: "本书把作者此前三本书中三处无法弥合的矛盾诊断为同一个结构性困境：任何有限复杂度的知识系统都不能同时完整地拥有局部完备性（C）、可组合性（A）与跨尺度传递性（T），至多同时满足两个；选择哪两个，就必然在第三个上留下一处可被定位的缺口。全书以四个战场（生命、物理、社会、人工）做现实诊断，把复杂知识系统的形成、演化与更新写成一部连续重新选择三角的历史，并给出可操作的分层有效性与优雅降级设计。"
+authors:
+  - family-names: "李"
+    given-names: "毅芃"
+    affiliation: "独立研究者 / Independent Researcher"
+contact:
+  - family-names: "李"
+    given-names: "毅芃"
+    email: "1610369302@qq.com"
+type: book
+license: CC-BY-4.0
+year: 2026
+date-released: 2026-10-15
+keywords:
+  - 不可能三角
+  - 完备性
+  - 可组合性
+  - 传递性
+  - 复杂知识系统
+  - 子模性
+  - 时间错配
+  - 优雅降级
+  - impossibility triangle
+  - completeness
+  - composability
+  - transferability
+repository-code: "https://github.com/lyp0746/impossibility-triangle"
+url: "https://github.com/lyp0746/impossibility-triangle"
+references:
+  - type: book
+    title: "遗忘的边界：有限容量下的记忆、智能与自我"
+    authors:
+      - family-names: "李"
+        given-names: "毅芃"
+  - type: book
+    title: "区分的演化：统一值不值——一套压缩方法、一个图上的硬核定理、三次自我检视，与一堵没绕开的墙"
+    authors:
+      - family-names: "李"
+        given-names: "毅芃"
+  - type: book
+    title: "错位的时间：为什么我们总是来不及——社会系统的时间错配与可控性边界"
+    authors:
+      - family-names: "李"
+        given-names: "毅芃"

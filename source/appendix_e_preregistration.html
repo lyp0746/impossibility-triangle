@@ -1,0 +1,49 @@
+<h2 class="chapter">附录 E　可证伪登记簿</h2>
+
+<p class="lead">本附录是本书的"账本"。<b>每一条可以被反驳的主张都在这里登记：命题、方向、证伪条件、核验日期。</b>账本只追加、不修改；被证伪的条目原样保留。</p>
+
+<div class="scenario"><span class="bt">登记规则</span>
+<b>1. 事前登记：</b>在检验前写下命题、方向与阈值。<br>
+<b>2. 以方向判定：</b>只判断"是否朝预测方向发展"。<br>
+<b>3. 预测与观察分开报告：</b>登记条目与核销条目分列。<br>
+<b>4. 只追加，永不修改：</b>账本为 append-only。<br>
+机器可读版本见 <code>docs/preregistration/registry.json</code> 与 <code>checkups.csv</code>。</div>
+
+<h3>E.1　已登记命题</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 E.1　可证伪命题登记</b></caption>
+<tr><th class="l">编号</th><th class="l">命题</th><th class="l">方向</th><th class="l">证伪条件</th><th class="l">状态</th></tr>
+<tr><td class="l">P1</td><td class="l">信息子模性（定理）</td><td class="l">—</td><td class="l">构造出 <span class="s">I(Z;X₁∪X₂) &gt; ΣI</span> 的反例</td><td class="l">已证，不可证伪</td></tr>
+<tr><td class="l">P2</td><td class="l">离散分离曲率恒等式</td><td class="l">—</td><td class="l">数值偏差 &gt; 1e−6</td><td class="l">已复算</td></tr>
+<tr><td class="l">P3</td><td class="l">说明性模型 T 的前沿</td><td class="l">—</td><td class="l">重跑脚本结果不符</td><td class="l">已复算</td></tr>
+<tr><td class="l">P4</td><td class="l">记忆系统的干扰随相似度上升</td><td class="l">正相关</td><td class="l">相似材料的干扰不高于不相似材料</td><td class="l">待核验（领域数据）</td></tr>
+<tr><td class="l">P5</td><td class="l">医疗制度的"尺度切换空白"导致冲突</td><td class="l">—</td><td class="l">显式区分尺度的制度没有减少冲突</td><td class="l">待核验</td></tr>
+<tr><td class="l">P6</td><td class="l">τ 与诊断置信区间宽度正相关</td><td class="l">正相关</td><td class="l">低 τ 反而置信区间更宽</td><td class="l">部分支持（《错位的时间》）</td></tr>
+<tr><td class="l">P7</td><td class="l">C+T 飞地能提高长期创新产出</td><td class="l">正相关</td><td class="l">飞地撤销后长期产出不下降</td><td class="l">待核验</td></tr>
+<tr><td class="l">P8</td><td class="l">学科分裂对应三角选择的分裂</td><td class="l">—</td><td class="l">某学科分裂但各分支的三角选择相同</td><td class="l">待核验</td></tr>
+<tr><td class="l">P9</td><td class="l">三角命题：<span class="s">(C₁,A₁,T₁) ∉ R(K)</span></td><td class="l">—</td><td class="l">构造出一个同时满格 C、A、T 的有限系统（O7）</td><td class="l">开放（生死线）</td></tr>
+</table>
+
+<h3>E.2　核销记录（append-only）</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 E.2　核销记录</b></caption>
+<tr><th class="l">日期</th><th class="l">编号</th><th class="l">预测</th><th class="l">观察</th><th class="l">结论</th></tr>
+<tr><td class="l">2026-10-15</td><td class="l">P2</td><td class="l">κ_info = Var(λ)/2</td><td class="l">随机图数值误差 &lt; 1e−6</td><td class="l">支持</td></tr>
+<tr><td class="l">2026-10-15</td><td class="l">P3</td><td class="l">n=12,K=15 时三点不能同时逼近 1</td><td class="l">枚举 473721 种分配，符合</td><td class="l">支持（模型内）</td></tr>
+<tr><td class="l">2026-10-15</td><td class="l">P9</td><td class="l">未找到三点满格系统</td><td class="l">未找到（非证明）</td><td class="l">开放</td></tr>
+</table>
+
+<h3>E.3　已证伪/削弱的条目（见附录 J）</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 E.3　被证伪或削弱的主张</b></caption>
+<tr><th class="l">编号</th><th class="l">原主张</th><th class="l">结果</th></tr>
+<tr><td class="l">F1</td><td class="l">"三角的坐标和存在普适上界 2"</td><td class="l">被证伪：模型 T 给出 2.16，依赖 n、K</td></tr>
+<tr><td class="l">F2</td><td class="l">"任何多尺度系统都恰好让出一个顶点"</td><td class="l">被削弱：模型 T 中多个顶点同时受挤压</td></tr>
+</table>
+
+<h3>E.4　如何追加</h3>
+
+<p>任何读者都可以按 <code>docs/preregistration/</code> 的格式追加一条登记或核销。追加时请遵守四条规则；<b>不要修改已有行</b>。一个被证伪的预测，比一个被重复的漂亮说法更有价值。</p>

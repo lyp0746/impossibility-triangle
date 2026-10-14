@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1414" width="1000" height="1414">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#0e1117"/><stop offset="0.55" stop-color="#151a23"/>
+<stop offset="1" stop-color="#0b0e14"/>
+</linearGradient>
+</defs>
+<rect x="0" y="0" width="1000" height="1414" fill="url(#bg)"/>
+<rect x="0" y="0" width="1000" height="8" fill="#b8862f" opacity="0.85"/>
+<polygon points="500.0,564.3 469.1,617.9 530.9,617.9" fill="none" stroke="#8fa0b5" stroke-width="1" opacity="0.16"/>
+<polygon points="500.0,528.6 438.1,635.7 561.9,635.7" fill="none" stroke="#8fa0b5" stroke-width="1" opacity="0.22"/>
+<polygon points="500.0,492.9 407.2,653.6 592.8,653.6" fill="none" stroke="#8fa0b5" stroke-width="1" opacity="0.28"/>
+<polygon points="500.0,457.1 376.3,671.4 623.7,671.4" fill="none" stroke="#8fa0b5" stroke-width="1" opacity="0.34"/>
+<polygon points="500.0,421.4 345.4,689.3 654.6,689.3" fill="none" stroke="#8fa0b5" stroke-width="1" opacity="0.35"/>
+<polygon points="500.0,385.7 314.4,707.1 685.6,707.1" fill="none" stroke="#8fa0b5" stroke-width="1" opacity="0.35"/>
+<circle cx="500.0" cy="350.0" r="7" fill="#3a6ea5" opacity="0.9"/>
+<circle cx="283.5" cy="725.0" r="7" fill="#009E73" opacity="0.9"/>
+<circle cx="716.5" cy="725.0" r="7" fill="#b8862f" opacity="0.9"/>
+<line x1="500.0" y1="350.0" x2="283.5" y2="725.0" stroke="#c9c9c9" stroke-width="1.6" opacity="0.55" stroke-dasharray="7,6"/>
+<line x1="283.5" y1="725.0" x2="716.5" y2="725.0" stroke="#c9c9c9" stroke-width="1.6" opacity="0.55" stroke-dasharray="7,6"/>
+<line x1="716.5" y1="725.0" x2="500.0" y2="350.0" stroke="#c9c9c9" stroke-width="1.6" opacity="0.55" stroke-dasharray="7,6"/>
+<style>
+text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;}
+.ttl{font-size:108px;font-weight:700;letter-spacing:12px;fill:#e8e6df;}
+.sub{font-size:27px;fill:#9aa0a6;letter-spacing:2px;}
+.eng{font-size:21px;fill:#9aa0a6;letter-spacing:1px;}
+.au{font-size:30px;fill:#e8e6df;letter-spacing:2px;}
+.rule{stroke:#9aa0a6;stroke-width:1;opacity:0.6;}
+.lab{font-size:24px;font-weight:700;}
+</style>
+<text x="80" y="176" class="eng">THE PRICE OF CHOICE</text>
+<text x="80" y="300" class="ttl">选择的代价</text>
+<line x1="84" y1="344" x2="700" y2="344" class="rule"/>
+<text x="84" y="396" class="sub">完备、可组合与可传递的三维权衡</text>
+<text x="84" y="440" class="sub">——复杂知识系统如何形成、演化与更新</text>
+<text x="486" y="328" class="lab" fill="#3a6ea5" text-anchor="middle">C</text>
+<text x="259" y="759" class="lab" fill="#009E73" text-anchor="middle">A</text>
+<text x="741" y="759" class="lab" fill="#b8862f" text-anchor="middle">T</text>
+<text x="80" y="1180" class="au">李毅芃　著</text>
+<text x="80" y="1232" class="eng">The Impossibility Triangle: Completeness, Composability, Transfer</text>
+<text x="80" y="1274" class="eng">跨学科理论专著 · 2026</text>
+</svg>

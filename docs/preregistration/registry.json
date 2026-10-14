@@ -1,0 +1,66 @@
+{
+  "project": "选择的代价：完备、可组合与可传递的三维权衡",
+  "registered_at": "2026-10-15",
+  "migration": {
+    "status": "本账本为 append-only；登记条目只追加，旧行永不修改。",
+    "machine_baseline": "docs/preregistration/checkups.csv"
+  },
+  "tests": [
+    {
+      "id": "P1",
+      "title": "信息子模性（定理，不可证伪）",
+      "observation_due": "不适用（已证）",
+      "indicators": [
+        {"name": "I(Z;X1,X2) - I(Z;X1) - I(Z;X2) 的上界", "source": "解析证明（条件互信息非负）"}
+      ]
+    },
+    {
+      "id": "P2",
+      "title": "离散分离曲率恒等式 κ_info = Var(λ)/2",
+      "observation_due": "已证（引用既有结果）",
+      "indicators": [
+        {"name": "解析证明（热核熵二阶导）与跨书复算", "source": "《区分的演化》第 12.6 节"}
+      ]
+    },
+    {
+      "id": "P3",
+      "title": "说明性模型 T 的前沿（不能三点同时逼近 1）",
+      "observation_due": "可随时复算",
+      "indicators": [
+        {"name": "n=12,K=15 的枚举前沿", "source": "analysis/triangle_frontier.py"}
+      ]
+    },
+    {
+      "id": "P4",
+      "title": "记忆干扰随材料相似度上升（方向）",
+      "observation_due": "待领域数据",
+      "indicators": [
+        {"name": "相似材料 vs 不相似材料的干扰差", "source": "公开心理学数据集（待检索）"}
+      ]
+    },
+    {
+      "id": "P6",
+      "title": "τ 与诊断置信区间宽度正相关",
+      "observation_due": "待多源序列",
+      "indicators": [
+        {"name": "τ 与置信区间宽度的相关", "source": "《错位的时间》第 14 章 MC 结果 + 公开序列"}
+      ]
+    },
+    {
+      "id": "P7",
+      "title": "C+T 飞地提高长期创新产出",
+      "observation_due": "待长期面板",
+      "indicators": [
+        {"name": "飞地撤销前后的长期产出", "source": "科研/企业长期面板（待获取）"}
+      ]
+    },
+    {
+      "id": "P9",
+      "title": "三角命题：不存在同时满格 C、A、T 的有限系统（O7）",
+      "observation_due": "开放（生死线）",
+      "indicators": [
+        {"name": "反例的存在性", "source": "任意领域；欢迎第三方提交"}
+      ]
+    }
+  ]
+}

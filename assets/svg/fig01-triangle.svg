@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620"><rect width="1000" height="620" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}.s{font-family:'Times New Roman',Georgia,serif;}</style><text x="40" y="46" font-size="24" font-weight="700">图 2.1　不可能三角：三个顶点与三个缺口</text>
+<line x1="500" y1="90" x2="130" y2="540" stroke="#c9c9c9" stroke-width="2"/>
+<line x1="130" y1="540" x2="870" y2="540" stroke="#c9c9c9" stroke-width="2"/>
+<line x1="870" y1="540" x2="500" y2="90" stroke="#c9c9c9" stroke-width="2"/>
+<rect x="410" y="28" width="180" height="70" rx="10" fill="#eef3f8" stroke="#3a6ea5" stroke-width="2"/><text x="500.0" y="55.0" text-anchor="middle" font-size="20" font-weight="600" fill="#3a6ea5">C 完备</text><text x="500.0" y="83.0" text-anchor="middle" font-size="15" fill="#666">局部说得清</text>
+<rect x="110" y="532" width="180" height="70" rx="10" fill="#eefaf4" stroke="#009E73" stroke-width="2"/><text x="200.0" y="559.0" text-anchor="middle" font-size="20" font-weight="600" fill="#009E73">A 可组合</text><text x="200.0" y="587.0" text-anchor="middle" font-size="15" fill="#666">拼得回去</text>
+<rect x="710" y="532" width="180" height="70" rx="10" fill="#fbf6ec" stroke="#b8862f" stroke-width="2"/><text x="800.0" y="559.0" text-anchor="middle" font-size="20" font-weight="600" fill="#b8862f">T 传递</text><text x="800.0" y="587.0" text-anchor="middle" font-size="15" fill="#666">跨得过去</text>
+<text x="500" y="360" text-anchor="middle" font-size="17" fill="#3a6ea5">选 C+T ⇒ 让出 A：能力不能相加（子模性）</text>
+<text x="230" y="470" text-anchor="middle" font-size="17" fill="#009E73">选 C+A ⇒ 让出 T：1/3 缺口</text>
+<text x="770" y="470" text-anchor="middle" font-size="17" fill="#b8862f">选 A+T ⇒ 让出 C：τ 发散</text>
+<text x="40" y="596" font-size="14" fill="#888">组织坐标图，不是可行域的精确形状。三本书分别位于三个顶点。</text></svg>
