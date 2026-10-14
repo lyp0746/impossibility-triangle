@@ -209,7 +209,7 @@
       "first": "ch01.html"
     },
     "传递性": {
-      "total": 35,
+      "total": 36,
       "by_chapter": [
         [
           "ch01.html",
@@ -245,7 +245,7 @@
         ],
         [
           "ch12.html",
-          4
+          5
         ],
         [
           "ch14.html",
@@ -267,7 +267,7 @@
       "first": "ch01.html"
     },
     "子模性": {
-      "total": 61,
+      "total": 63,
       "by_chapter": [
         [
           "ch01.html",
@@ -275,7 +275,7 @@
         ],
         [
           "ch02.html",
-          7
+          8
         ],
         [
           "ch03.html",
@@ -291,7 +291,7 @@
         ],
         [
           "ch21.html",
-          10
+          11
         ],
         [
           "ch23.html",
@@ -301,11 +301,15 @@
       "first": "ch01.html"
     },
     "时间错配": {
-      "total": 8,
+      "total": 10,
       "by_chapter": [
         [
           "ch01.html",
           3
+        ],
+        [
+          "ch02.html",
+          2
         ],
         [
           "ch04.html",
@@ -367,7 +371,7 @@
       "first": "ch01.html"
     },
     "离散": {
-      "total": 27,
+      "total": 29,
       "by_chapter": [
         [
           "ch01.html",
@@ -375,7 +379,7 @@
         ],
         [
           "ch02.html",
-          7
+          9
         ],
         [
           "ch03.html",
@@ -397,7 +401,7 @@
       "first": "ch01.html"
     },
     "连续": {
-      "total": 36,
+      "total": 38,
       "by_chapter": [
         [
           "ch01.html",
@@ -405,7 +409,7 @@
         ],
         [
           "ch02.html",
-          5
+          7
         ],
         [
           "ch03.html",
@@ -563,7 +567,7 @@
       "first": "ch01.html"
     },
     "诊断": {
-      "total": 167,
+      "total": 169,
       "by_chapter": [
         [
           "ch01.html",
@@ -571,7 +575,7 @@
         ],
         [
           "ch02.html",
-          5
+          6
         ],
         [
           "ch03.html",
@@ -639,7 +643,7 @@
         ],
         [
           "ch23.html",
-          8
+          9
         ]
       ],
       "first": "ch01.html"
@@ -881,6 +885,7 @@
     "3.3": "ch03.html",
     "8.1": "ch08.html",
     "10.1": "ch10.html",
+    "12.1": "ch12.html",
     "15.1": "ch15.html",
     "15.2": "ch15.html",
     "22.1": "ch22.html",
@@ -1342,6 +1347,7 @@
       "ch15.html"
     ],
     "15.8": [
+      "ch02.html",
       "ch15.html"
     ],
     "15.9": [
@@ -2405,6 +2411,16 @@
       "chapter": "ch15.html",
       "word": "必然",
       "snippet": "加的，而是由社会制度安排的。\n因此，尺度错位的\"必然性\"取决于社会制度：改变激励结构、资源分配或时间"
+    },
+    {
+      "chapter": "ch15.html",
+      "word": "必然",
+      "snippet": "规范判断。\n\n反面检验 15.2（级联反作用真的必然吗）\n警告 15.4 说改变一层会引发级联失衡。"
+    },
+    {
+      "chapter": "ch15.html",
+      "word": "必然",
+      "snippet": "准（向 A+T → C+A 倾斜），但未观察到\"必然的级联崩溃\"，而是缓慢的分化与多元化。\n结论（限"
     },
     {
       "chapter": "ch16.html",

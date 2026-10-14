@@ -64,6 +64,14 @@
 <div class="eq"><span class="body">T_char ≤ Δt ≤ 10 × T_char</span></div>
 即：观察窗口至少覆盖一个特征周期，又不至于长到需要等几十倍的时间。</div>
 
+<div class="define"><span class="bt">定义 23.2b　特征时间的多重性</span>
+对一个复杂系统，"特征时间"不是单一数字，而是一个<b>集合</b>：<br>
+<b>T_response</b>：对扰动的响应时间（秒—分钟）；<br>
+<b>T_adaptation</b>：适应新环境的时间（周—月）；<br>
+<b>T_evolution</b>：知识/结构改变的时间（年—十年）；<br>
+<b>T_transmission</b>：新知识从学习者传播到实践者的时间（年级）。<br>
+<b>三角框架最适合的窗口是 Δt ≈ T_evolution</b>：若 Δt ≈ T_response，变化太快看不清；若 Δt ≈ T_transmission，变化太慢、无法指认失效时刻。<b>因此每个诊断必须说明它用的是哪个 T_*。</b></div>
+
 <table class="nat">
 <caption class="cap"><b>表 23.2　不同系统的适用性</b></caption>
 <tr><th class="l">系统</th><th class="l">T_char</th><th class="l">诊断窗口 Δt</th><th class="l">是否适用</th></tr>
@@ -73,7 +81,8 @@
 <tr><td class="l">气候政策</td><td class="l">十年级</td><td class="l">20—50 年</td><td class="l">△ 只能给方向</td><td class="l">2—5</td></tr>
 <tr><td class="l">文明演化</td><td class="l">世纪级</td><td class="l">对当代决策者过长</td><td class="l">✗ 基本无用</td><td class="l">≪1 或 ≫10</td></tr>
 </table>
-<div class="datasrc"><b>性质：</b>适用范围表，等级 C／丙。<b>这与第 21.8 节直接相关：</b>F3/F5（精准医学、教育个性化）需要 10 年以上才能验证，正是因为它们落在适用窗口的<b>边缘或之外</b>。</div>
+<div class="datasrc"><b>性质：</b>适用范围表，等级 C／丙。<b>补充（定义 23.2b）：</b>表 23.2 的 T_char 一律取 <b>T_evolution</b>（知识/结构改变的时间）。若改用 T_response 或 T_transmission，适用性判断会不同——<b>这是本表的一个约定，读者应据此复算。</b><br>
+<b>这与第 21.8 节直接相关：</b>F3/F5（精准医学、教育个性化）需要 10 年以上才能验证，正是因为它们落在适用窗口的<b>边缘或之外</b>。</div>
 
 <div class="warning"><span class="bt">警告 23.1b　"10 倍"是启发式，不是硬约束</span>
 定义 23.2 的下界（Δt ≥ T_char）与上界（Δt ≤ 10·T_char）是<b>启发式判据（C／丙）</b>，不是从理论推导出的常数。它们的依据是：观察窗口至少覆盖一个周期（否则看不出），又不宜长到需要等几十倍时间（否则决策者等不了）。<b>表 23.2 的最后一列给出各系统的实际比值，供读者自行判断——若某系统的比值落在 (1, 10) 之外却仍能诊断，则该判据需要修正。</b></div>

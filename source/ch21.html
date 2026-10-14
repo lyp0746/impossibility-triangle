@@ -148,6 +148,31 @@ L2/L3 预测的是<b>缺口的类型</b>，不是具体数值或时刻。把"预
 </table>
 <div class="datasrc"><b>性质：</b>参数化说明，等级 C／丙。<b>参数区间是启发式估计（C），不是拟合结果</b>（函数形式的灵感来自神经缩放律 Kaplan 等 2020、软件成本模型 Boehm 1981、过拟合修正 Bailey &amp; López de Prado 2014）——它们的作用是让预测<b>可被明确反驳</b>。若你有数据，请按附录 E 登记并检验；<b>参数估计本身也应被更新（这是 append-only 账本的意义）。</b></div>
 
+<div class="warning"><span class="bt">警告 21.3　参数化预测的来源问题</span>
+表 21.6b 的参数区间来自不同领域（神经缩放律、软件成本、信息论）。<b>若参数误差与理论误差无法区分，则"可被证伪"的力度会削弱</b>——任何不符的结果都可能是"参数估错"而非"理论错"。<b>因此必须标注每个参数的来源强度。</b></div>
+
+<table class="nat">
+<caption class="cap"><b>表 21.6c　参数来源强度</b></caption>
+<tr><th class="l">预测</th><th class="l">参数来源</th><th class="l">强度</th></tr>
+<tr><td class="l">F9（子模性）</td><td class="l">直接从信息论推导</td><td class="l"><b>A</b>（理论）</td></tr>
+<tr><td class="l">F7（软件缺陷）</td><td class="l">软件缺陷标度（类 Boehm）</td><td class="l"><b>B</b>（相关领域）</td></tr>
+<tr><td class="l">F10（维护成本）</td><td class="l">维护成本标度（COCOMO 类）</td><td class="l"><b>B</b>（相关领域）</td></tr>
+<tr><td class="l">F6（长程依赖）</td><td class="l">认知负荷启发式</td><td class="l"><b>C</b>（启发式）</td></tr>
+<tr><td class="l">F8（教育平台）</td><td class="l">启发式估计</td><td class="l"><b>C</b>（启发式）</td></tr>
+</table>
+<div class="datasrc"><b>读法：</b>F9 的参数最硬（A，理论推导），因此<b>若 F9 被证伪，是理论问题而非参数问题</b>；F6/F8 的参数最软（C），若不符需先排除参数误差。<b>这正是第 21.7 节"L2—L3 而非 L4"的技术原因。</b></div>
+
+<table class="nat">
+<caption class="cap"><b>表 21.6d　强预测的验证清单（成功 / 失败 / 灰区）</b></caption>
+<tr><th class="l">预测</th><th class="l">成功</th><th class="l">失败（推翻）</th><th class="l">灰区</th></tr>
+<tr><td class="l">F6</td><td class="l">α∈(1.2,1.8) 且转折在 5—12k</td><td class="l">α≤1 或无转折</td><td class="l">α∈(1,1.2) 或转折不清</td></tr>
+<tr><td class="l">F7</td><td class="l">β∈(1.5,2.5)</td><td class="l">β≤1</td><td class="l">β∈(1,1.5)</td></tr>
+<tr><td class="l">F9</td><td class="l">边际增益单调不增</td><td class="l">存在边际增益上升</td><td class="l">不显著</td></tr>
+<tr><td class="l">F10</td><td class="l">γ∈(1.8,2.2)</td><td class="l">γ≤1</td><td class="l">γ∈(1,1.8)</td></tr>
+<tr><td class="l">F8</td><td class="l">第 4 年月度增长&lt;2% 且持续 6 月</td><td class="l">第 5 年月度增长&gt;5%</td><td class="l">2%—5%</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>验证清单，等级 C／丙。<b>作用：</b>把"是否支持"从模糊争论变成<b>三分类判定</b>，避免验证变成"政治辩论"。<b>请按附录 E 的 append-only 规则登记结果。</b></div>
+
 <div class="define"><span class="bt">F6—F10 与 F1—F5 的区别</span>
 <b>可否定性：</b>F6—F10 都给出了可测的阈值或拐点，因而可被明确推翻；F1—F5 只说方向。<br>
 <b>时间性：</b>F6/F7/F9 可在 1—2 年内检验，不需要等到 2030 年。<br>
