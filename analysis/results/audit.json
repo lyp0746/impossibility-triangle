@@ -15,7 +15,7 @@
       "first": "ch02.html"
     },
     "选择": {
-      "total": 291,
+      "total": 294,
       "by_chapter": [
         [
           "ch01.html",
@@ -71,7 +71,7 @@
         ],
         [
           "ch15.html",
-          29
+          32
         ],
         [
           "ch16.html",
@@ -267,7 +267,7 @@
       "first": "ch01.html"
     },
     "子模性": {
-      "total": 63,
+      "total": 64,
       "by_chapter": [
         [
           "ch01.html",
@@ -275,7 +275,7 @@
         ],
         [
           "ch02.html",
-          8
+          9
         ],
         [
           "ch03.html",
@@ -301,7 +301,7 @@
       "first": "ch01.html"
     },
     "时间错配": {
-      "total": 10,
+      "total": 11,
       "by_chapter": [
         [
           "ch01.html",
@@ -309,7 +309,7 @@
         ],
         [
           "ch02.html",
-          2
+          3
         ],
         [
           "ch04.html",
@@ -371,7 +371,7 @@
       "first": "ch01.html"
     },
     "离散": {
-      "total": 29,
+      "total": 30,
       "by_chapter": [
         [
           "ch01.html",
@@ -379,7 +379,7 @@
         ],
         [
           "ch02.html",
-          9
+          10
         ],
         [
           "ch03.html",
@@ -401,7 +401,7 @@
       "first": "ch01.html"
     },
     "连续": {
-      "total": 38,
+      "total": 39,
       "by_chapter": [
         [
           "ch01.html",
@@ -409,7 +409,7 @@
         ],
         [
           "ch02.html",
-          7
+          8
         ],
         [
           "ch03.html",
@@ -773,7 +773,7 @@
       "first": "ch17.html"
     },
     "可证伪": {
-      "total": 7,
+      "total": 8,
       "by_chapter": [
         [
           "ch02.html",
@@ -786,6 +786,10 @@
         [
           "ch05.html",
           2
+        ],
+        [
+          "ch12.html",
+          1
         ]
       ],
       "first": "ch02.html"
@@ -2296,6 +2300,26 @@
       "chapter": "ch02.html",
       "word": "必然",
       "snippet": "正：表 2.3 把医疗的\"个体化冲突\"列为\"逻辑必然\"，本表将其下调为 L0—L1——因为它可能只是"
+    },
+    {
+      "chapter": "ch02.html",
+      "word": "必然",
+      "snippet": "流转的准稳态\"。\n\n警告 2.5d　循环会削弱\"必然性\"的强度\n若冲突确实循环，则它的必然性低于\"一"
+    },
+    {
+      "chapter": "ch02.html",
+      "word": "必然",
+      "snippet": "环会削弱\"必然性\"的强度\n若冲突确实循环，则它的必然性低于\"一步迁移\"的版本：\n一步迁移（命题 2."
+    },
+    {
+      "chapter": "ch02.html",
+      "word": "必然",
+      "snippet": "\"的版本：\n一步迁移（命题 2.3 原版）：冲突必然在相邻边重现——较强的结构必然性；\n循环迁移（附"
+    },
+    {
+      "chapter": "ch02.html",
+      "word": "必然",
+      "snippet": ".3 原版）：冲突必然在相邻边重现——较强的结构必然性；\n循环迁移（附注 2.7）：冲突平均而言始终"
     },
     {
       "chapter": "ch02.html",
