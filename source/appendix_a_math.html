@@ -83,3 +83,32 @@
 <div class="datasrc"><b>性质：</b>模型 C／丙。结果可复算：<code>python analysis/triangle_frontier.py</code>。<b>限制：</b>模型是说明性构造，不是对任何真实系统的测量；坐标和上界 2.16 依赖 n、K 的选取，不代表普适常数。</div>
 
 <p><b>模型说明了什么、不说明什么。</b>它说明：在预算约束下，三个顶点不能同时逼近 1，且不同"选两个"的组合各自留下可量化的缺口。它不说明：真实系统服从同样的数字；存在一个普适的坐标和上界；或三角命题成立。后两者正是第 21 章的开放问题。</p>
+
+<h3>A.7　记账不等式（命题 2.2）的证明与推广</h3>
+
+<div class="define"><span class="bt">命题 A.2（记账不等式，重述）</span>
+设系统在预算 <span class="s">K</span> 下支出
+<div class="eq"><span class="body">cost(c,a,t) = κ_c·c + κ_a·a + κ_t·t + λ·ψ(c,a,t) ≤ K</span></div>
+其中 <span class="s">c,a,t ∈ [0,1]</span> 为三个坐标，<span class="s">κ_· &gt; 0</span> 为单位成本，<span class="s">λ ≥ 0</span>，<span class="s">ψ ≥ 0</span> 为交互惩罚。则
+<div class="eq"><span class="body">κ_c·c + κ_a·a + κ_t·t ≤ K − λ·ψ(c,a,t) ≤ K</span></div></div>
+
+<p><b>证明。</b>由预算约束直接移项得第一式；由 <span class="s">λ ≥ 0</span>、<span class="s">ψ ≥ 0</span> 得第二式。∎</p>
+
+<p><b>这个平凡证明的意义在于它指出张力的位置。</b>仅凭预算约束，坐标和只能被上界 <span class="s">K</span> 限制；只有当 <span class="s">ψ &gt; 0</span>（即"同时维持完备与可组合"比"分别维持"更贵）时，坐标和才被压到 <span class="s">K</span> 以下。<b>换句话说，三角不是预算的产物，而是交互惩罚的产物。</b></p>
+
+<div class="define"><span class="bt">推论 A.2.1（无交互则无三角）</span>
+若对一切 <span class="s">(c,a,t)</span> 有 <span class="s">ψ ≡ 0</span>，则三个坐标相互独立，可同时接近各自上界。<b>此时三角对其不适用。</b></div>
+
+<div class="define"><span class="bt">推论 A.2.2（归一到 K=2）</span>
+取 <span class="s">κ_c=κ_a=κ_t=1</span>、<span class="s">K=2</span>（预算恰好够满两个顶点），则
+<div class="eq"><span class="body">c + a + t ≤ 2 − λ·ψ &lt; 2　（当 ψ &gt; 0）</span></div>
+这与第 1 版"坐标和恒为 2"的差别在于：<b>上界不是常数 2，而是 <span class="s">K − λψ</span>。</b>当 <span class="s">K</span> 更大时上界更高——模型 T 在 <span class="s">n=12, K=15</span> 下给出 2.16，正是因为其归一化预算大于 2（见 A.6）。</div>
+
+<div class="define"><span class="bt">三个交互惩罚来源（ψ 的分解）</span>
+<b>ψ_desc</b>：完备与可加组合对同一批子系统提出相互制约的刻画要求（第 5 章的子模性是其信息论特例）。<br>
+<b>ψ_comp</b>：同时要求"可算的未来（C₂）"与"可跳算的传递（T）"在计算不可约系统上冲突（第 4.5 节）。<br>
+<b>ψ_res</b>：同时维持局部完备与跨尺度组合，要求额外的协调时间/注意力（第 7、9 章的时间错配是其表现）。<br>
+<b>这条分解把"让出哪个顶点"翻译成"哪一项 ψ 最大"。</b></div>
+
+<div class="warning"><span class="bt">警告 A.1　命题 A.2 仍不是普适定理</span>
+命题 A.2 是恒等式级别的（移项），但它的<b>解释力</b>取决于 (A1)—(A3) 在具体系统中是否成立、以及 <span class="s">ψ</span> 是否可测。<b>它把"三角为什么不普遍成立"的答案也写清楚了：当 <span class="s">ψ ≡ 0</span> 时不成立。</b>这就是第 21.6 节自检所需要的精确形式。</div>

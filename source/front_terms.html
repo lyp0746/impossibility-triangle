@@ -68,8 +68,49 @@
 <tr><td class="l">H</td><td class="l">制度设计模板库</td><td class="l">要设计分层制度</td></tr>
 <tr><td class="l">I</td><td class="l">与已有不可能定理的对照</td><td class="l">想比较 CAP、Arrow 等</td></tr>
 <tr><td class="l">J</td><td class="l">失败记录：一次被证伪的强主张</td><td class="l">想看我出过错</td></tr>
+<tr><td class="l">K</td><td class="l">案例数据库：四个战场的关键数字</td><td class="l">要核对诊断数字</td></tr>
+<tr><td class="l">L</td><td class="l">研究议题库：可接手的开放问题</td><td class="l">想找可做的研究</td></tr>
+<tr><td class="l">M</td><td class="l">与前三本书的对应</td><td class="l">要与系列对照</td></tr>
+<tr><td class="l">N</td><td class="l">计算、涌现与系统论：三角的上游</td><td class="l">想看与计算/系统论对话</td></tr>
+<tr><td class="l">O</td><td class="l">意识、人工智能与三角</td><td class="l">关心前沿应用</td></tr>
+<tr><td class="l">P</td><td class="l">延伸战场速览</td><td class="l">想看新领域试诊断</td></tr>
 </table>
 
 <h3>引用建议</h3>
 
-<p>若引用本书的硬核，请引第 5 章的子模性论证与第 12.5 节的离散—连续缺口，并注明其等级。若引用三角框架本身，请注明它是<b>组织坐标（B／乙）</b>，而非定理，并说明你所在领域对它的检验结果。<b>请不要把 C 级的方向判断引用为经验结论。</b></p>
+<p>若引用本书的硬核，请引第 5 章的子模性论证与第 12.5 节的离散—连续缺口，并注明其等级。若引用三角框架本身，请注明它是<b>组织坐标（B—C／乙—丙）</b>，而非定理，并说明你所在领域对它的检验结果。<b>请不要把 C 级的方向判断引用为经验结论。</b></p>
+
+<h3>断言语法规范</h3>
+
+<p>为减少阅读时的反复对照，本书的每类断言有固定内部结构：</p>
+
+<table class="nat">
+<caption class="cap"><b>表 0.11　断言语法规范</b></caption>
+<tr><th class="l">标记</th><th class="l">内部结构</th></tr>
+<tr><td class="l">定理 A／甲</td><td class="l">[适用对象] [陈述] [证明或复现方式]</td></tr>
+<tr><td class="l">命题 A／甲</td><td class="l">[前提] [陈述] [证明思路]</td></tr>
+<tr><td class="l">诊断 B／乙</td><td class="l">[观察] [诊断陈述] [失效条件] [反向力量]</td></tr>
+<tr><td class="l">观察 B／乙</td><td class="l">[现象] [数量级] [来源] [适用边界]</td></tr>
+<tr><td class="l">模型 C／丙</td><td class="l">[构想] [定义] [数值结果] [限制]</td></tr>
+<tr><td class="l">猜想 C／丙</td><td class="l">[陈述] [支持证据] [证伪条件]</td></tr>
+</table>
+
+<div class="scenario"><span class="bt">一个例子</span>
+<b>诊断 5.1　记忆系统（C+T，¬A）</b>：<br>
+<b>[观察]</b> 工作记忆容量约 4±1 项，相似材料干扰更大。<br>
+<b>[诊断]</b> 记忆系统保住 C、T，让出 A。<br>
+<b>[失效条件]</b> 当多个任务强行共享同一容量时，总性能低于各任务单独水平。<br>
+<b>[反向力量]</b> 这条限制使深度压缩与抽象成为可能。</div>
+
+<h3>与前三本书的证据等级对应</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 0.12　四本书的证据等级对应</b></caption>
+<tr><th class="l">前作</th><th class="l">前作最强结果</th><th class="l">本书等级</th><th class="l">含义</th></tr>
+<tr><td class="l">《遗忘的边界》</td><td class="l">信息瓶颈、率失真</td><td class="l">定理 A／甲</td><td class="l">可数学证明</td></tr>
+<tr><td class="l">《区分的演化》</td><td class="l">图上两阶段相变；κ_info = Var(λ)/2</td><td class="l">定理 A／甲</td><td class="l">可机器复算</td></tr>
+<tr><td class="l">《错位的时间》</td><td class="l">τ 的蒙特卡洛传播</td><td class="l">命题 A／甲 + 诊断 B／乙</td><td class="l">命题可复算，诊断依赖假设</td></tr>
+<tr><td class="l">《选择的代价》（本书）</td><td class="l">子模性（引）+ 离散恒等式（引）+ 模型 T 枚举</td><td class="l">定理 A／甲 + 模型 C／丙</td><td class="l">硬核可复算，三角为框架</td></tr>
+</table>
+
+<p>详细的术语与结论对照见附录 M。<b>关键点：本书的硬核部分完全是前作 A 级结果的直接引用或复算；本书新增的部分（三角框架）等级较低，且已明确标注。</b></p>

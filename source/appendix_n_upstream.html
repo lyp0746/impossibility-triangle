@@ -1,0 +1,78 @@
+<h2 class="chapter">附录 N　计算、涌现与系统论：三角的上游</h2>
+
+<p class="lead">第 4 章只勾勒了三角与计算论、系统论、涌现的关系。本附录展开这三条"上游"线索。<b>目的不是把三角塞进其中任何一个传统，而是说明：三角的取舍与这些传统所发现的边界共享同一个形状，但三角的严格性更低。</b></p>
+
+<h3>N.1　计算论：三种边界</h3>
+
+<p>计算论至少给出三种与三角相关的边界。</p>
+
+<div class="define"><span class="bt">边界 1　可计算性（Turing）</span>
+停机问题表明：不存在一个算法，对任意程序与输入判定其是否终止。<br>
+<b>三角读法：</b>这是"完备性 C（对任意程序给出判定）"在整个图灵可计算范围内的不可达。它与三角的关系是警示性的：<b>有些"完备"不是预算不够，而是逻辑上不可能。</b>三角讨论的是预算约束，不是逻辑不可能——这个区别必须守住。</div>
+
+<div class="define"><span class="bt">边界 2　计算不可约性（Wolfram）</span>
+对许多系统，不存在比直接模拟更快的预测方法。<br>
+<b>三角读法：</b>若系统计算不可约，则 <span class="s">C₃</span>（预测完备）的实现需要与模拟等价的 <span class="s">K_comp</span>。于是"提高 <span class="s">C₃</span>"与"节省 <span class="s">K_comp</span> 以实现传递 <span class="s">T</span>"直接冲突。<b>这是三角在 <span class="s">K_comp</span> 受限情形下的一个硬实现。</b>［论证，B／乙］</div>
+
+<div class="define"><span class="bt">边界 3　P vs NP（Cook）</span>
+若 <span class="s">P ≠ NP</span>，则不存在多项式时间的算法在最坏情形下求得 NP 困难问题的精确解。<br>
+<b>三角读法：</b>"完备地刻画解空间（C）"与"在预算内找到可组合的解（A）"之间可能存在结构性鸿沟。子模最大化是 NP 困难的，而它恰恰是"能力组合"的抽象模型。<b>这把 <span class="s">a</span> 从"连续折扣"推向了"结构性不可达"。</b>［论证，B／乙］</div>
+
+<div class="warning"><span class="bt">警告 N.1　不要把三角等同于这些定理</span>
+计算不可约性、停机问题、P vs NP 都是<b>已证或强猜想</b>的结果；三角是<b>框架</b>。宣称"三角 = 计算不可约性的推广"是过度宣称。<b>正确的说法是：它们共享"有限预算/逻辑下的取舍"这一形状，三角借它们为自己的一个分量（<span class="s">K_comp</span>）找到独立支持，但不声称等价。</b></div>
+
+<h3>N.2　算法信息论：描述预算的硬下界</h3>
+
+<p>Kolmogorov 复杂度 <span class="s">K(x)</span> 定义为一个能输出 <span class="s">x</span> 的最短程序的长度。它的核心性质（不可压缩性、不可计算性）直接对应三角的"<span class="s">K_desc</span> 受限"。</p>
+
+<div class="define"><span class="bt">不可压缩性与 C₁</span>
+对长度为 <span class="s">n</span> 的串，绝大多数满足 <span class="s">K(x) ≈ n</span>（不可压缩）。<br>
+<b>三角读法：</b>若一个系统的描述预算 <span class="s">K_desc &lt; n</span>，则它不可能对多数对象给出"描述完备 <span class="s">C₁</span>"的刻画——这是<b>计数论证</b>，不依赖任何假设。<b>因此 <span class="s">C₁</span> 与 <span class="s">K_desc</span> 之间存在一条硬下界。</b>［定理，A／甲］</div>
+
+<p>这条硬下界是三角中<b>最严格</b>的一部分：它说明"完备性"在描述预算受限时受计数约束，而不是受某个领域的特殊困难约束。第 5 章的子模性（信息论）与这里的不可压缩性（算法信息论）是同一条账的两个版本。</p>
+
+<h3>N.3　系统论：三次尝试与一个共同的盲点</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 N.1　系统论传统的三角定位（详版）</b></caption>
+<tr><th class="l">传统</th><th class="l">代表</th><th class="l">核心主张</th><th class="l">顶点</th><th class="l">盲点</th></tr>
+<tr><td class="l">一般系统论</td><td class="l">Bertalanffy</td><td class="l">跨系统的同构律</td><td class="l">C+T</td><td class="l">同构律太弱，不能组合成预测（¬A）</td></tr>
+<tr><td class="l">控制论</td><td class="l">Wiener</td><td class="l">反馈与调节</td><td class="l">A+T</td><td class="l">不追求对具体系统的完备描述（¬C）</td></tr>
+<tr><td class="l">软系统方法</td><td class="l">Checkland</td><td class="l">问题情境的多元建构</td><td class="l">C+A</td><td class="l">结论不可跨情境无损传递（¬T）</td></tr>
+<tr><td class="l">社会系统论</td><td class="l">Luhmann</td><td class="l">自我指涉的沟通系统</td><td class="l">C+A</td><td class="l">跨系统耦合难以传递（¬T）</td></tr>
+<tr><td class="l">复杂适应系统</td><td class="l">Holland</td><td class="l">涌现、适应、自组织</td><td class="l">C+A</td><td class="l">跨尺度理论要重写（¬T）</td></tr>
+</table>
+
+<p><b>共同盲点：</b>系统论传统的三次尝试都在不同顶点上很强，但没有一个同时把三个顶点推到满格。它们各自的"局限"，正是各自顶点的账单。<b>本书不是要补上这些局限，而是把"为什么会有这些局限"从一个遗憾，变成一个可定位的选择结果。</b></p>
+
+<h3>N.4　涌现：弱涌现、强涌现与可测量标记</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 N.2　涌现谱系与三角读法</b></caption>
+<tr><th class="l">类型</th><th class="l">定义要点</th><th class="l">三角读法</th><th class="l">可测？</th></tr>
+<tr><td class="l">弱涌现</td><td class="l">宏观规律可从微观推出，但计算上困难</td><td class="l"><span class="s">t</span> 中等，<span class="s">C₂</span> 受限</td><td class="l">可（计算不可约性）</td></tr>
+<tr><td class="l">强涌现</td><td class="l">宏观规律原则上不可从微观推出</td><td class="l"><span class="s">t ≈ 0</span> 或负，<span class="s">T₃</span> 失效</td><td class="l">争议（可能不可测）</td></tr>
+<tr><td class="l">下向因果</td><td class="l">宏观约束限制微观行为</td><td class="l">反向 <span class="s">t</span>：<span class="s">λ₂→λ₁</span> 的约束</td><td class="l">部分可测</td></tr>
+</table>
+
+<p><b>本书的立场是克制的。</b>第 4.7 节把"<span class="s">t</span> 下降"作为涌现的<b>可测量后果</b>，而不是涌现的定义。这样做有两个好处：<b>（一）</b>它把哲学争论（强涌现是否可能）与经验测量分开；<b>（二）</b>它使涌现成为一个可复核的坐标，而不是一个不可反驳的断言。<b>代价是：它不能覆盖涌现的全部含义（如不可还原性、新颖性）。</b>这个代价是自觉的。</p>
+
+<h3>N.5　三角相对这些传统的三个差异</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 N.3　三角与上游传统的差异</b></caption>
+<tr><th class="l">维度</th><th class="l">上游传统</th><th class="l">本书三角</th></tr>
+<tr><td class="l">目标</td><td class="l">发现普适规律 / 证明边界</td><td class="l">诊断具体系统的取舍</td></tr>
+<tr><td class="l">严格性</td><td class="l">高（定理或形式化）</td><td class="l">框架 + 条件命题 + 可复算模型</td></tr>
+<tr><td class="l">覆盖</td><td class="l">窄而深</td><td class="l">宽而浅</td></tr>
+<tr><td class="l">产出</td><td class="l">定理 / 理论</td><td class="l">坐标 + 模板 + 缺口清单</td></tr>
+</table>
+
+<h3>N.6　一个统一的问法</h3>
+
+<div class="define"><span class="bt">上游诸传统的共同问题</span>
+可计算性、计算不可约性、P vs NP、算法信息论、一般系统论、控制论、涌现理论，都可以被读成对同一个问题的不同回答：<br>
+<b>"当描述能力、计算能力或制度资源有限时，系统能在多大程度上同时拥有完备、可组合与可传递？"</b><br>
+不同传统的差异，在于它们固定的"受限分量"不同：可计算性固定逻辑，计算不可约性固定 <span class="s">K_comp</span>，算法信息论固定 <span class="s">K_desc</span>，控制论固定干预能力，本书固定的是"多尺度 + 有限预算"的一般情形。<b>这个统一问法本身就是本书对上游传统的一个贡献主张——但它是哲学层面的，等级 C／丙。</b></div>
+
+<p>把这句话说清楚，也就说清楚了本书的定位：<b>它不发明新的边界，而是给已有边界提供一张共同的坐标图。</b>这张图可能画错，但它是可修改、可反驳、可替换的——这正是它相对于"又一个系统论"的差别所在。</p>

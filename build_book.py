@@ -35,6 +35,7 @@ FRONT = [("先读这一页　三条可检验的诊断", "front_hardcore.html", "
          ("前言　为什么第四本书关乎“无法统一”", "front_preface.html", "preface"),
          ("十分钟读懂本书", "front_quickstart.html", "quickstart"),
          ("阅读合约　本书向你承诺什么，又不承诺什么", "front_theorymap.html", "theorymap"),
+         ("读者指南　按角色选择阅读路径", "front_roadmap.html", "roadmap"),
          ("术语、记号与断言分级速查", "front_terms.html", "terms")]
 BACK = [("结语　从寻求大一统到自觉管理权衡", "back_epilogue.html", "epilogue"),
         ("附录 A　形式化补充：不可能三角的陈述与三个见证", "appendix_a_math.html", "apxA"),
@@ -46,7 +47,14 @@ BACK = [("结语　从寻求大一统到自觉管理权衡", "back_epilogue.html
         ("附录 G　诊断手册与工具包", "appendix_g_toolkit.html", "apxG"),
         ("附录 H　制度设计模板库", "appendix_h_templates.html", "apxH"),
         ("附录 I　与已有不可能定理的对照", "appendix_i_comparison.html", "apxI"),
-        ("附录 J　失败记录：一次被证伪的强主张", "appendix_j_failed.html", "apxJ")]
+        ("附录 J　失败记录：一次被证伪的强主张", "appendix_j_failed.html", "apxJ"),
+        ("附录 K　案例数据库：四个战场的关键数字", "appendix_k_cases.html", "apxK"),
+        ("附录 L　研究议题库：可接手的开放问题", "appendix_l_agenda.html", "apxL"),
+        ("附录 M　与前三本书的对应", "appendix_m_series.html", "apxM"),
+        ("附录 N　计算、涌现与系统论：三角的上游", "appendix_n_upstream.html", "apxN"),
+        ("附录 O　意识、人工智能与三角：三个前沿", "appendix_o_frontiers.html", "apxO"),
+        ("附录 P　延伸战场速览：按三条标准试诊断", "appendix_p_extended.html", "apxP"),
+        ("附录 Q　知识演化的定量指标与历史年表", "appendix_q_indicators.html", "apxQ")]
 
 
 def load_json(p, default=None):

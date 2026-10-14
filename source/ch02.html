@@ -1,94 +1,181 @@
 <h2 class="chapter">第 2 章　不可能三角：完备性、可组合性与传递性</h2>
 
-<p class="lead">本章把第 1 章的三处症状收成一条约束。<b>它先给出三个性质各自的形式定义，再给出三角的陈述，最后说明这条约束的地位：它不是公理，不是对世界的测量，而是一张组织坐标——它的价值在于可以被逐项检查，也可以被逐项反驳。</b></p>
+<p class="lead">本章把第 1 章的三处症状收成一条约束。<b>它先形式化"系统""复杂度""三个性质"，再给出三角命题的准形式陈述、成本函数与一条在强假设下可证的记账不等式，最后说明这条约束的地位：它不是公理，不是对世界的测量，而是一张组织坐标——它的价值在于可以被逐项检查，也可以被逐项反驳。</b></p>
 
 <div class="scenario"><span class="bt">本章主张</span>
-对于一个有限复杂度、需要描述多尺度结构的系统，三个理想性质——局部完备性 C、可组合性 A、跨尺度传递性 T——不能同时被推到满格。至多同时满足两个；让出哪一个，就留下哪一类可定位的缺口。<b>三角是坐标，不是判决。</b>［框架，B／乙］</div>
+对一个有限复杂度、需要描述多尺度结构的系统，三个理想性质——局部完备性 C、可组合性 A、跨尺度传递性 T——不能同时被推到满格。至多同时满足两个；让出哪一个，就留下哪一类可定位的缺口。<b>本章给出三档定义、一个可测量的坐标 (c, a, t)、一条在明确假设下可证的记账不等式，以及一个仍为猜想的普适命题。</b>［形式化框架，B—C／乙—丙］</div>
 
 <h3>2.1　导论：把直觉变成刻度</h3>
 
-<p>第 1 章的三处症状都用了一个含糊的词："无法弥合"。这一章要把这个词拆开。"弥合"在数学上至少可以做三件事：补全一个局部描述；把两部分拼回整体；把结论从一个尺度搬到另一个尺度。如果三件事分别对应三个性质，那么"无法弥合"就可以被写成"三个性质不能都拿满分"。</p>
+<p>第 1 章的三处症状都用了一个含糊的词："无法弥合"。这一章要把这个词拆开，并且拆到可以被反驳的程度。"弥合"在数学上至少可以做三件事：补全一个局部描述；把两部分拼回整体；把结论从一个尺度搬到另一个尺度。如果三件事分别对应三个性质，那么"无法弥合"就可以被写成"三个坐标不能同时取到 1"。</p>
 
-<p>但这里有一个必须先承认的风险：<b>任何把复杂现象收成三个坐标尺度的做法，都有把世界挤扁的嫌疑。</b>本书的处理方式是：先给出三种性质各自的三档定义，再做三角陈述，然后明确说明这个陈述是"一个可以被反驳的组织方式"，而不是"一条定理"。如果读者在某个领域发现三档定义不适用，那正是对三角的修正，而不是对它的否定。</p>
+<p>但只把三个字变成三个字母是不够的。真正的形式化必须回答四个问题：<b>（一）</b>被描述的对象是什么？<b>（二）</b>"有限复杂度"里的复杂度指什么、如何度量？<b>（三）</b>三个坐标如何从系统里被测出来？<b>（四）</b>"不能同时取到 1"是定理、是猜想、还是账目？本章逐一回答，并明确：前两问给出定义，第三问给出度量，第四问的答案分三层——一条可证的条件命题、一条可复算的模型结论、一条仍为猜想的普适命题。</p>
 
-<h3>2.2　完备性 C 的三种形式</h3>
+<p>必须从一开始承认的风险："三"这个数字有人为成分（第 21.6 节会专门自检）。本章的形式化不试图消除这一点；它试图让这一点变得可以计算、可以比较、可以被指出错误。</p>
 
-<div class="define"><span class="bt">定义 2.1　完备性的三档</span>
-设系统 <span class="s">Σ</span> 由子系统 <span class="s">{Σ_i}</span> 组成。<br>
-<b>C₁ 描述完备</b>：存在有限基元集合，使每个子系统的全部相关现象都能被基元的组合刻画。<br>
-<b>C₂ 计算完备</b>：存在有限算法，从子系统的初值与规则出发，可计算其未来的相关状态。<br>
-<b>C₃ 预测完备</b>：对每个子系统感兴趣的量，模型给出的预测落在可接受误差内。<br>
-三档从强到弱：<span class="s">C₁ ⇒ C₂ ⇒ C₃</span>；实际系统通常只满足其中一到两档。</div>
+<h3>2.2　系统的形式化：元素、层次与资源</h3>
 
-<p>三档的区别很关键。一个气候模型可以是 <span class="s">C₁</span> 与 <span class="s">C₂</span>（方程完备、可数值积分），却<b>不</b>是 <span class="s">C₃</span>（因为混沌，长期预测失效）。一个临床指南可以是 <span class="s">C₃</span>（对多数病人预测可用），却<b>不</b>是 <span class="s">C₁</span>（没有完整的机制描述）。把三档混为一谈，是"完备性"这个词最常见的滥用。</p>
+<div class="define"><span class="bt">定义 2.1　多尺度系统</span>
+一个多尺度系统记作四元组
+<div class="eq"><span class="body">Σ = (E, R, ℒ, K)</span></div>
+其中<br>
+<b>E</b> 是元素集合（子系统、单元、个体）；<br>
+<b>R</b> 是元素之间的关系集合（耦合、依赖、通信）；<br>
+<b>ℒ = {λ₁, …, λ_m}</b> 是系统运行的尺度集合（时间或空间分辨率的层级）；<br>
+<b>K</b> 是系统的资源预算（定义 2.2）。<br>
+每个元素 <span class="s">e ∈ E</span> 关联一个尺度 <span class="s">λ(e) ∈ ℒ</span>；每个关系 <span class="s">r ∈ R</span> 连接两个元素，可跨尺度。</div>
 
-<div class="warning"><span class="bt">警告 2.1　完备不是"什么都知道"</span>
-本书的完备性永远相对于<b>一个给定的问题与分辨率</b>。说一个系统"完备"，永远要追问：关于什么量的完备？在什么分辨率下？当有人宣称"我们的模型是完备的"，正确的回应不是赞叹，而是问清档位与作用域。</div>
+<p>"多尺度"不是修辞：它意味着 <span class="s">|ℒ| ≥ 2</span> 且相邻尺度的周期之比的量级跨度足够大（在本书的诊断中通常要求 <span class="s">≥ 10²</span>，见第 20.2 节）。如果所有尺度都在同一数量级内，三角的张力通常不强——这一点会在第 9 章的金融—实体对照与第 7 章的气候表里反复出现。</p>
 
-<h3>2.3　可组合性 A 的三种形式</h3>
+<h3>2.3　复杂度 K：三种量度</h3>
 
-<div class="define"><span class="bt">定义 2.2　可组合性的三档</span>
+<div class="define"><span class="bt">定义 2.2　复杂度预算 K</span>
+系统的资源预算由三个分量组成：
+<div class="eq"><span class="body">K = (K_desc, K_comp, K_res)</span></div>
+<b>K_desc（描述预算）</b>：可用于刻画系统的独立参数/基元数目上界。与 Kolmogorov 复杂度、最小描述长度（MDL）同源的量。<br>
+<b>K_comp（计算预算）</b>：从初值推出未来状态所允许的计算步骤/存储上界。与时间、空间复杂性同源的量。<br>
+<b>K_res（制度预算）</b>：可动员的注意力、算力、人力、财政与制度资源。与有限理性（bounded rationality）同源的量。<br>
+三者不必相等，也不可直接换算；在具体领域里，"有限复杂度"通常指其中一到两个分量受限。</div>
+
+<p>为什么用三分量而不是一个标量？因为不同领域受限于不同的预算。神经系统的记忆受 <span class="s">K_desc</span> 限制（突触资源）；天气预报受 <span class="s">K_comp</span> 限制（数值积分）；社会系统受 <span class="s">K_res</span> 限制（协调时间与制度容量）。<b>把三者压成一个标量，会掩盖"角"究竟在哪里变紧。</b>这也是第 21.5 节把"<span class="s">K</span> 的统一度量"列为开放问题 O1 的原因——本书能给出三分量，但还不能给出跨领域的统一换算率。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 2.1　复杂度三分量在各领域的典型约束</b></caption>
+<tr><th class="l">领域</th><th class="l">主导分量</th><th class="l">受限的资源</th><th class="l">典型量级</th></tr>
+<tr><td class="l">工作记忆</td><td class="l">K_desc</td><td class="l">并列通道数</td><td class="l">4±1 项</td></tr>
+<tr><td class="l">数值天气</td><td class="l">K_comp</td><td class="l">格点分辨率 × 预报时长</td><td class="l">10⁹—10¹² 次运算/预报</td></tr>
+<tr><td class="l">临床决策</td><td class="l">K_res</td><td class="l">医生可用的时间与信息</td><td class="l">分钟—小时/病例</td></tr>
+<tr><td class="l">气候政策</td><td class="l">K_res</td><td class="l">政治协调的时间窗口</td><td class="l">年—届期</td></tr>
+<tr><td class="l">学术评价</td><td class="l">K_res</td><td class="l">评审可处理的维度数</td><td class="l">1—3 个量化指标</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>量级表，等级 B／乙。具体数值为公开共识的近似；"受限资源"列是本框架的解读。</div>
+
+<h3>2.4　完备性 C 的三种形式与领域对照</h3>
+
+<div class="define"><span class="bt">定义 2.3　完备性的三档</span>
+设系统 <span class="s">Σ = (E, R, ℒ, K)</span>，子系统为 <span class="s">{Σ_i}</span>。<br>
+<b>C₁ 描述完备</b>：存在有限基元集 <span class="s">B</span>，使每个 <span class="s">Σ_i</span> 的全部相关现象可由 <span class="s">B</span> 的组合刻画，且刻画不依赖对其他子系统 <span class="s">Σ_j</span> 的未声明假设。<br>
+<b>C₂ 计算完备</b>：存在有限算法，从 <span class="s">Σ_i</span> 的初值与规则出发，可在 <span class="s">K_comp</span> 内计算其未来的相关状态。<br>
+<b>C₃ 预测完备</b>：对 <span class="s">Σ_i</span> 感兴趣的量，模型给出的预测落在可接受误差 <span class="s">ε_i</span> 内（<span class="s">ε_i</span> 由领域约定）。<br>
+三档从强到弱：<span class="s">C₁ ⇒ C₂ ⇒ C₃</span>；实际系统通常只满足一到两档。</div>
+
+<p>三档的区别是本章最容易被忽略、却最重要的一处。一个气候模型可以是 <span class="s">C₁</span> 与 <span class="s">C₂</span>（方程完备、可积分），却<b>不</b>是 <span class="s">C₃</span>（混沌使长期预测失效）。一个临床指南可以是 <span class="s">C₃</span>（对多数病人预测可用），却<b>不</b>是 <span class="s">C₁</span>（没有完整机制）。把三档混为一谈，是"完备性"一词最常见的滥用。<b>因此，"完备"永远相对于一个给定的问题、分辨率与容差。</b></p>
+
+<table class="nat">
+<caption class="cap"><b>表 2.2　"完备性"的领域对照（同一字母，不同含义）</b></caption>
+<tr><th class="l">领域</th><th class="l">C 的具体含义</th><th class="l">可测的量</th><th class="l">当前达到的档位</th></tr>
+<tr><td class="l">神经科学</td><td class="l">从突触机制到行为的因果完整性</td><td class="l">模型对神经/行为反应的预测精度</td><td class="l">局部 C₂—C₃（跨尺度多为 C₁ 名义）</td></tr>
+<tr><td class="l">气候科学</td><td class="l">全球气候模型的物理参数确定性</td><td class="l">历史回报（hindcast）技能</td><td class="l">C₁+C₂；气温近 C₃，区域降水仅 C₃ 弱档</td></tr>
+<tr><td class="l">医学</td><td class="l">对个体结局的机制—药理预测</td><td class="l">个体疗效预测的校准误差</td><td class="l">C₃（群体）；C₁ 仅少数通路</td></tr>
+<tr><td class="l">教育学</td><td class="l">学生发展的完整档案</td><td class="l">评估维度数</td><td class="l">3—5 维；个体轨迹多不可测</td></tr>
+<tr><td class="l">经济学</td><td class="l">从微观行为到宏观总量</td><td class="l">微观基础的检验力度</td><td class="l">微观 C₁；宏观 C₃ 为主</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>对照表，等级 B／乙。"当前档位"为方向性判断，需领域专家校正。</div>
+
+<div class="warning"><span class="bt">警告 2.1　"完备"不是"什么都知道"</span>
+本书的完备性永远相对于<b>一个问题与一个容差</b>。当有人宣称"我们的模型是完备的"，正确的回应不是赞叹，而是三连问：<b>关于什么量的完备？在什么分辨率下？容差是多少？</b>答不出这三问的"完备"，只是修辞。</div>
+
+<h3>2.5　可组合性 A 的三种形式</h3>
+
+<div class="define"><span class="bt">定义 2.4　可组合性的三档</span>
 设 <span class="s">f</span> 是系统的描述映射，<span class="s">∘</span> 是组合运算。<br>
 <b>A₁ 线性可组合</b>：<span class="s">f(x₁ ∘ x₂) = f(x₁) + f(x₂)</span>；组合的收益可线性叠加。<br>
 <b>A₂ 关系可组合</b>：<span class="s">x₁</span> 与 <span class="s">x₂</span> 组合后不产生新的关系类型（无涌现的新约束）。<br>
 <b>A₃ 代数可组合</b>：组合运算在描述空间上封闭，且满足一个明确的代数结构（群、环、范畴等）。<br>
-强度从强到弱：<span class="s">A₁ ⇒ A₂ ⇒ A₃</span> 并非普遍成立；三档刻画的是不同意义上的"拼得回去"。</div>
+三档刻画的是不同意义上的"拼得回去"，并不普遍满足 <span class="s">A₁ ⇒ A₂ ⇒ A₃</span>。</div>
 
-<p>这里要注意一个常见的混淆：<b>一个系统可以代数可组合（<span class="s">A₃</span>）而线性不可组合（<span class="s">¬A₁</span>）。</b>有限图上的谱相加是 <span class="s">A₁</span>；一般范畴里的态射复合是 <span class="s">A₃</span>；而社会干预的组合往往连 <span class="s">A₂</span> 都不满足——两项政策合在一起会产生单独实施时不存在的新约束。第 1 章所说的"能力不能线性相加"，精确地说是 <span class="s">¬A₁</span>。</p>
+<p>常见的混淆是把 <span class="s">A₃</span> 与 <span class="s">A₁</span> 混同。有限图上的谱相加是 <span class="s">A₁</span>；一般范畴里的态射复合是 <span class="s">A₃</span>；而社会干预的组合往往连 <span class="s">A₂</span> 都不满足——两项政策合在一起会产生单独实施时不存在的新约束。第 1 章所说的"能力不能线性相加"，精确地说是 <span class="s">¬A₁</span>。</p>
 
-<h3>2.4　传递性 T 的三种形式</h3>
+<div class="define"><span class="bt">定义 2.5　可组合缺口（可测量）</span>
+给定描述映射 <span class="s">f</span> 与容差 <span class="s">δ</span>，定义可组合性坐标
+<div class="eq"><span class="body">a := 1 − E[ max(0, (f(x₁)+f(x₂) − f(x₁∘x₂)) / (f(x₁)+f(x₂)) ) ] / δ₀</span></div>
+其中期望取遍被考察的组合对，<span class="s">δ₀</span> 为归一化常数。<br>
+<b>读法：</b><span class="s">a = 1</span> 表示组合收益可加；<span class="s">a &lt; 1</span> 表示存在系统性的次可加缺口。<b>a 的取值依赖组合对的选取与容差，因此必须连同它们一起报告。</b></div>
 
-<div class="define"><span class="bt">定义 2.3　传递性的三档</span>
+<h3>2.6　传递性 T 的三种形式与误差界</h3>
+
+<div class="define"><span class="bt">定义 2.6　传递性的三档</span>
 设系统在尺度 <span class="s">λ₁, λ₂, …</span> 上运行。<br>
 <b>T₁ 尺度传递</b>：从 <span class="s">λ₁</span> 的结论可严格推出 <span class="s">λ₂</span> 的结论，误差不随尺度数累积。<br>
 <b>T₂ 时间传递</b>：多个时间尺度由同一个演化方程描述，不引入额外的现象学参数。<br>
-<b>T₃ 因果传递</b>：微观机制的因果链可无损地累积为宏观结果（没有"下游不可观测"的断点）。<br>
-强度：<span class="s">T₁ ⇒ T₂ ⇒ T₃</span> 一般也不普遍成立。</div>
+<b>T₃ 因果传递</b>：微观机制的因果链可无损累积为宏观结果（没有"下游不可观测"的断点）。</div>
 
-<p>传递性是三者中最容易被默认的。重正化群的全部技术前提，就是存在"尺度分离"（快过程与慢过程解耦）。当尺度分离成立时，<span class="s">T₁</span> 可以精确；当它不成立时（强耦合、记忆效应、非马尔可夫），传递性迅速下降。第 1 章的 <span class="s">1/3</span> 缺口，正是一个 <span class="s">T₁</span> 的缺口。</p>
+<div class="define"><span class="bt">定义 2.7　传递性坐标（基于技能分数）</span>
+在尺度 <span class="s">λ₁</span> 上训练/拟合的模型，被提升（upscale）到尺度 <span class="s">λ₂</span> 后，定义
+<div class="eq"><span class="body">t := 1 − Err(提升预测) / Err(零模型)</span></div>
+其中 <span class="s">Err</span> 为该尺度约定的误差（如 RMSE、校准误差、Brier 分数），零模型给出误差上界。<br>
+<b>读法：</b><span class="s">t = 1</span> 表示提升预测完美；<span class="s">t = 0</span> 表示提升后不优于零模型；<span class="s">t &lt; 0</span> 表示提升反而更差。<b>t 依赖尺度对与误差定义，必须连同它们报告。</b></div>
 
-<h3>2.5　三角命题：有限复杂度下的取舍</h3>
+<p>这个定义直接回应了一个常见质疑："什么叫'无误'传递？精度损失 5% 算吗？50% 算吗？"——答案不是给一个普适阈值，而是给一个<b>可测量的技能分数</b>，并把阈值留给领域约定。<span class="s">t</span> 小于多少算失效，取决于该领域能容忍的误差；框架只负责让这个数可见。</p>
 
-<div class="define"><span class="bt">命题 2.1（三角命题，启发式）</span>
-设系统 <span class="s">Σ</span> 具有有限描述复杂度 <span class="s">K</span>（可用的自由度、算力或制度资源）。若 <span class="s">Σ</span> 要同时描述多个尺度上的结构，则不存在一个分配，使 <span class="s">C, A, T</span> 三者的（相应档位）同时取到各自的最强值。至多同时满足两个；第三个的最强档位与 <span class="s">K</span> 成反向关系。<br>
-<b>更精确地：</b>对每一种"选择两个"的组合，第三个顶点的损失都有一个可指认的机制与一笔可估的账。</div>
+<h3>2.7　三角命题的准形式陈述</h3>
 
-<p>这条命题的"启发式"地位必须写清：<b>本书没有证明一条关于一切有限系统的一般定理。</b>通用的证明需要先给出复杂度 <span class="s">K</span> 的统一定义、三档性质与 <span class="s">K</span> 的可比度量，而这在各领域中含义不同。本书提供的是：三条见证（第 5 章、第 12.5 节、第 7 章）分别给出三组取舍的可复算实例，外加一个完全透明的说明性模型（附录 A）。<b>这把三角从直觉推进到"可局部验证的框架"，但没有推进到定理。</b></p>
+<div class="define"><span class="bt">命题 2.1（三角命题，准形式）</span>
+给定系统 <span class="s">Σ = (E, R, ℒ, K)</span>，定义其完备—可组合—传递坐标为
+<div class="eq"><span class="body">(c, a, t) ∈ [0,1]³</span></div>
+其中 <span class="s">c</span> 为达到 <span class="s">C_i</span> 档的子系统的加权比例，<span class="s">a</span> 由定义 2.5、<span class="s">t</span> 由定义 2.7 给出。记 <span class="s">R(K) ⊆ [0,1]³</span> 为在预算 <span class="s">K</span> 下可达坐标的闭包。则<b>猜测</b>
+<div class="eq"><span class="body">(1, 1, 1) ∉ R(K)　对所有有限 K 成立</span></div>
+且 <span class="s">R(K)</span> 随 <span class="s">K</span> 单调扩张。<br>
+<b>状态：</b>这是全书的组织命题，等级 C／丙。<b>本书没有证明它的一般形式</b>；它由三条见证（第 5、7、12 章）、一条条件命题（命题 2.2）与一个可复算模型（附录 A）支持。</div>
 
-<div class="warning"><span class="bt">警告 2.2　不要把三角当成"三选二的万能定律"</span>
-三角是一个诊断起点，不是一张可以套在任何系统上的判决书。在具体系统中，三个顶点可能各有不同的档位、不同的测量方式，甚至某个顶点根本不适用。<b>正确的用法是：先在系统里定义三个顶点的读数，再看取舍是否真的发生。</b>如果没发生，那就是三角的边界，应该记录下来。</div>
+<div class="warning"><span class="bt">警告 2.2　"准形式"不等于"已证明"</span>
+定义 2.5 与 2.7 把三个坐标变成了可测量的量，这比第 1 版的定性表述前进了一步。<b>但它把"普适不可能"的证明问题，转化为"每个领域的 R(K) 边界在哪里"的经验问题。</b>这正是本书想要的诚实位置：命题 2.1 可被检验，但不能被当作定理引用。</div>
 
-<h3>2.6　三个顶点、三条边与一个内部</h3>
+<h3>2.8　成本函数与记账不等式</h3>
 
-<p>三角有丰富的内部结构，值得逐一说明。</p>
+<p>为了让三角不只是坐标，本节给出一个<b>在明确假设下可证</b>的记账不等式。它不是普适定理；它的价值在于说明"在什么条件下，取舍是被逼出来的"。</p>
+
+<div class="define"><span class="bt">假设 (A1)—(A3)</span>
+<b>(A1) 同源预算：</b>提升 <span class="s">c</span>、<span class="s">a</span>、<span class="s">t</span> 都从同一个标量预算 <span class="s">K</span> 支出，单位成本分别为 <span class="s">κ_c, κ_a, κ_t &gt; 0</span>。<br>
+<b>(A2) 交互惩罚：</b>同时维持完备性 <span class="s">c</span> 与可组合性 <span class="s">a</span>，比分别维持它们多付出成本，因为两者对同一批子系统提出相互制约的刻画要求；超出的部分记为交互惩罚 <span class="s">ψ(c,a,t) ≥ 0</span>；<br>
+<b>(A3) 链式传递成本：</b>维持传递性 <span class="s">t</span> 要求支付沿尺度链的一致性代价，其规模不低于 <span class="s">m−1</span>（尺度数减一）。</div>
+
+<div class="define"><span class="bt">命题 2.2（记账不等式，条件性）［B／乙］</span>
+在 (A1)—(A3) 下，设三项支出满足
+<div class="eq"><span class="body">cost(c,a,t) = κ_c·c + κ_a·a + κ_t·t + λ·ψ(c,a,t) ≤ K</span></div>
+其中 <span class="s">ψ ≥ 0</span> 是<b>交互惩罚</b>（同时维持完备与可组合时所需的额外一致性成本），<span class="s">λ ≥ 0</span>。则
+<div class="eq"><span class="body">κ_c·c + κ_a·a + κ_t·t ≤ K − λ·ψ</span></div>
+规一化 <span class="s">κ_c=κ_a=κ_t=1</span> 且 <span class="s">K=2</span>（预算恰好够满两个顶点）时：<br>
+<b>（i）</b>若 <span class="s">ψ ≡ 0</span>（无交互），三者相互独立，可同时接近各自上界——<b>此时三角不成立</b>；<br>
+<b>（ii）</b>若 <span class="s">ψ &gt; 0</span>，则坐标和 <span class="s">≤ 2 − λψ &lt; 2</span>。<br>
+<b>结论：三角张力来自交互惩罚 <span class="s">ψ</span>，而让出顶点的代价就是 <span class="s">ψ</span> 中对应的那一项。</b>证明与推广见附录 A.7。［条件命题，B／乙］</div>
+
+<div class="warning"><span class="bt">警告 2.3　不要把记账不等式读成"定理"</span>
+命题 2.2 的价值是<b>把"权衡"从形容词变成不等式</b>，并明确指出<b>交互惩罚 <span class="s">ψ</span></b> 是张力的来源。它也解释了为什么第 1 版那条"坐标和恒为 2"的主张是错的：当 <span class="s">ψ</span> 与归一体化随 <span class="s">K</span> 变化时，上界严格大于或小于 2，并非普适常数——这正是附录 J 记录的那次证伪。<b>另一个必须说清楚的推论：若某系统的 <span class="s">ψ ≡ 0</span>，三角对它不适用。</b></div>
+
+<h3>2.9　三个顶点、三条边与一个内部</h3>
 
 <p><b>三个顶点。</b>选择 <span class="s">C+A</span> 的系统追求"局部完备 + 精确组合"，代价是跨尺度断层；选择 <span class="s">C+T</span> 的系统追求"局部完备 + 尺度贯通"，代价是能力不能相加；选择 <span class="s">A+T</span> 的系统追求"可组合 + 可传递"，代价是单点精确预测失效。第 1 章的三本书恰好各占一个顶点。</p>
 
-<p><b>三条边。</b>每两个顶点之间的边，代表"保住两个顶点、只在第三个上损失一部分"的连续过渡。现实系统很少站在顶点上，而是坐在边上某处：一个气候模型可以同时有较强的 <span class="s">C</span> 与 <span class="s">T</span>，只在 <span class="s">A</span> 上损失中等程度。诊断的精度，取决于能否沿这条边给出位置。</p>
+<p><b>三条边。</b>每两个顶点之间的边，代表"保住两个顶点、只在第三个上损失一部分"的连续过渡。现实系统很少站在顶点上，而是坐在边上某处。<b>诊断的精度，取决于能否沿这条边给出坐标 <span class="s">(c, a, t)</span> 的读数。</b></p>
 
-<p><b>一个内部。</b>理论上，平面内部的点代表"三个都不满格"的折中。但需要强调的是：<b>本书不假设可达集是一个凸三角形。</b>说明性模型（附录 A）显示，可达前沿可能是一条弯曲的曲面；"内部"是否可达、以什么代价可达，依赖具体系统。用一个平面三角形代替真实的可行域，是使用本框架时最常见的过度简化。</p>
+<p><b>一个内部。</b>平面内部的点代表"三个都不满格"的折中。需要强调：<b>本书不假设可达集 <span class="s">R(K)</span> 是一个凸三角形。</b>说明性模型（附录 A）显示，可达前沿可能是一条弯曲的曲面；<span class="s">R(K)</span> 的几何形状是开放问题 O2。</p>
 
 <img class="fig" src="assets/svg/fig01-triangle.svg" alt="不可能三角：三个顶点、三条边与三个被让出的缺口">
 
 <div class="cap"><b>图 2.1　三角的几何</b>。三个顶点分别是三种"选两个"的极端取舍；三条边是现实系统的常见位置；每个顶点对面是被让出的那个性质的"缺口"。<b>注意：这是组织坐标图，不是可行域的精确形状。</b></div>
 
-<h3>2.7　本章小结</h3>
+<h3>2.10　本章小结</h3>
 
-<p>完备性、可组合性、传递性各有三档定义；三角命题说：有限复杂度下三者不能同时满格，至多两个；每一种"选两个"都对应一个可指认的缺口机制。这条命题是框架而非定理，它的价值在于能被逐项检查、也能被逐项反驳。下一章给出检查它的纪律：证据分级、断言标记与可证伪登记。</p>
+<p>本章把系统写成四元组 <span class="s">Σ = (E, R, ℒ, K)</span>，把复杂度写成三分量 <span class="s">(K_desc, K_comp, K_res)</span>，把三个性质各写成三档，并给出可测量的坐标 <span class="s">(c, a, t)</span>。三角命题 2.1 是仍然开放的普适猜想；命题 2.2 是在明确假设下可证的记账不等式，它把张力的来源指认为"完备与可组合的预算重叠"。下一章给出检查这一切的纪律：证据分级、断言标记与可证伪登记。</p>
 
 <div class="note"><b>本章清单</b>
 <ul>
-<li><b>⊕ 有论证（B）：</b>定义 2.1—2.3（三性质各三档）；命题 2.1（三角命题）；三角的顶点—边—内部结构。</li>
-<li><b>⊗ 可引用（A）：</b>本章为定义与框架，无 A 级结果。</li>
-<li><b>○ 启发（C）：</b>三角的可行域可能不是平面三角形。</li>
-<li><b>？ 未解决：</b>能否给出复杂度 <span class="s">K</span> 与三个顶点损失的统一定量关系——留待第 21、22 章。</li>
+<li><b>⊕ 有论证（B）：</b>定义 2.1—2.7（系统、K、三档、坐标）；命题 2.2（记账不等式，条件性）。</li>
+<li><b>○ 启发（C）：</b>命题 2.1（三角命题）；<span class="s">R(K)</span> 的几何。</li>
+<li><b>⊗ 可引用（A）：</b>本章为形式化框架，无 A 级结果；子模性等 A 级结果在第 5 章。</li>
+<li><b>？ 未解决：</b>O1（K 的统一度量）、O2（R(K) 的形状）、O3（三档换算）。</li>
 <li><b>↔ 连接：</b>第 1 章给症状，本章给坐标；第 3 章给纪律；第 4 章把三角放进已有不可能定理的家族。</li>
 </ul></div>
 
 <h3>本章参考文献</h3>
 <div class="refs">
 <p>Simon, H. A. (1969). <i>The Sciences of the Artificial</i>. MIT Press.</p>
+<p>Simon, H. A. (1955). A Behavioral Model of Rational Choice. <i>Quarterly Journal of Economics</i>, 69(1), 99–118.</p>
+<p>Kolmogorov, A. N. (1965). Three Approaches to the Quantitative Definition of Information. <i>Problems of Information Transmission</i>, 1(1), 1–7.</p>
+<p>Rissanen, J. (1978). Modeling by Shortest Data Description. <i>Automatica</i>, 14(5), 465–471.</p>
 <p>Wilson, K. G. (1971). Renormalization Group and Critical Phenomena. <i>Physical Review B</i>, 4(9), 3174–3183.</p>
 <p>Allen, T. F. H., &amp; Starr, T. B. (1982). <i>Hierarchy: Perspectives for Ecological Complexity</i>. University of Chicago Press.</p>
-<p>Anderson, P. W. (1972). More Is Different. <i>Science</i>, 177(4047), 393–396.</p>
+<p>Anderson, P. W. (1972). More Is Different. <i>Science</i>, 177(4047), 393–410.</p>
+<p>Cover, T. M., &amp; Thomas, J. A. (2006). <i>Elements of Information Theory</i> (2nd ed.). Wiley.</p>
 </div>

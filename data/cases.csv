@@ -1,0 +1,30 @@
+domain,system,quantity,value,grade,source,chapter
+life,memory,working_memory_capacity,4±1 items,B,Cowan 2001,5
+life,memory,episodic_retention_no_rehearsal,"~60% at 20min; ~30% at 1day",B,Ebbinghaus 1885,5
+life,memory,long_context_position_bias,U-shaped minimum mid-context,B,Liu et al 2024,5
+life,memory,catastrophic_forgetting,early-task performance can collapse to near chance,B,McCloskey & Cohen 1989,5
+life,medicine,stroke_thrombolysis_window,~4.5 hours,A-B,clinical guidelines,6
+life,medicine,door_to_balloon,<=90 minutes target,A-B,cardiovascular guidelines,6
+life,medicine,sepsis_antibiotic_window,<=1 hour,A-B,resuscitation guidelines,6
+life,medicine,drug_development_total_success_rate,~0.3 percent,B,DiMasi et al 2016,6
+life,medicine,diabetes_complication_window,10-20 years,B,epidemiology,6
+physics,climate,remaining_carbon_budget_1p5C_50pct,~500 GtCO2 since 2020,B,IPCC AR6,7
+physics,climate,global_annual_emissions,~40 GtCO2 per year,B,Global Carbon Project,7
+physics,climate,required_2030_reduction_1p5C,~43 percent vs 2019,B,IPCC AR6,7
+physics,climate,infrastructure_lifetime,power plants 30-50 years,B,industry data,7
+physics,climate,policy_coordination_tau,"~0.5 / 3.5 / 30 (three scenarios)",B-C,The Time Out of Joint,7
+society,education,small_class_effect_k3,~0.2 effect size,B,STAR project,8
+society,education,one_to_one_tutoring_effect,~2 sigma,C-B,Bloom 1984,8
+society,education,class_size_oecd_mean,~21 primary students,B,OECD,8
+society,education,fast_field_knowledge_half_life,3-5 years,C,public reviews,8
+society,democracy,election_cycle,4-5 years,A,national constitutions,9
+society,macro,monetary_transmission_lag,6-18 months,B,central bank research,9
+society,macro,fiscal_implementation_lag,3-12 months,B,fiscal research,9
+society,macro,basic_research_return_cycle,10-30 years,B,STI policy research,9
+artifact,organization,startup_failure_rate_10y,~90 percent,C-B,industry statistics,10
+artifact,organization,ma_failure_rate,~70-90 percent,C-B,M&A reviews,10
+artifact,organization,remote_hybrid_share,~20-30 percent,B,labour surveys,10
+model,model_T,max_C_solo,0.58,A(model internal),analysis/triangle_frontier.py,AppendixA
+model,model_T,max_A_solo,1.00,A(model internal),analysis/triangle_frontier.py,AppendixA
+model,model_T,max_T_solo,1.00,A(model internal),analysis/triangle_frontier.py,AppendixA
+model,model_T,coordinate_sum_bound,2.16,A(model internal),analysis/triangle_frontier.py,AppendixA

@@ -35,7 +35,28 @@
 <div class="warning"><span class="bt">警告 5.1　"扩大容量"不能解决子模性</span>
 一个常见的反应是："那把容量做大不就行了？"子模性说的是<b>边际收益递减</b>，不是绝对不足。更大的通道减少的是绝对损失，但"不能线性相加"这个结构性质不变。除非资源无限——而无限资源恰恰意味着复杂度不受约束，三角命题的前提就消失了。</div>
 
-<h3>5.3　从毫秒到终身的容量级联</h3>
+<h3>5.3　子模性何时真的导致可组合性的丧失</h3>
+
+<p>从子模性到"可组合性丧失"之间，有一个容易被跳过的逻辑步骤。子模性说的是<b>信息量的非线性</b>；而"多项能力不能相加"说的是<b>决策/描述规则的不可加</b>。前者不自动推出后者。本节把这一步补上：给出三个条件，当它们同时成立时，子模性才会真正转化为可组合性的丧失。</p>
+
+<div class="define"><span class="bt">命题 5.2（子模性 → 可组合性丧失的条件）</span>
+若系统同时满足：<br>
+<b>(S1) 共享编码：</b>两项能力使用同一批编码资源（同一通道、同一组突触、同一上下文窗口）；<br>
+<b>(S2) 最优性：</b>系统以最大化总收益分配资源（而非固定分配）；<br>
+<b>(S3) 单调能力映射：</b>能力由编码信息量单调决定（信息越多，能力越强）。<br>
+则存在一项能力 <span class="s">X₂</span>，使其在 <span class="s">X₁</span> 已被编码后的边际能力增益，严格小于其单独编码时的增益。<b>此时可组合坐标 <span class="s">a &lt; 1</span>。</b>［论证，B／乙；子模性本身为 A／甲］</div>
+
+<p>三个条件缺一不可，这正好解释了为什么"能力不能相加"不是普遍现象，而是<b>共享资源系统</b>的现象：</p>
+
+<ul>
+<li><b>反例一（不满足 S1）：</b>两项能力若使用<b>完全独立</b>的资源（独立的通道、独立的硬件），则它们可以近乎线性叠加。这解释了为什么外置记忆（笔记、检索增强）能绕过子模性——它把资源从共享池里移了出去。</li>
+<li><b>反例二（不满足 S2）：</b>若系统采用<b>固定配额</b>（每项能力各占一半，不论收益），则总收益由配额而非最优化决定，子模性不再表现为"能力不能相加"，而表现为"即使在收益很高的方向上也无法加码"。</li>
+<li><b>反例三（不满足 S3）：</b>若能力由某个<b>瓶颈步骤</b>（而非信息量）决定，则增加信息量不增加能力，子模性对能力无可观测影响。</li>
+</ul>
+
+<p>这个练习的意义在于：<b>它把"子模性"从一个笼统的"能力不能相加"，收窄为一个有明确适用条件的因果链。</b>当有人声称"我们的多项能力不能相加"，正确的追问是：是否共享编码？是否在最优分配？能力是否随信息单调？<b>若三者不都成立，就不能把子模性当作解释。</b></p>
+
+<h3>5.4　从毫秒到终身的容量级联</h3>
 
 <p>记忆不是一个系统，而是一族运行在不同时间尺度上的系统。第一本书把它们排成一条"容量级联"：</p>
 
@@ -52,7 +73,7 @@
 
 <p>这张表的意义在于：<b>它让"传递性 T"显得非常自然</b>——从突触动力学逐级推到终身记忆，是一条连续的因果链。这也正是为什么第一本书能保住 T。<b>代价是</b>：不同尺度上的记忆系统不能简单相加，因为它们在信息论上相互竞争同一批编码资源。这就是被让出的 A。</p>
 
-<h3>5.4　先遗后忘：压缩更深的反而保存更久</h3>
+<h3>5.5　先遗后忘：压缩更深的反而保存更久</h3>
 
 <p>一个令人费解的现象：老年人常常对几十年前的事记忆清晰，却记不住刚才放下的钥匙。通常的解释是"近期记忆受损、远期记忆完好"。但用容量级联看，这个现象支持另一个解读。</p>
 
@@ -63,7 +84,7 @@
 
 <p>这个观察有一个现实推论：<b>记忆训练的收益不是均匀的。</b>把时间花在"深压缩"（理解、抽象、与已有结构连接）上，得到的记忆更抗容量收缩；把时间花在"浅编码"（机械重复）上，得到的记忆更容易被干扰吃掉。子模性解释了为什么后者总是"背了就忘"。</p>
 
-<h3>5.5　创伤与治疗：两条相反的路径为何都有效</h3>
+<h3>5.6　创伤与治疗：两条相反的路径为何都有效</h3>
 
 <p>临床上一个反复出现的困惑是：暴露疗法（反复面对创伤线索）与某些以"资源植入/再巩固"为名的疗法，机制看起来相反，却都有效。</p>
 
@@ -76,7 +97,7 @@
 
 <p>关键不是"哪种更对"，而是：<b>两种路径都在同一个约束下工作，只是选择了不同的时间尺度。</b>把它们对立起来，会让人误以为必须二选一；而容量级联的观点说，它们可能是同一约束在不同尺度上的两种最优解。</p>
 
-<h3>5.6　大模型的上下文漂移：同一约束的机器投影</h3>
+<h3>5.7　大模型的上下文漂移：同一约束的机器投影</h3>
 
 <p>第一本书的另一个贡献，是把人类记忆与 AI 的上下文窗口放在一起看。大语言模型的键值缓存、有限上下文窗口、以及"忘记早期信息"的位置偏差，构成一个机器版的容量级联。</p>
 
@@ -88,7 +109,40 @@
 <li>检索增强（RAG）之所以有效，本质上是绕开子模性的一次"外包"：把部分编码任务交给外部存储，减少内部通道的竞争。</li>
 </ul>
 
-<h3>5.7　本站诊断：选择 C+T，让出 A</h3>
+<h3>5.8　定量诊断：关键数字</h3>
+
+<p>本节把本章的诊断落到可核查的数字上。<b>所有数字都带等级</b>；凡口径不一者只取量级。更完整的案例数据见附录 K 与 <code>data/cases.csv</code>。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 5.2　记忆系统诊断的关键数字</b></caption>
+<tr><th class="l">量</th><th class="l">数值</th><th class="l">等级</th><th class="l">来源</th></tr>
+<tr><td class="l">工作记忆并列容量</td><td class="l">4±1 项</td><td class="l">B</td><td class="l">Cowan 2001；早期 "7±2" 为 Miller 1956</td></tr>
+<tr><td class="l">情景记忆保持（无复述）</td><td class="l">20 分钟后约 60%，1 天后约 30%（遗忘曲线）</td><td class="l">B</td><td class="l">Ebbinghaus 1885；现代复现口径不一</td></tr>
+<tr><td class="l">间隔效应</td><td class="l">分散复习保持率显著高于集中复习（效应量大）</td><td class="l">B</td><td class="l">Cepeda 等 2006 综述</td></tr>
+<tr><td class="l">前摄/倒摄干扰</td><td class="l">相似材料干扰显著高于不相似材料</td><td class="l">B</td><td class="l">经典干扰范式；量化幅度因任务而异</td></tr>
+<tr><td class="l">长上下文位置偏差</td><td class="l">关键词位于上下文中部时检索精度最低（近似 U 形）</td><td class="l">B</td><td class="l">Liu 等 2024（"Lost in the Middle"）</td></tr>
+<tr><td class="l">灾难性遗忘</td><td class="l">顺序微调后早期任务性能可崩塌至近随机水平</td><td class="l">B</td><td class="l">McCloskey &amp; Cohen 1989；持续学习综述</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>量级表。这些数字支持本章诊断（选 C+T、让出 A），但不足以"证明"子模性因果链——那需要 (S1)—(S3) 的逐一检验。</div>
+
+<p><b>如何读这张表。</b>每一项都是可组合性账目的一个分录：容量有限（4±1）使能力不能相加；相似材料干扰更大（S1 共享编码）使子模性折扣随相似度上升；位置偏差（近似 U 形）显示"相对分辨率"在共享上下文中被稀释；灾难性遗忘是 <span class="s">a</span> 在顺序任务上的极端表现。<b>但表也暴露了诊断的边界：这些是总量级，不是特定模型的定标数据（见附录 F 的缺口）。</b></p>
+
+<h3>5.9　历史脉络：从遗忘曲线到互补学习系统</h3>
+
+<p>本章的诊断不是静态分类，而是可以放进一条历史线索——记忆研究的范式也在做 C-A-T 选择。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 5.3　记忆研究的 C-A-T 演化</b></caption>
+<tr><th class="l">时期</th><th class="l">代表工作</th><th class="l">选择</th><th class="l">让出</th></tr>
+<tr><td class="l">1885—1930s</td><td class="l">Ebbinghaus 遗忘曲线；Bartlett 重构记忆</td><td class="l">C+T（实验室机制 + 时间过程）</td><td class="l">A：难以跨任务组合</td></tr>
+<tr><td class="l">1950s—1970s</td><td class="l">Atkinson–Shiffrin 多存仪模型；Miller</td><td class="l">A+T（模块化存仪 + 转移）</td><td class="l">C：模块边界不清晰</td></tr>
+<tr><td class="l">1970s—1990s</td><td class="l">Tulving 情景/语义；工作记忆模型</td><td class="l">C+A（子系统 + 组合）</td><td class="l">T：跨系统因果链弱</td></tr>
+<tr><td class="l">1995—</td><td class="l">互补学习系统（海马—新皮层）</td><td class="l">C+T（机制 + 多尺度）</td><td class="l">A：两系统不能简单相加</td></tr>
+</table>
+
+<p>这条线索的启示与第 11 章的三阶段模式一致：<b>记忆研究的重心在不同时期分别落在三个顶点上，而每一次重心转移都伴随着旧顶点的让出。</b>当下的"互补学习系统"选择 C+T，因此必须接受"两系统不能简单相加"这一可组合性账单——这正是本章的结论。</p>
+
+<h3>5.10　本站诊断：选择 C+T，让出 A</h3>
 
 <div class="define"><span class="bt">诊断 5.1　记忆系统（C+T，¬A）</span>
 <b>保住：</b>每个尺度上的信息论描述（C）；毫秒到终身的因果链（T）。<br>
@@ -99,7 +153,7 @@
 
 <p>必须补上的是这条限制的<b>反向力量</b>：让出 A 不是纯粹的损失。正因为不能线性叠加，系统才被迫学会压缩、抽象与优先级；正因为容量有限，深压缩的记忆才显得珍贵。这不是对限制的美化，而是承认交易的另一面：<b>这条限制使"选择性"成为可能。</b></p>
 
-<h3>5.8　本章小结</h3>
+<h3>5.11　本章小结</h3>
 
 <p>记忆系统保住了完备性与传递性，让出了可组合性。子模性是这张账的精确形式：能力不能线性相加。先遗后忘、治疗路径的悖论、大模型的上下文漂移，都是同一约束的不同投影。下一章进入同一战场的另一面：医疗决策的多尺度冲突。</p>
 
@@ -120,4 +174,10 @@
 <p>McClelland, J. L., McNaughton, B. L., &amp; O'Reilly, R. C. (1995). Why There Are Complementary Learning Systems in the Hippocampus and Neocortex. <i>Psychological Review</i>, 102(3), 419–457.</p>
 <p>Tonegawa, S., Nakazawa, K., &amp; Wilson, M. A. (2003). Genetic Neuroscience of Mammalian Learning and Memory. <i>Philosophical Transactions of the Royal Society B</i>, 358(1432), 787–795.</p>
 <p>Liu, N. F., et al. (2024). Lost in the Middle: How Language Models Use Long Contexts. <i>TACL</i>, 12, 157–173.</p>
+<p>Ebbinghaus, H. (1885). <i>Über das Gedächtnis</i>. Duncker &amp; Humblot.</p>
+<p>Bartlett, F. C. (1932). <i>Remembering</i>. Cambridge University Press.</p>
+<p>Atkinson, R. C., &amp; Shiffrin, R. M. (1968). Human Memory: A Proposed System and Its Control Processes. In <i>Psychology of Learning and Motivation</i>, 2, 89–195.</p>
+<p>Baddeley, A. D., &amp; Hitch, G. (1974). Working Memory. In <i>Psychology of Learning and Motivation</i>, 8, 47–89.</p>
+<p>Cepeda, N. J., Pashler, H., Vul, E., Wixted, J. T., &amp; Rohrer, D. (2006). Distributed Practice in Verbal Recall Tasks. <i>Psychological Bulletin</i>, 132(3), 354–380.</p>
+<p>McCloskey, M., &amp; Cohen, N. J. (1989). Catastrophic Interference in Connectionist Networks. <i>Psychology of Learning and Motivation</i>, 24, 109–165.</p>
 </div>
