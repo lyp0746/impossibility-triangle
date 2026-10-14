@@ -51,7 +51,7 @@
 <div class="define"><span class="bt">X.4.1　软件领域（可在 1 年内执行，A 级数据）</span>
 <b>数据源：</b>Linux 内核及 Apache/Node.js 等大型开源仓库（贡献历史、依赖图、缺陷记录）。<br>
 <b>验证目标：</b>（a）A 型诊断——模块化下的"局部繁荣"是否表现为贡献分布的长尾与局部集中？（b）C 型缺口——跨子系统大改动（涉及多个 maintainer）的处理周期是否显著长于局部改动？<br>
-<b>可行性：</b><b>A 级</b>（数据公开、方法清晰、可复现）。<b>建议优先执行。</b></div>
+<b>可行性：</b><b>A 级</b>（数据公开、方法清晰、可复现）。<b>建议优先执行。</b><br><b>已执行（第一次，附录 W.6）：</b>发现内核 GitHub PR 被禁用（改用 commit 历史）；探针支持"局部繁荣"但<b>不支持"跨子系统更慢"</b>（Spearman −0.12）。<b>下一步见 O35。</b></div>
 
 <div class="define"><span class="bt">X.4.2　医疗领域（可在 2—3 年内执行，B 级数据）</span>
 <b>数据源：</b>电子病历 + 临床试验登记 + 药物获批数据。<br>
@@ -65,6 +65,15 @@
 
 <div class="warning"><span class="bt">为什么要给出这个排序</span>
 它把附录 X 从"说方向"变成"<b>指出最容易的第一步</b>"。<b>软件领域是唯一数据全公开、方法最清晰、周期最短的验证场</b>——若三角在软件上被证伪，其他领域的验证就不必做了。<b>这与第 21.8 节 F7（软件涌现缺陷）相互印证：F7 正是这条路线上的第一个可检验预测。</b></div>
+
+<table class="nat">
+<caption class="cap"><b>表 X.4d　三个验证路线的优先级权衡</b></caption>
+<tr><th class="l">路线</th><th class="l">硬科学优先</th><th class="l">应用优先</th><th class="l">历史验证优先</th></tr>
+<tr><td class="l">软件</td><td class="l">★★★</td><td class="l">★★</td><td class="l">★</td></tr>
+<tr><td class="l">医疗</td><td class="l">★★</td><td class="l">★★★</td><td class="l">★★</td></tr>
+<tr><td class="l">教育</td><td class="l">★</td><td class="l">★★</td><td class="l">★★★</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>优先级矩阵，等级 C／丙。<b>读法：</b>不同资源方应选不同起点——<b>技术公司从软件开始</b>（数据自有、成本低）；<b>医疗机构从医疗开始</b>（验证直接相关）；<b>公共政策研究从教育开始</b>（历史数据丰富）；<b>多学科团队建议按 软件 → 医疗 → 教育 依次增加复杂度。</b>这与 X.4b 的"软件优先"一致，但补充了"谁来验证、为何选此起点"。</div>
 
 <h3>X.5　一个最小可行版本（MVP）</h3>
 

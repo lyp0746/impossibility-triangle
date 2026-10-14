@@ -54,6 +54,9 @@
 # 1) 复现说明性模型的精确枚举（n=12, K=15）
 python analysis/triangle_frontier.py
 
+# 1c) Linux 内核实证探针（附录 W.6，需 GitHub token）
+python analysis/linux_kernel_probe.py --n 200
+
 # 1b) 复现前沿随规模变化（n 至 200，图 2.2）
 python analysis/frontier_scaling.py
 

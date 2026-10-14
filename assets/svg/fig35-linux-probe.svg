@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 540"><rect width="1000" height="540" fill="#ffffff"/>
+<style>text{font-family:"Microsoft YaHei","SimHei",Arial,sans-serif;}</style>
+<text x="40" y="46" font-size="24" font-weight="700">图 W.1　Linux 内核实证探针：跨子系统改动是否更慢落地</text>
+<text x="40" y="76" font-size="15" fill="#666">n=200 个非合并提交；Spearman(dirs,latency) 全体=-0.1171，仅审阅子集=-0.1119</text>
+<rect x="100" y="120" width="140" height="320" rx="6" fill="#3a6ea5" opacity="0.5"/>
+<text x="170" y="110" text-anchor="middle" font-size="15" fill="#3a6ea5">123.4 h</text>
+<text x="170" y="470" text-anchor="middle" font-size="15">1 个目录</text>
+<text x="170" y="492" text-anchor="middle" font-size="13" fill="#888">n=191</text>
+<rect x="310" y="169" width="140" height="271" rx="6" fill="#009E73" opacity="0.5"/>
+<text x="380" y="159" text-anchor="middle" font-size="15" fill="#009E73">104.52 h</text>
+<text x="380" y="470" text-anchor="middle" font-size="15">2 个目录</text>
+<text x="380" y="492" text-anchor="middle" font-size="13" fill="#888">n=7</text>
+<rect x="520" y="234" width="140" height="206" rx="6" fill="#b8862f" opacity="0.5"/>
+<text x="590" y="224" text-anchor="middle" font-size="15" fill="#b8862f">79.53 h</text>
+<text x="590" y="470" text-anchor="middle" font-size="15">3-4 个目录</text>
+<text x="590" y="492" text-anchor="middle" font-size="13" fill="#888">n=2</text>
+<rect x="730" y="440" width="140" height="0" rx="6" fill="#c94f4f" opacity="0.5"/>
+<text x="800" y="430" text-anchor="middle" font-size="15" fill="#c94f4f">— h</text>
+<text x="800" y="470" text-anchor="middle" font-size="15">5+ 个目录</text>
+<text x="800" y="492" text-anchor="middle" font-size="13" fill="#888">n=0</text>
+<text x="40" y="525" font-size="13" fill="#888">数据：GitHub API 实时抓取（torvalds/linux；其 GitHub PR 被禁用，状态码 404）。局限：PR/邮件列表偏差、files 截断、自提交 gap≈0。</text></svg>
