@@ -1,0 +1,57 @@
+<h2 class="chapter">附录 X　框架的计算实现路线图</h2>
+
+<p class="lead">本书的工具（附录 G/H/K）目前都是<b>表格化</b>的——靠人手工填写。本附录给出一条把它们变成<b>可计算、可复现</b>的路线图，作为对读者与研究者的邀请。全部标为纲领（C／丙）。</p>
+
+<h3>X.1　当前状态：什么已经可算，什么还不能</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 X.1　可计算性现状</b></caption>
+<tr><th class="l">组件</th><th class="l">状态</th><th class="l">等级</th></tr>
+<tr><td class="l">信息子模性</td><td class="l">有数学证明与数值验证</td><td class="l">A</td></tr>
+<tr><td class="l">离散分离曲率恒等式</td><td class="l">可精确计算（跨书）</td><td class="l">A</td></tr>
+<tr><td class="l">说明性模型 T 的可达前沿</td><td class="l">可精确枚举 / 大规模估计</td><td class="l">A（模型内）</td></tr>
+<tr><td class="l">三阶段 / 双极摆动模式</td><td class="l">定性模式，未参数化</td><td class="l">C</td></tr>
+<tr><td class="l">复杂度 K 的量化</td><td class="l">启发式（三标注）</td><td class="l">C</td></tr>
+<tr><td class="l">坐标 (c, a, t) 的领域测量</td><td class="l">仅个别系统估算（附录 K.7）</td><td class="l">C</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>现状表，等级 C／丙。<b>要点：</b>硬核（子模性、恒等式、模型 T）已经可算；但从"系统描述"到"坐标读数"的映射仍靠人手。</div>
+
+<h3>X.2　目标的工具：三角诊断套件</h3>
+
+<div class="define"><span class="bt">目标产物（开放实现）</span>
+<b>输入：</b>一个系统的描述（文本 + 可用的时间序列 + 代理人结构）。<br>
+<b>输出：</b><br>
+&nbsp;&nbsp;· 多尺度的 <span class="s">(c, a, t)</span> 读数（附置信区间与等级）；<br>
+&nbsp;&nbsp;· 被让出顶点的定位与依据；<br>
+&nbsp;&nbsp;· 失效阈值/形态的估计；<br>
+&nbsp;&nbsp;· 一张可导出的权衡矩阵与降级预案（对齐附录 G/H）。<br>
+<b>关键要求：</b>每个输出都带证据等级与证伪条件——工具不得比理论更自信。</div>
+
+<h3>X.3　数据需求</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 X.2　计算实现的数据需求</b></caption>
+<tr><th class="l">数据</th><th class="l">用途</th><th class="l">可得性</th></tr>
+<tr><td class="l">各领域时间序列</td><td class="l">估计 τ、失效形态、模式（三阶段/摆动）</td><td class="l">部分公开（见 data/cases_timeseries.csv）</td></tr>
+<tr><td class="l">代理人结构数据</td><td class="l">多代理诊断（U.2、第 15.10 节）</td><td class="l">稀缺</td></tr>
+<tr><td class="l">失败案例库</td><td class="l">验证 U.4 的失败分类</td><td class="l">可从公开事故报告构建</td></tr>
+<tr><td class="l">坐标编码量表</td><td class="l">跨领域统一 (c,a,t) 读数</td><td class="l">尚不存在（O2/O10）</td></tr>
+</table>
+
+<h3>X.4　学习挑战：跨领域外推</h3>
+
+<div class="warning"><span class="bt">最大的技术难点</span>
+从"系统描述"到"坐标读数"的映射，需要把<b>一个领域</b>学到的模式外推到<b>另一个领域</b>。但按第 2 章，不同领域的 <span class="s">(K_desc, K_comp, K_res)</span> 受限分量不同，<b>直接外推风险很高</b>（第 12.5 节的 <span class="s">1/3</span> 缺口就是"离散到连续外推失败"的实例）。<br>
+<b>因此工具的合理设计是"分层"的：</b>硬核（可算）→ 模式识别（半自动）→ 领域校准（人工）。<b>不做"一键诊断"的许诺</b>——那会违反第 23.6 节的自反诚实（框架本身让出 T）。</div>
+
+<h3>X.5　一个最小可行版本（MVP）</h3>
+
+<ol>
+<li><b>第一步：</b>把附录 G 的权衡矩阵做成可填写的结构化文件（YAML/CSV），带等级字段。</li>
+<li><b>第二步：</b>接入附录 K 的案例库与 <code>data/*.csv</code>，自动生成坐标读数与比值。</li>
+<li><b>第三步：</b>对每个读数检查是否满足适用范围（第 23.5 节）并标注。</li>
+<li><b>第四步：</b>输出降级预案（对齐第 18 章）与登记条目（附录 E 格式）。</li>
+<li><b>第五步：</b>保留人工校准环节——<b>工具只做"提醒与核算"，不做"判断"。</b></li>
+</ol>
+
+<p><b>邀请。</b>任何读者都可基于上述五步实现并开源；<b>本附录不提供现成代码，只提供接口约定</b>，以免把一个 C 级的框架过早固化成"看起来权威"的软件。这与本书"框架先于工具"的次序一致。</p>

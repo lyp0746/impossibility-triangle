@@ -15,6 +15,16 @@
 <img class="fig" src="assets/svg/fig07-impossibility-family.svg" alt="CAP、Arrow、Mundell–Fleming、无免费午餐、停机问题共享同一形状：有限资源在若干理想性质之间的取舍。">
 <div class="cap"><b>图 4.1　不可能定理的家族</b>。CAP、Arrow、Mundell–Fleming、无免费午餐、停机问题共享同一形状：有限资源在若干理想性质之间的取舍。</div>
 
+<div class="note"><b>全书关键符号速查（便于后续章节阅读）</b>
+<ul>
+<li><b>K = (K_desc, K_comp, K_res)</b>：复杂度预算（描述 / 计算 / 制度）；</li>
+<li><b>ψ</b>：交互惩罚；<b>ψ=∞</b> 为逻辑必然（L2），有限为经济权衡；</li>
+<li><b>(c, a, t) ∈ [0,1]³</b>：完备 / 可组合 / 传递的可测量坐标；</li>
+<li><b>Π = (π₁,…,π₄)</b>：各层级的配置向量；<b>τ = T_min/T_available</b>：时间错配；</li>
+<li><b>Δt</b>：观察窗口；适用范围为 <b>T_char ≤ Δt ≤ 10·T_char</b>；</li>
+<li><b>L0/L1/L2</b>：必然性等级（框架内 / 结构矛盾 / 已证）；<b>C₁—C₃, A₁—A₃, T₁—T₃</b>：配置档位。</li>
+</ul></div>
+
 <h3>4.2　CAP 与分布式系统的三难</h3>
 
 <p>CAP 定理（Brewer 2000；Gilbert &amp; Lynch 2002）断言：一个分布式数据系统在网络可能分区（Partition）的前提下，不能同时保证一致性（Consistency）与可用性（Availability）。</p>
