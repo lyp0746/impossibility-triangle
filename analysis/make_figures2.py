@@ -363,6 +363,33 @@ def fig_beyond_triangle():
     return wrap(W, H, "\n".join(b))
 
 
+
+def fig_ml_timeline():
+    W, H = 1000, 520
+    b = [title("图 11.2　机器学习的三阶段：带时间坐标")]
+    x0, x1 = 120, 940
+    def X(year):
+        return x0 + (year - 1980) / (2026 - 1980) * (x1 - x0)
+    # 时间轴
+    b.append(f'<line x1="{x0}" y1="470" x2="{x1}" y2="470" stroke="#333" stroke-width="1.5"/>')
+    for yr in (1980, 1990, 2000, 2012, 2020, 2026):
+        b.append(f'<line x1="{X(yr):.0f}" y1="464" x2="{X(yr):.0f}" y2="476" stroke="#333"/>')
+        b.append(T(X(yr), 498, str(yr), 13, GREY, "middle"))
+    rows = [("C+T 范式", 1986, 1995, BLUE, "反向传播"),
+            ("A+T 教学", 1995, 2012, GREEN, "基准与课程"),
+            ("C+A 工程", 2012, 2024, GOLD, "预训练产业化"),
+            ("危机征兆", 2023, 2026, RED, "位置偏差/评估")]
+    for i, (name, a, bb, col, note) in enumerate(rows):
+        y = 100 + i * 88
+        b.append(box(60, y - 24, 0, 0, "")) if False else None
+        b.append(f'<rect x="{X(a):.0f}" y="{y}" width="{X(bb)-X(a):.0f}" height="46" rx="8" '
+                 f'fill="{col}" opacity="0.30" stroke="{col}"/>')
+        b.append(T(60, y + 30, name, 16, col, "start", "600"))
+        b.append(T((X(a)+X(bb))/2, y + 30, note, 13, INK, "middle"))
+    b.append(T(X(2012), 70, "▲2012 AlexNet", 13, RED, "middle"))
+    b.append(T(X(2017), 70, "▲2017 Transformer", 13, RED, "middle"))
+    return wrap(W, H, "\n".join(b))
+
 # ---------------------------------------------------------------- 附录
 def fig_psi():
     W, H = 1000, 420
@@ -457,6 +484,7 @@ FIGS = {
     "fig27-emergence.svg": fig_emergence,
     "fig28-coverage.svg": fig_coverage,
     "fig29-position-map.svg": fig_position_map,
+    "fig30-ml-timeline.svg": fig_ml_timeline,
 }
 
 

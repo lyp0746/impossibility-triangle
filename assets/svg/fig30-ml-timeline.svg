@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520"><rect width="1000" height="520" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 11.2　机器学习的三阶段：带时间坐标</text>
+<line x1="120" y1="470" x2="940" y2="470" stroke="#333" stroke-width="1.5"/>
+<line x1="120" y1="464" x2="120" y2="476" stroke="#333"/>
+<text x="120.0" y="498" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">1980</text>
+<line x1="298" y1="464" x2="298" y2="476" stroke="#333"/>
+<text x="298.2608695652174" y="498" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">1990</text>
+<line x1="477" y1="464" x2="477" y2="476" stroke="#333"/>
+<text x="476.52173913043475" y="498" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">2000</text>
+<line x1="690" y1="464" x2="690" y2="476" stroke="#333"/>
+<text x="690.4347826086956" y="498" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">2012</text>
+<line x1="833" y1="464" x2="833" y2="476" stroke="#333"/>
+<text x="833.0434782608695" y="498" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">2020</text>
+<line x1="940" y1="464" x2="940" y2="476" stroke="#333"/>
+<text x="940.0" y="498" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">2026</text>
+<rect x="227" y="100" width="160" height="46" rx="8" fill="#3a6ea5" opacity="0.30" stroke="#3a6ea5"/>
+<text x="60" y="130" font-size="16" fill="#3a6ea5" text-anchor="start" font-weight="600">C+T 范式</text>
+<text x="307.17391304347825" y="130" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="normal">反向传播</text>
+<rect x="387" y="188" width="303" height="46" rx="8" fill="#009E73" opacity="0.30" stroke="#009E73"/>
+<text x="60" y="218" font-size="16" fill="#009E73" text-anchor="start" font-weight="600">A+T 教学</text>
+<text x="538.9130434782609" y="218" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="normal">基准与课程</text>
+<rect x="690" y="276" width="214" height="46" rx="8" fill="#b8862f" opacity="0.30" stroke="#b8862f"/>
+<text x="60" y="306" font-size="16" fill="#b8862f" text-anchor="start" font-weight="600">C+A 工程</text>
+<text x="797.391304347826" y="306" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="normal">预训练产业化</text>
+<rect x="887" y="364" width="53" height="46" rx="8" fill="#c94f4f" opacity="0.30" stroke="#c94f4f"/>
+<text x="60" y="394" font-size="16" fill="#c94f4f" text-anchor="start" font-weight="600">危机征兆</text>
+<text x="913.2608695652175" y="394" font-size="13" fill="#1a1a1a" text-anchor="middle" font-weight="normal">位置偏差/评估</text>
+<text x="690.4347826086956" y="70" font-size="13" fill="#c94f4f" text-anchor="middle" font-weight="normal">▲2012 AlexNet</text>
+<text x="779.5652173913044" y="70" font-size="13" fill="#c94f4f" text-anchor="middle" font-weight="normal">▲2017 Transformer</text></svg>
