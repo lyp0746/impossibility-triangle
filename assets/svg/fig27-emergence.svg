@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400"><rect width="1000" height="400" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 N.1　涌现的三层与三角位置</text>
+<rect x="60" y="100" width="320" height="70" rx="10" fill="#f7f9fc" stroke="#3a6ea5" stroke-width="2"/><text x="220.0" y="141.0" font-size="19" fill="#3a6ea5" text-anchor="middle" font-weight="600">涌现 1　编码涌现</text>
+<text x="430" y="144" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">K_desc 受限；A 与 T 权衡</text>
+<rect x="60" y="190" width="320" height="70" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="220.0" y="231.0" font-size="19" fill="#009E73" text-anchor="middle" font-weight="600">涌现 2　因果涌现</text>
+<text x="430" y="234" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">T 被让出</text>
+<rect x="60" y="280" width="320" height="70" rx="10" fill="#f7f9fc" stroke="#b8862f" stroke-width="2"/><text x="220.0" y="321.0" font-size="19" fill="#b8862f" text-anchor="middle" font-weight="600">涌现 3　价值涌现</text>
+<text x="430" y="324" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">C 让步给 A</text></svg>

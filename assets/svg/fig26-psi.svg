@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420"><rect width="1000" height="420" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 A.1　交互惩罚 ψ 的三项分解</text>
+<rect x="60" y="100" width="200" height="70" rx="10" fill="#f7f9fc" stroke="#3a6ea5" stroke-width="2"/><text x="160.0" y="141.0" font-size="20" fill="#3a6ea5" text-anchor="middle" font-weight="600">ψ_desc</text>
+<text x="290" y="130" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">子模性折扣</text>
+<text x="290" y="156" font-size="13" fill="#666" text-anchor="start" font-weight="normal">第 5 章</text>
+<text x="850" y="144" font-size="15" fill="#3a6ea5" text-anchor="middle" font-weight="600">证据多</text>
+<rect x="60" y="190" width="200" height="70" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="160.0" y="231.0" font-size="20" fill="#009E73" text-anchor="middle" font-weight="600">ψ_comp</text>
+<text x="290" y="220" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">计算不可约性</text>
+<text x="290" y="246" font-size="13" fill="#666" text-anchor="start" font-weight="normal">第 4.5 节 / N.1</text>
+<text x="850" y="234" font-size="15" fill="#009E73" text-anchor="middle" font-weight="600">仅理论</text>
+<rect x="60" y="280" width="200" height="70" rx="10" fill="#f7f9fc" stroke="#b8862f" stroke-width="2"/><text x="160.0" y="321.0" font-size="20" fill="#b8862f" text-anchor="middle" font-weight="600">ψ_res</text>
+<text x="290" y="310" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">时间错配 τ</text>
+<text x="290" y="336" font-size="13" fill="#666" text-anchor="start" font-weight="normal">第 7、9 章</text>
+<text x="850" y="324" font-size="15" fill="#b8862f" text-anchor="middle" font-weight="600">证据中</text>
+<text x="40" y="400" font-size="13" fill="#666" text-anchor="start" font-weight="normal">三者的测量成熟度不对称：计算论部分基本只有理论。</text></svg>

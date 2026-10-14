@@ -11,6 +11,10 @@
 
 <p>这提示我们："不可能"往往不是某个领域的特殊困难，而是<b>资源约束或逻辑约束下的普遍现象</b>。本章要看的，正是这个现象在不同层面的四种表现：<b>分配三难</b>（CAP、Arrow、Mundell–Fleming）、<b>能力不可加</b>（子模性、NP 困难）、<b>预测的硬边界</b>（计算不可约性）、<b>跨尺度断裂</b>（重正化群、涌现）。</p>
 
+
+<img class="fig" src="assets/svg/fig07-impossibility-family.svg" alt="CAP、Arrow、Mundell–Fleming、无免费午餐、停机问题共享同一形状：有限资源在若干理想性质之间的取舍。">
+<div class="cap"><b>图 4.1　不可能定理的家族</b>。CAP、Arrow、Mundell–Fleming、无免费午餐、停机问题共享同一形状：有限资源在若干理想性质之间的取舍。</div>
+
 <h3>4.2　CAP 与分布式系统的三难</h3>
 
 <p>CAP 定理（Brewer 2000；Gilbert &amp; Lynch 2002）断言：一个分布式数据系统在网络可能分区（Partition）的前提下，不能同时保证一致性（Consistency）与可用性（Availability）。</p>
@@ -60,6 +64,10 @@
 
 <p>类似地，<b>P vs NP</b> 提供了另一条线索：如果 <span class="s">P ≠ NP</span>，那么"完备地刻画解空间（C）"与"在预算内找到可组合的解（A）"之间存在结构性鸿沟。本书不声称三角等价于 P vs NP——那是过度宣称；本书只声称：<b>这两者共享"有限预算下的取舍"这一形状</b>，且计算不可约性为三角的一个分量（<span class="s">K_comp</span>）提供了独立的支持。</p>
 
+
+<img class="fig" src="assets/svg/fig08-computation.svg" alt="可计算性固定逻辑，计算不可约性固定 K_comp，P vs NP 固定计算复杂度；三者分别对应三角的一个受限分量。">
+<div class="cap"><b>图 4.2　计算论的三条边界与三角</b>。可计算性固定逻辑，计算不可约性固定 K_comp，P vs NP 固定计算复杂度；三者分别对应三角的一个受限分量。</div>
+
 <h3>4.6　系统论的三次尝试：从一般系统论到复杂系统</h3>
 
 <p>本书的三角必须与系统论传统对话，否则会显得像又一个"重新发明系统论"的框架。系统论大致经历了三次尝试，每次都撞上同一个位置。</p>
@@ -80,6 +88,21 @@
 它们的"局限"并非失败，而是各自顶点的账单。<b>本书的贡献是把"系统论为什么从未统一"从一个遗憾，变成一个可定位的选择结果。</b></div>
 
 <p>这也解释了 Mitchel、Gleick 等复杂系统普及著作反复出现的张力：它们既想给出跨领域的统一图景（C+T 或 C+A），又想给出可操作的具体结论（A）；两者在三角里不可同时满格。</p>
+
+<h4>4.6.1　三角 vs 系统论：诊断能力对比</h4>
+
+<p>那么，三角比系统论"更好"吗？本节给出一个诚实的、分维度的对比。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 4.3b　三角与系统论的诊断能力对比</b></caption>
+<tr><th class="l">能力</th><th class="l">系统论</th><th class="l">本书三角</th></tr>
+<tr><td class="l">能预测什么会失败</td><td class="l">系统会"分崩离析"（笼统）</td><td class="l">当前顶点配置会失效（可定位）</td></tr>
+<tr><td class="l">能指出缺口在哪</td><td class="l">模糊（"反馈不足"？）</td><td class="l">精确到 C/A/T 中哪一个</td></tr>
+<tr><td class="l">能给出改进方向</td><td class="l">增加反馈/冗余</td><td class="l">换顶点 / 扩大 K / 设飞地</td></tr>
+<tr><td class="l">可操作性</td><td class="l">低</td><td class="l">中—高（有模板）</td></tr>
+<tr><td class="l">理论严格性</td><td class="l">中（部分形式化）</td><td class="l">硬核 A／框架 C</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>对比表，等级 B／乙。<b>结论：</b>三角不是"更好的系统论"，而是<b>更窄、更可操作</b>的一个诊断切片。系统论回答"系统为什么会自我维持"，三角只回答"它在三个顶点上如何取舍"。<b>后者覆盖面小，但落点更精确。</b></div>
 
 <h3>4.7　涌现：三角与"多则异"</h3>
 

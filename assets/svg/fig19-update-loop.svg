@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420"><rect width="1000" height="420" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 15.1　最小可行更新协议</text>
+<rect x="50" y="130" width="150" height="100" rx="10" fill="#f7f9fc" stroke="#3a6ea5" stroke-width="2"/><text x="125.0" y="186.0" font-size="16" fill="#3a6ea5" text-anchor="middle" font-weight="600">登记 当前选择</text>
+<line x1="200" y1="180" x2="235" y2="180" stroke="#666" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="240" y="130" width="150" height="100" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="315.0" y="186.0" font-size="16" fill="#009E73" text-anchor="middle" font-weight="600">划出 C+T 飞地</text>
+<line x1="390" y1="180" x2="425" y2="180" stroke="#666" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="430" y="130" width="150" height="100" rx="10" fill="#f7f9fc" stroke="#b8862f" stroke-width="2"/><text x="505.0" y="186.0" font-size="16" fill="#b8862f" text-anchor="middle" font-weight="600">跨顶点 翻译</text>
+<line x1="580" y1="180" x2="615" y2="180" stroke="#666" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="620" y="130" width="150" height="100" rx="10" fill="#f7f9fc" stroke="#c94f4f" stroke-width="2"/><text x="695.0" y="186.0" font-size="16" fill="#c94f4f" text-anchor="middle" font-weight="600">周期 复检</text>
+<line x1="770" y1="180" x2="805" y2="180" stroke="#666" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="810" y="130" width="150" height="100" rx="10" fill="#f7f9fc" stroke="#1a1a1a" stroke-width="2"/><text x="885.0" y="186.0" font-size="16" fill="#1a1a1a" text-anchor="middle" font-weight="600">写入 组织记忆</text>
+<path d="M 850 250 C 900 330 500 360 200 300" fill="none" stroke="#666" stroke-width="2" stroke-dasharray="7,6" marker-end="url(#ar)"/>
+<text x="500" y="340" font-size="14" fill="#666" text-anchor="middle" font-weight="normal">只追加、不修改（append-only）</text></svg>

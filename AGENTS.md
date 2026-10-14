@@ -24,6 +24,7 @@ GIT="/mnt/d/Git/cmd/git.exe"
 "$PY" analysis/triangle_frontier.py   # 说明性模型 T 的精确枚举（附录 A / 图 0.1）
 "$PY" analysis/frontier_scaling.py     # 前沿随规模变化（附录 A.10 / 图 2.2）
 "$PY" analysis/make_figures.py        # 正文插图 fig01/02/03
+"$PY" analysis/make_figures2.py       # 第二批正文配图（25 幅）
 "$PY" analysis/make_cover.py          # 生成 assets/svg/cover.svg
 "$PY" analysis/audit.py               # 校对 → 刷新 校对清单.md
 "$PY" analysis/preregistration_checkup.py  # 校验 append-only 登记账本

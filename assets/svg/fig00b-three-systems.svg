@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560"><rect width="1000" height="560" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 0.2　三个系统 → 一个坐标</text>
+<rect x="60" y="100" width="250" height="90" rx="10" fill="#f7f9fc" stroke="#3a6ea5" stroke-width="2"/><text x="185.0" y="139.0" font-size="20" fill="#3a6ea5" text-anchor="middle" font-weight="600">记忆系统</text><text x="185.0" y="165.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">《遗忘的边界》</text>
+<text x="340" y="152" font-size="16" fill="#3a6ea5" text-anchor="start" font-weight="600">容量级联</text>
+<text x="500" y="152" font-size="15" fill="#666" text-anchor="start" font-weight="normal">保住 C+T</text>
+<text x="680" y="152" font-size="15" fill="#c94f4f" text-anchor="start" font-weight="600">让出 A</text>
+<rect x="60" y="230" width="250" height="90" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="185.0" y="269.0" font-size="20" fill="#009E73" text-anchor="middle" font-weight="600">区分结构</text><text x="185.0" y="295.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">《区分的演化》</text>
+<text x="340" y="282" font-size="16" fill="#009E73" text-anchor="start" font-weight="600">1/3 缺口</text>
+<text x="500" y="282" font-size="15" fill="#666" text-anchor="start" font-weight="normal">保住 C+A</text>
+<text x="680" y="282" font-size="15" fill="#c94f4f" text-anchor="start" font-weight="600">让出 T</text>
+<rect x="60" y="360" width="250" height="90" rx="10" fill="#f7f9fc" stroke="#b8862f" stroke-width="2"/><text x="185.0" y="399.0" font-size="20" fill="#b8862f" text-anchor="middle" font-weight="600">社会时间</text><text x="185.0" y="425.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">《错位的时间》</text>
+<text x="340" y="412" font-size="16" fill="#b8862f" text-anchor="start" font-weight="600">τ 错配</text>
+<text x="500" y="412" font-size="15" fill="#666" text-anchor="start" font-weight="normal">保住 A+T</text>
+<text x="680" y="412" font-size="15" fill="#c94f4f" text-anchor="start" font-weight="600">让出 C</text>
+<line x1="330" y1="280" x2="500" y2="280" stroke="#666" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="560" y="200" width="380" height="160" rx="10" fill="#f4f4f2" stroke="#1a1a1a" stroke-width="2"/><text x="750.0" y="274.0" font-size="22" fill="#1a1a1a" text-anchor="middle" font-weight="600">C-A-T 坐标</text><text x="750.0" y="300.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">完备 / 可组合 / 传递</text>
+<text x="40" y="536" font-size="13" fill="#666" text-anchor="start" font-weight="normal">三个系统各自把 A、T、C 逼到极限，账单形状相同。</text></svg>

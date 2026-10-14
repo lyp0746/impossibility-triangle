@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420"><rect width="1000" height="420" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 18.1　优雅降级：预设触发器与顺序</text>
+<rect x="60" y="110" width="200" height="70" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="160.0" y="139.0" font-size="20" fill="#009E73" text-anchor="middle" font-weight="600">正常</text><text x="160.0" y="165.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">C + T</text>
+<line x1="260" y1="145" x2="330" y2="200" stroke="#666" stroke-width="2" marker-end="url(#ar)"/>
+<text x="340" y="180" font-size="13" fill="#666" text-anchor="start" font-weight="normal">触发器 + 最低服务水平</text>
+<rect x="60" y="205" width="200" height="70" rx="10" fill="#f7f9fc" stroke="#b8862f" stroke-width="2"/><text x="160.0" y="234.0" font-size="20" fill="#b8862f" text-anchor="middle" font-weight="600">降级 1</text><text x="160.0" y="260.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">A + T</text>
+<line x1="260" y1="240" x2="330" y2="295" stroke="#666" stroke-width="2" marker-end="url(#ar)"/>
+<text x="340" y="275" font-size="13" fill="#666" text-anchor="start" font-weight="normal">触发器 + 最低服务水平</text>
+<rect x="60" y="300" width="200" height="70" rx="10" fill="#f7f9fc" stroke="#c94f4f" stroke-width="2"/><text x="160.0" y="329.0" font-size="20" fill="#c94f4f" text-anchor="middle" font-weight="600">降级 2</text><text x="160.0" y="355.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">A</text>
+<text x="40" y="400" font-size="13" fill="#666" text-anchor="start" font-weight="normal">失效是被排练过的动作，而不是临场惊慌。</text></svg>

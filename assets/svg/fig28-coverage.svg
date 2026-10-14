@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 420"><rect width="1000" height="420" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 P.1　核心与延伸战场的覆盖矩阵</text>
+<text x="80" y="116" font-size="16" fill="#1a1a1a" text-anchor="start" font-weight="700">分量</text>
+<text x="360" y="116" font-size="16" fill="#1a1a1a" text-anchor="start" font-weight="700">核心战场</text>
+<text x="660" y="116" font-size="16" fill="#1a1a1a" text-anchor="start" font-weight="700">延伸战场</text>
+<text x="80" y="150" font-size="15" fill="#3a6ea5" text-anchor="start" font-weight="600">K_desc</text>
+<text x="360" y="150" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">记忆（第 5 章）</text>
+<text x="660" y="150" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">AI（O.2）</text>
+<text x="80" y="216" font-size="15" fill="#009E73" text-anchor="start" font-weight="600">K_comp</text>
+<text x="360" y="216" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">气候（第 7 章）</text>
+<text x="660" y="216" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">软件（P.4）</text>
+<text x="80" y="282" font-size="15" fill="#b8862f" text-anchor="start" font-weight="600">K_res</text>
+<text x="360" y="282" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">教育/民主（第 8、9 章）</text>
+<text x="660" y="282" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">法律/公卫（P.1、P.2）</text>
+<text x="80" y="348" font-size="15" fill="#c94f4f" text-anchor="start" font-weight="600">混合</text>
+<text x="360" y="348" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">组织（第 10 章）</text>
+<text x="660" y="348" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">能源（P.3）</text></svg>

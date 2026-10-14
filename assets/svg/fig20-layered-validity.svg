@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460"><rect width="1000" height="460" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 16.1　分层有效性：目标决定选择</text>
+<rect x="60" y="100" width="180" height="76" rx="10" fill="#f7f9fc" stroke="#3a6ea5" stroke-width="2"/><text x="150.0" y="144.0" font-size="22" fill="#3a6ea5" text-anchor="middle" font-weight="600">预测</text>
+<rect x="280" y="100" width="160" height="76" rx="10" fill="#ffffff" stroke="#3a6ea5" stroke-width="2"/><text x="360.0" y="144.0" font-size="20" fill="#3a6ea5" text-anchor="middle" font-weight="600">C + T</text>
+<text x="480" y="146" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">天气预报：约 15 天混沌极限</text>
+<rect x="60" y="200" width="180" height="76" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="150.0" y="244.0" font-size="22" fill="#009E73" text-anchor="middle" font-weight="600">解释</text>
+<rect x="280" y="200" width="160" height="76" rx="10" fill="#ffffff" stroke="#009E73" stroke-width="2"/><text x="360.0" y="244.0" font-size="20" fill="#009E73" text-anchor="middle" font-weight="600">C + A</text>
+<text x="480" y="246" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">临床/数学：跨尺度处断开</text>
+<rect x="60" y="300" width="180" height="76" rx="10" fill="#f7f9fc" stroke="#b8862f" stroke-width="2"/><text x="150.0" y="344.0" font-size="22" fill="#b8862f" text-anchor="middle" font-weight="600">控制</text>
+<rect x="280" y="300" width="160" height="76" rx="10" fill="#ffffff" stroke="#b8862f" stroke-width="2"/><text x="360.0" y="344.0" font-size="20" fill="#b8862f" text-anchor="middle" font-weight="600">A + T</text>
+<text x="480" y="346" font-size="15" fill="#1a1a1a" text-anchor="start" font-weight="normal">公卫：说不准个案</text>
+<text x="40" y="440" font-size="13" fill="#666" text-anchor="start" font-weight="normal">同时承诺三者满格的方案，必然在某处食言。</text></svg>

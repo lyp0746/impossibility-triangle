@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 520"><rect width="1000" height="520" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 7.1　气候的钟与政治的钟（τ = T_min / T_available）</text>
+<rect x="60" y="100" width="200" height="60" rx="10" fill="#f7f9fc" stroke="#c94f4f" stroke-width="2"/><text x="160.0" y="136.0" font-size="18" fill="#c94f4f" text-anchor="middle" font-weight="600">金融/市场</text>
+<rect x="290" y="116" width="15" height="28" rx="6" fill="#c94f4f" opacity="0.35"/>
+<text x="317" y="138" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 15×</text>
+<rect x="60" y="180" width="200" height="60" rx="10" fill="#f7f9fc" stroke="#3a6ea5" stroke-width="2"/><text x="160.0" y="216.0" font-size="18" fill="#3a6ea5" text-anchor="middle" font-weight="600">政治/选举</text>
+<rect x="290" y="196" width="80" height="28" rx="6" fill="#3a6ea5" opacity="0.35"/>
+<text x="382" y="218" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 80×</text>
+<rect x="60" y="260" width="200" height="60" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="160.0" y="296.0" font-size="18" fill="#009E73" text-anchor="middle" font-weight="600">基础设施</text>
+<rect x="290" y="276" width="350" height="28" rx="6" fill="#009E73" opacity="0.35"/>
+<text x="652" y="298" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 350×</text>
+<rect x="60" y="340" width="200" height="60" rx="10" fill="#f7f9fc" stroke="#b8862f" stroke-width="2"/><text x="160.0" y="376.0" font-size="18" fill="#b8862f" text-anchor="middle" font-weight="600">生态响应</text>
+<rect x="290" y="356" width="650" height="28" rx="6" fill="#b8862f" opacity="0.35"/>
+<text x="952" y="378" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 650×</text>
+<text x="40" y="500" font-size="13" fill="#666" text-anchor="start" font-weight="normal">不同尺度的钟无法被同一机制协调——这就是 τ ≫ 1 的构成。</text></svg>

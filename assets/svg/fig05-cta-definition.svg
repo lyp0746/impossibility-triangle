@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620"><rect width="1000" height="620" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 0.3　C-A-T 的精确定义</text>
+<rect x="80" y="100" width="240" height="70" rx="10" fill="#f7f9fc" stroke="#3a6ea5" stroke-width="2"/><text x="200.0" y="141.0" font-size="22" fill="#3a6ea5" text-anchor="middle" font-weight="600">C 完备</text>
+<rect x="80" y="200" width="240" height="60" rx="10" fill="#ffffff" stroke="#3a6ea5" stroke-width="2"/><text x="200.0" y="236.0" font-size="15" fill="#3a6ea5" text-anchor="middle" font-weight="600">C₁ 描述完备</text>
+<rect x="80" y="280" width="240" height="60" rx="10" fill="#ffffff" stroke="#3a6ea5" stroke-width="2"/><text x="200.0" y="316.0" font-size="15" fill="#3a6ea5" text-anchor="middle" font-weight="600">C₂ 计算完备</text>
+<rect x="80" y="360" width="240" height="60" rx="10" fill="#ffffff" stroke="#3a6ea5" stroke-width="2"/><text x="200.0" y="396.0" font-size="15" fill="#3a6ea5" text-anchor="middle" font-weight="600">C₃ 预测完备</text>
+<rect x="380" y="100" width="240" height="70" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="500.0" y="141.0" font-size="22" fill="#009E73" text-anchor="middle" font-weight="600">A 可组合</text>
+<rect x="380" y="200" width="240" height="60" rx="10" fill="#ffffff" stroke="#009E73" stroke-width="2"/><text x="500.0" y="236.0" font-size="15" fill="#009E73" text-anchor="middle" font-weight="600">A₁ 线性可组合</text>
+<rect x="380" y="280" width="240" height="60" rx="10" fill="#ffffff" stroke="#009E73" stroke-width="2"/><text x="500.0" y="316.0" font-size="15" fill="#009E73" text-anchor="middle" font-weight="600">A₂ 关系可组合</text>
+<rect x="380" y="360" width="240" height="60" rx="10" fill="#ffffff" stroke="#009E73" stroke-width="2"/><text x="500.0" y="396.0" font-size="15" fill="#009E73" text-anchor="middle" font-weight="600">A₃ 代数可组合</text>
+<rect x="680" y="100" width="240" height="70" rx="10" fill="#f7f9fc" stroke="#b8862f" stroke-width="2"/><text x="800.0" y="141.0" font-size="22" fill="#b8862f" text-anchor="middle" font-weight="600">T 传递</text>
+<rect x="680" y="200" width="240" height="60" rx="10" fill="#ffffff" stroke="#b8862f" stroke-width="2"/><text x="800.0" y="236.0" font-size="15" fill="#b8862f" text-anchor="middle" font-weight="600">T₁ 尺度传递</text>
+<rect x="680" y="280" width="240" height="60" rx="10" fill="#ffffff" stroke="#b8862f" stroke-width="2"/><text x="800.0" y="316.0" font-size="15" fill="#b8862f" text-anchor="middle" font-weight="600">T₂ 时间传递</text>
+<rect x="680" y="360" width="240" height="60" rx="10" fill="#ffffff" stroke="#b8862f" stroke-width="2"/><text x="800.0" y="396.0" font-size="15" fill="#b8862f" text-anchor="middle" font-weight="600">T₃ 因果传递</text>
+<line x1="200" y1="450" x2="200" y2="470" stroke="#3a6ea5" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="500" y1="450" x2="500" y2="470" stroke="#009E73" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="800" y1="450" x2="800" y2="470" stroke="#b8862f" stroke-width="2" marker-end="url(#ar)"/>
+<text x="500" y="530" font-size="17" fill="#1a1a1a" text-anchor="middle" font-weight="600">记忆 = C+T　|　区分 = C+A　|　社会时间 = A+T</text>
+<text x="500" y="570" font-size="14" fill="#c94f4f" text-anchor="middle" font-weight="normal">三者的让出分别是 A、T、C</text></svg>

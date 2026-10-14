@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 460"><rect width="1000" height="460" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 14.1　范式转变 = 三角的整体迁移</text>
+<rect x="60" y="110" width="190" height="90" rx="10" fill="#f7f9fc" stroke="#3a6ea5" stroke-width="2"/><text x="155.0" y="149.0" font-size="20" fill="#3a6ea5" text-anchor="middle" font-weight="600">旧范式</text><text x="155.0" y="175.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">C + T</text>
+<text x="155" y="235" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">牛顿力学 / 生物医学</text>
+<line x1="250" y1="155" x2="285" y2="155" stroke="#666" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="290" y="110" width="190" height="90" rx="10" fill="#f7f9fc" stroke="#c94f4f" stroke-width="2"/><text x="385.0" y="149.0" font-size="20" fill="#c94f4f" text-anchor="middle" font-weight="600">过渡期</text><text x="385.0" y="175.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">三边碎裂</text>
+<text x="385" y="235" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">异常积累、教学混乱</text>
+<line x1="480" y1="155" x2="515" y2="155" stroke="#666" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="520" y="110" width="190" height="90" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="615.0" y="149.0" font-size="20" fill="#009E73" text-anchor="middle" font-weight="600">新范式</text><text x="615.0" y="175.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">C + T'</text>
+<text x="615" y="235" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">相对论 / 循证医学</text>
+<line x1="710" y1="155" x2="745" y2="155" stroke="#666" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="750" y="110" width="190" height="90" rx="10" fill="#f7f9fc" stroke="#b8862f" stroke-width="2"/><text x="845.0" y="149.0" font-size="20" fill="#b8862f" text-anchor="middle" font-weight="600">稳定期</text><text x="845.0" y="175.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">A + T</text>
+<text x="845" y="235" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">教科书化、再工程化</text>
+<text x="40" y="440" font-size="13" fill="#666" text-anchor="start" font-weight="normal">范式转变是整体重选顶点；缓慢源于三个尺度无法同步。</text></svg>

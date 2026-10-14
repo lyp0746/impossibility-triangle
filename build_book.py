@@ -33,6 +33,7 @@ DATA_DIR = os.path.join(HERE, "data")
 
 FRONT = [("先读这一页　三条可检验的诊断", "front_hardcore.html", "hardcore"),
          ("前言　为什么第四本书关乎“无法统一”", "front_preface.html", "preface"),
+         ("背景　从三个复杂系统到 C-A-T", "front_background.html", "background"),
          ("十分钟读懂本书", "front_quickstart.html", "quickstart"),
          ("阅读合约　本书向你承诺什么，又不承诺什么", "front_theorymap.html", "theorymap"),
          ("读者指南　按角色选择阅读路径", "front_roadmap.html", "roadmap"),
@@ -55,7 +56,9 @@ BACK = [("结语　从寻求大一统到自觉管理权衡", "back_epilogue.html
         ("附录 O　意识、人工智能与三角：三个前沿", "appendix_o_frontiers.html", "apxO"),
         ("附录 P　延伸战场速览：按三条标准试诊断", "appendix_p_extended.html", "apxP"),
         ("附录 Q　知识演化的定量指标与历史年表", "appendix_q_indicators.html", "apxQ"),
-        ("附录 R　演化视角的三角：生物、文化与技术", "appendix_r_evolution.html", "apxR")]
+        ("附录 R　演化视角的三角：生物、文化与技术", "appendix_r_evolution.html", "apxR"),
+        ("附录 S　三角失效的边界案例：系统为何崩溃", "appendix_s_boundary.html", "apxS"),
+        ("附录 T　根本质疑与回应：C、A、T 真的独立吗", "appendix_t_closure.html", "apxT")]
 
 
 def load_json(p, default=None):

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 620"><rect width="1000" height="620" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 23.1　四本书在三角中的位置</text>
+<line x1="500" y1="110" x2="140" y2="540" stroke="#c9c9c9" stroke-width="2"/>
+<line x1="140" y1="540" x2="860" y2="540" stroke="#c9c9c9" stroke-width="2"/>
+<line x1="860" y1="540" x2="500" y2="110" stroke="#c9c9c9" stroke-width="2"/>
+<text x="500" y="90" font-size="17" fill="#3a6ea5" text-anchor="middle" font-weight="700">C 完备</text>
+<text x="136" y="568" font-size="17" fill="#009E73" text-anchor="middle" font-weight="700">A 可组合</text>
+<text x="864" y="568" font-size="17" fill="#b8862f" text-anchor="middle" font-weight="700">T 传递</text>
+<rect x="400" y="278" width="200" height="46" rx="10" fill="#ffffff" stroke="#3a6ea5" stroke-width="2"/><text x="500.0" y="307.0" font-size="15" fill="#3a6ea5" text-anchor="middle" font-weight="600">《遗忘的边界》</text>
+<rect x="260" y="378" width="200" height="46" rx="10" fill="#ffffff" stroke="#009E73" stroke-width="2"/><text x="360.0" y="407.0" font-size="15" fill="#009E73" text-anchor="middle" font-weight="600">《区分的演化》</text>
+<rect x="550" y="378" width="200" height="46" rx="10" fill="#ffffff" stroke="#b8862f" stroke-width="2"/><text x="650.0" y="407.0" font-size="15" fill="#b8862f" text-anchor="middle" font-weight="600">《错位的时间》</text>
+<rect x="400" y="178" width="200" height="46" rx="10" fill="#ffffff" stroke="#c94f4f" stroke-width="2"/><text x="500.0" y="207.0" font-size="15" fill="#c94f4f" text-anchor="middle" font-weight="600">《选择的代价》</text></svg>

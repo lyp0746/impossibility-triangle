@@ -15,7 +15,7 @@
       "first": "ch02.html"
     },
     "选择": {
-      "total": 269,
+      "total": 278,
       "by_chapter": [
         [
           "ch01.html",
@@ -43,7 +43,7 @@
         ],
         [
           "ch08.html",
-          18
+          19
         ],
         [
           "ch09.html",
@@ -59,11 +59,11 @@
         ],
         [
           "ch12.html",
-          19
+          21
         ],
         [
           "ch13.html",
-          18
+          20
         ],
         [
           "ch14.html",
@@ -71,19 +71,19 @@
         ],
         [
           "ch15.html",
-          25
+          26
         ],
         [
           "ch16.html",
-          19
-        ],
-        [
-          "ch17.html",
           20
         ],
         [
+          "ch17.html",
+          21
+        ],
+        [
           "ch18.html",
-          16
+          17
         ],
         [
           "ch19.html",
@@ -323,7 +323,7 @@
       "first": "ch01.html"
     },
     "容量级联": {
-      "total": 10,
+      "total": 11,
       "by_chapter": [
         [
           "ch01.html",
@@ -331,7 +331,7 @@
         ],
         [
           "ch05.html",
-          9
+          10
         ]
       ],
       "first": "ch01.html"
@@ -381,7 +381,7 @@
       "first": "ch01.html"
     },
     "连续": {
-      "total": 31,
+      "total": 32,
       "by_chapter": [
         [
           "ch01.html",
@@ -405,7 +405,7 @@
         ],
         [
           "ch10.html",
-          1
+          2
         ],
         [
           "ch11.html",
@@ -443,7 +443,7 @@
       "first": "ch01.html"
     },
     "优雅降级": {
-      "total": 9,
+      "total": 10,
       "by_chapter": [
         [
           "ch17.html",
@@ -451,13 +451,13 @@
         ],
         [
           "ch18.html",
-          8
+          9
         ]
       ],
       "first": "ch17.html"
     },
     "失效阈值": {
-      "total": 7,
+      "total": 8,
       "by_chapter": [
         [
           "ch15.html",
@@ -465,7 +465,7 @@
         ],
         [
           "ch17.html",
-          1
+          2
         ],
         [
           "ch20.html",
@@ -479,11 +479,11 @@
       "first": "ch15.html"
     },
     "分层有效性": {
-      "total": 1,
+      "total": 2,
       "by_chapter": [
         [
           "ch16.html",
-          1
+          2
         ]
       ],
       "first": "ch16.html"
@@ -547,15 +547,15 @@
       "first": "ch01.html"
     },
     "诊断": {
-      "total": 144,
+      "total": 152,
       "by_chapter": [
         [
           "ch01.html",
-          10
+          12
         ],
         [
           "ch02.html",
-          2
+          3
         ],
         [
           "ch03.html",
@@ -563,7 +563,7 @@
         ],
         [
           "ch04.html",
-          4
+          7
         ],
         [
           "ch05.html",
@@ -615,7 +615,7 @@
         ],
         [
           "ch20.html",
-          9
+          10
         ],
         [
           "ch21.html",
@@ -623,14 +623,18 @@
         ],
         [
           "ch23.html",
-          3
+          4
         ]
       ],
       "first": "ch01.html"
     },
     "知识系统": {
-      "total": 14,
+      "total": 15,
       "by_chapter": [
+        [
+          "ch01.html",
+          1
+        ],
         [
           "ch10.html",
           1
@@ -656,10 +660,10 @@
           6
         ]
       ],
-      "first": "ch10.html"
+      "first": "ch01.html"
     },
     "范式": {
-      "total": 43,
+      "total": 46,
       "by_chapter": [
         [
           "ch05.html",
@@ -695,7 +699,7 @@
         ],
         [
           "ch14.html",
-          20
+          23
         ],
         [
           "ch23.html",
@@ -705,19 +709,23 @@
       "first": "ch05.html"
     },
     "飞地": {
-      "total": 32,
+      "total": 36,
       "by_chapter": [
+        [
+          "ch04.html",
+          1
+        ],
         [
           "ch10.html",
           6
         ],
         [
           "ch13.html",
-          7
+          9
         ],
         [
           "ch15.html",
-          16
+          17
         ],
         [
           "ch16.html",
@@ -728,14 +736,14 @@
           1
         ]
       ],
-      "first": "ch10.html"
+      "first": "ch04.html"
     },
     "权衡矩阵": {
-      "total": 6,
+      "total": 7,
       "by_chapter": [
         [
           "ch17.html",
-          5
+          6
         ],
         [
           "ch23.html",
@@ -787,7 +795,7 @@
       "first": "ch02.html"
     },
     "跨顶点翻译": {
-      "total": 4,
+      "total": 5,
       "by_chapter": [
         [
           "ch12.html",
@@ -795,7 +803,7 @@
         ],
         [
           "ch15.html",
-          3
+          4
         ]
       ],
       "first": "ch12.html"
@@ -931,9 +939,29 @@
     "9.5"
   ],
   "A3_figures_defined": [
+    "1.1",
+    "10.1",
     "11.1",
+    "12.1",
+    "13.1",
+    "14.1",
+    "15.1",
+    "16.1",
+    "17.1",
+    "18.1",
     "2.1",
-    "3.1"
+    "20.1",
+    "21.1",
+    "22.1",
+    "23.1",
+    "3.1",
+    "4.1",
+    "4.2",
+    "5.1",
+    "6.1",
+    "7.1",
+    "8.1",
+    "9.1"
   ],
   "A3_table_refs_missing_def": [],
   "A3_figure_refs_missing_def": [],
@@ -2112,6 +2140,11 @@
     {
       "chapter": "ch06.html",
       "word": "必然",
+      "snippet": "，慢病结局以十年计；制度若用同一套指标考核两者，必然在一端失真。\n\n6.3　新药开发的“第二道墙”"
+    },
+    {
+      "chapter": "ch06.html",
+      "word": "必然",
       "snippet": "。这不是 EBM 的缺陷，而是它选择 A+T 后必然的账单。\n\n警告 6.1　平均数不是个体预测\n把"
     },
     {
@@ -2142,7 +2175,7 @@
     {
       "chapter": "ch10.html",
       "word": "不可避免",
-      "snippet": "受外部创新威胁，需要定期转向。\n关键：阶段转变是不可避免的；问题不是阻止转变，而是管理好转折点。\n\n10"
+      "snippet": "受外部创新威胁，需要定期转向。\n关键：阶段转变是不可避免的；问题不是阻止转变，而是管理好转折点。"
     },
     {
       "chapter": "ch10.html",
@@ -2163,6 +2196,11 @@
       "chapter": "ch16.html",
       "word": "必然",
       "snippet": "偏 A+T。一个方案若同时承诺三者，按三角命题它必然在某处食言。［框架，B／乙］\n\n16.1　导论："
+    },
+    {
+      "chapter": "ch16.html",
+      "word": "必然",
+      "snippet": "C+A，控制偏 A+T；同时承诺三者满格的方案必然在某处食言。\n\n16.2　若目标是预测：C+T，"
     },
     {
       "chapter": "ch16.html",

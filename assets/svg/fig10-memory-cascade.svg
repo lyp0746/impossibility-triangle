@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 490"><rect width="1000" height="490" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 5.1　记忆的容量级联（尺度跨度约 10⁹）</text>
+<rect x="60" y="100" width="220" height="56" rx="10" fill="#f7f9fc" stroke="#3a6ea5" stroke-width="2"/><text x="170.0" y="134.0" font-size="17" fill="#3a6ea5" text-anchor="middle" font-weight="600">感觉登记</text>
+<rect x="300" y="114" width="20" height="28" rx="6" fill="#3a6ea5" opacity="0.35"/>
+<text x="332" y="136" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 20×</text>
+<rect x="60" y="174" width="220" height="56" rx="10" fill="#f7f9fc" stroke="#3a6ea5" stroke-width="2"/><text x="170.0" y="208.0" font-size="17" fill="#3a6ea5" text-anchor="middle" font-weight="600">工作记忆</text>
+<rect x="300" y="188" width="60" height="28" rx="6" fill="#3a6ea5" opacity="0.35"/>
+<text x="372" y="210" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 60×</text>
+<rect x="60" y="248" width="220" height="56" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="170.0" y="282.0" font-size="17" fill="#009E73" text-anchor="middle" font-weight="600">短期巩固</text>
+<rect x="300" y="262" width="200" height="28" rx="6" fill="#009E73" opacity="0.35"/>
+<text x="512" y="284" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 200×</text>
+<rect x="60" y="322" width="220" height="56" rx="10" fill="#f7f9fc" stroke="#b8862f" stroke-width="2"/><text x="170.0" y="356.0" font-size="17" fill="#b8862f" text-anchor="middle" font-weight="600">长期巩固</text>
+<rect x="300" y="336" width="450" height="28" rx="6" fill="#b8862f" opacity="0.35"/>
+<text x="762" y="358" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 450×</text>
+<rect x="60" y="396" width="220" height="56" rx="10" fill="#f7f9fc" stroke="#c94f4f" stroke-width="2"/><text x="170.0" y="430.0" font-size="17" fill="#c94f4f" text-anchor="middle" font-weight="600">终身整合</text>
+<rect x="300" y="410" width="700" height="28" rx="6" fill="#c94f4f" opacity="0.35"/>
+<text x="1012" y="432" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 700×</text>
+<text x="40" y="474" font-size="13" fill="#666" text-anchor="start" font-weight="normal">条形长度示意各尺度的时间跨度；同一组信息论约束支配全部尺度。</text></svg>
