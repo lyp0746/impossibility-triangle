@@ -62,7 +62,8 @@ BACK = [("结语　从寻求大一统到自觉管理权衡", "back_epilogue.html
         ("附录 U　诊断的哲学基础：观察者、选择、边界与失败", "appendix_u_philosophy.html", "apxU"),
         ("附录 V　框架的对标与对话：与同时代相关框架", "appendix_v_dialogue.html", "apxV"),
         ("附录 W　四个失败的深度案例：框架何时失效", "appendix_w_failures.html", "apxW"),
-        ("附录 X　框架的计算实现路线图", "appendix_x_roadmap.html", "apxX")]
+        ("附录 X　框架的计算实现路线图", "appendix_x_roadmap.html", "apxX"),
+        ("附录 Y　实证探针集：软件项目与文献网络", "appendix_y_probes.html", "apxY")]
 
 
 def load_json(p, default=None):

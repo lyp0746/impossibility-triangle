@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500"><rect width="1000" height="500" fill="#ffffff"/>
+<style>text{font-family:"Microsoft YaHei","SimHei",Arial,sans-serif;}</style>
+<text x="40" y="46" font-size="24" font-weight="700">图 Y.1　arXiv 跨领域耦合随时间的变化（跨分类论文占比）</text>
+<circle cx="100" cy="324" r="5" fill="#3a6ea5"/>
+<text x="100" y="314" text-anchor="middle" font-size="13">0.17</text>
+<text x="100" y="444" text-anchor="middle" font-size="13">1995</text>
+<circle cx="250" cy="261" r="5" fill="#3a6ea5"/>
+<text x="250" y="251" text-anchor="middle" font-size="13">0.28</text>
+<text x="250" y="444" text-anchor="middle" font-size="13">2000</text>
+<circle cx="400" cy="225" r="5" fill="#3a6ea5"/>
+<text x="400" y="215" text-anchor="middle" font-size="13">0.34</text>
+<text x="400" y="444" text-anchor="middle" font-size="13">2005</text>
+<circle cx="550" cy="156" r="5" fill="#3a6ea5"/>
+<text x="550" y="146" text-anchor="middle" font-size="13">0.46</text>
+<text x="550" y="444" text-anchor="middle" font-size="13">2010</text>
+<circle cx="700" cy="158" r="5" fill="#3a6ea5"/>
+<text x="700" y="148" text-anchor="middle" font-size="13">0.46</text>
+<text x="700" y="444" text-anchor="middle" font-size="13">2015</text>
+<circle cx="850" cy="112" r="5" fill="#3a6ea5"/>
+<text x="850" y="102" text-anchor="middle" font-size="13">0.54</text>
+<text x="850" y="444" text-anchor="middle" font-size="13">2020</text>
+<circle cx="940" cy="110" r="5" fill="#3a6ea5"/>
+<text x="940" y="100" text-anchor="middle" font-size="13">0.54</text>
+<text x="940" y="444" text-anchor="middle" font-size="13">2023</text>
+<polyline points="100,324 250,261 400,225 550,156 700,158 850,112 940,110" fill="none" stroke="#3a6ea5" stroke-width="2.4"/>
+<text x="40" y="470" font-size="13" fill="#888">数据：arXiv API 实时抓取。局限：领域构成随时间变化、cross-list 为作者自选标签。</text></svg>

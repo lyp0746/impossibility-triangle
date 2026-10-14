@@ -1,0 +1,37 @@
+{
+  "1995": {
+    "n": 300,
+    "share_multicat": 0.167,
+    "mean_cats": 1.2
+  },
+  "2000": {
+    "n": 300,
+    "share_multicat": 0.277,
+    "mean_cats": 1.387
+  },
+  "2005": {
+    "n": 300,
+    "share_multicat": 0.34,
+    "mean_cats": 1.433
+  },
+  "2010": {
+    "n": 300,
+    "share_multicat": 0.46,
+    "mean_cats": 1.553
+  },
+  "2015": {
+    "n": 300,
+    "share_multicat": 0.457,
+    "mean_cats": 1.633
+  },
+  "2020": {
+    "n": 300,
+    "share_multicat": 0.537,
+    "mean_cats": 1.793
+  },
+  "2023": {
+    "n": 300,
+    "share_multicat": 0.54,
+    "mean_cats": 1.833
+  }
+}
