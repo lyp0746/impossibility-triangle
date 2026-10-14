@@ -15,7 +15,7 @@
       "first": "ch02.html"
     },
     "选择": {
-      "total": 308,
+      "total": 309,
       "by_chapter": [
         [
           "ch01.html",
@@ -27,7 +27,7 @@
         ],
         [
           "ch04.html",
-          9
+          10
         ],
         [
           "ch05.html",
@@ -509,11 +509,11 @@
       "first": "ch16.html"
     },
     "被让出的顶点": {
-      "total": 30,
+      "total": 40,
       "by_chapter": [
         [
           "ch01.html",
-          2
+          3
         ],
         [
           "ch03.html",
@@ -521,7 +521,7 @@
         ],
         [
           "ch04.html",
-          1
+          5
         ],
         [
           "ch06.html",
@@ -537,7 +537,7 @@
         ],
         [
           "ch15.html",
-          5
+          9
         ],
         [
           "ch16.html",
@@ -558,6 +558,10 @@
         [
           "ch20.html",
           4
+        ],
+        [
+          "ch21.html",
+          1
         ],
         [
           "ch23.html",
@@ -2378,6 +2382,11 @@
       "chapter": "ch04.html",
       "word": "必然",
       "snippet": "t ≤ 10·T_char；\nL0/L1/L2：必然性等级（框架内 / 结构矛盾 / 已证）；C₁—"
+    },
+    {
+      "chapter": "ch04.html",
+      "word": "必然",
+      "snippet": "dered vertex）：为保住另外两个性质而必然低效的那一个。全书统一用\"被让出的顶点\"（不用\""
     },
     {
       "chapter": "ch04.html",

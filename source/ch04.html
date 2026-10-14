@@ -25,6 +25,13 @@
 <li><b>L0/L1/L2</b>：必然性等级（框架内 / 结构矛盾 / 已证）；<b>C₁—C₃, A₁—A₃, T₁—T₃</b>：配置档位。</li>
 </ul></div>
 
+<div class="note"><b>核心术语规范（新增）</b>
+<ul>
+<li><b>代理层级（agency level）</b>：同一系统中做选择的独立决策单位（如医疗中的监管/医生/支付方）。<b>注意：</b>与委托—代理理论的"代理人（agent）"含义不同——本书的"代理层级"不预设委托关系。</li>
+<li><b>被让出的顶点（surrendered vertex）</b>：为保住另外两个性质而必然低效的那一个。<b>全书统一用"被让出的顶点"（不用"让出的顶点"）。</b></li>
+<li><b>失效形态（failure pattern）</b>：系统在被让出的顶点上的衰退类型。<b>三类：</b>缓慢退化（A 型）/ 阈值崩溃（C 型）/ 潜伏失效（T 型）。<b>全书统一用"失效形态"（不用"失效机制"）。</b></li>
+</ul></div>
+
 <h3>4.2　CAP 与分布式系统的三难</h3>
 
 <p>CAP 定理（Brewer 2000；Gilbert &amp; Lynch 2002）断言：一个分布式数据系统在网络可能分区（Partition）的前提下，不能同时保证一致性（Consistency）与可用性（Availability）。</p>
@@ -84,7 +91,7 @@
 
 <table class="nat">
 <caption class="cap"><b>表 4.3　系统论的三次尝试与它们的三角位置</b></caption>
-<tr><th class="l">传统</th><th class="l">核心主张</th><th class="l">保住的顶点</th><th class="l">让出的顶点</th></tr>
+<tr><th class="l">传统</th><th class="l">核心主张</th><th class="l">保住的顶点</th><th class="l">被让出的顶点</th></tr>
 <tr><td class="l">一般系统论（Bertalanffy）</td><td class="l">存在适用于所有系统的同构律</td><td class="l">C+T（一般性 + 跨系统类比）</td><td class="l">A：同构律不能精确组合成预测</td></tr>
 <tr><td class="l">控制论（Wiener）</td><td class="l">反馈使系统可调节</td><td class="l">A+T（可组合的控制手段 + 动态）</td><td class="l">C：对具体系统无法完备预测</td></tr>
 <tr><td class="l">复杂系统（Santa Fe）</td><td class="l">涌现、自组织、适应</td><td class="l">C+A（机制 + 组合）</td><td class="l">T：跨尺度理论难以无损传递</td></tr>

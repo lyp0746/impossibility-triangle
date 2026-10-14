@@ -4,7 +4,7 @@
 
 <div class="scenario"><span class="bt">阅读约定</span>
 每个案例分四段：<b>（1）框架会怎么诊断</b>（事前）；<b>（2）实际发生了什么</b>；<b>（3）诊断匹配吗</b>；<b>（4）为什么（不）匹配</b>。<br>
-<b>全部标为 C1／丙（事后解释），且历史归因存在争议。</b>本书不宣称这些诊断优于领域内更完整的解释。</div>
+<b>等级采用附录 A.11 的细化制（B1—B3 / C1—C3），逐案标注</b>：NCLB 有多个同行评议政策研究支持（<b>B1</b>）；Linux 有公开仓库数据但解释存争议（<b>B2</b>）；LTCM 基于大量公开数据但归因仍有分歧（<b>B3</b>）；AlphaFold/GPT 的新配置为推测（<b>C1</b>）。<b>本书不宣称这些诊断优于领域内更完整的解释。</b></div>
 
 <h3>W.1　LTCM（1998）：C+A 让出 T 的潜伏失效</h3>
 
@@ -17,7 +17,12 @@
 <p><b>（3）诊断匹配吗？</b>部分匹配，但分类需要修正。<b>框架事前说"T 型潜伏失效"，这被抓到了</b>——问题的确是"局部完备/可组合，跨到系统层不传递"。但 AI 建议把它当作"C 型阈值崩溃"来检验，<b>这个预期本身是错的</b>：LTCM 的 C 并不弱（模型极精），它让出的是 T。<b>因此这个案例验证的是 T 型，而不是 C 型。</b></p>
 
 <div class="warning"><span class="bt">（4）为什么诊断"部分失效"</span>
-框架抓住了<b>正确的被让出顶点（T）</b>，但<b>没有预测到失效的时点与触发条件</b>（俄罗斯违约 + 流动性）。<b>这正是第 21.7 节所说的"L2 而非 L4"</b>：框架能说"会出现 T 型缺口"，不能说"何时、由什么触发"。<b>这也是"框架何时失效"的第一个实证证据：它分类失效形态，但不预测失效时刻。</b></div>
+框架抓住了<b>正确的被让出的顶点（T）</b>，但<b>没有预测到失效的时点与触发条件</b>（俄罗斯违约 + 流动性）。<b>这正是第 21.7 节所说的"L2 而非 L4"</b>：框架能说"会出现 T 型缺口"，不能说"何时、由什么触发"。<b>这也是"框架何时失效"的第一个实证证据：它分类失效形态，但不预测失效时刻。</b></div>
+
+<div class="define"><span class="bt">第四个陷阱：框架与领域常识的分类冲突</span>
+W.1 中，三角给出的诊断是 <b>T 型</b>，而金融学通常把 LTCM 归为"C 型"（模型风险）或"流动性冲击"。<b>这不是框架失效，而是两个分类系统的坐标不同：</b><br>
+<b>金融学按"触发机制"分类</b>（宏观冲击 → 流动性枯竭）；<b>三角按"被让出的顶点"分类</b>（微观的跨尺度不可加）。<br>
+<b>两者都不错，只是回答不同问题。</b>框架的价值不在于比金融学更"正确"，而在于提供了<b>第二种视角</b>——它把"哪个性质被让出"单独拎出来。<b>承认分类冲突，正是框架不宣称"唯一真理"的证据。</b></div>
 
 <h3>W.2　美国教育标准化运动（2001—2015）：双极摆动的可逆性</h3>
 
@@ -72,7 +77,25 @@ Linux 内核的开发模式接近 <b>A+T</b>：高度模块化、多贡献者、
 </table>
 <div class="datasrc"><b>性质：</b>事后诊断对照，等级 C1／丙。<b>读法：</b>两例匹配（形态），两例部分匹配（方向对、细节缺）。<b>共同失效模式：框架分类失效形态与方向，但不预测时点、触发与新配置。</b></div>
 
+<div class="define"><span class="bt">自检 W.1　为什么三分类总是匹配：真验证还是逻辑枚举</span>
+既然任何失败都能被分到 A / C / T 型之一，"形态匹配 4/4"可能有两种解释：<br>
+<b>（1）真验证：</b>三分类是必要且充分的——它确实抓到了失败的结构；<br>
+<b>（2）逻辑枚举：</b>三分类只是一个"穷举"——任何失败都能贴上一个标签，因此没有预测力（类似"托勒密式的救援"）。<br>
+<b>四个案例都被成功分类，但无法区分（1）与（2）。</b>要区分，需要以下任一项：<br>
+&nbsp;&nbsp;<b>□</b> 找到一个<b>无法被三分类</b>的失败案例（将构成反例）；<br>
+&nbsp;&nbsp;<b>□</b> 找到一个<b>混合型</b>失败（同时表现 A/C/T 的特征）；<br>
+&nbsp;&nbsp;<b>□</b> 从 <span class="s">K</span> 的结构<b>正面论证</b>三分类为何是穷举的（若能做到，则（1）成立）。<br>
+<b>本书无法完成上述任一项，因此"4/4 匹配"应被读作"尚未发现反例"，而非"已证明充分"。</b>［登记为开放问题 O34］</div>
+
 <div class="define"><span class="bt">本附录的三个结论</span>
 <b>（1）框架的实证强度：</b>在"失效形态与方向"上匹配 4/4（2 高 2 部分）；在"失效时点与新配置"上匹配 0/4——<b>这精确地刻画了 L2—L3 预测力的边界。</b><br>
 <b>（2）失败分类的验证：</b>U.4 的三分类（缓慢退化 / 阈值崩溃 / 潜伏失效）在 LTCM（T 型）与 Linux（A 型）上有实例；<b>但 LTCM 的分类与常识预期（C 型）相反，说明"事先分类"本身很难。</b><br>
 <b>（3）框架何时失效：</b>当问题需要<b>具体时点、触发条件或新配置</b>时，框架失效；当问题只要<b>失效形态与方向</b>时，框架可用。<b>建议使用者据此决定是否采用本框架。</b></div>
+
+<h3>本附录关键参考</h3>
+<div class="refs">
+<p><b>LTCM：</b>Lowenstein, R. (2000). <i>When Genius Failed</i>. Random House.；MacKenzie, D. (2003). Long-Term Capital Management and the Sociology of Arbitrage. <i>Economy and Society</i>, 32(3), 349–380.</p>
+<p><b>NCLB/ESSA：</b>Dee, T. S., &amp; Jacob, B. (2011). The Impact of No Child Left Behind on Student Achievement. <i>Journal of Policy Analysis and Management</i>, 30(3), 418–446.；McGuinn, P. (2016). From No Child Left Behind to the Every Student Succeeds Act. <i>Publius</i>, 46(3), 392–416.</p>
+<p><b>Linux 内核：</b>Zhou, M., Mockus, A., Ma, X., Zhang, L., &amp; Mei, H. (2016). Inflow and Retention in OSS Communities with Commercial Involvement. <i>TOSEM</i>, 25(2).；Coelho, J., &amp; Valente, M. T. (2017). Why Modern Open Source Projects Fail. <i>FSE</i>.</p>
+<p><b>AlphaFold/GPT：</b>Jumper, J., et al. (2021). Highly Accurate Protein Structure Prediction with AlphaFold. <i>Nature</i>, 596, 583–589.；Bommasani, R., et al. (2021). On the Opportunities and Risks of Foundation Models. <i>arXiv:2108.07258</i>.</p>
+</div>
