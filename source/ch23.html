@@ -55,7 +55,29 @@
 
 <p><b>本书不寻求被全盘接受，只寻求被具体反驳。</b>它的每一层都可以被单独攻击：硬核层被反例推翻，框架层被领域反例推翻，工具层被"不好用"评价。这种"可分层攻击"正是作者希望达到的诚实标准。</p>
 
-<h3>23.5　本章与全书小结</h3>
+<h3>23.5　适用范围：什么时候三角有用，什么时候没用</h3>
+
+<p class="lead">一个诚实的框架必须说明自己的适用边界。本节给出三角框架的<b>时间尺度窗口</b>——超出它，三角只能给方向，不能给"何时失效"。</p>
+
+<div class="define"><span class="bt">定义 23.2　适用范围</span>
+记系统的特征时间尺度为 <span class="s">T_char</span>，诊断可用的观察窗口为 <span class="s">Δt</span>。三角框架<b>给出可检验读数</b>的条件是：
+<div class="eq"><span class="body">T_char ≤ Δt ≤ 10 × T_char</span></div>
+即：观察窗口至少覆盖一个特征周期，又不至于长到需要等几十倍的时间。</div>
+
+<table class="nat">
+<caption class="cap"><b>表 23.2　不同系统的适用性</b></caption>
+<tr><th class="l">系统</th><th class="l">T_char</th><th class="l">诊断窗口 Δt</th><th class="l">是否适用</th></tr>
+<tr><td class="l">机器学习</td><td class="l">年级</td><td class="l">2—5 年（研究周期）</td><td class="l">✓ 较适用</td></tr>
+<tr><td class="l">教育（基础效果）</td><td class="l">年级</td><td class="l">1 学年</td><td class="l">✓ 较适用</td></tr>
+<tr><td class="l">气候政策</td><td class="l">十年级</td><td class="l">20—50 年</td><td class="l">△ 只能给方向</td></tr>
+<tr><td class="l">文明演化</td><td class="l">世纪级</td><td class="l">对当代决策者过长</td><td class="l">✗ 基本无用</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>适用范围表，等级 C／丙。<b>这与第 21.8 节直接相关：</b>F3/F5（精准医学、教育个性化）需要 10 年以上才能验证，正是因为它们落在适用窗口的<b>边缘或之外</b>。</div>
+
+<div class="warning"><span class="bt">警告 23.1　不要把三角用到过长的尺度上</span>
+对一个特征尺度为 50 年的系统（气候、文明），三角<b>不能</b>回答"何时失效"——它只能回答"如果继续选这个配置，缺口会出现在哪一类"。<b>把长期的"缺口类型"读成"失效时刻"，是把 L2 预测误当 L4 预测。</b>这既是本框架的边界，也是第 21.8 节预测记录簿中部分条目迟迟"待观察"的原因。</div>
+
+<h3>23.6　本章与全书小结</h3>
 
 <p>从"寻求大一统"到"自觉管理权衡"，是一次姿态的转变。前者的目标是消去矛盾，后者的目标是管理矛盾。<b>本书主张：对于有限复杂度的知识系统，后一种姿态更诚实，也更有用。</b></p>
 

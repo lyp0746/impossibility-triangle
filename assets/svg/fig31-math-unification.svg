@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560"><rect width="1000" height="560" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 12.2　数学统一的代价：C+A 强，T 被让出</text>
+<line x1="500" y1="90" x2="130" y2="540" stroke="#c9c9c9" stroke-width="2"/>
+<line x1="130" y1="540" x2="870" y2="540" stroke="#c9c9c9" stroke-width="2"/>
+<line x1="870" y1="540" x2="500" y2="90" stroke="#c9c9c9" stroke-width="2"/>
+<rect x="410" y="28" width="180" height="70" rx="10" fill="#eef3f8" stroke="#3a6ea5" stroke-width="2"/><text x="500.0" y="57.0" font-size="18" fill="#3a6ea5" text-anchor="middle" font-weight="600">C 完备</text><text x="500.0" y="83.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">深层结构精确</text>
+<rect x="120" y="532" width="180" height="70" rx="10" fill="#eefaf4" stroke="#009E73" stroke-width="2"/><text x="210.0" y="561.0" font-size="18" fill="#009E73" text-anchor="middle" font-weight="600">A 可组合</text><text x="210.0" y="587.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">领域间可翻译</text>
+<rect x="700" y="532" width="180" height="70" rx="10" fill="#fdeeee" stroke="#c94f4f" stroke-width="2"/><text x="790.0" y="561.0" font-size="18" fill="#c94f4f" text-anchor="middle" font-weight="600">T 传递</text><text x="790.0" y="587.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">几乎无人能懂</text>
+<text x="500" y="360" font-size="18" fill="#1a1a1a" text-anchor="middle" font-weight="600">朗兰兹纲领 / 凝聚态数学：选 C+A，让出 T</text>
+<text x="500" y="400" font-size="15" fill="#666" text-anchor="middle" font-weight="normal">统一 ≠ 简化；它牺牲传递性，换取更高层的完备与可组合</text>
+<text x="40" y="540" font-size="13" fill="#666" text-anchor="start" font-weight="normal">对《区分的演化》的反思：让数学整体变简单，撞上的是同一堵墙。</text></svg>

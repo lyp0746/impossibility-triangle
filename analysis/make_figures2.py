@@ -390,6 +390,21 @@ def fig_ml_timeline():
     b.append(T(X(2017), 70, "▲2017 Transformer", 13, RED, "middle"))
     return wrap(W, H, "\n".join(b))
 
+
+def fig_math_unification():
+    W, H = 1000, 560
+    b = [title("图 12.2　数学统一的代价：C+A 强，T 被让出")]
+    Cx, Cy, Ax, Ay, Tx, Ty = 500, 90, 130, 540, 870, 540
+    for (x1, y1), (x2, y2) in [((Cx, Cy), (Ax, Ay)), ((Ax, Ay), (Tx, Ty)), ((Tx, Ty), (Cx, Cy))]:
+        b.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#c9c9c9" stroke-width="2"/>')
+    b.append(box(Cx - 90, Cy - 62, 180, 70, "C 完备", "深层结构精确", BLUE, "#eef3f8", 18))
+    b.append(box(Ax - 10, Ay - 8, 180, 70, "A 可组合", "领域间可翻译", GREEN, "#eefaf4", 18))
+    b.append(box(Tx - 170, Ty - 8, 180, 70, "T 传递", "几乎无人能懂", RED, "#fdeeee", 18))
+    b.append(T(500, 360, "朗兰兹纲领 / 凝聚态数学：选 C+A，让出 T", 18, INK, "middle", "600"))
+    b.append(T(500, 400, "统一 ≠ 简化；它牺牲传递性，换取更高层的完备与可组合", 15, GREY, "middle"))
+    b.append(T(40, H - 20, "对《区分的演化》的反思：让数学整体变简单，撞上的是同一堵墙。", 13, GREY))
+    return wrap(W, H, "\n".join(b))
+
 # ---------------------------------------------------------------- 附录
 def fig_psi():
     W, H = 1000, 420
@@ -485,6 +500,7 @@ FIGS = {
     "fig28-coverage.svg": fig_coverage,
     "fig29-position-map.svg": fig_position_map,
     "fig30-ml-timeline.svg": fig_ml_timeline,
+    "fig31-math-unification.svg": fig_math_unification,
 }
 
 

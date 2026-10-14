@@ -124,6 +124,26 @@ L2/L3 预测的是<b>缺口的类型</b>，不是具体数值或时刻。把"预
 </table>
 <div class="datasrc"><b>性质：</b>预测记录簿，等级 B—C。<b>规则：</b>与附录 E 一致——事前登记、以方向判定、只追加不修改。<b>注意：</b>F1、F3、F5 为方向性预测，不预言具体数值或年份。</div>
 
+<p><b>F1—F5 都是方向性预测（L2），不够硬。</b>它们只说"会出现某类问题"，不说"在什么阈值、什么时间"。下面 F6—F10 是<b>更硬的预测：带阈值、时间拐点，且多数可在 3—5 年内检验</b>。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 21.6　强预测（F6—F10）</b></caption>
+<tr><th class="l">编号</th><th class="l">预测（含阈值/拐点）</th><th class="l">依据</th><th class="l">检验窗口</th><th class="l">初步证据</th></tr>
+<tr><td class="l">F6</td><td class="l">长程依赖准确率随推理长度<b>非线性下降</b>，在某一长度阈值后加速下滑（阈值预测）</td><td class="l">共享容量 + 相对分辨率稀释（¬A）</td><td class="l">1—2 年</td><td class="l">长上下文评测显示中部衰退（初步）</td></tr>
+<tr><td class="l">F7</td><td class="l">模块组合数超过阈值后，涌现缺陷率<b>超线性上升</b></td><td class="l">模块化选 C+A 让出 T（<span class="s">t</span> 下降）</td><td class="l">1—2 年</td><td class="l">可用开源项目数据立即检验</td></tr>
+<tr><td class="l">F8</td><td class="l">教育个性化系统的效果/留存率在第 3—4 年<b>达到平台，不再增长</b>（时间拐点）</td><td class="l">选 C+A 让出 T（长期效果不传递）</td><td class="l">3—5 年</td><td class="l">长周期对照数据尚缺</td></tr>
+<tr><td class="l">F9</td><td class="l">分层标志物数量增加时，<b>边际预测增益递减</b>（子模性）</td><td class="l">子模性（<b>L2 直接支持</b>）</td><td class="l">可在现有队列数据上立即检验</td><td class="l">多标志物组合的增益递减已有零星报告</td></tr>
+<tr><td class="l">F10</td><td class="l">跨版本/跨供应商的兼容维护成本随平台寿命<b>超线性增长</b></td><td class="l">C+A 让出 T</td><td class="l">2—4 年</td><td class="l">企业软件维护成本数据可查</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>强预测，等级 B—C。<b>F9 的等级最高</b>（子模性为 L2 已证），<b>F6/F7 次之</b>（可用公开数据检验），F8/F10 需更长窗口。<b>这些预测的价值在于可被具体证伪：</b>若 F9 显示分层标志物的边际增益不递减，则子模性在临床标志物上不成立（那将是一个重要反例）。</div>
+
+<div class="define"><span class="bt">F6—F10 与 F1—F5 的区别</span>
+<b>可否定性：</b>F6—F10 都给出了可测的阈值或拐点，因而可被明确推翻；F1—F5 只说方向。<br>
+<b>时间性：</b>F6/F7/F9 可在 1—2 年内检验，不需要等到 2030 年。<br>
+<b>部分已见初步证据：</b>F6/F7/F9 都有零星证据，不是全部"待检验"。<b>这是本书从"诊断效能"向"预测能力"迈出的关键一步——尽管仍只到 L2—L3，未达 L4。</b></div>
+
+
+
 <div class="define"><span class="bt">这份记录簿的意义</span>
 它把第 21.7 节的"L2—L3 预测力"落成<b>可检查的条目</b>。<br>
 <b>若 F4（软件涌现 bug）被证伪，</b>则第 4.7 节"t 下降作为涌现标记"的读法在该领域失效；<br>
