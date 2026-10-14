@@ -53,6 +53,9 @@
 # 1) 复现说明性模型的精确枚举（n=12, K=15）
 python analysis/triangle_frontier.py
 
+# 1b) 复现前沿随规模变化（n 至 200，图 2.2）
+python analysis/frontier_scaling.py
+
 # 2) 生成插图与封面
 python analysis/make_figures.py && python analysis/make_cover.py
 

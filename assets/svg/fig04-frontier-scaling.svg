@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640"><style>text{font-family:"Microsoft YaHei","SimHei",Arial,sans-serif;}</style><rect width="1000" height="640" fill="#ffffff"/>
+<text x="40" y="46" font-size="25" font-weight="700">图 2.2　前沿如何随规模变化（说明性模型 T）</text>
+<text x="40" y="76" font-size="15" fill="#666">固定预算比 α = K/n，横轴为 n，纵轴为可达到的坐标和上界 C+A+T</text>
+<line x1="90" y1="560" x2="940" y2="560" stroke="#333" stroke-width="1.4"/>
+<line x1="90" y1="560" x2="90" y2="110" stroke="#333" stroke-width="1.4"/>
+<line x1="90" y1="419" x2="940" y2="419" stroke="#eee"/>
+<text x="82" y="424" text-anchor="end" font-size="13" fill="#666">2</text>
+<line x1="90" y1="279" x2="940" y2="279" stroke="#eee"/>
+<text x="82" y="284" text-anchor="end" font-size="13" fill="#666">2.5</text>
+<line x1="90" y1="138" x2="940" y2="138" stroke="#eee"/>
+<text x="82" y="143" text-anchor="end" font-size="13" fill="#666">3</text>
+<polyline points="90.0,304.3 126.2,293.6 171.4,288.4 261.8,313.3 487.9,324.1 940.0,309.8" fill="none" stroke="#3a6ea5" stroke-width="2.4"/>
+<circle cx="90.0" cy="304.3" r="4" fill="#3a6ea5"/>
+<circle cx="126.2" cy="293.6" r="4" fill="#3a6ea5"/>
+<circle cx="171.4" cy="288.4" r="4" fill="#3a6ea5"/>
+<circle cx="261.8" cy="313.3" r="4" fill="#3a6ea5"/>
+<circle cx="487.9" cy="324.1" r="4" fill="#3a6ea5"/>
+<circle cx="940.0" cy="309.8" r="4" fill="#3a6ea5"/>
+<text x="934" y="298" text-anchor="end" font-size="15" fill="#3a6ea5">α=1.5</text>
+<polyline points="90.0,210.6 126.2,209.2 171.4,204.1 261.8,200.7 487.9,202.9 940.0,207.2" fill="none" stroke="#009E73" stroke-width="2.4"/>
+<circle cx="90.0" cy="210.6" r="4" fill="#009E73"/>
+<circle cx="126.2" cy="209.2" r="4" fill="#009E73"/>
+<circle cx="171.4" cy="204.1" r="4" fill="#009E73"/>
+<circle cx="261.8" cy="200.7" r="4" fill="#009E73"/>
+<circle cx="487.9" cy="202.9" r="4" fill="#009E73"/>
+<circle cx="940.0" cy="207.2" r="4" fill="#009E73"/>
+<text x="934" y="195" text-anchor="end" font-size="15" fill="#009E73">α=1.8</text>
+<text x="515" y="606" text-anchor="middle" font-size="15" fill="#333">系统规模 n（对数刻度近似）</text>
+<text x="20" y="335" font-size="15" fill="#333" transform="rotate(-90 20 335)" text-anchor="middle">坐标和上界</text>
+<text x="40" y="612" font-size="13" fill="#888">结论：固定预算比下，坐标和上界随 n 增大而上升；模型 T 的三选二是有限规模 + 紧预算现象。复现：python analysis/frontier_scaling.py</text></svg>

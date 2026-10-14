@@ -22,6 +22,7 @@ PY="/mnt/d/0_Code/Iris Series/.venv/Scripts/python.exe"
 GIT="/mnt/d/Git/cmd/git.exe"
 
 "$PY" analysis/triangle_frontier.py   # 说明性模型 T 的精确枚举（附录 A / 图 0.1）
+"$PY" analysis/frontier_scaling.py     # 前沿随规模变化（附录 A.10 / 图 2.2）
 "$PY" analysis/make_figures.py        # 正文插图 fig01/02/03
 "$PY" analysis/make_cover.py          # 生成 assets/svg/cover.svg
 "$PY" analysis/audit.py               # 校对 → 刷新 校对清单.md
@@ -66,8 +67,10 @@ bash scripts/release.sh               # 组装 release/
 - **形式化**：第 2 章 + 附录 A.7（记账不等式与交互惩罚 ψ 分解）。推论：ψ≡0 时三角不适用。
 - **失败记录**（`source/appendix_j_failed.html`）是正式内容，不得删除。
 - **说明性模型 T**（`analysis/triangle_frontier.py`）是 C 级说明，不得被引用为经验事实。
-- **定量数据**：关键数字集中于 `data/cases.csv` 与附录 K；每章新数字必须带 A/B/C 等级。
+- **定量数据**：关键数字集中于 `data/cases.csv` 与附录 K；时间序列于 `data/cases_timeseries.csv`（近似锚点，用前必须回溯原始来源）；每章新数字必须带 A/B/C（及 B1—B3/C1—C3）等级。
 - **新附录**：K 案例数据库、L 研究议题库（O1—O25）、M 系列对应、N 计算/涌现/系统论、O 前沿、P 延伸战场、Q 演化指标。
+- **完整案例**：附录 H.4（研究生培养制度五步诊断）；正文第 11.7（机器学习）与 15.7（研究机构更新）。
+- **反面检验**：第 5—10 章各有一节“这个诊断会怎样被推翻”；附录 P.6 同理。
 - 三处见证的等级：子模性 A／甲；离散曲率恒等式 A／甲 + 1/3 缺口 B／乙；时间错配
   命题 A／甲 + 诊断 B／乙。
 

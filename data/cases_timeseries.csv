@@ -1,0 +1,21 @@
+series_id,series,unit,year,value,grade,source_note
+co2_global,global fossil CO2 emissions,GtCO2/yr,1970,14.9,C-B,Global Carbon Budget approx anchor
+co2_global,global fossil CO2 emissions,GtCO2/yr,1980,19.5,C-B,Global Carbon Budget approx anchor
+co2_global,global fossil CO2 emissions,GtCO2/yr,1990,22.7,C-B,Global Carbon Budget approx anchor
+co2_global,global fossil CO2 emissions,GtCO2/yr,2000,25.5,C-B,Global Carbon Budget approx anchor
+co2_global,global fossil CO2 emissions,GtCO2/yr,2010,33.1,C-B,Global Carbon Budget approx anchor
+co2_global,global fossil CO2 emissions,GtCO2/yr,2020,34.8,C-B,Global Carbon Budget approx anchor (COVID dip)
+co2_global,global fossil CO2 emissions,GtCO2/yr,2023,37.4,C-B,Global Carbon Budget approx anchor
+papers_global,scientific publications indexed (approx),millions/yr,1990,0.6,C,scientometrics orders of magnitude
+papers_global,scientific publications indexed (approx),millions/yr,2000,1.0,C,scientometrics orders of magnitude
+papers_global,scientific publications indexed (approx),millions/yr,2010,2.0,C,scientometrics orders of magnitude
+papers_global,scientific publications indexed (approx),millions/yr,2020,3.0,C,scientometrics orders of magnitude
+precision_med,precision-medicine related share of biomedical papers (approx),percent,2000,2,C,indicative only
+precision_med,precision-medicine related share of biomedical papers (approx),percent,2010,8,C,indicative only
+precision_med,precision-medicine related share of biomedical papers (approx),percent,2020,15,C,indicative only
+class_size_oecd,primary class size OECD average,students,2000,22,B,OECD approx
+class_size_oecd,primary class size OECD average,students,2010,21,B,OECD approx
+class_size_oecd,primary class size OECD average,students,2020,21,B,OECD approx
+remote_work,share of paid workdays from home (US, approx),percent,2019,5,B,WFH Research approx
+remote_work,share of paid workdays from home (US, approx),percent,2020,40,B,WFH Research approx
+remote_work,share of paid workdays from home (US, approx),percent,2023,28,B,WFH Research approx

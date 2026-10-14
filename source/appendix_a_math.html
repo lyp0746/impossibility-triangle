@@ -112,3 +112,77 @@
 
 <div class="warning"><span class="bt">警告 A.1　命题 A.2 仍不是普适定理</span>
 命题 A.2 是恒等式级别的（移项），但它的<b>解释力</b>取决于 (A1)—(A3) 在具体系统中是否成立、以及 <span class="s">ψ</span> 是否可测。<b>它把"三角为什么不普遍成立"的答案也写清楚了：当 <span class="s">ψ ≡ 0</span> 时不成立。</b>这就是第 21.6 节自检所需要的精确形式。</div>
+
+<h3>A.8　关系集 R 的三种数学表示</h3>
+
+<p>四元组 <span class="s">Σ = (E, R, ℒ, K)</span> 中，<span class="s">R</span> 是最模糊的一项。本节给出三种可用的数学表示，并说明何时用哪一种。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 A.2　关系集 R 的三种表示</b></caption>
+<tr><th class="l">表示</th><th class="l">数学对象</th><th class="l">适合的情形</th><th class="l">不适合的情形</th></tr>
+<tr><td class="l">图论</td><td class="l">有向/无向图 <span class="s">G=(E,R)</span>，边带权</td><td class="l">成对相互作用为主；可算谱、可算连通性</td><td class="l">三元及以上协同、必须保留高阶关系</td></tr>
+<tr><td class="l">范畴论</td><td class="l">态射 <span class="s">R: e → e'</span>，满足结合律</td><td class="l">关系可复合；需要"结构保持映射"</td><td class="l">关系不可复合、无单位元</td></tr>
+<tr><td class="l">超图/单纯复形</td><td class="l">超边 <span class="s">r ⊆ E</span>，<span class="s">|r| ≥ 2</span></td><td class="l">高阶协同（三者以上同时约束）</td><td class="l">计算代价高；谱结构不完整</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>表示选择指南，等级 B／乙。<b>要点：</b>选择哪种表示，本身就是一次建模决定——它决定了哪些关系被视为"可组合"。</div>
+
+<div class="define"><span class="bt">选择规则（启发式）</span>
+<b>（1）</b>若相互作用主要是两两的、且需要谱分析（相变、稳定性），用<b>图论表示</b>；<br>
+<b>（2）</b>若关键性质是"关系可以复合"（如时间演化、变换），用<b>范畴论表示</b>；<br>
+<b>（3）</b>若存在不可分解的高阶协同，用<b>超图/单纯复形</b>；<br>
+<b>代价：</b>三种表示的"可组合性"A 含义不同——图论的 A 是谱可加，范畴的 A 是复合封闭，超图的 A 是子复形封闭。<b>诊断时必须声明用的是哪一种，否则"可组合"将不可比。</b></div>
+
+<h3>A.9　复杂度三分量的换算</h3>
+
+<p>定义 2.2 给出 <span class="s">K = (K_desc, K_comp, K_res)</span>，但未给出换算。本节说明：<b>不存在普适换算率；但在具体系统里，分量之间可以相互"交易"，交易率是可估的。</b></p>
+
+<table class="nat">
+<caption class="cap"><b>表 A.3　三分量的交易示例</b></caption>
+<tr><th class="l">系统</th><th class="l">交易</th><th class="l">方向</th></tr>
+<tr><td class="l">查表 vs 计算</td><td class="l">用更大 <span class="s">K_desc</span>（存储表）换更小 <span class="s">K_comp</span>（在线计算）</td><td class="l">存储 ↔ 时间</td></tr>
+<tr><td class="l">缓存/记忆化</td><td class="l">同上，以空间换时间</td><td class="l">存储 ↔ 时间</td></tr>
+<tr><td class="l">制度惯例</td><td class="l">用书面规则（<span class="s">K_res</span> 的存储）换会议协调（<span class="s">K_res</span> 的时间）</td><td class="l">规则 ↔ 协调</td></tr>
+<tr><td class="l">模型压缩/蒸馏</td><td class="l">用小 <span class="s">K_desc</span> 换略低的 <span class="s">C₃</span></td><td class="l">存储 ↔ 精度</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>示例表，等级 B／乙。<b>推论：</b>把三分量压成标量会掩盖"哪种资源在交易"——这正是定义 2.2 保留三分量的理由。统一换算率是开放问题 O1。</div>
+
+<h3>A.10　前沿如何随规模变化：一个大规模数值实验</h3>
+
+<p>表 A.1 的精确枚举只在 <span class="s">n=12</span> 上成立。本节用局部搜索 + 多权重，在 <span class="s">n</span> 至多 200 上估计可达前沿（脚本 <code>analysis/frontier_scaling.py</code>）。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 A.4　坐标和上界随规模的变化（模型 T）</b></caption>
+<tr><th class="l">n</th><th class="l">K/n = 1.5</th><th class="l">K/n = 1.8</th><th class="l">构造下界（解析）</th></tr>
+<tr><td class="l">12</td><td class="l">2.41</td><td class="l">2.74</td><td class="l">2.41 / 2.74</td></tr>
+<tr><td class="l">30</td><td class="l">2.47</td><td class="l">2.77</td><td class="l">2.47 / 2.77</td></tr>
+<tr><td class="l">100</td><td class="l">2.34</td><td class="l">2.77</td><td class="l">2.49 / 2.79</td></tr>
+<tr><td class="l">200</td><td class="l">2.39</td><td class="l">2.75</td><td class="l">2.50 / 2.80</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>模型 C／丙；结果可复算。局部搜索是估计（未必取到全局最优），构造下界是解析的。</div>
+
+<img class="fig" src="assets/svg/fig04-frontier-scaling.svg" alt="前沿如何随规模变化">
+
+<div class="cap"><b>图 2.2　前沿如何随规模变化</b>。固定预算比 <span class="s">α = K/n</span> 时，坐标和上界随 <span class="s">n</span> 增大而缓慢上升，趋近解析值 <span class="s">α+1</span>：<b>模型 T 的"三选二"是有限规模 + 紧预算现象，不是结构必然。</b></div>
+
+<div class="warning"><span class="bt">警告 A.2　这次实验削弱了见证 Ⅳ 的强度（书内自检）</span>
+大规模实验显示：在模型 T 中，只要预算比 <span class="s">α</span> 接近 2（预算足以让全部单元精确），三个坐标可以同时接近 1。<b>因此模型 T 展示的是"预算稀缺下的取舍"，而不是"结构性的三选二"。</b>结构性三选二需要正的交互惩罚 <span class="s">ψ</span>（A.7）——这正是三条见证（子模性、1/3 缺口、τ）各自提供的东西。<b>本实验因此把见证 Ⅳ 从"三角的独立见证"降级为"记账不等式的一个预算特例"，并登记在附录 J。</b></div>
+
+<h3>A.11　定量数据的等级细化</h3>
+
+<p>第 3 章给出 A/B/C 三级。实际标注中，B 与 C 内部差异仍大。本节把它们各细分为三档，供各章标注使用。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 A.5　定量数据的等级细化</b></caption>
+<tr><th class="l">等级</th><th class="l">判据</th><th class="l">例子</th><th class="l">可用性</th></tr>
+<tr><td class="l">B1</td><td class="l">单一权威来源，口径明确</td><td class="l">WHO/官方统计</td><td class="l">可直接引用</td></tr>
+<tr><td class="l">B2</td><td class="l">多来源共识，偏差 &lt; 20%</td><td class="l">临床指南、IPCC 核心区间</td><td class="l">作为量级引用</td></tr>
+<tr><td class="l">B3</td><td class="l">有争议但方向一致，偏差 &gt; 20%</td><td class="l">气候模型预测、通过率</td><td class="l">只引方向，不引点值</td></tr>
+<tr><td class="l">C1</td><td class="l">数量级可信，点值不可靠</td><td class="l">班级规模效应、失败率</td><td class="l">展示结构，不作推断</td></tr>
+<tr><td class="l">C2</td><td class="l">方向可能性高但数据缺失</td><td class="l">远程工作对创新的影响</td><td class="l">登记为待验证</td></tr>
+<tr><td class="l">C3</td><td class="l">思辨性强，需新实验</td><td class="l">意识的投影读法</td><td class="l">仅作方向性读法</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>等级细化，等级 B／乙。<b>用法：</b>正文中的 B 级数字应在首次出现时标明 B1/B2/B3（如"碳预算 500 Gt（B3）"）；C 级同理。<b>本书未逐条重标正文，但用本表可在附录 K 中查得更细的判据。</b></div>
+
+<div class="define"><span class="bt">一个例子：碳预算该标几级？</span>
+IPCC AR6 对 1.5°C 的剩余碳预算给出一个区间（不同情景、不同概率水平下差异可观）。<br>
+<b>结论：</b>应标为 <b>B3</b>——方向可靠（预算有限且正在耗尽），但点值（500 Gt）在情景间偏差较大。<b>正确用法是"约 500 Gt 量级（B3）"，而不是"恰好 500 Gt"。</b></div>
