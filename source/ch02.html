@@ -108,7 +108,12 @@
 其中 <span class="s">Err</span> 为该尺度约定的误差（如 RMSE、校准误差、Brier 分数），零模型给出误差上界。<br>
 <b>读法：</b><span class="s">t = 1</span> 表示提升预测完美；<span class="s">t = 0</span> 表示提升后不优于零模型；<span class="s">t &lt; 0</span> 表示提升反而更差。<b>t 依赖尺度对与误差定义，必须连同它们报告。</b></div>
 
-<p>这个定义直接回应了一个常见质疑："什么叫'无误'传递？精度损失 5% 算吗？50% 算吗？"——答案不是给一个普适阈值，而是给一个<b>可测量的技能分数</b>，并把阈值留给领域约定。<span class="s">t</span> 小于多少算失效，取决于该领域能容忍的误差；框架只负责让这个数可见。</p>
+<p><div class="define"><span class="bt">定义 2.6b　传递性的两个来源</span>
+<b>T_内在（intrinsic）：</b>由系统的<b>选择</b>造成的传递性——一个选 C+A 的系统，其跨尺度传递的弱点来自选择本身。<br>
+<b>T_外在（extrinsic）：</b>由<b>教学、传播与工具技术</b>决定的传递性——同一个内容，教材、图示、类比越好，读者越容易掌握。<br>
+<b>三角约束的是 T_内在，而不是 T_外在。</b>因此改进教学可以提高总体的 T，但<b>不能完全抵消 C+A 造成的 T_内在 弱点</b>（详见第 12.8 节量子力学的对照）。</div>
+
+这个定义直接回应了一个常见质疑："什么叫'无误'传递？精度损失 5% 算吗？50% 算吗？"——答案不是给一个普适阈值，而是给一个<b>可测量的技能分数</b>，并把阈值留给领域约定。<span class="s">t</span> 小于多少算失效，取决于该领域能容忍的误差；框架只负责让这个数可见。</p>
 
 <h3>2.7　三角命题的准形式陈述</h3>
 
@@ -193,22 +198,35 @@
 <p><b>但"逻辑必然"本身还没有分层。</b>批评者会追问："关系异质"到底是<b>现实必然</b>，还是<b>我们当前描述框架的局限</b>？如果只是后者，那么随着知识进步，它可能消失。因此必须把"必然"再分三级。</p>
 
 <div class="define"><span class="bt">定义 2.8b　必然性的三个等级</span>
-<b>L0（框架内必然）：</b>在<b>当前的测量/描述框架</b>下，两个性质不能同时满足。这可能反映框架的局限，而非现实的必然——随知识进步可能被解除。<br>
+<b>L0（框架内必然）：</b>在<b>当前的测量/描述框架</b>下，两个性质不能同时满足（可视为无免费午餐思想的一个近亲；Wolpert &amp; Macready 1997）。这可能反映框架的局限，而非现实的必然——随知识进步可能被解除。<br>
 <b>L1（结构矛盾）：</b>某个标准数学结构与另一个在<b>定义上</b>直接矛盾。例：线性可加要求 <span class="s">f(x₁+x₂)=f(x₁)+f(x₂)</span>，而个体交互作用恰好违反它。<br>
 <b>L2（已证定理）：</b>在<b>任何</b>框架下都必然矛盾，且有证明。例：信息子模性、离散分离曲率恒等式。<br>
 <b>强度：</b><span class="s">L2 ⇒ L1 ⇒ L0</span>；反过来不成立。<b>只有 L2 才配得上"不可能"一词。</b></div>
 
 <table class="nat">
 <caption class="cap"><b>表 2.3b　必然性的分层读数</b></caption>
-<tr><th class="l">系统</th><th class="l">冲突</th><th class="l">等级</th><th class="l">证据</th></tr>
-<tr><td class="l">记忆</td><td class="l">共享编码 → 边际收益递减</td><td class="l"><b>L2</b></td><td class="l">子模性不等式（已证）</td></tr>
-<tr><td class="l">数学（离散/连续）</td><td class="l">代数完备 → 连续极限缺口</td><td class="l"><b>L2</b></td><td class="l">离散曲率恒等式 + 1/3 缺口</td></tr>
-<tr><td class="l">教育</td><td class="l">可加评价 → 忽略交互项</td><td class="l"><b>L1</b></td><td class="l">可加性定义直接排除交互项</td></tr>
-<tr><td class="l">金融</td><td class="l">完整拟合 → 样本外失效</td><td class="l"><b>L1</b></td><td class="l">过拟合的结构性倾向</td></tr>
-<tr><td class="l">医疗</td><td class="l">个体化 → 关系异质</td><td class="l"><b>L0—L1</b></td><td class="l">未证；可能随医学进步变化</td></tr>
-<tr><td class="l">组织</td><td class="l">完整决策 → 不可线性叠加</td><td class="l"><b>L0</b>（经济权衡）</td><td class="l">可近似分解，非严格互斥</td></tr>
+<tr><th class="l">系统</th><th class="l">冲突</th><th class="l">等级</th><th class="l">证据</th><th class="l">K 恒定时是否消失？</th></tr>
+<tr><td class="l">记忆</td><td class="l">共享编码 → 边际收益递减</td><td class="l"><b>L2</b></td><td class="l">子模性不等式（已证）</td><td class="l">否（L2）</td></tr>
+<tr><td class="l">数学（离散/连续）</td><td class="l">代数完备 → 连续极限缺口</td><td class="l"><b>L2</b></td><td class="l">离散曲率恒等式 + 1/3 缺口</td><td class="l">否（L2）</td></tr>
+<tr><td class="l">教育</td><td class="l">可加评价 → 忽略交互项</td><td class="l"><b>L1</b></td><td class="l">可加性定义直接排除交互项</td><td class="l">否（迁移到 A）</td></tr>
+<tr><td class="l">金融</td><td class="l">完整拟合 → 样本外失效</td><td class="l"><b>L1</b></td><td class="l">过拟合的结构性倾向</td><td class="l">否</td></tr>
+<tr><td class="l">医疗</td><td class="l">个体化 → 关系异质</td><td class="l"><b>L0—L1</b></td><td class="l">未证；可能随医学进步变化</td><td class="l">可能，但迁移到 A</td></tr>
+<tr><td class="l">组织</td><td class="l">完整决策 → 不可线性叠加</td><td class="l"><b>L0</b>（经济权衡）</td><td class="l">可近似分解，非严格互斥</td><td class="l">否（只缓解）</td></tr>
 </table>
 <div class="datasrc"><b>性质：</b>分层读数，等级 B／乙。<b>关键更正：</b>表 2.3 把医疗的"个体化冲突"列为"逻辑必然"，<b>本表将其下调为 L0—L1</b>——因为它可能只是当前医学描述框架的局限。<b>只有记忆与数学两项有 L2（已证）的证据。</b></div>
+
+<div class="warning"><span class="bt">警告 2.5b　L0 下调的风险：冲突会迁移，不会消失</span>
+把某冲突标为 L0（"可能被知识进步消除"）时，隐含了一个假设：<b>存在某种知识进步，使该冲突在 <span class="s">K</span> 固定下消失。</b>但这需要逐一检查。<b>反例对照：</b><br>
+医疗的"个体异质"可能由"缺乏足够的分子标志物"造成（L0）——随着代谢组学进步，<b>可能消除</b>；但一旦实现完全个体化（C+T），系统会立即遇到<b>另一个 A 的约束</b>：个体化知识难以用指南复制，每个医生都须成为专家。<b>冲突不是消失了，而是从"C—A 边"迁移到了"A—T 边"。</b></div>
+
+
+<img class="fig" src="assets/svg/fig32-conflict-migration.svg" alt="冲突迁移示意">
+<div class="cap"><b>图 2.3　冲突迁移：知识进步把取舍推到另一条边</b>。医疗的个体异质若被知识进步消除，冲突会迁移到个体化知识难复制。</div>
+
+<div class="define"><span class="bt">命题 2.3（冲突迁移，启发式）</span>
+若以知识进步（而非扩大 <span class="s">K</span>）消除一个 L0 冲突，且总交互惩罚仍 <span class="s">ψ &gt; 0</span>，则取舍会<b>迁移到三角的另一个边上</b>重新出现。<br>
+<b>推论：</b>知识进步可以把冲突从一个性质对推到另一个性质对，但<b>不能把它从系统中移除</b>——除非扩大 <span class="s">K</span> 或改变坐标（O19）。<br>
+<b>验证状态：</b>启发式（C／丙）；它在医疗（个体化→复制难）与教育（个性化→评估难）上有初步迹象，但未系统检验。［登记于附录 E］</div>
 
 <div class="warning"><span class="bt">警告 2.5　"不可能三角"的严格基础只有两条</span>
 按定义 2.8b，本书能证明为 L2 的冲突只有<b>两条</b>：信息子模性、离散曲率恒等式。<b>其余各系统的冲突是 L0 或 L1。</b>这意味着"不可能三角"作为<b>普适定律</b>缺乏 L2 支持；它作为<b>诊断坐标</b>依然有效，因为 L0/L1 的冲突在有限 <span class="s">K</span> 下同样要求取舍。<b>读者应据此调整对"不可能"一词的期待。</b></div>
@@ -253,4 +271,7 @@
 <p>Allen, T. F. H., &amp; Starr, T. B. (1982). <i>Hierarchy: Perspectives for Ecological Complexity</i>. University of Chicago Press.</p>
 <p>Anderson, P. W. (1972). More Is Different. <i>Science</i>, 177(4047), 393–410.</p>
 <p>Cover, T. M., &amp; Thomas, J. A. (2006). <i>Elements of Information Theory</i> (2nd ed.). Wiley.</p>
+
+<p>Solomonoff, R. J. (1964). A Formal Theory of Inductive Inference. <i>Information and Control</i>, 7(1), 1–22.</p>
+<p>Wolpert, D. H., &amp; Macready, W. G. (1997). No Free Lunch Theorems for Optimization. <i>IEEE Transactions on Evolutionary Computation</i>, 1(1), 67–82.</p>
 </div>

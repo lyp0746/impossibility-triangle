@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600"><rect width="1000" height="600" fill="#ffffff"/><style>text{font-family:'Microsoft YaHei','SimHei',Arial,sans-serif;fill:#1a1a1a;}</style><defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto"><path d="M0,0 L8,3 L0,6 z" fill="#666"/></marker></defs><text x="40" y="46" font-size="24" fill="#1a1a1a" text-anchor="start" font-weight="700">图 2.3　冲突迁移：知识进步把取舍推到另一条边</text>
+<line x1="500" y1="90" x2="130" y2="540" stroke="#dcdcdc" stroke-width="2"/>
+<line x1="130" y1="540" x2="870" y2="540" stroke="#dcdcdc" stroke-width="2"/>
+<line x1="870" y1="540" x2="500" y2="90" stroke="#dcdcdc" stroke-width="2"/>
+<text x="500" y="72" font-size="18" fill="#3a6ea5" text-anchor="middle" font-weight="700">C 完备</text>
+<text x="130" y="566" font-size="18" fill="#009E73" text-anchor="middle" font-weight="700">A 可组合</text>
+<text x="870" y="566" font-size="18" fill="#b8862f" text-anchor="middle" font-weight="700">T 传递</text>
+<circle cx="315" cy="315" r="10" fill="#009E73" opacity="0.5"/>
+<text x="299.0" y="297.0" font-size="15" fill="#009E73" text-anchor="end" font-weight="600">冲突 1：C–A</text>
+<text x="299.0" y="321.0" font-size="13" fill="#666" text-anchor="end" font-weight="normal">个体异质 → 难编码</text>
+<path d="M 335 315 Q 500 360 500 540" fill="none" stroke="#c94f4f" stroke-width="2.6" stroke-dasharray="8,6" marker-end="url(#ar)"/>
+<text x="500" y="350" font-size="15" fill="#c94f4f" text-anchor="middle" font-weight="600">知识进步（如代谢组学）</text>
+<circle cx="500" cy="540" r="10" fill="#c94f4f" opacity="0.5"/>
+<text x="504.0" y="522.0" font-size="15" fill="#c94f4f" text-anchor="start" font-weight="600">冲突 2：A–T</text>
+<text x="504.0" y="546.0" font-size="13" fill="#666" text-anchor="start" font-weight="normal">个体化知识 → 难复制</text>
+<text x="40" y="580" font-size="13" fill="#666" text-anchor="start" font-weight="normal">结论：知识进步把冲突从一条边推到另一条边，但不把它从系统中移除（除非扩大 K）。</text></svg>

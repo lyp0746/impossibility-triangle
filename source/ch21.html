@@ -137,6 +137,17 @@ L2/L3 预测的是<b>缺口的类型</b>，不是具体数值或时刻。把"预
 </table>
 <div class="datasrc"><b>性质：</b>强预测，等级 B—C。<b>F9 的等级最高</b>（子模性为 L2 已证），<b>F6/F7 次之</b>（可用公开数据检验），F8/F10 需更长窗口。<b>这些预测的价值在于可被具体证伪：</b>若 F9 显示分层标志物的边际增益不递减，则子模性在临床标志物上不成立（那将是一个重要反例）。</div>
 
+<table class="nat">
+<caption class="cap"><b>表 21.6b　强预测的参数化细节</b></caption>
+<tr><th class="l">预测</th><th class="l">函数形式</th><th class="l">参数预测</th><th class="l">反驳条件</th></tr>
+<tr><td class="l">F6</td><td class="l">Accuracy(n) = A₀ − B·n<sup>α</sup>（n=推理长度）</td><td class="l">α ∈ (1.2, 1.8)；转折点约 8k tokens</td><td class="l">若 α ≤ 1，或转折点不存在</td></tr>
+<tr><td class="l">F7</td><td class="l">BugRate(m) = c₀ + c₁·m<sup>β</sup>（m=模块数）</td><td class="l">β ∈ (1.5, 2.5)</td><td class="l">若 β ≤ 1</td></tr>
+<tr><td class="l">F9</td><td class="l">ΔGain(k) 随标志物数 k 递减</td><td class="l">边际增益单调不增</td><td class="l">若边际增益不递减</td></tr>
+<tr><td class="l">F10</td><td class="l">Cost(T) = C₀·(1 + λT<sup>γ</sup>)（T=平台寿命）</td><td class="l">γ ∈ (1.8, 2.2)</td><td class="l">若 γ ≤ 1（线性或亚线性）</td></tr>
+<tr><td class="l">F8</td><td class="l">Effect(t) 在 t* 后进入平台</td><td class="l">t* ∈ (3, 4) 年</td><td class="l">若第 5 年仍在增长</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>参数化说明，等级 C／丙。<b>参数区间是启发式估计（C），不是拟合结果</b>（函数形式的灵感来自神经缩放律 Kaplan 等 2020、软件成本模型 Boehm 1981、过拟合修正 Bailey &amp; López de Prado 2014）——它们的作用是让预测<b>可被明确反驳</b>。若你有数据，请按附录 E 登记并检验；<b>参数估计本身也应被更新（这是 append-only 账本的意义）。</b></div>
+
 <div class="define"><span class="bt">F6—F10 与 F1—F5 的区别</span>
 <b>可否定性：</b>F6—F10 都给出了可测的阈值或拐点，因而可被明确推翻；F1—F5 只说方向。<br>
 <b>时间性：</b>F6/F7/F9 可在 1—2 年内检验，不需要等到 2030 年。<br>
@@ -170,4 +181,8 @@ L2/L3 预测的是<b>缺口的类型</b>，不是具体数值或时刻。把"预
 <p>Kolmogorov, A. N. (1965). Three Approaches to the Quantitative Definition of Information. <i>Problems of Information Transmission</i>, 1(1), 1–7.</p>
 <p>Li, M., &amp; Vitányi, P. (2008). <i>An Introduction to Kolmogorov Complexity and Its Applications</i>. Springer.</p>
 <p>Gell-Mann, M. (1994). <i>The Quark and the Jaguar</i>. W. H. Freeman.</p>
+
+<p>Kaplan, J., et al. (2020). Scaling Laws for Neural Language Models. <i>arXiv:2001.08361</i>.</p>
+<p>Boehm, B. W. (1981). <i>Software Engineering Economics</i>. Prentice-Hall.</p>
+<p>Bailey, D. H., &amp; López de Prado, M. (2014). The Deflated Sharpe Ratio. <i>Journal of Portfolio Management</i>, 40(5), 94–107.</p>
 </div>

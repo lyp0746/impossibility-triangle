@@ -405,6 +405,30 @@ def fig_math_unification():
     b.append(T(40, H - 20, "对《区分的演化》的反思：让数学整体变简单，撞上的是同一堵墙。", 13, GREY))
     return wrap(W, H, "\n".join(b))
 
+
+def fig_conflict_migration():
+    W, H = 1000, 600
+    b = [title("图 2.3　冲突迁移：知识进步把取舍推到另一条边")]
+    Cx, Cy, Ax, Ay, Tx, Ty = 500, 90, 130, 540, 870, 540
+    for (x1, y1), (x2, y2) in [((Cx, Cy), (Ax, Ay)), ((Ax, Ay), (Tx, Ty)), ((Tx, Ty), (Cx, Cy))]:
+        b.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#dcdcdc" stroke-width="2"/>')
+    b.append(T(Cx, Cy - 18, "C 完备", 18, BLUE, "middle", "700"))
+    b.append(T(Ax, Ay + 26, "A 可组合", 18, GREEN, "middle", "700"))
+    b.append(T(Tx, Ty + 26, "T 传递", 18, GOLD, "middle", "700"))
+    # 边中点
+    ca = ((Cx+Ax)/2, (Cy+Ay)/2); ta = ((Tx+Ax)/2, (Ty+Ay)/2); ct = ((Cx+Tx)/2, (Cy+Ty)/2)
+    b.append(f'<circle cx="{ca[0]:.0f}" cy="{ca[1]:.0f}" r="10" fill="{GREEN}" opacity="0.5"/>')
+    b.append(T(ca[0]-16, ca[1]-18, "冲突 1：C–A", 15, GREEN, "end", "600"))
+    b.append(T(ca[0]-16, ca[1]+6, "个体异质 → 难编码", 13, GREY, "end"))
+    b.append(f'<path d="M {ca[0]+20:.0f} {ca[1]:.0f} Q 500 360 {ta[0]:.0f} {ta[1]:.0f}" '
+             f'fill="none" stroke="{RED}" stroke-width="2.6" stroke-dasharray="8,6" marker-end="url(#ar)"/>')
+    b.append(T(500, 350, "知识进步（如代谢组学）", 15, RED, "middle", "600"))
+    b.append(f'<circle cx="{ta[0]:.0f}" cy="{ta[1]:.0f}" r="10" fill="{RED}" opacity="0.5"/>')
+    b.append(T(ta[0]+4, ta[1]-18, "冲突 2：A–T", 15, RED, "start", "600"))
+    b.append(T(ta[0]+4, ta[1]+6, "个体化知识 → 难复制", 13, GREY, "start"))
+    b.append(T(40, H - 20, "结论：知识进步把冲突从一条边推到另一条边，但不把它从系统中移除（除非扩大 K）。", 13, GREY))
+    return wrap(W, H, "\n".join(b))
+
 # ---------------------------------------------------------------- 附录
 def fig_psi():
     W, H = 1000, 420
@@ -501,6 +525,7 @@ FIGS = {
     "fig29-position-map.svg": fig_position_map,
     "fig30-ml-timeline.svg": fig_ml_timeline,
     "fig31-math-unification.svg": fig_math_unification,
+    "fig32-conflict-migration.svg": fig_conflict_migration,
 }
 
 

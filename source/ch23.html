@@ -67,12 +67,16 @@
 <table class="nat">
 <caption class="cap"><b>表 23.2　不同系统的适用性</b></caption>
 <tr><th class="l">系统</th><th class="l">T_char</th><th class="l">诊断窗口 Δt</th><th class="l">是否适用</th></tr>
-<tr><td class="l">机器学习</td><td class="l">年级</td><td class="l">2—5 年（研究周期）</td><td class="l">✓ 较适用</td></tr>
-<tr><td class="l">教育（基础效果）</td><td class="l">年级</td><td class="l">1 学年</td><td class="l">✓ 较适用</td></tr>
-<tr><td class="l">气候政策</td><td class="l">十年级</td><td class="l">20—50 年</td><td class="l">△ 只能给方向</td></tr>
-<tr><td class="l">文明演化</td><td class="l">世纪级</td><td class="l">对当代决策者过长</td><td class="l">✗ 基本无用</td></tr>
+<tr><th class="l">系统</th><th class="l">T_char</th><th class="l">诊断窗口 Δt</th><th class="l">是否适用</th><th class="l">比值 Δt/T_char</th></tr>
+<tr><td class="l">机器学习</td><td class="l">年级</td><td class="l">2—5 年（研究周期）</td><td class="l">✓ 较适用</td><td class="l">2—5</td></tr>
+<tr><td class="l">教育（基础效果）</td><td class="l">年级</td><td class="l">1 学年</td><td class="l">✓ 较适用</td><td class="l">约 1</td></tr>
+<tr><td class="l">气候政策</td><td class="l">十年级</td><td class="l">20—50 年</td><td class="l">△ 只能给方向</td><td class="l">2—5</td></tr>
+<tr><td class="l">文明演化</td><td class="l">世纪级</td><td class="l">对当代决策者过长</td><td class="l">✗ 基本无用</td><td class="l">≪1 或 ≫10</td></tr>
 </table>
 <div class="datasrc"><b>性质：</b>适用范围表，等级 C／丙。<b>这与第 21.8 节直接相关：</b>F3/F5（精准医学、教育个性化）需要 10 年以上才能验证，正是因为它们落在适用窗口的<b>边缘或之外</b>。</div>
+
+<div class="warning"><span class="bt">警告 23.1b　"10 倍"是启发式，不是硬约束</span>
+定义 23.2 的下界（Δt ≥ T_char）与上界（Δt ≤ 10·T_char）是<b>启发式判据（C／丙）</b>，不是从理论推导出的常数。它们的依据是：观察窗口至少覆盖一个周期（否则看不出），又不宜长到需要等几十倍时间（否则决策者等不了）。<b>表 23.2 的最后一列给出各系统的实际比值，供读者自行判断——若某系统的比值落在 (1, 10) 之外却仍能诊断，则该判据需要修正。</b></div>
 
 <div class="warning"><span class="bt">警告 23.1　不要把三角用到过长的尺度上</span>
 对一个特征尺度为 50 年的系统（气候、文明），三角<b>不能</b>回答"何时失效"——它只能回答"如果继续选这个配置，缺口会出现在哪一类"。<b>把长期的"缺口类型"读成"失效时刻"，是把 L2 预测误当 L4 预测。</b>这既是本框架的边界，也是第 21.8 节预测记录簿中部分条目迟迟"待观察"的原因。</div>
