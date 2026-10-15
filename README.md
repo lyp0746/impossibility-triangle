@@ -4,7 +4,9 @@
 
 > **The Price of Choice** — The Impossibility Triangle of Completeness, Composability, and Transfer: How Complex Knowledge Systems Form, Evolve, and Renew
 
-李毅芃　著　·　2026　·　CC BY 4.0　·　源码：[github.com/lyp0746/impossibility-triangle](https://github.com/lyp0746/impossibility-triangle)
+李毅芃　著　·　2026　·　CC BY 4.0　·　DOI: [10.5281/zenodo.23388629](https://doi.org/10.5281/zenodo.23388629)
+
+> **The Price of Choice** — 源码：[github.com/lyp0746/impossibility-triangle](https://github.com/lyp0746/impossibility-triangle)
 
 ---
 
@@ -119,6 +121,7 @@ bash scripts/validate.sh               # 校对 + EPUB 结构校验
   year      = {2026},
   publisher = {GitHub},
   note      = {CC BY 4.0},
+  doi       = {10.5281/zenodo.23388629},
   url       = {https://github.com/lyp0746/impossibility-triangle}
 }
 ```

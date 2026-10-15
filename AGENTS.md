@@ -49,6 +49,7 @@ bash scripts/release.sh               # 组装 release/
 - **可证伪登记簿**（`source/appendix_e_preregistration.html` 与 `docs/preregistration/`）为
   **append-only**：只追加，绝不改写旧行。
 - **正文与元数据不含版本号**；日期使用真实完成日期（`source/book.json` 单一来源）。
+- 归档 DOI：**10.5281/zenodo.23388629**（单一来源见 `source/front_copyright.html`、`.zenodo.json`、`CITATION.cff`、`README.md`）。
 - 发布包只放读者面文件；不得含 xlsx/csv/json/py 等原始数据与脚本（`release.sh` 有守门检查）。
 
 ## 写作风格（重要）

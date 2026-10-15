@@ -47,6 +47,10 @@ python analysis/make_figures.py        # 正文插图
 python analysis/audit.py               # 校对
 ```
 
+## 归档标识
+
+DOI：10.5281/zenodo.23388629（https://doi.org/10.5281/zenodo.23388629）。
+
 ## 许可
 
 正文 CC BY 4.0；代码 MIT。

@@ -41,6 +41,11 @@
   "language": "zho",
   "related_identifiers": [
     {
+      "identifier": "https://doi.org/10.5281/zenodo.23388629",
+      "relation": "isIdenticalTo",
+      "resource_type": "publication"
+    },
+    {
       "identifier": "https://github.com/lyp0746/impossibility-triangle",
       "relation": "isSupplementTo",
       "resource_type": "software"
@@ -61,5 +66,5 @@
       "resource_type": "publication"
     }
   ],
-  "notes": "Zenodo DOI 待归档。与作者此前三本书构成同一研究系列；本书把三本书的“不统一”重新定位为同一三角的不同顶点。"
+  "notes": "Zenodo DOI: 10.5281/zenodo.23388629. 与作者此前三本书构成同一研究系列；本书把三本书的“不统一”重新定位为同一三角的不同顶点。"
 }

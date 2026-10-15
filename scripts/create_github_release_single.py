@@ -22,7 +22,7 @@ HERE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 GIT = os.environ.get("GIT_BIN", r"D:\Git\cmd\git.exe")
 REPO = "lyp0746/impossibility-triangle"
 BOOK = "选择的代价"
-DOI = "DOI-PENDING"
+DOI = "10.5281/zenodo.23388629"
 
 # (本地文件, GitHub 资产名)
 ASSETS = [
@@ -75,6 +75,7 @@ def main():
     tag = f"{args.tag_prefix}-{args.date}"
     base = f"https://api.github.com/repos/{args.repo}"
     body = (f"《{BOOK}》发布包（{tag}）。\n\n"
+            f"全书 DOI：{DOI} · https://doi.org/{DOI}\n\n"
             "源码、构建流程与可复现脚本：https://github.com/lyp0746/impossibility-triangle\n\n"
             "含印刷版 PDF、电子阅读版 PDF、EPUB 3、网页版、合并／分文件 Markdown、"
             "封面与说明文件。本 release 为仓库唯一的 release。")
