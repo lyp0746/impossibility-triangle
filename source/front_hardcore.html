@@ -50,7 +50,7 @@
 <b>传递性</b> <span class="s">T</span> ＝ 相邻两个单元都被覆盖的比例（支持沿尺度推断）。<br>
 预算约束 <span class="s">Σ r_i ≤ K</span>（精确描述比粗描述贵一倍）。对所有分配做精确搜索，得到可达域与 Pareto 前沿。</div>
 
-<p>计算结果（<span class="s">n=12, K=15</span>，473721 种分配，脚本 <code>analysis/triangle_frontier.py</code>）：<span class="s">max C = 0.58</span>、<span class="s">max A = 1.00</span>、<span class="s">max T = 1.00</span>。三个坐标不能同时逼近 1：<b>在 <span class="s">C≥0.5 且 A≥0.5</span> 时，<span class="s">T ≤ 0.73</span>；在 <span class="s">A≥0.5 且 T≥0.5</span> 时，<span class="s">C ≤ 0.58</span>；在 <span class="s">C≥0.5 且 T≥0.5</span> 时，<span class="s">A ≤ 0.91</span>。</b>最极端的是：若同时把 <span class="s">A</span> 与 <span class="s">T</span> 推到 1，则 <span class="s">C = 0</span>——均匀可组合又连续可传递时，不能有任何精确描述。坐标和的上界约为 <span class="s">2.16</span>。<b>本模型只是把三角的直觉变成一个可看见的曲面，不承担任何经验预测。</b>［C／丙］</p>
+<p>计算结果（<span class="s">n=12, K=15</span>，473721 种分配，脚本 <code>analysis/triangle_frontier.py</code>）：<span class="s">max C = 0.58</span>、<span class="s">max A = 1.00</span>、<span class="s">max T = 1.00</span>。三个坐标不能同时逼近 1：<b>在 <span class="s">C≥0.5 且 A≥0.5</span> 时，<span class="s">T ≤ 0.73</span>；在 <span class="s">A≥0.5 且 T≥0.5</span> 时，<span class="s">C ≤ 0.58</span>；在 <span class="s">C≥0.5 且 T≥0.5</span> 时，<span class="s">A ≤ 0.91</span>。</b>最极端的是：若同时把 <span class="s">A</span> 与 <span class="s">T</span> 推到 1，则 <span class="s">C = 0</span>——均匀可组合又连续可传递时，不能有任何精确描述。坐标和的上界约为 <span class="s">2.16</span>。<b>本模型只是把三角的直觉变成一个可看见的曲面，不承担任何经验预测。</b>C／丙</p>
 
 <img class="fig" src="assets/svg/fig00-triangle-frontier.svg" alt="说明性模型给出的三角前沿">
 

@@ -26,11 +26,11 @@
 设系统 <span class="s">Σ</span> 具有有限描述复杂度 <span class="s">K</span>，运行在多个尺度上。则不存在分配使 <span class="s">(C, A, T)</span> 同时取到各自最强档位。<br>
 <b>弱形式（可被 O7 证伪）：</b><span class="s">(C₁, A₁, T₁) ∉ R(K)</span> 对一切有限 <span class="s">K</span> 成立。<br>
 <b>强形式（本书不主张）：</b>存在函数 <span class="s">g</span>，使 <span class="s">C + A + T ≤ g(K)</span>，且 <span class="s">g(K) &lt; 3</span> 对所有有限 <span class="s">K</span> 成立。<br>
-<b>状态：</b>弱形式为框架主张（C／丙）；强形式未定义（<span class="s">g</span> 未知）。</div>
+<b>状态：</b>弱形式为框架主张C／丙；强形式未定义（<span class="s">g</span> 未知）。</div>
 
 <h3>A.3　见证 Ⅰ：信息子模性（可证）</h3>
 
-<div class="define"><span class="bt">定理 A.1（子模性）［A／甲］</span>
+<div class="define"><span class="bt">定理 A.1（子模性）A／甲</span>
 对任意随机变量 <span class="s">Z, X₁, X₂</span>：
 <div class="eq"><span class="body">I(Z; X₁, X₂) = I(Z; X₁) + I(Z; X₂ | X₁)</span></div>
 由条件互信息非负，<span class="s">I(Z;X₂|X₁) ≥ 0</span>；又因条件不增加信息量，<span class="s">I(Z;X₂|X₁) ≤ I(Z;X₂)</span>。故
@@ -41,7 +41,7 @@
 
 <h3>A.4　见证 Ⅱ：离散—连续缺口（恒等式可证，缺口开放）</h3>
 
-<div class="define"><span class="bt">定理 A.2（拉普拉斯谱方差）［A／甲］</span>
+<div class="define"><span class="bt">定理 A.2（拉普拉斯谱方差）A／甲</span>
 对有限图 <span class="s">G</span>，取热核 <span class="s">ρ(t) = e<sup>−tL</sup>/Z(t)</span>，von Neumann 熵 <span class="s">S(t) = −tr(ρ log ρ)</span>。定义
 <div class="eq"><span class="body">κ_info(G) := −(1/2) S″(0⁺)</span></div>
 则 <span class="s">κ_info(G) = (1/2) Var(λ)</span>，其中 <span class="s">λ</span> 取遍拉普拉斯谱。</div>
@@ -52,7 +52,7 @@
 
 <h3>A.5　见证 Ⅲ：时间错配（命题可证，诊断依赖假设）</h3>
 
-<div class="define"><span class="bt">命题 A.2（时间错配）［A／甲］</span>
+<div class="define"><span class="bt">命题 A.2（时间错配）A／甲</span>
 设 <span class="s">T_min</span> 为动员适应能力所需最短时间，<span class="s">T_available</span> 为可用反应时间。定义
 <div class="eq"><span class="body">τ = T_min / T_available，　C_ctl = 1 / τ</span></div>
 当 <span class="s">τ ≤ 1</span>，存在适应窗口；当 <span class="s">τ &gt; 1</span>，适应窗口不足，系统必须依赖预先减小暴露或降级。<b>（"τ 增大时诊断置信区间发散"是经验诊断，等级 B／乙。）</b></div>
