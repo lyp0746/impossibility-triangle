@@ -37,7 +37,7 @@ references:
       - family-names: "李"
         given-names: "毅芃"
   - type: book
-    title: "区分的演化：统一值不值——一套压缩方法、一个图上的硬核定理、三次自我检视，与一堵没绕开的墙"
+    title: "区分的语法——为什么统一值不值：对称双线性形式与一个可复算的样本"
     authors:
       - family-names: "李"
         given-names: "毅芃"

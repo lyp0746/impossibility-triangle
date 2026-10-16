@@ -51,7 +51,7 @@ def fig_three_systems():
     W, H = 1000, 560
     b = [title("图 0.2　三个系统 → 一个坐标")]
     data = [("记忆系统", "《遗忘的边界》", "容量级联", BLUE, "保住 C+T", "让出 A"),
-            ("区分结构", "《区分的演化》", "1/3 缺口", GREEN, "保住 C+A", "让出 T"),
+            ("区分结构", "《区分的语法》", "1/3 缺口", GREEN, "保住 C+A", "让出 T"),
             ("社会时间", "《错位的时间》", "τ 错配", GOLD, "保住 A+T", "让出 C")]
     for i, (name, book, core, col, keep, miss) in enumerate(data):
         y = 100 + i * 130
@@ -402,7 +402,7 @@ def fig_math_unification():
     b.append(box(Tx - 170, Ty - 8, 180, 70, "T 传递", "几乎无人能懂", RED, "#fdeeee", 18))
     b.append(T(500, 360, "朗兰兹纲领 / 凝聚态数学：选 C+A，让出 T", 18, INK, "middle", "600"))
     b.append(T(500, 400, "统一 ≠ 简化；它牺牲传递性，换取更高层的完备与可组合", 15, GREY, "middle"))
-    b.append(T(40, H - 20, "对《区分的演化》的反思：让数学整体变简单，撞上的是同一堵墙。", 13, GREY))
+    b.append(T(40, H - 20, "对《区分的语法》的反思：让数学整体变简单，撞上的是同一堵墙。", 13, GREY))
     return wrap(W, H, "\n".join(b))
 
 
@@ -517,7 +517,7 @@ def fig_position_map():
     Tx, Ty = 860, 540
     for (x1, y1), (x2, y2) in [((Cx, Cy), (Ax, Ay)), ((Ax, Ay), (Tx, Ty)), ((Tx, Ty), (Cx, Cy))]:
         b.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#c9c9c9" stroke-width="2"/>')
-    books = [("《遗忘的边界》", (500, 300), BLUE), ("《区分的演化》", (360, 400), GREEN),
+    books = [("《遗忘的边界》", (500, 300), BLUE), ("《区分的语法》", (360, 400), GREEN),
              ("《错位的时间》", (650, 400), GOLD), ("《选择的代价》", (500, 200), RED)]
     # 顶点标注
     b.append(T(Cx, Cy - 20, "C 完备", 17, BLUE, "middle", "700"))

@@ -3,7 +3,7 @@
 <text x="340" y="152" font-size="16" fill="#3a6ea5" text-anchor="start" font-weight="600">容量级联</text>
 <text x="500" y="152" font-size="15" fill="#666" text-anchor="start" font-weight="normal">保住 C+T</text>
 <text x="680" y="152" font-size="15" fill="#c94f4f" text-anchor="start" font-weight="600">让出 A</text>
-<rect x="60" y="230" width="250" height="90" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="185.0" y="269.0" font-size="20" fill="#009E73" text-anchor="middle" font-weight="600">区分结构</text><text x="185.0" y="295.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">《区分的演化》</text>
+<rect x="60" y="230" width="250" height="90" rx="10" fill="#f7f9fc" stroke="#009E73" stroke-width="2"/><text x="185.0" y="269.0" font-size="20" fill="#009E73" text-anchor="middle" font-weight="600">区分结构</text><text x="185.0" y="295.0" font-size="13" fill="#666" text-anchor="middle" font-weight="normal">《区分的语法》</text>
 <text x="340" y="282" font-size="16" fill="#009E73" text-anchor="start" font-weight="600">1/3 缺口</text>
 <text x="500" y="282" font-size="15" fill="#666" text-anchor="start" font-weight="normal">保住 C+A</text>
 <text x="680" y="282" font-size="15" fill="#c94f4f" text-anchor="start" font-weight="600">让出 T</text>
