@@ -161,3 +161,11 @@ bash scripts/build.sh                   # PDF / EPUB / HTML / Markdown
 **Cite.** Li Yipeng. *The Price of Choice: The Impossibility Triangle of Completeness, Composability, and Transfer*. 2026. CC BY 4.0.
 
 **License.** Text: CC BY 4.0. Code: MIT.
+
+---
+
+## 本系列
+
+- **通俗读本《只能选两样》**：从来不及、会忘记到说不清——五个核心，看懂复杂世界的取舍。
+  面向所有人（小朋友 / 学生 / 成年人 / 专家），含 12 幅图解与 5 分钟小实验。
+- **系列入口与外部登记库**：[github.com/lyp0746/knowledge-tradeoffs](https://github.com/lyp0746/knowledge-tradeoffs) —— 最小可验证单元、跨域盲测登记（append-only）、合并术语表、五核关系图。
