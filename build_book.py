@@ -39,6 +39,7 @@ FRONT = [("先读这一页　三条可检验的诊断", "front_hardcore.html", "
          ("读者指南　按角色选择阅读路径", "front_roadmap.html", "roadmap"),
          ("术语、记号与断言分级速查", "front_terms.html", "terms")]
 BACK = [("结语　从寻求大一统到自觉管理权衡", "back_epilogue.html", "epilogue"),
+        ("附　通俗读本《只能选两样》导引", "back_popular_guide.html", "popguide"),
         ("附录 A　形式化补充：不可能三角的陈述与三个见证", "appendix_a_math.html", "apxA"),
         ("附录 B　案例总表：四个战场的 C-A-T 选择", "appendix_b_cases.html", "apxB"),
         ("附录 C　参考文献", "appendix_c_references.html", "apxC"),
