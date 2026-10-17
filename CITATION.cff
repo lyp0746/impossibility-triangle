@@ -1,48 +1,51 @@
 cff-version: 1.2.0
-message: "若使用本书，请按以下格式引用。"
-title: "选择的代价：完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新"
-abstract: "本书把作者此前三本书中三处无法弥合的矛盾诊断为同一个结构性困境：任何有限复杂度的知识系统都不能同时完整地拥有局部完备性（C）、可组合性（A）与跨尺度传递性（T），至多同时满足两个；选择哪两个，就必然在第三个上留下一处可被定位的缺口。全书以四个战场（生命、物理、社会、人工）做现实诊断，把复杂知识系统的形成、演化与更新写成一部连续重新选择三角的历史，并给出可操作的分层有效性与优雅降级设计。"
+message: "If you use this work, please cite it as below. 若使用本作，请按下述格式引用。"
+type: book
+title: "选择的代价：完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新 / The Price of Choice: The Impossibility Triangle of Completeness, Composability, and Transfer"
+abstract: >-
+  本著作提出“选择的代价”诊断框架，用以解释任何有限复杂度知识系统在形成、演化与更新中的结构性困境。 核心主张：完备（C）、可组合（A）、跨尺度传递（T）至多同时充分具备两项；选择两项，第三项必然留下可定位的缺口。信息子模性、离散—连续断层（1/3 缺口）与时间错配 τ 是三条理论见证。 结构与证据：25 章、附录 A—Y、38 幅图；医疗、教育、组织、金融（LTCM 1998）、软件工程、人工智能六个领域被放进同一张价目表，并配十个反例与逐条反驳条件。 诚实的纪律：全部主张按 A/B/C 与甲/乙/丙双重分级；37 个开放问题（O1—O37）标明已证、假设与待验证；失败与曾被推翻的强主张写在正文与附录，而非藏在脚注。 边界：框架给出“失效的形态与方向”的诊断，不给出新配置的预测，也不替代领域判断；它的用途是让设计者在选择两项时，看见第三项会怎样失效。 版本：2026-10-18，268 页，25 章，38 图，附录 A—Y，O1—O37；源码与脚本开源，内容 CC BY 4.0，代码 MIT。
+  Abstract (English). This work presents “The Price of Choice,” a diagnostic framework for the structural dilemma of any finite-complexity knowledge system. Core thesis: completeness (C), composability (A) and cross-scale transfer (T) can be fully held at most two at a time; choosing two leaves an identifiable gap at the third. Information submodularity, the discrete–continuous gap (1/3) and temporal mismatch τ serve as theoretical witnesses. Structure and evidence: 25 chapters, appendices A–Y, 38 figures; six domains — medicine, education, organisations, finance (LTCM 1998), software engineering and AI — are mapped onto one price list, with ten counterexamples and refutation conditions. Discipline: every claim carries an evidence grade (A/B/C) and a conceptual grade; 37 open questions (O1–O37) mark what is proved, assumed or untested, and failures are reported in the main text. Boundaries: the framework diagnoses failure modalities and directions, not novel configurations, and does not replace domain expertise. Edition: 2026-10-18, 268 pages, 25 chapters, 38 figures, appendices A–Y.
 authors:
   - family-names: "李"
     given-names: "毅芃"
-    affiliation: "独立研究者 / Independent Researcher"
-contact:
-  - family-names: "李"
-    given-names: "毅芃"
+    alias: "Li Yipeng"
     email: "1610369302@qq.com"
-type: book
-doi: "10.5281/zenodo.23388629"
+    affiliation: "独立研究者 / Independent Researcher"
+date-released: "2026-10-18"
 license: CC-BY-4.0
-year: 2026
-date-released: "2026-10-16"
-keywords:
-  - 不可能三角
-  - 完备性
-  - 可组合性
-  - 传递性
-  - 复杂知识系统
-  - 子模性
-  - 时间错配
-  - 优雅降级
-  - impossibility triangle
-  - completeness
-  - composability
-  - transferability
+doi: "10.5281/zenodo.23388628"
 repository-code: "https://github.com/lyp0746/impossibility-triangle"
-url: "https://github.com/lyp0746/impossibility-triangle"
+url: "https://doi.org/10.5281/zenodo.23388628"
+keywords:
+  - "选择的代价"
+  - "不可能三角"
+  - "完备性"
+  - "可组合性"
+  - "传递性"
+  - "子模性"
+  - "知识演化"
+  - "优雅降级"
+  - "可证伪性"
+  - "语言：中文（含英文摘要）"
+  - "Language: Chinese (with English abstract)"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23388628"
+    description: "Zenodo 归档 DOI（本版）"
+  - type: url
+    value: "https://github.com/lyp0746/impossibility-triangle"
+    description: "源码、可复算脚本与构建流程"
+  - type: url
+    value: "https://github.com/lyp0746/knowledge-tradeoffs"
+    description: "系列入口与外部登记库"
 references:
   - type: book
-    title: "遗忘的边界：有限容量下的记忆、智能与自我"
-    authors:
-      - family-names: "李"
-        given-names: "毅芃"
+    title: "错位的时间：为什么我们总是来不及——社会系统的时间错配与可控性边界 / Desynchronized Time: Why We Are Always Too Late — Temporal Mismatch and the Boundary of Controllability in Social Systems"
   - type: book
-    title: "区分的语法——五个领域，同一个二次型"
-    authors:
-      - family-names: "李"
-        given-names: "毅芃"
+    title: "遗忘的边界：有限容量下的记忆、智能与自我 / The Boundary of Forgetting: Memory, Intelligence, and the Self under Finite Capacity"
   - type: book
-    title: "错位的时间：为什么我们总是来不及——社会系统的时间错配与可控性边界"
-    authors:
-      - family-names: "李"
-        given-names: "毅芃"
+    title: "区分的语法：五个领域，同一个二次型 / The Grammar of Distinction: Five Domains, One Quadratic Form"
+  - type: book
+    title: "诠释的权衡：历史研究中的置信度、权衡与理论流变——从人物还原到范式转移的五个应用 / The Tradeoffs of Interpretation: Confidence, Trade-offs, and Theoretical Change in Historical Research — Five Applications from Restoring Persons to Paradigm Shifts"
+  - type: book
+    title: "涌现的临界：为什么有些变化回不去——临界、涌现与形式化的边界 / The Criticality of Emergence: Why Some Changes Cannot Be Undone — Criticality, Emergence, and the Limits of Formalization"

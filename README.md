@@ -4,7 +4,7 @@
 
 > **The Price of Choice** — The Impossibility Triangle of Completeness, Composability, and Transfer: How Complex Knowledge Systems Form, Evolve, and Renew
 
-李毅芃　著　·　2026　·　CC BY 4.0　·　DOI: [10.5281/zenodo.23388629](https://doi.org/10.5281/zenodo.23388629)
+李毅芃　著　·　2026　·　CC BY 4.0　·　DOI: [10.5281/zenodo.23388628](https://doi.org/10.5281/zenodo.23388628)
 
 > **The Price of Choice** — 源码：[github.com/lyp0746/impossibility-triangle](https://github.com/lyp0746/impossibility-triangle)
 
@@ -121,7 +121,7 @@ bash scripts/validate.sh               # 校对 + EPUB 结构校验
   year      = {2026},
   publisher = {GitHub},
   note      = {CC BY 4.0},
-  doi       = {10.5281/zenodo.23388629},
+  doi       = {10.5281/zenodo.23388628},
   url       = {https://github.com/lyp0746/impossibility-triangle}
 }
 ```
@@ -174,7 +174,7 @@ bash scripts/build.sh                   # PDF / EPUB / HTML / Markdown
 
 ## 归档 DOI（最新）
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23388629.svg)](https://doi.org/10.5281/zenodo.23388629)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23388628.svg)](https://doi.org/10.5281/zenodo.23388628)
 
 本书的**最新版本**以该 DOI 为准（Zenodo 自动指向最新版本）；引用格式见 `CITATION.cff`。
 本系列的通俗读本《只能选两样》与外部登记库见 [lyp0746/knowledge-tradeoffs](https://github.com/lyp0746/knowledge-tradeoffs)。
