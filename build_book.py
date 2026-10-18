@@ -31,7 +31,8 @@ CSS_DIR = os.path.join(HERE, "assets", "css")
 OUTPUT = os.path.join(HERE, "output")
 DATA_DIR = os.path.join(HERE, "data")
 
-FRONT = [("先读这一页　三条可检验的诊断", "front_hardcore.html", "hardcore"),
+FRONT = [("总纲　现实中不存在无限", "front_finitude.html", "finitude"),
+         ("先读这一页　三条可检验的诊断", "front_hardcore.html", "hardcore"),
          ("前言　为什么第四本书关乎“无法统一”", "front_preface.html", "preface"),
          ("背景　从三个复杂系统到 C-A-T", "front_background.html", "background"),
          ("十分钟读懂本书", "front_quickstart.html", "quickstart"),
