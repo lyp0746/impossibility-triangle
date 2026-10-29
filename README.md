@@ -1,180 +1,65 @@
-# 选择的代价
+# 选择的代价 · 
 
-### 完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新
+> 完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新
+>
+> **DOI**：10.5281/zenodo.23447238　·　概念 DOI：10.5281/zenodo.23388628　·　276 页 / 5 部分 / 25 章
 
-> **The Price of Choice** — The Impossibility Triangle of Completeness, Composability, and Transfer: How Complex Knowledge Systems Form, Evolve, and Renew
-
-李毅芃　著　·　2026　·　CC BY 4.0　·　DOI: [10.5281/zenodo.23388628](https://doi.org/10.5281/zenodo.23388628)
-
-> **The Price of Choice** — 源码：[github.com/lyp0746/impossibility-triangle](https://github.com/lyp0746/impossibility-triangle)
+本书追问一个比任何单一学科都更靠下的问题：复杂知识系统如何形成、演化和更新？答案不是某个大一统机制，而是一条约束。作者此前三本书各自撞上了一次“无法弥合的矛盾”：《遗忘的边界》里是遗忘与更新的对立，《区分的语法》里是离散完备与连续传递之间差一个因子 1/3 的缺口，《错位的时间》里是效率与冗余、以及多尺度之间无法同步的时间错配。本书把这三处症状诊断为同一个结构性困境的三个投影，并把它命名为“选择的代价”：任何有限复杂度的知识系统都不能同时完整地拥有三个性质——局部完备性（每个部分有自洽的内部描述）、可组合性（部分的组合不产生新的非线性项）、跨尺度传递性（不同尺度的结论可以无损互推）。三者至多同时满足两个；选择哪两个，就会在第三个上留下一处可被定位的缺口。本书不把这条约束当作宿命，而当作交易的价目表：它先给出三角的形式陈述与三个见证（信息子模性、离散—连续断层、时间错配），再在生命、物理、社会、人工四个战场做现实诊断，然后把“形成—演化—更新”写成一部连续重新选择三角的历史（从少数大师的 C+T 知识，到教学化的 A+T 知识，到工程化的 C+A 知识，再在危机中重启），最后给出建设性的行动建议：分层有效性、制度化的失效预案、优雅降级、以及一种把选择与代价写在明处的书写方式。全书以 A/B/C 证据等级与可证伪登记簿组织，明确区分“已证”“框架”“猜想”，并把作者本人一次被证伪的强主张照实记录。卷首《总纲　现实中不存在无限》把地基写在最前面：有限性是三角的必要前提而非充分条件，三角的实质内容是描述、组合、传递的构成性与交互惩罚 ψ>0；第 2.2b 节与第 22.4b 节分别给出这一逻辑结构与“第四维”的资格审查。
 
 ---
 
-## 这本书在做什么
+## 结构
 
-把作者此前三本书中三处**"无法弥合的矛盾"**诊断为同一个结构性困境：
+| 部分 | 标题 | 章数 | 起 → 止 |
+|---|---|---:|---|
+| 1 | 第一部分　问题的现身：从裂缝到三角 | 4 | 三场失败的统一：问题如何现身 → 与已有理论的对话：不可能定理、计算与系统论 |
+| 2 | 第二部分　实践：四个战场的 C-A-T | 6 | 生命系统（一）：记忆、遗忘与容量级联 → 人工系统：组织成长、创新与远程工作 |
+| 3 | 第三部分　形成、演化与更新 | 5 | 知识系统的三阶段成长模式 → 更新：制度性的 C-A-T 管理 |
+| 4 | 第四部分　实践智慧：在承认边界前做判断 | 5 | 分层有效性：预测、解释与控制 → 决策者的诊断手册 |
+| 5 | 第五部分　边界、反例与结语 | 5 | 三分法的证据现状与开放问题 → 结语二：给读者的诊断手册 |
 
-- 《遗忘的边界》——遗忘与更新 → 让出**可组合性**
-- 《区分的语法》——离散完备与连续传递 → 让出**传递性**
-- 《错位的时间》——效率与冗余、时间错配 → 让出**完备性**
+每章八段：主提问 → 场景开篇 → 导论 → 机制 → 表/图 → 反例 → 本章小结 → 一句话带走。
+每个部分有满栏插图扉页（`assets/svg/part-NN.svg`）、一段部分导语与一段部分小结。
 
-**一句话：** 任何有限复杂度的知识系统，都不能同时完整地拥有局部完备性（C）、可组合性（A）与跨尺度传递性（T）；至多两个。三角不是宿命，是一张**价目表**；诊断的核心动作，就是指出系统**让出了哪一个顶点**。
+## 证据与自检
 
-## 核心主张（分级）
+- 结论标注 **A/B/C** 证据等级与甲/乙/丙概念等级；结论强度不超过证据强度。
+- 可证伪登记簿：`docs/preregistration/checkups.csv`（append-only）。
+- 结构校阅：系列 lint 24 条规则，本书 **error 0 / warn 0**（见 `_series/lint/REPORT.md`）。
 
-| 层 | 内容 | 强度 | 位置 |
-|---|---|---|---|
-| 硬核 | 信息子模性（能力不能线性相加）；拉普拉斯谱方差恒等式 | **定理（A／甲）** | 第 5、12 章 |
-| 硬核 | 说明性模型 T 的可达前沿（473721 种分配精确枚举） | **模型（A／丙）** | 附录 A |
-| 形式化 | 系统四元组、复杂度三分量、可测量坐标 (c,a,t)、记账不等式 | **条件命题（B／乙）** | 第 2 章、附录 A.7 |
-| 诊断 | 四个战场的 C-A-T 选择（含定量诊断与历史脉络） | 框架（B／乙） | 第二部分 |
-| 诊断 | 三角命题（至多两个顶点满格） | 框架（C／丙） | 第 2 章 |
-| 纲领 | 三角之外；第四性质；可行域形状；O1—O25 | 纲领（C／丙） | 第 21、22 章、附录 L |
+## 文件
 
-## 三个可检验的诊断
+| 路径 | 是什么 |
+|---|---|
+| `source/` | **唯一正文来源**（HTML）；`book.json` 元数据、`parts.json` 结构 |
+| `analysis/` | 图表、统计、抓取脚本（可重跑） |
+| `assets/` | 封面、SVG 图、CSS |
+| `scripts/build.sh` | audit → 印刷 PDF → 电子版 → EPUB → Markdown |
+| `docs/` | 方法、数据来源、缺口与登记簿 |
 
-1. **子模性**：`I(Z; X₁∪X₂) ≤ I(Z;X₁) + I(Z;X₂)`——有限容量下，能力不能相加。
-2. **离散—连续缺口**：`κ_info = Var(λ)/2` 在有限图上精确；跨到连续留下因子 `1/3` 的缺口。
-3. **时间错配**：`τ = T_min / T_available`；τ 增大时诊断置信区间发散，框架退化为方向。
-
-## 结构：症状 → 三角 → 诊断 → 课题 → 设计
-
-| 部分 | 章 | 内容 |
-|---|---|---|
-| 先读这一页 | 前件 | 三条可检验的诊断，供怀疑论者先验证 |
-| 背景 | 前件 | **从三个复杂系统（记忆/区分结构/社会时间）引入并精确定义 C-A-T** | |
-| 第一部分 | 第 1—4 章 | 问题的现身：三处症状、不可能三角、分级纪律、与已有理论对话 |
-| 第二部分 | 第 5—10 章 | **现实诊断**：生命、物理、社会、人工四个战场 |
-| 第三部分 | 第 11—15 章 | **形成、演化与更新**：三阶段成长、学科分裂、学术体制、范式转变、制度性管理 |
-| 第四部分 | 第 16—20 章 | **设计智慧**：分层有效性、制度权衡、优雅降级、书写方式、诊断手册 |
-| 第五部分 | 第 21—23 章 | 边界与纲领：证据现状、三角之外、结语 |
-| 附录 | A—Y | 形式化、案例总表、文献（含文献地图）、术语、可证伪登记、缺口、工具、模板、对照、失败记录、**案例数据库、研究议题库、系列对应、计算与系统论、三大前沿、延伸战场、演化指标、演化视角、边界案例、根本质疑、**诊断的哲学基础、框架对标、失败案例、计算路线图、**实证探针集** |
-
-## 快速开始
-
-```bash
-# 1) 复现说明性模型的精确枚举（n=12, K=15）
-python analysis/triangle_frontier.py
-
-# 1c) 软件实证探针（附录 Y.1，需 GitHub token；双仓库对照）
-python analysis/linux_kernel_probe.py --n 200
-
-# 1d) arXiv 文献探针（附录 Y.2）
-python analysis/arxiv_crossfield.py --per-year 300
-
-# 1e) OpenAlex 引用层面探针（附录 Y.2b，O36）
-python analysis/openalex_fission.py
-
-# 1b) 复现前沿随规模变化（n 至 200，图 2.2）
-python analysis/frontier_scaling.py
-
-# 2) 生成插图与封面
-python analysis/make_figures.py && python analysis/make_cover.py
-
-# 3) 构建全部版本：印刷 PDF / 电子阅读 PDF / EPUB / HTML / Markdown
-bash scripts/build.sh
-
-# 4) 质量门禁
-bash scripts/validate.sh
-
-# 5) 组装发布包
-bash scripts/release.sh
-```
-
-依赖：Python（numpy、lxml、pypdf、bs4）、Chrome/Edge（PDF 打印）。
-
-## 目录结构
-
-```
-impossibility-triangle/
-├── source/              # 唯一权威正文来源（HTML）
-│   ├── book.json        # 书名/作者/日期/摘要（单一来源）
-│   ├── parts.json       # 部分 → 章 → 节
-│   ├── ch01.html … ch23.html
-│   ├── front_*.html / back_*.html
-│   └── appendix_*.html
-├── analysis/            # 数值复现、插图、校对、登记核销
-├── assets/{css,svg}/    # 版式与矢量插图
-├── docs/                # 方法论、来源、缺口、贡献指南、preregistration/
-├── scripts/             # build / validate / release
-└── output/, release/    # 派生产物（gitignored）
-```
-
-## 可证伪性与失败记录
-
-- **可证伪登记簿**（附录 E 与 `docs/preregistration/`）：每条可反驳命题写明证伪条件与核验日期；账本**只追加、不修改**。
-- **失败记录**（附录 J）：作者照实保留两条被自己脚本推翻的强主张（"坐标和上界恒为 2"、"恰好让出一个顶点"）。
-
-## 工程验证
-
-```bash
-python analysis/triangle_frontier.py   # 精确枚举 473721 种分配
-bash scripts/validate.sh               # 校对 + EPUB 结构校验
-```
+产物（`output/`、`release/`）不入库，可由 `source/` 重建。
 
 ## 引用
 
-```bibtex
-@book{li2026price,
-  title     = {选择的代价：完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新},
-  author    = {李毅芃},
-  year      = {2026},
-  publisher = {GitHub},
-  note      = {CC BY 4.0},
-  doi       = {10.5281/zenodo.23388628},
-  url       = {https://github.com/lyp0746/impossibility-triangle}
-}
 ```
+选择的代价：完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新。李毅芃，2026。10.5281/zenodo.23447238
+```
+
+## 系列（九本书）
+
+| 书 | 仓库 |
+|---|---|
+| 只能选两样 | [knowledge-tradeoffs](https://github.com/lyp0746/knowledge-tradeoffs) |
+| 区分的语法 | [distinction-evolution](https://github.com/lyp0746/distinction-evolution) |
+| 遗忘的边界 | [capacity-cascade](https://github.com/lyp0746/capacity-cascade) |
+| 错位的时间 | [entropy-spiral](https://github.com/lyp0746/entropy-spiral) |
+| 诠释的权衡 | [interpretation-tradeoff](https://github.com/lyp0746/interpretation-tradeoff) |
+| 涌现的临界 | [emergence-critical](https://github.com/lyp0746/emergence-critical) |
+| 心灵的分岔 | [mind-forks](https://github.com/lyp0746/mind-forks) |
+| 热点的账单 | [hotspot-bills](https://github.com/lyp0746/hotspot-bills) |
+
+十四篇工作论文与全部条目的 DOI 见 [series-workspace](https://github.com/lyp0746/series-workspace)。
 
 ## 许可
 
-- 正文：**CC BY 4.0**
-- 代码与脚本：**MIT**
-
----
-
-# English
-
-## The Price of Choice
-
-### The Impossibility Triangle of Completeness, Composability, and Transfer — How Complex Knowledge Systems Form, Evolve, and Renew
-
-**What this book does.** It diagnoses three "unbridgeable contradictions" from the author's previous three books as one structural predicament. *The Boundary of Forgetting* (forgetting vs. updating) concedes **composability**; *The Evolution of Distinction* (discrete completeness vs. continuous transfer) concedes **transferability**; *The Time Out of Joint* (efficiency vs. redundancy, temporal mismatch) concedes **completeness**.
-
-**Central thesis.** Any knowledge system of bounded complexity cannot fully possess all three at once — local **completeness** (C), **composability** (A), and cross-scale **transferability** (T) — but at most two. The triangle is not fate but a **price list**; the core diagnostic act is to name the *conceded vertex*.
-
-**Three testable diagnostics.**
-
-1. **Submodularity**: `I(Z; X₁∪X₂) ≤ I(Z;X₁) + I(Z;X₂)` — under limited capacity, capabilities do not add linearly.
-2. **Discrete–continuous gap**: `κ_info = Var(λ)/2` is exact on finite graphs; passing to the continuum leaves a factor-of-`1/3` gap.
-3. **Temporal mismatch**: `τ = T_min / T_available`; as τ grows, the diagnostic's confidence interval diverges and the framework degrades to direction only.
-
-**Structure.** Three testable diagnostics → the triangle → four battlefields (life, physics, society, artifacts) → how knowledge systems form, evolve, and renew → design wisdom (layered validity, institutional trade-offs, graceful degradation, diagnostic playbook). Every strong claim carries an evidence grade (A/B/C) and a falsification condition; the preregistration ledger is append-only and the author's own falsified claims (Appendix J) are kept on record.
-
-**Reproduce.**
-
-```bash
-python analysis/triangle_frontier.py   # exact enumeration of the illustrative model
-bash scripts/build.sh                   # PDF / EPUB / HTML / Markdown
-```
-
-**Cite.** Li Yipeng. *The Price of Choice: The Impossibility Triangle of Completeness, Composability, and Transfer*. 2026. CC BY 4.0.
-
-**License.** Text: CC BY 4.0. Code: MIT.
-
----
-
-## 本系列
-
-- **通俗读本《只能选两样》**：从来不及、会忘记到说不清——五个核心，看懂复杂世界的取舍。
-  面向所有人（小朋友 / 学生 / 成年人 / 专家），含 12 幅图解与 5 分钟小实验。
-- **系列入口与外部登记库**：[github.com/lyp0746/knowledge-tradeoffs](https://github.com/lyp0746/knowledge-tradeoffs) —— 最小可验证单元、跨域盲测登记（append-only）、合并术语表、五核关系图。
-
----
-
-## 归档 DOI（最新）
-
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23388628.svg)](https://doi.org/10.5281/zenodo.23388628)
-
-本书的**最新版本**以该 DOI 为准（Zenodo 自动指向最新版本）；引用格式见 `CITATION.cff`。
-本系列的通俗读本《只能选两样》与外部登记库见 [lyp0746/knowledge-tradeoffs](https://github.com/lyp0746/knowledge-tradeoffs)。
+正文与图件 CC BY 4.0；脚本 MIT。
