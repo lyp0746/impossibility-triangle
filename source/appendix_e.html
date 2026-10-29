@@ -1,0 +1,634 @@
+<h2 class="chapter">附录 E　上游、前沿与对话</h2>
+<div class="box"><p>本附录汇集原附录 JMNORSTUV 各字母项下的条目；它们是证据与工具，不是论述。</p></div>
+
+<h3>J.1　失败的强主张 F1：坐标和存在普适上界 2</h3>
+
+<div class="define"><span class="bt">原始主张（已撤回）</span>
+"任何有限复杂度知识系统都满足 <span class="s">C + A + T ≤ 2</span>，即三个坐标的粗化值至多取到 2。"<br>
+这条主张最初被写成几乎像定理一样，因为它看起来优雅、对称、且与"三选二"的直觉吻合。</div>
+
+<p><b>如何被推翻。</b>作者用说明性模型 T 做精确枚举（脚本 <code>analysis/triangle_frontier.py</code>）。结果显示：</p>
+
+<table class="nat">
+<caption class="cap"><b>表 J.1　模型 T 的坐标和</b></caption>
+<tr><th class="l">n</th><th class="l">K</th><th class="l">坐标和上界</th></tr>
+<tr><td class="l">12</td><td class="l">12</td><td class="l">2.00</td></tr>
+<tr><td class="l">12</td><td class="l">15</td><td class="l">2.16</td></tr>
+<tr><td class="l">12</td><td class="l">18</td><td class="l">2.41</td></tr>
+<tr><td class="l">12</td><td class="l">20</td><td class="l">2.58</td></tr>
+</table>
+
+<p>坐标和上界<b>随预算 K 增大而上升</b>，并不固定在 2。因此"存在普适上界 2"是错误的。原始主张被撤回，改为弱形式：<b>"三个坐标不能同时逼近 1；坐标和的上界依赖复杂度 K"</b>（第 2 章、附录 形式化与证明）。</p>
+
+<div class="warning"><span class="bt">这次失败教了什么</span>
+优雅的对称数字（如"上界正好是 2"）极具诱惑力，但它常常来自把模型的一个偶然取值误当作结构常数。<b>这个失败直接催生了第 3 章的铁律："结论强度 ≤ 证据强度"，以及第 21.6 节的自我检视。</b></div>
+
+<h3>J.4　为什么保留失败</h3>
+
+<p>删除失败的主张会让一本书看起来更整齐，但会降低它的可信度。<b>一个只报告成功的框架，无法让读者判断它在何处脆弱。</b>保留失败有三重价值：</p>
+
+<ul>
+<li><b>它标出了框架的真实边界：</b>读者会知道"上界 2"这类漂亮数字不可信。</li>
+<li><b>它示范了自我检视：</b>作者会用自己的脚本推翻自己的主张，这说明脚本不是装饰。</li>
+<li><b>它邀请同等诚实的反驳：</b>如果作者能公开自己的失败，读者也更容易公开自己的反例（如 O7）。</li>
+</ul>
+
+<div class="define"><span class="bt">结语</span>
+本书主张：对有限复杂度的知识系统，"选择的代价"是结构与可定位的。<br>
+如果这两条失败记录反而让你更相信这个主张，那就说明：<b>一个框架的可信度，来自它愿意公开自己在哪里碎过。</b></div>
+
+<h3>M.2　证据等级对应</h3>
+
+<p>四本书各自建立了证据等级。本书的等级与它们一致（A/B/C 与甲/乙/丙），但需要说明每一本中的"最强结果"落在哪一级。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 M.2　四本书的证据等级对应</b></caption>
+<tr><th class="l">书</th><th class="l">最强结果</th><th class="l">本书等级</th><th class="l">含义</th></tr>
+<tr><td class="l">《遗忘的边界》</td><td class="l">信息瓶颈与率失真的形式化</td><td class="l">定理 A／甲</td><td class="l">可数学证明</td></tr>
+<tr><td class="l">《区分的语法》</td><td class="l">图上两阶段相变定理；κ_info = Var(λ)/2</td><td class="l">定理 A／甲</td><td class="l">可机器复算</td></tr>
+<tr><td class="l">《错位的时间》</td><td class="l">τ 的蒙特卡洛传播与序数诊断</td><td class="l">命题 A／甲 + 诊断 B／乙</td><td class="l">命题可复算，诊断依赖假设</td></tr>
+<tr><td class="l">《选择的代价》</td><td class="l">子模性（引）+ 离散曲率恒等式（引）+ 模型 T 枚举</td><td class="l">定理 A／甲 + 模型 C／丙</td><td class="l">硬核可复算，三角为框架</td></tr>
+</table>
+
+<h3>M.5　系列阅读建议</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 M.4　系列阅读顺序</b></caption>
+<tr><th class="l">目标</th><th class="l">顺序</th></tr>
+<tr><td class="l">先看方法</td><td class="l">《选择的代价》前言 + 第 2、3 章 → 再读其他三本</td></tr>
+<tr><td class="l">先看硬核</td><td class="l">《区分的语法》第五部分 → 《选择的代价》第 2 章 → 《遗忘的边界》</td></tr>
+<tr><td class="l">先看现实</td><td class="l">《错位的时间》 → 《选择的代价》第二部分</td></tr>
+<tr><td class="l">完整系列</td><td class="l">《遗忘的边界》 → 《区分的语法》 → 《错位的时间》 → 《选择的代价》</td></tr>
+</table>
+
+<h3>N.2　算法信息论：描述预算的硬下界</h3>
+
+<p>Kolmogorov 复杂度 <span class="s">K(x)</span> 定义为一个能输出 <span class="s">x</span> 的最短程序的长度。它的核心性质（不可压缩性、不可计算性）直接对应三角的"<span class="s">K_desc</span> 受限"。</p>
+
+<div class="define"><span class="bt">不可压缩性与 C₁</span>
+对长度为 <span class="s">n</span> 的串，绝大多数满足 <span class="s">K(x) ≈ n</span>（不可压缩）。<br>
+<b>三角读法：</b>若一个系统的描述预算 <span class="s">K_desc &lt; n</span>，则它不可能对多数对象给出"描述完备 <span class="s">C₁</span>"的刻画——这是<b>计数论证</b>，不依赖任何假设。<b>因此 <span class="s">C₁</span> 与 <span class="s">K_desc</span> 之间存在一条硬下界。</b>［定理，A／甲］</div>
+
+<p>这条硬下界是三角中<b>最严格</b>的一部分：它说明"完备性"在描述预算受限时受计数约束，而不是受某个领域的特殊困难约束。第 5 章的子模性（信息论）与这里的不可压缩性（算法信息论）是同一条账的两个版本。</p>
+
+<h3>N.5　三角相对这些传统的三个差异</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 N.3　三角与上游传统的差异</b></caption>
+<tr><th class="l">维度</th><th class="l">上游传统</th><th class="l">本书三角</th></tr>
+<tr><td class="l">目标</td><td class="l">发现普适规律 / 证明边界</td><td class="l">诊断具体系统的取舍</td></tr>
+<tr><td class="l">严格性</td><td class="l">高（定理或形式化）</td><td class="l">框架 + 条件命题 + 可复算模型</td></tr>
+<tr><td class="l">覆盖</td><td class="l">窄而深</td><td class="l">宽而浅</td></tr>
+<tr><td class="l">产出</td><td class="l">定理 / 理论</td><td class="l">坐标 + 模板 + 缺口清单</td></tr>
+</table>
+
+<h3>N.8　涌现的三层分类与三角位置</h3>
+
+<p>第 4.7 节与 N.4 节把涌现读成"<span class="s">t</span> 下降"。本节给出更细的三层分类，并把每层映到三角的一个坐标。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 N.4　涌现的三层分类与三角位置</b></caption>
+<tr><th class="l">层次</th><th class="l">定义要点</th><th class="l">三角坐标</th><th class="l">可测代理</th></tr>
+<tr><td class="l">涌现 1：编码涌现</td><td class="l">底层现象难以编码存储，但高层性质可描述</td><td class="l"><span class="s">K_desc</span> 受限；A 与 T 权衡</td><td class="l">压缩比、有效秩</td></tr>
+<tr><td class="l">涌现 2：因果涌现</td><td class="l">高层状态对低层变化的因果影响强于反向</td><td class="l">T 被让出（下层无法完整推出上层）</td><td class="l">技能分数 <span class="s">t</span>、有效信息</td></tr>
+<tr><td class="l">涌现 3：价值/评价涌现</td><td class="l">高层评价标准降维后才可与低层组合</td><td class="l">C 让步给 A</td><td class="l">指标维度的坍缩率</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>分类提案，等级 C／丙。三层并非互斥；一个系统可同时表现多层。</div>
+
+<div class="define"><span class="bt">三层涌现 × 三角选择</span>
+<b>选 C+T 的系统</b>（如气候科学）倾向于否认涌现（还原主义），但会遇到 <span class="s">K_desc</span> 的墙——即"多则异"无法被有限编码吸收。<br>
+<b>选 A+T 的系统</b>（如宏观调控）允许涌现，但会在 C 的完备性上付账——无法预测个体。<br>
+<b>选 C+A 的系统</b>（如复杂系统科学）用新的编码 <span class="s">ℒ</span> 来"消解"涌现——这正是科学进步的一种模式：用新的语言把旧的语言无法组合的东西变成可组合的。<b>代价是 T：新语言往往只在自己的尺度上有效。</b></div>
+
+<p><b>与 Santa Fe 传统的关系。</b>复杂适应系统研究（Holland、Mitchell 等）的核心贡献是"机制 + 组合"（C+A），其困难也在这里：跨尺度的传递需要重写，<span class="s">t</span> 不稳定。本书不宣称超越它，而是把它的困难定位为"站在 C+A 顶点"的账单（第 4.6 节、表 N.1）。</p>
+
+
+<img class="fig" src="assets/svg/fig27-emergence.svg" alt="编码涌现（K_desc 受限）、因果涌现（T 被让出）、价值涌现（C 让步给 A）。">
+<div class="cap"><b>图 N.1　涌现的三层与三角位置</b>。编码涌现（K_desc 受限）、因果涌现（T 被让出）、价值涌现（C 让步给 A）。</div>
+
+<h3>O.1　意识：三角的一种读法C／丙</h3>
+
+<p>第一本书曾提出一个大胆的图像：<b>潜意识是高维计算，意识是对它的低维投影。</b>用三角语言，这个图像可以重述为一次取舍。</p>
+
+<div class="define"><span class="bt">意识的三角读法（试探性）</span>
+设认知系统同时进行大量并行计算（高维），而全局可及的表征有限（低维投影）。则：<br>
+<b>完备性 C</b>：被投射到全局空间的表征获得自洽、可报告的内容（意识内容"说得清"）；<br>
+<b>可组合性 A</b>：全局空间中的表征可被组合、推理、报告；<br>
+<b>传递性 T</b>：投射之外的高维计算与全局内容之间的因果链<b>被让出</b>——因为投影丢掉了正交补方向的信息。<br>
+<b>读法：</b>意识系统选择 C+A，让出 T；这解释了为什么"元认知是对容量使用的事后重构"——重构正是 T 缺口的表现。［试探性，C／丙］</div>
+
+<div class="warning"><span class="bt">警告 O.1　这是读法，不是理论</span>
+意识的科学理论仍在争论（全局工作空间、整合信息论、高阶表征理论等）。<b>三角不选边，也不替代它们。</b>上面这条读法的价值仅在于：它把"投影丢失了信息"这一几何直觉，翻译成"让出 T"这一坐标，从而与本书其他部分可比较。<b>把它当成意识理论，是过度宣称。</b></div>
+
+<h3>O.4　三个前沿的分级总结</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 O.2　三个前沿的证据等级</b></caption>
+<tr><th class="l">前沿</th><th class="l">三角能给出什么</th><th class="l">等级</th><th class="l">可否被反驳</th></tr>
+<tr><td class="l">意识</td><td class="l">一种几何读法（投影让出 T）</td><td class="l">C／丙</td><td class="l">难（无统一测量）</td></tr>
+<tr><td class="l">通用 AI</td><td class="l">可测的 (c,a,t) 取舍</td><td class="l">B／乙</td><td class="l">可（用公开模型）</td></tr>
+<tr><td class="l">人机协作</td><td class="l">分工与接口设计原则</td><td class="l">B／乙</td><td class="l">可（现场对照）</td></tr>
+</table>
+
+<h3>R.2　演化生物学的三类困境</h3>
+
+<div class="define"><span class="bt">困境 1：高保真发育（C）导致重组时性状打乱（¬A）</span>
+若个体发育高度整合（C 强：性状间强耦合），则<b>有性重组会打破有利的组合</b>——这正是"性选择的代价"问题（Weismann、Maynard Smith）。<br>
+<b>三角读法：</b>选 C 的个体（高度整合的发育）在重组下损失 A（可加组合）。<b>性繁殖之所以复杂，部分因为它在 C 与 A 之间制造持续张力。</b></div>
+
+<div class="define"><span class="bt">困境 2：加法遗传假设（A）掩盖了非线性上位效应（¬C）</span>
+经典数量遗传学假设性状可加（A 强：可组合），但真实基因组充满<b>上位效应（epistasis）</b>与<b>多效性（pleiotropy）</b>——性状不能独立优化。<br>
+<b>三角读法：</b>要保住 A（可加、可预测的育种），就常要在 C（对基因互作的完整刻画）上付账。表观遗传学的兴起，正是对 ¬C 的一次修补。</div>
+
+<div class="define"><span class="bt">困境 3：跨代传递（T）导致对当前环境的过度适配（¬A 或 ¬C）</span>
+强传递（T 强：适应性稳定传代）意味着<b>更好的局部适配，但也意味着更差的换环境能力</b>——生态脆弱性、专化陷阱。<br>
+<b>三角读法：</b>选 T（稳定遗传）常在 A（表型可塑性）或 C（对环境变化的响应完备性）上付账。<b>"红皇后"式的军备竞赛，就是这个张力的动态表现。</b></div>
+
+<h3>R.5　反面检验：演化映射会怎样被推翻</h3>
+
+<p>附录 增补：上游、边界与对话 的映射等级为 C／丙。与正文各章一致，这里写出会推翻它的具体证据。</p>
+
+<div class="define"><span class="bt">反面检验 R.1（演化映射）</span>
+<b>□（映射失效）</b>若"发育保真度""可加性""传递保真度"三者无法被写成可测的量，或三者的测量在控制种群规模后<b>并不冲突</b>——则映射只是修辞；<br>
+<b>□（困境独立）</b>若三类困境（重组代价、上位效应、专化脆弱）被证明各自有独立的机制解释，且<b>不共享同一约束</b>——则"三角适用于演化"为假；<br>
+<b>□（推论被证伪）</b>若在高环境变化下，专化类型<b>并不</b>比泛化类型更易崩溃（推论 R.1 被证伪）——则本附录的映射被削弱；<br>
+<b>□（可塑性反例）</b>若发现某个物种<b>同时</b>具有高发育保真（C）、高性状可加组合（A）与高跨代传递保真（T）——则 O7 在生物演化领域出现反例。<br>
+<b>目前状态：</b>未观察到上述任一项；映射仍为 C／丙。<b>可操作性评级：中—难（需要比较生物学与古生物学的定量数据，属 5—10 年级研究）。</b></div>
+
+<div class="define"><span class="bt">为什么这条映射值得登记（而非删除）</span>
+O21 问"三角与生物演化的关系"。本附录给出的回答是"<b>可能适用C／丙</b>"，并附带一个可反驳推论 R.1。<b>即便这条映射最终被证伪，它的价值也在于：它为三角提供了一个"是否只在人类知识系统内成立"的边界测试。</b>若演化系统表现出与知识系统相同的取舍，三角的普适性提升；若不，则三角的适用范围收窄到"有描述/学习行为的系统"——<b>这本身是有用的信息。</b></div>
+
+<h3>T.1　独立性检验协议（可执行）</h3>
+
+<div class="define"><span class="bt">协议 T.1</span>
+要检验 C、A、T 是否独立（而非耦合），按以下步骤执行：<br>
+<b>（1）测量：</b>在多个领域用统一量表测出三者的坐标 <span class="s">(c, a, t)</span>；<br>
+<b>（2）控制 <span class="s">K</span>：</b>计算成对相关与<b>偏相关</b>（控制复杂度预算 <span class="s">K</span>）；<br>
+<b>（3）判定：</b><br>
+&nbsp;&nbsp;· 若某对性质在控制 <span class="s">K</span> 后仍强相关 → 它们<b>不是独立维度</b>，三角应降为二维或需要换坐标；<br>
+&nbsp;&nbsp;· 若三者近似独立、且 <span class="s">(1,1,1)</span> 不可达 → 三角作为独立坐标合理；<br>
+&nbsp;&nbsp;· 若某对性质在 <span class="s">K → ∞</span> 时仍不可同时满足 → 该对是<b>逻辑强制型</b>（<span class="s">ψ = ∞</span>）。<br>
+<b>（4）报告：</b>分别报告"控制 <span class="s">K</span> 前的相关"与"控制 <span class="s">K</span> 后的偏相关"——两者的差，就是耦合强度的估计。</div>
+
+<div class="warning"><span class="bt">状态：本协议尚未执行</span>
+本书<b>未执行</b>该协议——它需要跨领域的统一量表与坐标数据，而本书的坐标（定义 2.5、2.7）只在个别系统上被估算过（附录 数据与案例.7）。<b>这是一份留给读者的工作</b>，登记为研究议题 O2、O10、O24。<b>在它被执行之前，"C-A-T 独立"只是一个工作假设，不是结果。</b></div>
+
+<h3>U.3　系统边界的决定性：边界改变诊断</h3>
+
+<p>诊断必须先确定系统的边界。但<b>边界的选择会改变诊断结果</b>。</p>
+
+<div class="define"><span class="bt">观察 U.2　边界决定被让出的顶点</span>
+<b>医疗：</b>若边界是"医院"，诊断可能落在 A+T（标准化诊疗）；若边界扩大到"制药 + 支付方 + 患者教育"，诊断可能翻转为 C+A。<br>
+<b>教育：</b>若边界是"学校"，诊断落在 A+T；若边界纳入家庭与社会资本，诊断可能转向 C+A 或 C+T。<br>
+<b>推论：</b>同一个"系统"，换一个边界，被让出的顶点可能完全不同。</div>
+
+<p><b>这涉及系统论的根本问题。</b>Luhmann 指出"系统"由"系统/环境"的区分构成；Simon 也强调"边界是分析者的选择"。<b>按《区分的语法》的立场，边界本身就是一个<b>区分</b>——不同的区分给出不同的系统。</b>因此"边界"不是给定的，而是被建构的。</p>
+
+<div class="warning"><span class="bt">警告 U.3　诊断必须声明边界，且边界可变</span>
+本书的诊断隐含地采用了某些边界（如"医疗 = 医院 + 公卫"），但<b>没有系统讨论边界选择</b>。<b>这是一个真实的缺口</b>：读者若换一个边界，可能得到不同的"被让出的顶点"。<br>
+<b>补救：</b>任何应用都应显式写下边界，并做一次"边界敏感性检查"——把边界扩大/缩小一级，看诊断是否翻转。<b>这登记为开放问题 O32。</b></div>
+
+<table class="nat">
+<caption class="cap"><b>表 U.3　边界敏感性分析</b></caption>
+<tr><th class="l">系统</th><th class="l">最小边界</th><th class="l">扩展边界</th><th class="l">翻转的顶点</th><th class="l">触发条件</th></tr>
+<tr><td class="l">医疗</td><td class="l">诊疗单位</td><td class="l">卫生系统</td><td class="l">C+A → A+T</td><td class="l">包入支付方</td></tr>
+<tr><td class="l">教育</td><td class="l">学校</td><td class="l">含家庭/社会资本</td><td class="l">双极 → C+A</td><td class="l">含入隐性竞争</td></tr>
+<tr><td class="l">组织</td><td class="l">部门</td><td class="l">企业 + 市场</td><td class="l">C+A → A+T</td><td class="l">含入竞争压力</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>敏感性表，等级 C／丙。<b>用法：</b>把边界扩大一级，看诊断是否翻转；<b>若翻转，说明原诊断依赖边界选择，必须显式声明边界（第 U.3 节）。</b></div>
+
+<h3>V.2　与韧性理论（Resilience）的对话</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 V.2　本书三角 vs 韧性理论</b></caption>
+<tr><th class="l">维度</th><th class="l">韧性理论</th><th class="l">本书三角</th></tr>
+<tr><td class="l">核心语汇</td><td class="l">吸收、适应、转变、阈值</td><td class="l">优雅降级、失效形态、容限</td></tr>
+<tr><td class="l">三角位置</td><td class="l">A+T（可组合干预 + 长期追踪）</td><td class="l">诊断 + 降级设计</td></tr>
+<tr><td class="l">强项</td><td class="l">失败与恢复的工程化</td><td class="l">把失败追溯到"被让出的顶点"</td></tr>
+<tr><td class="l">弱项</td><td class="l">不解释"为什么必须有取舍"</td><td class="l">不给出韧性度量</td></tr>
+</table>
+<div class="datasrc"><b>关系：</b>高度互补。<b>第 18 章的"优雅降级"本就是韧性理论的三角表述</b>；三角补充了"降级之所以必要，是因为某顶点已被让出"。<b>合并风险：</b>韧性度量（如 Walker 的阈值）与三角坐标的换算率未知（O1）。</div>
+
+<h3>S.2　案例二：1998 年亚洲金融危机（A+T，让出 C）</h3>
+
+<div class="define"><span class="bt">诊断 S.2</span>
+<b>选择：</b>A+T——资本自由流动与可组合的金融工具（A）+ 汇率与政策追踪（T）。<br>
+<b>让出：</b>C——对风险敞口与传染路径的完备评估。<br>
+<b>缺口：</b>风险在累积时"看不见"（C 弱），因为单个机构看起来稳健，而系统性的负面反馈未被刻画。<br>
+<b>崩溃机制：</b>当外部冲击到来，被让出的 C 使诊断退化为方向性判断；干预（A）虽可组合，却在不完整的信息上迅速传导恐慌。<br>
+<b>等级：</b>C1／丙。<b>争议：</b>归因于投机攻击、政策失误、还是结构性脆弱，学界仍有分歧。</div>
+
+<h3>J.2　被削弱的主张 F2：每个系统恰好让出一个顶点</h3>
+
+<div class="define"><span class="bt">原始主张（已削弱）</span>
+"任何多尺度系统都<b>恰好</b>让出一个顶点，另外两个满格。"<br>
+这条主张来自第 1 章三本书的整齐排布：三本书、三个顶点、各让出一个。</div>
+
+<p><b>如何被削弱。</b>模型 T 显示：在预算紧张时，<b>多个顶点会同时被挤压</b>。例如在 <span class="s">C≥0.5 且 A≥0.5</span> 的约束下，<span class="s">T</span> 至多 0.73；但此时 <span class="s">C</span> 本身也只有 0.58，远未满格。<b>现实系统更可能是"多个顶点都不满格"，而不是"两个满格、一个归零"。</b></p>
+
+<p>这一削弱使本书的表述从"三选二"改为更谨慎的"三个顶点不能同时逼近 1，不同选择方向留下不同缺口"。<b>三本书的整齐排布因而是特例，而非通例。</b></p>
+
+<h3>M.3　三本书的三角定位</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 M.3　三本书在三角中的位置与阶段</b></caption>
+<tr><th class="l">书</th><th class="l">保住</th><th class="l">让出</th><th class="l">账单</th><th class="l">对应成长阶段</th></tr>
+<tr><td class="l">《遗忘的边界》</td><td class="l">C+T</td><td class="l">A</td><td class="l">子模性</td><td class="l">范式建立的深度</td></tr>
+<tr><td class="l">《区分的语法》</td><td class="l">C+A</td><td class="l">T</td><td class="l">1/3 缺口</td><td class="l">形式化/工程化的精密</td></tr>
+<tr><td class="l">《错位的时间》</td><td class="l">A+T</td><td class="l">C</td><td class="l">τ 发散</td><td class="l">面向治理的可组合</td></tr>
+</table>
+
+<h3>N.3　系统论：三次尝试与一个共同的盲点</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 N.1　系统论传统的三角定位（详版）</b></caption>
+<tr><th class="l">传统</th><th class="l">代表</th><th class="l">核心主张</th><th class="l">顶点</th><th class="l">盲点</th></tr>
+<tr><td class="l">一般系统论</td><td class="l">Bertalanffy</td><td class="l">跨系统的同构律</td><td class="l">C+T</td><td class="l">同构律太弱，不能组合成预测（¬A）</td></tr>
+<tr><td class="l">控制论</td><td class="l">Wiener</td><td class="l">反馈与调节</td><td class="l">A+T</td><td class="l">不追求对具体系统的完备描述（¬C）</td></tr>
+<tr><td class="l">软系统方法</td><td class="l">Checkland</td><td class="l">问题情境的多元建构</td><td class="l">C+A</td><td class="l">结论不可跨情境无损传递（¬T）</td></tr>
+<tr><td class="l">社会系统论</td><td class="l">Luhmann</td><td class="l">自我指涉的沟通系统</td><td class="l">C+A</td><td class="l">跨系统耦合难以传递（¬T）</td></tr>
+<tr><td class="l">复杂适应系统</td><td class="l">Holland</td><td class="l">涌现、适应、自组织</td><td class="l">C+A</td><td class="l">跨尺度理论要重写（¬T）</td></tr>
+</table>
+
+<p><b>共同盲点：</b>系统论传统的三次尝试都在不同顶点上很强，但没有一个同时把三个顶点推到满格。它们各自的"局限"，正是各自顶点的账单。<b>本书不是要补上这些局限，而是把"为什么会有这些局限"从一个遗憾，变成一个可定位的选择结果。</b></p>
+
+<h3>N.6　一个统一的问法</h3>
+
+<div class="define"><span class="bt">上游诸传统的共同问题</span>
+可计算性、计算不可约性、P vs NP、算法信息论、一般系统论、控制论、涌现理论，都可以被读成对同一个问题的不同回答：<br>
+<b>"当描述能力、计算能力或制度资源有限时，系统能在多大程度上同时拥有完备、可组合与可传递？"</b><br>
+不同传统的差异，在于它们固定的"受限分量"不同：可计算性固定逻辑，计算不可约性固定 <span class="s">K_comp</span>，算法信息论固定 <span class="s">K_desc</span>，控制论固定干预能力，本书固定的是"多尺度 + 有限预算"的一般情形。<b>这个统一问法本身就是本书对上游传统的一个贡献主张——但它是哲学层面的，等级 C／丙。</b></div>
+
+<p>把这句话说清楚，也就说清楚了本书的定位：<b>它不发明新的边界，而是给已有边界提供一张共同的坐标图。</b>这张图可能画错，但它是可修改、可反驳、可替换的——这正是它相对于"又一个系统论"的差别所在。</p>
+
+<h3>N.9　系统论核心概念的三角映射</h3>
+
+<p>第 4.6 节把系统论的三个分支定位到三个顶点。本节把系统论的<b>核心概念</b>逐个映到 C-A-T，说明为什么"系统论难以形式化"本身就是三角的结果。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 N.5　系统论概念的三角映射</b></caption>
+<tr><th class="l">系统论概念</th><th class="l">三角映射</th><th class="l">对应坐标</th></tr>
+<tr><td class="l">开放系统 / 远离平衡的有序</td><td class="l">系统维持自身结构的能力</td><td class="l">C（局部完备）</td></tr>
+<tr><td class="l">子系统独立优化</td><td class="l">不冲突地并行</td><td class="l">A（可组合）</td></tr>
+<tr><td class="l">层级间规律的对应</td><td class="l">跨层级无损推导</td><td class="l">T（传递）</td></tr>
+<tr><td class="l">涌现</td><td class="l">高层性质不可由低层无损推出</td><td class="l">¬T</td></tr>
+<tr><td class="l">自组织</td><td class="l">无需外部控制即形成结构</td><td class="l">C 强、A 弱（不可外部组合）</td></tr>
+<tr><td class="l">自反性 / 自指</td><td class="l">系统描述自身</td><td class="l">C 的内部循环，常伴随 ¬T</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>映射表，等级 C／丙。</div>
+
+<div class="define"><span class="bt">为什么系统论难以形式化：一个三角解释</span>
+系统论三次尝试的困难，可以用一句话概括：<b>系统论想要同时保住 C（对每类系统给出完整描述）、A（跨系统可比较、可组合）、T（跨层级可推导），而这三者不能同时满格。</b><br>
+<b>要涌现（¬T）</b>，就必须接受跨层级不可无损推导，从而放弃 T；<br>
+<b>要强自组织（C 强）</b>，就常常失去外部可解释性与可组合性（¬A）；<br>
+<b>要可管理（A 强）</b>，就常常失去系统自主性（¬C，系统必须可外部干预）。<br>
+<b>这三条"要……就必须放弃……"正是系统论各分支各自让出顶点的精确表述。</b></div>
+
+<p><b>与 Luhmann 的对接。</b>社会系统论（Luhmann）强调系统"自我指涉"（autopoietic）：系统用自己的要素再生产自己。<b>这在三角里是 C 的自循环——但代价是 ¬T：一个自我指涉系统对其他系统的"翻译"极难，这正是 Luhmann 所谓"系统间结构耦合"的困难。</b>本书的跨顶点翻译机制（第 15.3 节）试图应对的，正是这个困难。</p>
+
+<h3>O.2　通用人工智能：三角给出的可检验判断B／乙</h3>
+
+<p>与意识不同，AI 系统是可以测量 C-A-T 坐标的。第 5.7 节已给出记忆方面的例子。这里给出一个更一般的判断。</p>
+
+<div class="define"><span class="bt">判断 O.1（AI 系统的三角坐标）</span>
+对以固定参数预算 <span class="s">K</span>（参数量、上下文长度、算力）训练的系统，可测：<br>
+<b>c</b>：在任务分布上达到高精度（C₃）的比例；<br>
+<b>a</b>：多任务联合性能 / 单任务性能之和（可组合缺口）；<br>
+<b>t</b>：跨域/跨分布迁移的技能分数。<br>
+<b>判断：</b>在固定 <span class="s">K</span> 下，三者不能同时逼近 1；扩大 <span class="s">K</span> 抬高上界但不改变取舍结构。［论证，B／乙；可用公开模型测量］</div>
+
+<p>这条判断是可反驳的：<b>若某个模型在固定 <span class="s">K</span> 下把 c、a、t 同时推到接近 1，则它构成 Open Problem O7 在 AI 领域的一个反例。</b>目前的大模型表现与判断一致：<b>（一）</b>扩大上下文能提高 c，但"中间遗忘"（位置偏差）显示 t 与 a 仍受损；<b>（二）</b>多任务微调常以单任务性能下降为代价（a &lt; 1）；<b>（三）</b>微调后的灾难性遗忘是 a 的极端失败。<b>这些现象都是本框架可预测的缺口类型（L2 预测，见第 21.7 节）。</b></p>
+
+<div class="scenario"><span class="bt">一个可测的实验设计</span>
+取同一模型的两个规模 <span class="s">K₁ &lt; K₂</span>，在固定任务集上测 <span class="s">(c,a,t)</span>。<br>
+<b>L2 预测：</b>随 <span class="s">K</span> 增大，<span class="s">R(K)</span> 向外扩张，但前沿的"拐点"（不能在三个方向同时改善处）依然存在。<br>
+<b>若观察到 <span class="s">K₂</span> 的前沿完全包含 <span class="s">K₁</span> 的前沿且同时逼近 (1,1,1)：</b>则三角在 AI 领域被证伪。<br>
+这条实验不需要新数据——它可以用公开检查点完成。</div>
+
+<h3>O.5　风险与失效情景（自我标注）</h3>
+
+<p>附录 增补：上游、边界与对话 的三个前沿论证深度不如核心四战场。本节把它们的风险显式写出，以免被误用。</p>
+
+<div class="define"><span class="bt">风险分级：这些诊断在什么情况下会失效</span>
+<b>意识（O.1）</b><br>
+<b>风险 1（理论前提）：</b>若意识不是“低维投影”而是某种强涌现，整个读法失效。需要：意识投影假说的神经证据。<br>
+<b>风险 2（实证范围）：</b>该读法只对人类意识试探，对 AI/动物意识的适用性不明。需要：跨物种/跨架构对比。<br>
+<b>风险 3（可操作性）：</b>C+A 的选择给不出“意识应如何运作”的预测，属事后解释（L1）。<br>
+<b>结论：</b>这是“方向性读法”，<b>不是可依赖的诊断，不应作为意识论证的基础</b>。<br><br>
+<b>通用 AI（O.2）</b><br>
+<b>风险 1：</b>若“固定 K”的测量不可比（不同架构的参数量不可对齐），坐标不可比。需要：统一的容量指标。<br>
+<b>风险 2：</b>若某模型同时逼近 (1,1,1)，则 O7 在 AI 领域被反例推翻。<br>
+<b>结论：</b>可检验判断（B），但依赖测量口径。<br><br>
+<b>人机协作（O.3）</b><br>
+<b>风险 1：</b>接口处的翻译成本未被度量，可能吞掉分工收益。<br>
+<b>风险 2：</b>人/机的顶点归属可能随任务而变，固定分工未必最优。<br>
+<b>结论：</b>设计原则（B），需现场对照。</div>
+
+<div class="define"><span class="bt">结语</span>
+三角在意识问题上是<b>可被拒绝的读法</b>；在 AI 与人机协作上是<b>可检验的判断</b>。<br>
+这个分级的差异，恰恰示范了第 3 章的纪律：<b>同一个框架，在不同领域的证据强度不同，必须分别标注。</b></div>
+
+<h3>R.3　文化演化与技术演化</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 R.2　三种演化系统的三角选择</b></caption>
+<tr><th class="l">系统</th><th class="l">传递机制（T）</th><th class="l">组合机制（A）</th><th class="l">保真机制（C）</th><th class="l">典型让出</th></tr>
+<tr><td class="l">生物演化</td><td class="l">基因复制</td><td class="l">重组/自由组合</td><td class="l">发育稳健性</td><td class="l">A（重组破坏组合）</td></tr>
+<tr><td class="l">文化演化</td><td class="l">模仿/教学</td><td class="l">观念混搭</td><td class="l">规范与制度</td><td class="l">C（模因的高保真低）</td></tr>
+<tr><td class="l">技术演化</td><td class="l">文档/专利</td><td class="l">模块化设计</td><td class="l">标准与测试</td><td class="l">T（跨代兼容难）</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>对照表，等级 C／丙。来源：Boyd &amp; Richerson（文化演化）、Dennett（模因）、Arthur（技术演化）。</div>
+
+<p><b>三者的共同点。</b>三种演化系统都表现出"<b>复制 + 变异 + 选择</b>"，也都在 C-A-T 上做取舍：生物演化让出 A（重组代价）、文化演化让出 C（模因保真低）、技术演化让出 T（兼容性差）。<b>这支持一个弱结论：三角的取舍在演化系统中也出现（O21 的初步回答）。</b></p>
+
+<div class="warning"><span class="bt">警告 R.1　这个初步回答的强度很低</span>
+本附录是<b>类比性映射C／丙</b>，不是对 O21 的解决。<b>要升级为 B 或 A，需要：（一）把"发育保真度""可加性""传递保真度"写成可测的量；（二）证明三类困境是同一约束的实例而非各自独立；（三）至少一个可反驳的定量预测。</b>目前三项都缺。<b>把本附录当作演化生物学的结论，是过度宣称。</b></div>
+
+<h3>T.2　如果质疑成立，三角还剩什么</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 T.1　四种情形下三角的地位</b></caption>
+<tr><th class="l">情形</th><th class="l">三角是否成立</th><th class="l">还剩什么</th><th class="l">对应的实验判据</th></tr>
+<tr><td class="l">C、A、T 独立且 <span class="s">(1,1,1)</span> 不可达</td><td class="l">成立（最强）</td><td class="l">完整的诊断坐标</td><td class="l">偏相关近零 + 三点不可达</td></tr>
+<tr><td class="l">存在耦合，但有正交互惩罚</td><td class="l">成立（本书主张）</td><td class="l">诊断坐标 + <span class="s">ψ</span> 分解</td><td class="l">偏相关非零但三点不可达</td></tr>
+<tr><td class="l">存在一个更根本的单一约束</td><td class="l">作为投影坐标仍可用</td><td class="l">可操作的三维投影</td><td class="l">三者可由一个隐变量解释</td></tr>
+<tr><td class="l">三者完全冗余（其实是同一维）</td><td class="l">不成立</td><td class="l">只剩"存在取舍"这一弱结论</td><td class="l">偏相关接近 ±1</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>情形分析，等级 C／丙。<b>诚实结语：</b>若最后一行为真，三角退化为"存在某种约束"——<b>此时本书的诊断价值大部分消失，但形式化（第 2 章）、案例数据库（附录 数据与案例）、诊断手册（附录 工具与清单/H）仍可用。</b></div>
+
+<h3>U.1　诊断的反馈效应：观察者改变系统</h3>
+
+<p>框架假设系统能被<b>客观地观察与诊断</b>。但在社会系统中，<b>诊断本身会改变被诊断的系统</b>。</p>
+
+<div class="define"><span class="bt">观察 U.1　诊断即干预</span>
+当医疗系统被诊断为"让出了完备性 C"、当教育系统被诊断为"选了 A+T"，它们<b>可能因此改变行为</b>——试图转向 C+A 或修补缺口。此时诊断不再是"发现"，而是"干预"。<br>
+三个已知的机制：<br>
+<b>（1）Goodhart 定律：</b>一个指标一旦成为目标，就不再是好的指标（第 17 章）。<br>
+<b>（2）默顿的自我实现预言（self-fulfilling prophecy）：</b>对情境的定义会成为情境的一部分。<br>
+<b>（3）索罗斯的反身性（reflexivity）：</b>观察者的认知与被观察的现实相互塑造。</div>
+
+<p><b>对框架的后果。</b>诊断坐标不是一张被动的测量地图——它是<b>一次"区分"</b>（第 U.5 节），而按《区分的语法》的观点，<b>区分本身预设了一个观察者，因而不是"从无处观看"（view from nowhere）</b>。这意味着：</p>
+
+<ul>
+<li><b>诊断要消耗 K_res：</b>做一次三角诊断需要时间、注意力与协调——诊断本身从被诊断系统的预算里支出。</li>
+<li><b>诊断会改变激励：</b>被诊断出的"被让出的顶点"一旦成为考核对象，就会触发 Goodhart 崩塌（第 13.4 节）。</li>
+<li><b>因此诊断必须声明自己是干预：</b>任何在生产系统里直接使用的三角诊断，都应被视为"向系统注入了一个新约束"，并评估其自身代价。</li>
+</ul>
+
+
+<img class="fig" src="assets/svg/fig34-reflexivity.svg" alt="诊断的反身循环">
+<div class="cap"><b>图 U.1　诊断的反身循环：观察者改变系统</b>。诊断是一次区分，会改变系统行为，从而改变下一次观察。</div>
+
+<div class="warning"><span class="bt">警告 U.1　反身性使诊断变成"参与式"而非"客观"</span>
+这一条看似削弱框架的客观性，但它其实与《区分的语法》的立场一致：<b>框架不宣称"从无处观看"，而是承认自己是一次有观察者的区分。</b>代价是：诊断的效度不能只靠"准确性"衡量，还要靠"它是否让系统朝好的方向改变"衡量。<b>这登记为开放问题 O30。</b></div>
+
+<h3>U.4　失败的分类与容限</h3>
+
+<p>框架常说"若缺口太大，系统会失败"。但<b>失败有不同形态，且与缺口的关系未必线性。</b></p>
+
+<table class="nat">
+<caption class="cap"><b>表 U.2　被让出的顶点与失败形态（初步分类）</b></caption>
+<tr><th class="l">被让出</th><th class="l">典型失败形态</th><th class="l">时间特征</th><th class="l">例子</th></tr>
+<tr><td class="l">A</td><td class="l">缓慢退化（能力不能相加）</td><td class="l">连续、渐变</td><td class="l">创新率逐年下降（第 10 章）</td></tr>
+<tr><td class="l">C</td><td class="l">阈值崩溃（风险看不见）</td><td class="l">突发、非线性</td><td class="l">1998 金融危机（附录 数据与案例）</td></tr>
+<tr><td class="l">T</td><td class="l">潜伏失效（局部合规、整体出事）</td><td class="l">潜伏期长、事发突然</td><td class="l">复杂工程事故（附录 数据与案例）</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>分类表，等级 C／丙。<b>参考：</b>《错位的时间》的"优雅降级"与《遗忘的边界》的"灾难性遗忘"都讨论过类似的失败形态。</div>
+
+<div class="warning"><span class="bt">警告 U.4　失败与缺口的关系可能不是线性的</span>
+一个关键未知：缺口有多大才导致失败？是否存在<b>容限（tolerance）</b>——在某阈值以下，缺口只带来性能损失而不导致崩溃？<br>
+若容限存在，那么"让出顶点"与"系统失败"之间是<b>非线性</b>的（有平台期、有拐点）。<b>本书没有给出容限的估计，只给出了失败的形态分类。这登记为开放问题 O33。</b></div>
+
+<div class="define"><span class="bt">U.4b　O30—O33 的反驳可操作性</span>
+与 O1—O29 一致，四个哲学问题也应给出可反驳场景：<br>
+<b>O30（反身性）驳回场景：</b>系统接收诊断后 <span class="s">K_res</span> 下降但行为完全不变；或反馈仅在单一代理层级出现、多层协同时消失。<br>
+<b>O31（集体选择）驳回场景：</b>某些被声称"多代理"的系统，其实由单一代理人决定（此时"聚合"是平凡的，O31 不适用）。<br>
+<b>O32（边界）驳回场景：</b>诊断结果在多次边界变更下保持不变（则边界不具决定性，U.3 的警告需削弱）。<br>
+<b>O33（失败容限）驳回场景：</b>缺口与失败呈线性关系、无阈值与平台期（则"容限"不存在，U.4 需修正）。</div>
+
+<h3>V.3　与制度经济学（North / Ostrom）的对话</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 V.3　本书三角 vs 制度经济学</b></caption>
+<tr><th class="l">维度</th><th class="l">制度经济学</th><th class="l">本书三角</th></tr>
+<tr><td class="l">核心语汇</td><td class="l">交易成本、路径依赖、多中心</td><td class="l">配置向量 Π、尺度错位、级联</td></tr>
+<tr><td class="l">强项</td><td class="l">制度变迁的机制与数据</td><td class="l">把取舍放到统一坐标</td></tr>
+<tr><td class="l">本书的借用</td><td class="l">North 路径依赖、Ostrom 多中心（第 15.9 节）</td><td class="l">—</td></tr>
+</table>
+<div class="datasrc"><b>关系：</b>三角是制度经济学的<b>一个诊断切片</b>，不是替代。制度经济学解释"制度如何形成与变迁"；三角只回答"它在哪个顶点取舍"。<b>合并风险：</b>把三角当成制度理论会遗漏权力、交易成本与政治过程（见附录 增补：上游、边界与对话.2）。</div>
+
+<h3>S.3　案例三：复杂工程系统的"跨尺度传递"失效（C+A，让出 T）</h3>
+
+<div class="define"><span class="bt">诊断 S.3</span>
+<b>选择：</b>C+A——每一子系统有精确的工程模型（C）+ 模块化、可组合的设计（A，如 737 MAX 的 MCAS 作为软件补丁）。<br>
+<b>让出：</b>T——子系统层的结论无法无损传递到"飞行员—飞机—监管"的跨尺度整体（认证与培训链断裂）。<br>
+<b>缺口：</b>局部合规（每个模块通过验证）与全局安全（整体行为）之间没有传递。<br>
+<b>崩溃机制：</b>模块级验证（C+A）没有覆盖组织与人的尺度；被让出的 T 让"每个部件都合格"与"整机安全"脱钩。<br>
+<b>等级：</b>C2／丙。<b>争议：</b>事故调查报告提供了事实，但三角只是重新组织它们。</div>
+
+<h3>J.3　两次失败的地位</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 J.2　两次失败与它们的后果</b></caption>
+<tr><th class="l">编号</th><th class="l">原主张</th><th class="l">结果</th><th class="l">后果</th></tr>
+<tr><td class="l">F1</td><td class="l">坐标和上界恒为 2</td><td class="l">被证伪（2.16—2.58）</td><td class="l">改为"上界依赖 K"</td></tr>
+<tr><td class="l">F2</td><td class="l">恰好让出一个顶点</td><td class="l">被削弱（多点同时受挤压）</td><td class="l">改为"不能同时逼近 1"</td></tr>
+</table>
+
+<h3>M.1　术语对应</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 M.1　四本书的术语对照</b></caption>
+<tr><th class="l">本书（C-A-T）</th><th class="l">《遗忘的边界》</th><th class="l">《区分的语法》</th><th class="l">《错位的时间》</th></tr>
+<tr><td class="l">完备性 C</td><td class="l">各尺度上的信息论描述（瓶颈、率失真）</td><td class="l">有限图上的代数完备</td><td class="l">对具体情形的精确诊断</td></tr>
+<tr><td class="l">可组合性 A</td><td class="l">多项记忆能力线性叠加（被让出）</td><td class="l">谱相加、笛卡尔积可加</td><td class="l">多种干预可组合</td></tr>
+<tr><td class="l">传递性 T</td><td class="l">毫秒→终身的因果链</td><td class="l">离散→连续无损（被让出）</td><td class="l">长期效应可追踪</td></tr>
+<tr><td class="l">被让出的顶点</td><td class="l">A（子模性）</td><td class="l">T（1/3 缺口）</td><td class="l">C（τ 发散）</td></tr>
+<tr><td class="l">核心机制</td><td class="l">容量级联（capacity-cascade）</td><td class="l">区分语言</td><td class="l">时间错配 τ = T_min/T_available</td></tr>
+</table>
+
+<div class="define"><span class="bt">双语平行标注</span>
+为便于对照，正文中关键处采用平行标注：<br>
+<b>容量级联（capacity-cascade）</b> = 信息子模性（A 的让出）在记忆多尺度上的表现（第 5 章）。<br>
+<b>区分语言</b> = 选择 C+A、让出 T 的形式框架（第 12 章）。<br>
+<b>时间错配（temporal mismatch, τ）</b> = 多尺度系统让出 C 的定量标志（第 7、9 章）。</div>
+
+<h3>M.4　"无法统一"的可定位解释</h3>
+
+<div class="define"><span class="bt">四本书的关系（一句话）</span>
+三本书分别站在三角的三个顶点上，各让出一个顶点，各付一笔可指认的账。<br>
+<b>它们无法被合并成一个更强的理论，是因为合并要求同时把三个顶点推到满格——而这正是三角所禁止的。</b><br>
+但它们可以被<b>定位</b>：在同一条坐标轴上互相说明边界。<b>定位不要求合并，只要求可对接。</b></div>
+
+<p>这一解释本身是对前言"为什么第四本书关乎'无法统一'"的兑现：<b>它不是作者能力不足的证据，而是有限复杂度约束的一个可复算后果。</b>如果读者接受子模性与离散曲率恒等式（均为 A 级），并且接受三角的框架（C 级），那么"三本书无法统一"就从一个遗憾，变成了一个可以核对的账目。</p>
+
+<h3>N.1　计算论：三种边界</h3>
+
+<p>计算论至少给出三种与三角相关的边界。</p>
+
+<div class="define"><span class="bt">边界 1　可计算性（Turing）</span>
+停机问题表明：不存在一个算法，对任意程序与输入判定其是否终止。<br>
+<b>三角读法：</b>这是"完备性 C（对任意程序给出判定）"在整个图灵可计算范围内的不可达。它与三角的关系是警示性的：<b>有些"完备"不是预算不够，而是逻辑上不可能。</b>三角讨论的是预算约束，不是逻辑不可能——这个区别必须守住。</div>
+
+<div class="define"><span class="bt">边界 2　计算不可约性（Wolfram）</span>
+对许多系统，不存在比直接模拟更快的预测方法。<br>
+<b>三角读法：</b>若系统计算不可约，则 <span class="s">C₃</span>（预测完备）的实现需要与模拟等价的 <span class="s">K_comp</span>。于是"提高 <span class="s">C₃</span>"与"节省 <span class="s">K_comp</span> 以实现传递 <span class="s">T</span>"直接冲突。<b>这是三角在 <span class="s">K_comp</span> 受限情形下的一个硬实现。</b>［论证，B／乙］</div>
+
+<div class="define"><span class="bt">边界 3　P vs NP（Cook）</span>
+若 <span class="s">P ≠ NP</span>，则不存在多项式时间的算法在最坏情形下求得 NP 困难问题的精确解。<br>
+<b>三角读法：</b>"完备地刻画解空间（C）"与"在预算内找到可组合的解（A）"之间可能存在结构性鸿沟。子模最大化是 NP 困难的，而它恰恰是"能力组合"的抽象模型。<b>这把 <span class="s">a</span> 从"连续折扣"推向了"结构性不可达"。</b>［论证，B／乙］</div>
+
+<div class="warning"><span class="bt">警告 N.1　不要把三角等同于这些定理</span>
+计算不可约性、停机问题、P vs NP 都是<b>已证或强猜想</b>的结果；三角是<b>框架</b>。宣称"三角 = 计算不可约性的推广"是过度宣称。<b>正确的说法是：它们共享"有限预算/逻辑下的取舍"这一形状，三角借它们为自己的一个分量（<span class="s">K_comp</span>）找到独立支持，但不声称等价。</b></div>
+
+<h3>N.4　涌现：弱涌现、强涌现与可测量标记</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 N.2　涌现谱系与三角读法</b></caption>
+<tr><th class="l">类型</th><th class="l">定义要点</th><th class="l">三角读法</th><th class="l">可测？</th></tr>
+<tr><td class="l">弱涌现</td><td class="l">宏观规律可从微观推出，但计算上困难</td><td class="l"><span class="s">t</span> 中等，<span class="s">C₂</span> 受限</td><td class="l">可（计算不可约性）</td></tr>
+<tr><td class="l">强涌现</td><td class="l">宏观规律原则上不可从微观推出</td><td class="l"><span class="s">t ≈ 0</span> 或负，<span class="s">T₃</span> 失效</td><td class="l">争议（可能不可测）</td></tr>
+<tr><td class="l">下向因果</td><td class="l">宏观约束限制微观行为</td><td class="l">反向 <span class="s">t</span>：<span class="s">λ₂→λ₁</span> 的约束</td><td class="l">部分可测</td></tr>
+</table>
+
+<p><b>本书的立场是克制的。</b>第 4.7 节把"<span class="s">t</span> 下降"作为涌现的<b>可测量后果</b>，而不是涌现的定义。这样做有两个好处：<b>（一）</b>它把哲学争论（强涌现是否可能）与经验测量分开；<b>（二）</b>它使涌现成为一个可复核的坐标，而不是一个不可反驳的断言。<b>代价是：它不能覆盖涌现的全部含义（如不可还原性、新颖性）。</b>这个代价是自觉的。</p>
+
+<h3>N.7　计算不可约性的检验清单</h3>
+
+<p>第 N.1 节说"计算不可约性是 <span class="s">K_comp</span> 受限三角的一个硬实现"，但没有给出可操作的判据。本节补上。</p>
+
+<div class="define"><span class="bt">检验清单 N.1（计算不可约性）</span>
+<b>□ 1. 确定性：</b>系统演化规则是确定性的吗？（若否，先谈随机性，而非不可约性。）<br>
+<b>□ 2. 无短捷径：</b>是否尝试过多种压缩/解析/机器学习方法，都无法得到比逐步模拟更快的等价模型？<br>
+<b>□ 3. 复杂度增长：</b>系统的（描述）复杂度是否随模拟步数至少线性增长？（Wolfram 判别法。）<br>
+<b>□ 4. 敏感性：</b>初值的微小变化是否导致结果不可预测的差异？（混沌测试——注意：混沌 ≠ 不可约，但常相伴。）<br>
+<b>□ 5. 无物理跳步：</b>是否存在物理/数学上的"跳步"捷径（如可积性、守恒量）？<br>
+<b>判读：</b>若第 1 项为"是"，且第 2、5 项为"否"、第 3 项为"是"，则该系统<b>可能</b>计算不可约。<b>清单只能给"可能"，不能给"是"</b>——不可约性是普遍性断言，难以逐一验证。</div>
+
+<div class="warning"><span class="bt">警告 N.3　清单不是判定程序</span>
+计算不可约性通常是对<b>一整类</b>系统/规则空间的断言，而不是单个实例。<b>本清单只用于排除明显可约的系统，不能证明不可约。</b>把它当作"排除法"使用，而不是"证明法"。</div>
+
+<h3>O.3　人机协作：谁保 C、谁保 A、谁保 TB／乙</h3>
+
+<p>一个更现实的应用是把三角用于人机分工。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 O.1　人机协作的三角分工</b></caption>
+<tr><th class="l">角色</th><th class="l">选择</th><th class="l">理由</th><th class="l">风险</th></tr>
+<tr><td class="l">人类专家</td><td class="l">C+T</td><td class="l">掌握隐性知识、能跨情境判断</td><td class="l">不可复制、慢</td></tr>
+<tr><td class="l">AI 系统</td><td class="l">A+T（可规模化 + 持续）</td><td class="l">可组合、可复制、可高频运行</td><td class="l">缺个体完备（对边缘情形不可靠）</td></tr>
+<tr><td class="l">人机协作</td><td class="l">C+T（人）+ A+T（机）</td><td class="l">两类选择互补</td><td class="l">接口处的翻译成本</td></tr>
+</table>
+
+<p><b>协作的设计原则由此变得清晰：</b>不要让人和机器都追求三个顶点满格，而要让它们各自站在合适的顶点上，并在接口处做翻译（第 15.3 节）。<b>当 AI 被要求"既精确又通用又可解释"（三个顶点满格）时，它会以本框架可预测的方式在某处妥协</b>——通常是 C（对边缘情形的完备性）。</p>
+
+<h3>R.1　生物演化的三角映射</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 R.1　演化概念到 C-A-T 的映射</b></caption>
+<tr><th class="l">演化概念</th><th class="l">三角坐标</th><th class="l">含义</th></tr>
+<tr><td class="l">发育的保真（基因型→表型）</td><td class="l">C 完备性</td><td class="l">个体能完整、自洽地表达其遗传信息</td></tr>
+<tr><td class="l">性状的独立混合（自由组合）</td><td class="l">A 可组合性</td><td class="l">不同性状可加性组合，无强上位效应</td></tr>
+<tr><td class="l">适应性跨代传递</td><td class="l">T 传递性</td><td class="l">自然选择的累积可无损传到后代</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>映射提案，等级 C／丙。<b>注意：</b>这是<b>类比</b>，不是同一；演化概念与三角坐标的对应依赖"用哪一层（基因/个体/种群）"。</div>
+
+<h3>R.4　一个可反驳的推论</h3>
+
+<div class="define"><span class="bt">推论 R.1（待检验）</span>
+若三角适用于演化系统，则<b>"高度专化（T 或 C 强）的物种/技术，在面对环境突变时的崩溃概率，应高于泛化类型"</b>，且这一差异应随环境变化幅度单调上升。<br>
+<b>这是一个 L2 预测，可用古生物学（专化种的灭绝率）或技术史（专有技术的淘汰率）检验。</b>若在高变化情形下专化类型并不更易崩溃，则本附录的映射被削弱。</div>
+
+<p><b>登记。</b>本推论已登记于附录 可证伪登记簿（编号 P10），并列入研究议题库 O21。欢迎领域专家推进或证伪。</p>
+
+<h3>T.3　本书的最终立场</h3>
+
+<div class="define"><span class="bt">三句话</span>
+<b>（1）</b>我们不能证明 C、A、T 是独立的；<b>我们能证明的是：在三个被独立研究过的系统里，三组冲突至少两组是逻辑强制型（子模性、离散曲率恒等式），一组是经济权衡型。</b><br>
+<b>（2）</b>若三者在所有系统里都只是经济权衡型，则"不可能三角"应改名为"昂贵三角"——<b>这是本书愿意接受的降级</b>。<br>
+<b>（3）</b>区分这两种情形，需要 T.1 的协议——<b>这是留给读者与后续研究的工作（O24）。</b></div>
+
+<h3>U.2　集体选择机制：谁在做选择</h3>
+
+<p>框架反复说系统"选择"了某个配置。<b>但在社会系统中，这个"选择"的主体并不清晰。</b></p>
+
+<table class="nat">
+<caption class="cap"><b>表 U.1　"谁在选"：三个系统的代理层级冲突</b></caption>
+<tr><th class="l">系统</th><th class="l">可能的代理人</th><th class="l">冲突来源</th></tr>
+<tr><td class="l">医疗</td><td class="l">医生 / 患者 / 卫生部门 / 支付方 / 市场</td><td class="l">个体化诉求 vs 标准化管理的激励冲突</td></tr>
+<tr><td class="l">教育</td><td class="l">学生 / 教师 / 政府 / 家长 / 就业市场</td><td class="l">个体发展 vs 可比较产出的目标冲突</td></tr>
+<tr><td class="l">组织</td><td class="l">CEO / 员工 / 股东 / 监管 / 市场</td><td class="l">长期投入 vs 短期回报的时间偏好冲突</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>分析表，等级 C／丙。<b>要点：</b>所谓"系统的选择"，往往是多个代理人<b>相互冲突的微观选择</b>的聚合结果——而不是一个统一的理性主体的选择。</div>
+
+<p><b>已有的理论工具。</b>集体选择与代理问题有成熟的处理：<b>Arrow</b> 的不可能定理（聚合的困难，第 4.3 节）、<b>Ostrom</b> 的多中心治理、<b>委托—代理</b>理论与<b>权力</b>研究（谁设定议程）。<b>本书只做了很小的一步：附录 工具与清单.8 的"代理人识别框架"要求诊断先指明层级与代理人。</b>但"选择机制"本身未被形式化。</p>
+
+<div class="warning"><span class="bt">警告 U.2　"系统的选择"是一个有用的简化，不是事实</span>
+把系统当作一个统一的选择者，是<b>方法论上的简化</b>。它的代价是掩盖了<b>代理冲突</b>——而在许多系统中，冲突本身就是被让出的顶点的来源（第 15.8 节的尺度错位正是代理冲突的宏观表现）。<br>
+<b>因此，任何 L_社会 的三角诊断，都应至少注明：这里的"系统"是谁？以及是否存在相互冲突的代理人？</b>这本书把《错位的时间》里"制度是被人格化的"这一直觉，推进为"制度的选择是代理冲突的聚合"。<b>这登记为开放问题 O31。</b></div>
+
+<h3>U.5　三角作为一种区分：框架的自指与三本书的收束</h3>
+
+<p>最深的一点：<b>三角本身就是一次"区分"，而按《区分的语法》，区分预设了一个观察者。</b></p>
+
+<div class="define"><span class="bt">附注 U.1　框架不是"从无处观看"</span>
+本书的三角不是一个"客观事实"，而是<b>作者（以及读者）对复杂系统所做的一次特定区分</b>：把取舍投影到"完备 / 组合 / 传递"三个坐标上。<br>
+这不是缺陷，而是与作者研究系列的一贯立场一致：<b>理论是持续演化的模型，不是最终真理</b>——即 <span class="s">M_{t+1} = Update(M_t, E_t)</span>。三角是 <span class="s">M_t</span> 的一次区分；读者的批评与数据是 <span class="s">E_t</span>。</div>
+
+<p><b>三本书在此收束。</b></p>
+
+<ul>
+<li><b>《遗忘的边界》</b>：自我是被压缩、会被更新的叙事；观察者也是一个受限的记忆系统。<b>三角框架作为"观察者"的产物，同样受 <span class="s">K</span> 约束。</b></li>
+<li><b>《区分的语法》</b>：区分是基本对象，而区分预设观察者。<b>三角是一次区分；它的价值在于可被替换，而非永恒。</b></li>
+<li><b>《错位的时间》</b>：我们无法完美控制，只能在承认边界的前提下更聪明地分配可控性。<b>三角给出的正是一种"认知的可控性边界"：它不让你控制复杂系统，只让你看清取舍。</b></li>
+</ul>
+
+<div class="warning"><span class="bt">结语：诚实的边界</span>
+本附录的四个问题（反身性、集体选择、边界、失败）<b>都可能超出诊断框架的范围</b>，属于哲学、社会学与制度经济学的领地。<b>本书把它们标注出来，但不去解决它们</b>——因为解决它们需要跨学科合作与不同的研究方法。<br>
+<b>这不是缺陷，而是"清晰地标注出这里之后是我不确定的领地"。</b>一个知道自己界限的工具，比一个宣称无所不能的工具更可信。这正是作者研究系列的一贯姿态：开放、可证伪、邀请后来者。</div>
+
+<h3>V.1　与复杂性科学（Santa Fe 传统）的对话</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 V.1　本书三角 vs 复杂性科学</b></caption>
+<tr><th class="l">维度</th><th class="l">复杂性科学</th><th class="l">本书三角</th></tr>
+<tr><td class="l">核心语汇</td><td class="l">涌现、自组织、适应、临界</td><td class="l">完备/组合/传递、被让出的顶点</td></tr>
+<tr><td class="l">三角位置</td><td class="l">C+A（机制 + 组合）</td><td class="l">诊断坐标（不含预设立场）</td></tr>
+<tr><td class="l">强项</td><td class="l">机制丰富、案例生动</td><td class="l">可定位取舍、可登记证伪</td></tr>
+<tr><td class="l">弱项</td><td class="l">跨尺度传递弱（需重写）</td><td class="l">机制薄（只给坐标）</td></tr>
+</table>
+<div class="datasrc"><b>关系：</b>互补。<b>复杂性科学解释"如何涌现"，三角诊断"在哪里取舍"。</b>二者可叠加：用复杂性科学的机制填充三角的坐标，用三角定位复杂性案例的取舍。<b>风险：</b>若强行声称三角"包含"复杂性科学，会把后者的机制丰富性降为坐标标签——这是过度概括。</div>
+
+<h3>V.4　本框架的创新在哪里</h3>
+
+<div class="define"><span class="bt">相对上述三个传统的增量（诚实版）</span>
+<b>（1）可移植坐标：</b>把不同领域的取舍投影到同一组 <span class="s">(c, a, t)</span>，使跨域比较成为可能（上述传统各在自己的语汇内）。<br>
+<b>（2）让出账本：</b>不仅说"有取舍"，还写出"被让出的顶点 + 其机制（<span class="s">ψ</span>）+ 失效形态"。<br>
+<b>（3）可证伪登记：</b>O1—O33 与 A/B/C 分级，使框架的主张可被逐条攻击（上述传统少有如此登记）。<br>
+<b>（4）自反一致：</b>框架对自己用了同一把尺子（第 23.6 节），未把自己豁免。</div>
+
+<div class="warning"><span class="bt">警告 V.1　创新的代价是机制薄</span>
+上述四点都是"元层"创新（坐标、账本、登记、自反），<b>不是"领域机制"创新</b>。三角<b>不</b>解释记忆如何巩固、气候如何响应、市场如何传染——那些要靠各领域的既有理论。<b>因此三角适合做"跨域翻译层"，不适合做"领域理论"。把它当成复杂性科学或制度经济学的替代，都会失败。</b></div>
+
+<h3>S.1　案例一：计划经济（C+T，让出 A）</h3>
+
+<div class="define"><span class="bt">诊断 S.1</span>
+<b>选择：</b>C+T——详细的中央计划（局部完备）+ 长期目标与五年计划（跨期传递）。<br>
+<b>让出：</b>A——地方与企业层面的自主组合、试错与信息反馈。<br>
+<b>缺口：</b>创新与局部响应能力（A）长期缺席，导致对新技术与需求变化的适应迟缓。<br>
+<b>崩溃机制：</b>当外部技术加速、内部信息成本上升时，计划端（C）越来越依赖失真信息，而缺失的 A 使其无法通过分散试错纠错。<br>
+<b>等级：</b>C1／丙。<b>争议：</b>崩溃原因包含制度、外部压力、统计口径等多重因素，三角只提供一个截面。</div>
+
+<h3>S.4　三个案例的对照</h3>
+
+<table class="nat">
+<caption class="cap"><b>表 S.1　边界案例的三角对照</b></caption>
+<tr><th class="l">案例</th><th class="l">选择</th><th class="l">让出</th><th class="l">缺口如何累积（τ）</th></tr>
+<tr><td class="l">计划经济</td><td class="l">C+T</td><td class="l">A</td><td class="l">慢（数十年）</td></tr>
+<tr><td class="l">亚洲金融危机</td><td class="l">A+T</td><td class="l">C</td><td class="l">快（数周—数月）</td></tr>
+<tr><td class="l">复杂工程系统</td><td class="l">C+A</td><td class="l">T</td><td class="l">潜伏（数年，事故时才暴露）</td></tr>
+</table>
+<div class="datasrc"><b>性质：</b>对照表，等级 C／丙。<b>读法：</b>τ 越小，缺口暴露越快；τ 越大（计划经济的数十年、工程系统的潜伏期），系统越可能长期"看起来没事"，直到一次性爆发——这正是第 18 章"优雅降级"要提前准备的原因。</div>
+
+<div class="define"><span class="bt">本附录的边界</span>
+三个案例都是<b>事后解释（等级 C）</b>，且各自有更完整的领域解释。它们的作用是：<b>说明"缺口"可以累积到"崩溃"，并给出一个可检查的坐标。</b>它们不构成对三角的验证；真正的验证需要事前可反驳的预测（第 21.7 节的 L2—L4）。</div>

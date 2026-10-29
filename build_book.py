@@ -39,33 +39,15 @@ FRONT = [("总纲　现实中不存在无限", "front_finitude.html", "finitude"
          ("阅读合约　本书向你承诺什么，又不承诺什么", "front_theorymap.html", "theorymap"),
          ("读者指南　按角色选择阅读路径", "front_roadmap.html", "roadmap"),
          ("术语、记号与断言分级速查", "front_terms.html", "terms")]
-BACK = [("结语　从寻求大一统到自觉管理权衡", "back_epilogue.html", "epilogue"),
+BACK = [
+        ("结语　从寻求大一统到自觉管理权衡", "back_epilogue.html", "epilogue"),
         ("本系列（六本专著 + 两本通俗读本）", "back_popular_guide.html", "popguide"),
-        ("附录 A　形式化补充：不可能三角的陈述与三个见证", "appendix_a_math.html", "apxA"),
-        ("附录 B　案例总表：四个战场的 C-A-T 选择", "appendix_b_cases.html", "apxB"),
-        ("附录 C　参考文献", "appendix_c_references.html", "apxC"),
-        ("附录 D　术语表", "appendix_d_glossary.html", "apxD"),
-        ("附录 E　可证伪登记簿", "appendix_e_preregistration.html", "apxE"),
-        ("附录 F　证据与数据缺口清单", "appendix_f_datagaps.html", "apxF"),
-        ("附录 G　诊断手册与工具包", "appendix_g_toolkit.html", "apxG"),
-        ("附录 H　制度设计模板库", "appendix_h_templates.html", "apxH"),
-        ("附录 I　与已有不可能定理的对照", "appendix_i_comparison.html", "apxI"),
-        ("附录 J　失败记录：一次被证伪的强主张", "appendix_j_failed.html", "apxJ"),
-        ("附录 K　案例数据库：四个战场的关键数字", "appendix_k_cases.html", "apxK"),
-        ("附录 L　研究议题库：可接手的开放问题", "appendix_l_agenda.html", "apxL"),
-        ("附录 M　与前三本书的对应", "appendix_m_series.html", "apxM"),
-        ("附录 N　计算、涌现与系统论：三角的上游", "appendix_n_upstream.html", "apxN"),
-        ("附录 O　意识、人工智能与三角：三个前沿", "appendix_o_frontiers.html", "apxO"),
-        ("附录 P　延伸战场速览：按三条标准试诊断", "appendix_p_extended.html", "apxP"),
-        ("附录 Q　知识演化的定量指标与历史年表", "appendix_q_indicators.html", "apxQ"),
-        ("附录 R　演化视角的三角：生物、文化与技术", "appendix_r_evolution.html", "apxR"),
-        ("附录 S　三角失效的边界案例：系统为何崩溃", "appendix_s_boundary.html", "apxS"),
-        ("附录 T　根本质疑与回应：C、A、T 真的独立吗", "appendix_t_closure.html", "apxT"),
-        ("附录 U　诊断的哲学基础：观察者、选择、边界与失败", "appendix_u_philosophy.html", "apxU"),
-        ("附录 V　框架的对标与对话：与同时代相关框架", "appendix_v_dialogue.html", "apxV"),
-        ("附录 W　四个失败的深度案例：框架何时失效", "appendix_w_failures.html", "apxW"),
-        ("附录 X　框架的计算实现路线图", "appendix_x_roadmap.html", "apxX"),
-        ("附录 Y　实证探针集：软件项目与文献网络", "appendix_y_probes.html", "apxY")]
+        ("附录 A　形式化与证明", "appendix_a.html", "apxA"),
+        ("附录 B　可证伪登记簿", "appendix_b.html", "apxB"),
+        ("附录 C　工具与清单", "appendix_c.html", "apxC"),
+        ("附录 D　失败记录、案例与探针", "appendix_d.html", "apxD"),
+        ("附录 E　上游、前沿与对话", "appendix_e.html", "apxE"),
+]
 
 
 def load_json(p, default=None):
@@ -247,6 +229,43 @@ def build_copyright(book=None):
     return f'<div class="copyright-page">{html}</div>'
 
 
+
+def _part_para(text):
+    """部分导语/小结正文：按空行拆段，逐段包 <p>。"""
+    text = (text or "").strip()
+    if not text:
+        return ""
+    out = []
+    for seg in re.split(r"\n\s*\n", text):
+        seg = " ".join(seg.split())
+        if seg:
+            out.append(f"<p>{seg}</p>")
+    return "\n".join(out)
+
+
+def build_part_page(part):
+    """部分扉页：标题 + 导语。
+
+    导语回答三件事：上一部分留下了什么、这一部分怎么推进、让出了什么。
+    数据来自 parts.json 的 `intro`，缺省回退 `desc`（避免旧数据空着）。
+    """
+    title = part["part"]
+    intro = part.get("intro") or part.get("desc") or ""
+    return (f'<div class="part-page">'
+            f'<h1 class="part-title">{title}</h1>'
+            f'<div class="part-intro">{_part_para(intro)}</div>'
+            f'</div>')
+
+
+def build_part_summary(part):
+    """部分小结：最硬的一条、它依赖的假设、下一部分为什么从这里开始。"""
+    sm = part.get("summary") or ""
+    if not sm.strip():
+        return ""
+    return (f'<div class="part-summary"><span class="bt">本部分小结</span>'
+            f'{_part_para(sm)}</div>')
+
+
 def build(book, parts, ereader=False):
     blocks = [build_cover(), build_title_page(book), build_copyright(book), build_toc(parts)]
     for title, fname, anchor in FRONT:
@@ -256,17 +275,18 @@ def build(book, parts, ereader=False):
                 blocks.append(f'<div id="{anchor}">{fh.read()}</div>')
     written = []
     for part in parts:
-        n_before = len(blocks)
+        if not any(c.get("written") and c.get("file") for c in part.get("chapters", [])):
+            continue
+        blocks.append(build_part_page(part))
         for ch in part.get("chapters", []):
             if ch.get("written") and ch.get("file"):
                 f = os.path.join(SOURCE, ch["file"])
                 if os.path.exists(f):
-                    if len(blocks) == n_before:  # 部分扉页只加一次
-                        blocks.append(f'<h1 class="part-title">{part["part"]}</h1>')
                     with open(f, encoding="utf-8") as fh:
                         body = fh.read()
                     blocks.append(f'<div id="ch{ch["no"]}">{body}</div>')
                     written.append(ch["no"])
+        blocks.append(build_part_summary(part))
     if any(os.path.exists(os.path.join(SOURCE, f)) for _, f, _ in BACK):
         blocks.append('<h1 class="part-title">结语与附录</h1>')
     for title, fname, anchor in BACK:
