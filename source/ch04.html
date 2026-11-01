@@ -7,7 +7,7 @@
 <div class="scenario"><span class="bt">本章主张</span>
 已有的不可能定理、计算论与系统论各自成立于一个特定层面，但它们共享一个更抽象的形状：<b>有限的、必须被分配的资源，在若干理想性质之间的取舍。</b>本书的三角是同一形状的一个更抽象、更弱、但覆盖更广的版本。［论证，B／乙］</div>
 
-<h3>4.1　导论：不可能定理为什么反复出现</h3>
+<h3 id="sec4-1">4.1　导论：不可能定理为什么反复出现</h3>
 
 <p>一个耐人寻味的现象是：不可能定理论证往往出奇地短。CAP 定理的核心论证可以用三句话说完；Arrow 定理的核心是一个投票悖论的构造；Mundell–Fleming 的核心是一个利率平价方程；停机问题的核心是一个自我指涉的构造。<b>它们之所以强大，不是因为有复杂的证明，而是因为它们在极简的假设下指出了取舍或边界的会。</b></p>
 
@@ -34,7 +34,7 @@
 <li><b>失效形态（failure pattern）</b>：系统在被让出的顶点上的衰退类型。<b>三类：</b>缓慢退化（A 型）/ 阈值崩溃（C 型）/ 潜伏失效（T 型）。<b>全书统一用"失效形态"（不用"失效机制"）。</b></li>
 </ul></div>
 
-<h3>4.2　CAP 与分布式系统的三难</h3>
+<h3 id="sec4-2">4.2　CAP 与分布式系统的三难</h3>
 
 <p>CAP 定理（Brewer 2000；Gilbert &amp; Lynch 2002）断言：一个分布式数据系统在网络可能分区（Partition）的前提下，不能同时保证一致性（Consistency）与可用性（Availability）。</p>
 
@@ -49,16 +49,16 @@
 
 <p><b>结构上的相似：</b>CAP 也在说"三选二"，而且那个被让出的顶点决定了系统在故障时的行为。<b>内容上的不同：</b>CAP 的资源是网络同步能力，本书的资源是描述能力；CAP 的取舍是设计选择，本书的取舍可能连选择者都不自知。CAP 给本书的最大启示是：<b>不可能定理的用处不在于哀叹，而在于给出一个设计坐标系。</b></p>
 
-<h3>4.3　Arrow 与 Mundell–Fleming：选择即失去</h3>
+<h3 id="sec4-3">4.3　Arrow 与 Mundell–Fleming：选择即失去</h3>
 
 <p><b>Arrow 不可能定理</b>（1951）说：一个满足若干"合理"公理的集体排序规则不存在（非独裁前提下）。<b>Mundell–Fleming 三难</b>（1960s）说：开放经济不能同时拥有固定汇率、资本自由流动与独立货币政策。</p>
 
 <div class="define"><span class="bt">共同形状</span>
 这些定理都满足同一个模板：<b>给定一组理想性质 <span class="s">{P₁, P₂, P₃}</span> 与有限资源，不存在同时满足全部性质的解；选择满足其中两个，第三个会以某种方式失效。</b>这个模板不保证第三个的失效有统一机制——它只保证取舍存在。</div>
 
-<p>本书与它们的区别在于：<b>Arrow 与 Mundell–Fleming 是定理（在公理前提下已证），本书的三角是框架。</b>本书把它们的"选择即失去"姿态借来，用在尚未被严格定理化的领域，同时诚实标注：那里取舍是"论证/假说"，不是"已证"。<b>更精确地说，第 2 章的命题 2.2（记账不等式）就是本书对"选择即失去"的可证版本——但它是条件性的，依赖于预算重叠假设 (A2)。</b></p>
+<p>本书与它们的区别在于：<b>Arrow 与 Mundell–Fleming 是定理（在公理前提下已证），本书的三角是框架。</b>本书把它们的"选择即失去"姿态借来，用在尚未被严格定理化的领域，同时如实标注：那里取舍是"论证/假说"，不是"已证"。<b>更精确地说，第 2 章的命题 2.2（记账不等式）就是本书对"选择即失去"的可证版本——但它是条件性的，依赖于预算重叠假设 (A2)。</b></p>
 
-<h3>4.4　子模性与 NP 困难：能力不能相加</h3>
+<h3 id="sec4-4">4.4　子模性与 NP 困难：能力不能相加</h3>
 
 <p>第 1 章的第一处症状是子模性。<b>子模性是优化与信息论中普遍存在的结构</b>：特征选择的边际收益递减；博弈论里 Shapley 值的边际贡献递减；生态学里物种多样性与生态功能的非线性关系。</p>
 
@@ -72,7 +72,7 @@
 
 <p>与子模性相邻的是计算复杂性。许多"能力组合"问题（组合优化、验证）是 NP 困难的：<b>你可以写出完备的目标函数（C），却找不到可组合的求解算法（¬A）。</b>这不是工程问题，而是复杂性类的问题。更精确地说，它把第 2 章的 <span class="s">a</span> 从"连续性折扣"推向了"结构性不可达"：某些组合不仅收益递减，而且根本不能在预算 <span class="s">K_comp</span> 内求到最优。</p>
 
-<h3>4.5　计算不可约性：预测的硬边界</h3>
+<h3 id="sec4-5">4.5　计算不可约性：预测的硬边界</h3>
 
 <p>Wolfram 的"计算不可约性"（computational irreducibility）指出：对许多系统，<b>不存在比直接模拟更快的预测方法</b>——要得到第 <span class="s">n</span> 步的结果，唯一办法是走完 <span class="s">n</span> 步。这与三角的关系是直接而深刻的。</p>
 
@@ -87,7 +87,7 @@
 <img class="fig" src="assets/svg/fig08-computation.svg" alt="可计算性固定逻辑，计算不可约性固定 K_comp，P vs NP 固定计算复杂度；三者分别对应三角的一个受限分量。">
 <div class="cap"><b>图 4.2　计算论的三条边界与三角</b>。可计算性固定逻辑，计算不可约性固定 K_comp，P vs NP 固定计算复杂度；三者分别对应三角的一个受限分量。</div>
 
-<h3>4.6　系统论的三次尝试：从一般系统论到复杂系统</h3>
+<h3 id="sec4-6">4.6　系统论的三次尝试：从一般系统论到复杂系统</h3>
 
 <p>本书的三角必须与系统论传统对话，否则会显得像又一个"重新发明系统论"的框架。系统论大致经历了三次尝试，每次都撞上同一个位置。</p>
 
@@ -110,7 +110,7 @@
 
 <h4>4.6.1　三角 vs 系统论：诊断能力对比</h4>
 
-<p>那么，三角比系统论"更好"吗？本节给出一个诚实的、分维度的对比。</p>
+<p>那么，三角比系统论"更好"吗？本节给出一个分维度的对比。</p>
 
 <table class="nat">
 <caption class="cap"><b>表 4.3b　三角与系统论的诊断能力对比</b></caption>
@@ -123,7 +123,7 @@
 </table>
 <div class="datasrc"><b>性质：</b>对比表，等级 B／乙。<b>结论：</b>三角不是"更好的系统论"，而是<b>更窄、更可操作</b>的一个诊断切片。系统论回答"系统为什么会自我维持"，三角只回答"它在三个顶点上如何取舍"。<b>后者覆盖面小，但落点更精确。</b></div>
 
-<h3>4.7　涌现：三角与"多则异"</h3>
+<h3 id="sec4-7">4.7　涌现：三角与"多则异"</h3>
 
 <p>Anderson 的名文《More Is Different》指出：<b>在一个尺度上成立的基本定律，不能简单地"还原"或"外推"到另一个尺度</b>；每一个新的复杂度层次都可能出现新的规律。这几乎就是传递性 <span class="s">T</span> 被让出的教科书式陈述。</p>
 
@@ -136,7 +136,7 @@
 <div class="warning"><span class="bt">警告 4.1　不要用三角"解释掉"涌现</span>
 说"涌现 = t 下降"是危险的简化。涌现还涉及不可预测性、不可还原性、下向因果等更丰富的概念；<span class="s">t</span> 只是一个坐标，不是全部。本书的主张是定性的：<b>"多则异"是传递性账单的一种表现，而不是说三角替涌现理论给出了完整答案。</b></div>
 
-<h3>4.8　重正化群与尺度分离：被默认的前提</h3>
+<h3 id="sec4-8">4.8　重正化群与尺度分离：被默认的前提</h3>
 
 <p>理论物理里最强大的尺度工具是重正化群。它允许我们从一个尺度上的有效理论推演出另一个尺度上的有效理论。<b>但它的前提是"尺度分离"</b>：快过程可以被积分掉，慢过程近似恒定。</p>
 
@@ -145,7 +145,7 @@
 <div class="warning"><span class="bt">警告 4.2　被默认的前提往往最贵</span>
 一个理论越成功，它的前提越容易被遗忘。重正化群的"尺度分离"、经济学模型的"代表性代理人"、医学指南的"平均病人"——这些前提一旦失效，结论的失效会以最意想不到的方式出现。<b>三角诊断的很大一部分工作，就是把被默认的前提重新写成可见的取舍。</b></div>
 
-<h3>4.9　本书与它们的区别：诊断，而非同一</h3>
+<h3 id="sec4-9">4.9　本书与它们的区别：诊断，而非同一</h3>
 
 <p>必须直说：<b>本书不是要宣布"CAP、Arrow、停机问题、计算不可约性都是三角的特例"。</b>那样做会把它们的严格性拉低到框架的严格性，是一种降格。本书的正确姿态是相反的：把它们的严格性作为标杆，同时承认三角（在它们之外）的严格性更低。</p>
 
@@ -161,7 +161,7 @@
 <p>最准确的说法是：<b>本书把"不可能"从一个又一个领域定理，抽象成一种可以在新领域里先行施加的诊断姿态；这个抽象降低了严格性，换来了覆盖面。</b>读清楚这笔交易的方向，是阅读全书的前提。</p>
 
 <div class="case"><span class="ct">人的尺度</span><p>一位系统论学者说：“我们这一行最大的诱惑，是把所有东西都说成系统。”他后来在自己的书里加了一章“不适用的地方”。<b>与已有理论对话最难的部分，不是找相同，是承认“这件事我这里解释不了”。</b></p></div>
-<h3>4.10　本章小结</h3>
+<h3 id="sec4-10">4.10　本章小结</h3>
 
 <p>已有的不可能定理共享一个形状：有限资源在理想性质之间的取舍。本章进一步把三角与三个更上游的传统对接：<b>计算论</b>（计算不可约性为 <span class="s">K_comp</span> 受限的三角提供支持）、<b>系统论</b>（其三次尝试分别站在三个顶点上）、<b>涌现</b>（"多则异"是传递性账单的可测量表现）。下一章进入第一个战场：生命系统里的记忆与遗忘。</p>
 
@@ -176,20 +176,22 @@
 
 <div class="box box-takeaway"><p><b>一句话带走：</b>与阿罗、CAP、哥德尔对照之后：三角是不可能性定理家族里最软的那一个。</p></div>
 
-<h3>本章参考文献</h3>
+<h3>4　本章文献（引用与延伸）</h3>
 <div class="refs">
-<p>Brewer, E. (2000). Towards Robust Distributed Systems. <i>PODC Keynote</i>.</p>
-<p>Gilbert, S., &amp; Lynch, N. (2002). Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services. <i>ACM SIGACT News</i>, 33(2), 51–59.</p>
-<p>Arrow, K. J. (1951). <i>Social Choice and Individual Values</i>. Wiley.</p>
-<p>Mundell, R. A. (1963). Capital Mobility and Stabilization Policy under Fixed and Flexible Exchange Rates. <i>Canadian Journal of Economics and Political Science</i>, 29(4), 475–485.</p>
-<p>Fleming, J. M. (1962). Domestic Financial Policies under Fixed and Floating Exchange Rates. <i>IMF Staff Papers</i>, 9, 369–379.</p>
-<p>Nemhauser, G. L., Wolsey, L. A., &amp; Fisher, M. L. (1978). An Analysis of Approximations for Maximizing Submodular Set Functions. <i>Mathematical Programming</i>, 14(1), 265–294.</p>
-<p>Wolfram, S. (2002). <i>A New Kind of Science</i>. Wolfram Media.</p>
-<p>Cook, S. A. (1971). The Complexity of Theorem-Proving Procedures. <i>STOC</i>, 151–158.</p>
-<p>von Bertalanffy, L. (1968). <i>General System Theory</i>. George Braziller.</p>
-<p>Wiener, N. (1948). <i>Cybernetics</i>. MIT Press.</p>
-<p>Anderson, P. W. (1972). More Is Different. <i>Science</i>, 177(4047), 393–410.</p>
-<p>Holland, J. H. (1995). <i>Hidden Order</i>. Addison-Wesley.</p>
-<p>Mitchell, M. (2009). <i>Complexity: A Guided Tour</i>. Oxford University Press.</p>
-<p>Gleick, J. (1987). <i>Chaos: Making a New Science</i>. Viking.</p>
+<p class="refh">本章引用</p>
+<p>★ Brewer, E. (2000). Towards Robust Distributed Systems. PODC Keynote.</p>
+<p>★ Gilbert, S., &amp; Lynch, N. (2002). Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services. ACM SIGACT News, 33(2), 51–59.</p>
+<p>★ Arrow, K. J. (1951). Social Choice and Individual Values. Wiley.</p>
+<p class="refh">延伸阅读</p>
+<p>Mundell, R. A. (1963). Capital Mobility and Stabilization Policy under Fixed and Flexible Exchange Rates. Canadian Journal of Economics and Political Science, 29(4), 475–485.</p>
+<p>Fleming, J. M. (1962). Domestic Financial Policies under Fixed and Floating Exchange Rates. IMF Staff Papers, 9, 369–379.</p>
+<p>Nemhauser, G. L., Wolsey, L. A., &amp; Fisher, M. L. (1978). An Analysis of Approximations for Maximizing Submodular Set Functions. Mathematical Programming, 14(1), 265–294.</p>
+<p>Wolfram, S. (2002). A New Kind of Science. Wolfram Media.</p>
+<p>Cook, S. A. (1971). The Complexity of Theorem-Proving Procedures. STOC, 151–158.</p>
+<p>von Bertalanffy, L. (1968). General System Theory. George Braziller.</p>
+<p>Wiener, N. (1948). Cybernetics. MIT Press.</p>
+<p>Anderson, P. W. (1972). More Is Different. Science, 177(4047), 393–410.</p>
+<p>Holland, J. H. (1995). Hidden Order. Addison-Wesley.</p>
+<p>Mitchell, M. (2009). Complexity: A Guided Tour. Oxford University Press.</p>
+<p>Gleick, J. (1987). Chaos: Making a New Science. Viking.</p>
 </div>

@@ -7,7 +7,7 @@
 <div class="scenario"><span class="bt">本章主张</span>
 对一个紧预算（K/D 有界）、需要描述多尺度结构的系统，三个理想性质——局部完备性 C、可组合性 A、跨尺度传递性 T——不能同时被推到满格。至多同时满足两个；让出哪一个，就留下哪一类可定位的缺口。<b>本章给出三档定义、一个可测量的坐标 (c, a, t)、一条在明确假设下可证的记账不等式，以及一个仍为猜想的普适命题。</b>［形式化框架，B—C／乙—丙］</div>
 
-<h3>2.1　导论：把直觉变成刻度</h3>
+<h3 id="sec2-1">2.1　导论：把直觉变成刻度</h3>
 
 <p>第 1 章的三处症状都用了一个含糊的词："无法弥合"。这一章要把这个词拆开，并且拆到可以被反驳的程度。"弥合"在数学上至少可以做三件事：补全一个局部描述；把两部分拼回整体；把结论从一个尺度搬到另一个尺度。如果三件事分别对应三个性质，那么"无法弥合"就可以被写成"三个坐标不能同时取到 1"。</p>
 
@@ -15,7 +15,7 @@
 
 <p>必须从一开始承认的风险："三"这个数字有人为成分（第 21.6 节会专门自检）。本章的形式化不试图消除这一点；它试图让这一点变得可以计算、可以比较、可以被指出错误。</p>
 
-<h3>2.2　系统的形式化：元素、层次与资源</h3>
+<h3 id="sec2-2">2.2　系统的形式化：元素、层次与资源</h3>
 
 <div class="define"><span class="bt">定义 2.1　多尺度系统</span>
 一个多尺度系统记作四元组
@@ -36,7 +36,7 @@
 
 <p>"多尺度"不是修辞：它意味着 <span class="s">|ℒ| ≥ 2</span> 且相邻尺度的周期之比的量级跨度足够大（在本书的诊断中通常要求 <span class="s">≥ 10²</span>，见第 20.2 节）。如果所有尺度都在同一数量级内，三角的张力通常不强——这一点会在第 9 章的金融—实体对照与第 7 章的气候表里反复出现。</p>
 
-<h3>2.3　b　有限性：三角的生成条件</h3>
+<h3 id="sec2-3">2.3　b　有限性：三角的生成条件</h3>
 
 <p class="lead">上一节把系统写成四元组，其中 K 是资源预算。<b>但“预算有限”这句话本身，还不足以推出三角。</b>本节把有限性的逻辑角色说清楚：它提供三角的必要前提，三角的充分条件另有所在。</p>
 
@@ -64,7 +64,7 @@
 
 <p>这也解释了本书对“无限”一词的使用纪律：书里的“无限容量”“无限精度”“连续极限”一律是<b>反事实或极限操作</b>，用来显示约束消失后会发生什么；它们不是对任何现实系统的描述。<b>把反事实当成路线图，是这一领域最常见的误读。</b></p>
 
-<h3>2.4　复杂度 K：三种量度</h3>
+<h3 id="sec2-4">2.4　复杂度 K：三种量度</h3>
 
 <div class="define"><span class="bt">定义 2.2　复杂度预算 K</span>
 系统的资源预算由三个分量组成：
@@ -94,7 +94,7 @@
 </table>
 <div class="datasrc"><b>性质：</b>量级表，等级 B／乙。具体数值为公开共识的近似；"受限资源"列是本框架的解读。</div>
 
-<h3>2.5　完备性 C 的三种形式与领域对照</h3>
+<h3 id="sec2-5">2.5　完备性 C 的三种形式与领域对照</h3>
 
 <div class="define"><span class="bt">定义 2.3　完备性的三档</span>
 设系统 <span class="s">Σ = (E, R, ℒ, K)</span>，子系统为 <span class="s">{Σ_i}</span>。<br>
@@ -121,7 +121,7 @@
 <div class="warning"><span class="bt">警告 2.1　"完备"不是"什么都知道"</span>
 本书的完备性永远相对于<b>一个问题与一个容差</b>。当有人宣称"我们的模型是完备的"，正确的回应不是赞叹，而是三连问：<b>关于什么量的完备？在什么分辨率下？容差是多少？</b>答不出这三问的"完备"，只是修辞。</div>
 
-<h3>2.6　可组合性 A 的三种形式</h3>
+<h3 id="sec2-6">2.6　可组合性 A 的三种形式</h3>
 
 <div class="define"><span class="bt">定义 2.4　可组合性的三档</span>
 设 <span class="s">f</span> 是系统的描述映射，<span class="s">∘</span> 是组合运算。<br>
@@ -138,7 +138,7 @@
 其中期望取遍被考察的组合对，<span class="s">δ₀</span> 为归一化常数。<br>
 <b>读法：</b><span class="s">a = 1</span> 表示组合收益可加；<span class="s">a &lt; 1</span> 表示存在系统性的次可加缺口。<b>a 的取值依赖组合对的选取与容差，因此必须连同它们一起报告。</b></div>
 
-<h3>2.7　传递性 T 的三种形式与误差界</h3>
+<h3 id="sec2-7">2.7　传递性 T 的三种形式与误差界</h3>
 
 <div class="define"><span class="bt">定义 2.6　传递性的三档</span>
 设系统在尺度 <span class="s">λ₁, λ₂, …</span> 上运行。<br>
@@ -159,7 +159,7 @@
 
 这个定义直接回应了一个常见质疑："什么叫'无误'传递？精度损失 5% 算吗？50% 算吗？"——答案不是给一个普适阈值，而是给一个<b>可测量的技能分数</b>，并把阈值留给领域约定。<span class="s">t</span> 小于多少算失效，取决于该领域能容忍的误差；框架只负责让这个数可见。</p>
 
-<h3>2.8　三角命题的准形式陈述</h3>
+<h3 id="sec2-8">2.8　三角命题的准形式陈述</h3>
 
 <div class="define"><span class="bt">命题 2.1（三角命题，准形式）</span>
 给定系统 <span class="s">Σ = (E, R, ℒ, K)</span>，定义其完备—可组合—传递坐标为
@@ -177,9 +177,9 @@
 <b>若上述任一项被证伪，命题 2.1 在该领域随即失效——这是它可被攻击的具体入口。</b></div>
 
 <div class="warning"><span class="bt">警告 2.2　"准形式"不等于"已证明"</span>
-定义 2.5 与 2.7 把三个坐标变成了可测量的量，这比第 1 版的定性表述前进了一步。<b>但它把"普适不可能"的证明问题，转化为"每个领域的 R(K) 边界在哪里"的经验问题。</b>这正是本书想要的诚实位置：命题 2.1 可被检验，但不能被当作定理引用。</div>
+定义 2.5 与 2.7 把三个坐标变成了可测量的量，这比第 1 版的定性表述前进了一步。<b>但它把"普适不可能"的证明问题，转化为"每个领域的 R(K) 边界在哪里"的经验问题。</b>这正是本书想要的位置：命题 2.1 可被检验，但不能被当作定理引用。</div>
 
-<h3>2.9　成本函数与记账不等式</h3>
+<h3 id="sec2-9">2.9　成本函数与记账不等式</h3>
 
 <p>为了让三角不只是坐标，本节给出一个<b>在明确假设下可证</b>的记账不等式。它不是普适定理；它的价值在于说明"在什么条件下，取舍是被逼出来的"。</p>
 
@@ -201,7 +201,7 @@
 <div class="warning"><span class="bt">警告 2.3　不要把记账不等式读成"定理"</span>
 命题 2.2 的价值是<b>把"权衡"从形容词变成不等式</b>，并明确指出<b>交互惩罚 <span class="s">ψ</span></b> 是张力的来源。它也解释了为什么第 1 版那条"坐标和恒为 2"的主张是错的：当 <span class="s">ψ</span> 与归一体化随 <span class="s">K</span> 变化时，上界严格大于或小于 2，并非普适常数——这正是附录 增补：上游、边界与对话 记录的那次证伪。<b>另一个必须说清楚的推论：若某系统的 <span class="s">ψ ≡ 0</span>，三角对它不适用。</b></div>
 
-<h3>2.10　三个顶点、三条边与一个内部</h3>
+<h3 id="sec2-10">2.10　三个顶点、三条边与一个内部</h3>
 
 <p><b>三个顶点。</b>选择 <span class="s">C+A</span> 的系统追求"局部完备 + 精确组合"，代价是跨尺度断层；选择 <span class="s">C+T</span> 的系统追求"局部完备 + 尺度贯通"，代价是能力不能相加；选择 <span class="s">A+T</span> 的系统追求"可组合 + 可传递"，代价是单点精确预测失效。第 1 章的三本书恰好各占一个顶点。</p>
 
@@ -213,7 +213,7 @@
 
 <div class="cap"><b>图 2.1　三角的几何</b>。三个顶点分别是三种"选两个"的极端取舍；三条边是现实系统的常见位置；每个顶点对面是被让出的那个性质的"缺口"。<b>注意：这是组织坐标图，不是可行域的精确形状。</b></div>
 
-<h3>2.11　C、A、T 独立吗：因果强制与经济权衡</h3>
+<h3 id="sec2-11">2.11　C、A、T 独立吗：因果强制与经济权衡</h3>
 
 <p class="lead">这是对本书最根本的质疑，本节正面回答。<b>它不是技巧性的反驳，而是对框架前提的挑战：三个性质真的正交吗？</b>答案分两步：先承认耦合，再把两类完全不同、却都被叫作"取舍"的现象分开。</p>
 
@@ -365,7 +365,7 @@
 若存在一个更根本的单一约束（O24），三角仍可作为它的三维投影坐标使用。</div>
 
 <div class="case"><span class="ct">人的尺度</span><p>一个五人小队，两周，一个必须交的东西。队长提出“要完美、要按时、要人人满意”，说完自己停了停，说：“我们选两个吧。”他选了“按时”和“能用”，然后当面告诉那个被牺牲的人：“这次委屈你。”<b>三角不是纸上的几何，是有人要当面说出这句话。</b></p></div>
-<h3>2.12　本章小结</h3>
+<h3 id="sec2-12">2.12　本章小结</h3>
 
 <p>本章把系统写成四元组 <span class="s">Σ = (E, R, ℒ, K)</span>，把复杂度写成三分量 <span class="s">(K_desc, K_comp, K_res)</span>，把三个性质各写成三档，并给出可测量的坐标 <span class="s">(c, a, t)</span>。三角命题 2.1 是仍然开放的、尺度相对的猜想；命题 2.2 是在明确假设下可证的记账不等式，它把张力的来源指认为"完备与可组合的预算重叠"。下一章给出检查这一切的纪律：证据分级、断言标记与可证伪登记。</p>
 
@@ -380,17 +380,18 @@
 
 <div class="box box-takeaway"><p><b>一句话带走：</b>完备、可组合、传递——至多同时满足两个；这不是宿命，是价目表。</p></div>
 
-<h3>本章参考文献</h3>
+<h3>2　本章文献（引用与延伸）</h3>
 <div class="refs">
-<p>Simon, H. A. (1969). <i>The Sciences of the Artificial</i>. MIT Press.</p>
-<p>Simon, H. A. (1955). A Behavioral Model of Rational Choice. <i>Quarterly Journal of Economics</i>, 69(1), 99–118.</p>
-<p>Kolmogorov, A. N. (1965). Three Approaches to the Quantitative Definition of Information. <i>Problems of Information Transmission</i>, 1(1), 1–7.</p>
-<p>Rissanen, J. (1978). Modeling by Shortest Data Description. <i>Automatica</i>, 14(5), 465–471.</p>
-<p>Wilson, K. G. (1971). Renormalization Group and Critical Phenomena. <i>Physical Review B</i>, 4(9), 3174–3183.</p>
-<p>Allen, T. F. H., &amp; Starr, T. B. (1982). <i>Hierarchy: Perspectives for Ecological Complexity</i>. University of Chicago Press.</p>
-<p>Anderson, P. W. (1972). More Is Different. <i>Science</i>, 177(4047), 393–410.</p>
-<p>Cover, T. M., &amp; Thomas, J. A. (2006). <i>Elements of Information Theory</i> (2nd ed.). Wiley.</p>
-
-<p>Solomonoff, R. J. (1964). A Formal Theory of Inductive Inference. <i>Information and Control</i>, 7(1), 1–22.</p>
-<p>Wolpert, D. H., &amp; Macready, W. G. (1997). No Free Lunch Theorems for Optimization. <i>IEEE Transactions on Evolutionary Computation</i>, 1(1), 67–82.</p>
+<p class="refh">本章引用</p>
+<p>★ Wolpert, D. H., &amp; Macready, W. G. (1997). No Free Lunch Theorems for Optimization. IEEE Transactions on Evolutionary Computation, 1(1), 67–82.</p>
+<p class="refh">延伸阅读</p>
+<p>Simon, H. A. (1969). The Sciences of the Artificial. MIT Press.</p>
+<p>Simon, H. A. (1955). A Behavioral Model of Rational Choice. Quarterly Journal of Economics, 69(1), 99–118.</p>
+<p>Kolmogorov, A. N. (1965). Three Approaches to the Quantitative Definition of Information. Problems of Information Transmission, 1(1), 1–7.</p>
+<p>Rissanen, J. (1978). Modeling by Shortest Data Description. Automatica, 14(5), 465–471.</p>
+<p>Wilson, K. G. (1971). Renormalization Group and Critical Phenomena. Physical Review B, 4(9), 3174–3183.</p>
+<p>Allen, T. F. H., &amp; Starr, T. B. (1982). Hierarchy: Perspectives for Ecological Complexity. University of Chicago Press.</p>
+<p>Anderson, P. W. (1972). More Is Different. Science, 177(4047), 393–410.</p>
+<p>Cover, T. M., &amp; Thomas, J. A. (2006). Elements of Information Theory (2nd ed.). Wiley.</p>
+<p>Solomonoff, R. J. (1964). A Formal Theory of Inductive Inference. Information and Control, 7(1), 1–22.</p>
 </div>

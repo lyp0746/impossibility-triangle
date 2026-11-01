@@ -13,5 +13,5 @@
 <text x="762" y="358" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 450×</text>
 <rect x="60" y="396" width="220" height="56" rx="10" fill="#f7f9fc" stroke="#c94f4f" stroke-width="2"/><text x="170.0" y="430.0" font-size="17" fill="#c94f4f" text-anchor="middle" font-weight="600">终身整合</text>
 <rect x="300" y="410" width="700" height="28" rx="6" fill="#c94f4f" opacity="0.35"/>
-<text x="1012" y="432" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 700×</text>
+<text x="930" text-anchor="end" y="432" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 700×</text>
 <text x="40" y="474" font-size="13" fill="#666" text-anchor="start" font-weight="normal">条形长度示意各尺度的时间跨度；同一组信息论约束支配全部尺度。</text></svg>

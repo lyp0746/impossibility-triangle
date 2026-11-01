@@ -10,5 +10,5 @@
 <text x="712" y="284" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 400×</text>
 <rect x="60" y="322" width="220" height="56" rx="10" fill="#f7f9fc" stroke="#b8862f" stroke-width="2"/><text x="170.0" y="356.0" font-size="17" fill="#b8862f" text-anchor="middle" font-weight="600">公卫/代际</text>
 <rect x="300" y="336" width="700" height="28" rx="6" fill="#b8862f" opacity="0.35"/>
-<text x="1012" y="358" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 700×</text>
+<text x="930" text-anchor="end" y="358" font-size="14" fill="#666" text-anchor="start" font-weight="normal">≈ 700×</text>
 <text x="40" y="400" font-size="13" fill="#666" text-anchor="start" font-weight="normal">急性窗口以分钟计，慢病结局以十年计；制度若用同一套指标考核两者，必然在一端失真。</text></svg>
