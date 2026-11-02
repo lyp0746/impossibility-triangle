@@ -1,6 +1,6 @@
 {
-  "title": "选择的代价：完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新 / The Price of Choice: The Impossibility Triangle of Completeness, Composability, and Transfer",
-  "description": "<p><b>中文.</b> 本著作提出“选择的代价”诊断框架，用以解释任何有限复杂度知识系统在形成、演化与更新中的结构性困境。</p><p>核心主张：完备（C）、可组合（A）、跨尺度传递（T）至多同时充分具备两项；选择两项，第三项必然留下可定位的缺口。信息子模性、离散—连续断层（1/3 缺口）与时间错配 τ 是三条理论见证。</p><p>结构与证据：25 章、附录 A—Y、38 幅图；医疗、教育、组织、金融（LTCM 1998）、软件工程、人工智能六个领域被放进同一张价目表，并配十个反例与逐条反驳条件。</p><p>诚实的纪律：全部主张按 A/B/C 与甲/乙/丙双重分级；37 个开放问题（O1—O37）标明已证、假设与待验证；失败与曾被推翻的强主张写在正文与附录，而非藏在脚注。</p><p>边界：框架给出“失效的形态与方向”的诊断，不给出新配置的预测，也不替代领域判断；它的用途是让设计者在选择两项时，看见第三项会怎样失效。</p><p>版本：2026-10-18，279 页，25 章，38 图，附录 A—Y，O1—O37；源码与脚本开源，内容 CC BY 4.0，代码 MIT。</p><p><b>本版更新（2026-10-18 地基版）。</b>本版把全书的共同前提写到卷首：<b>现实中不存在无限</b>——无限只作为极限出现在模型里，从不出现在现实系统的实际状态里。有限性本身只说明“有上界”；它要变成“必须让出一样”，还需要三个条件同时成立：需求随规模增长、描述/组合/传递共享同一承载者、同时维持两种活动更贵（交互惩罚 ψ&gt;0）。因此“至多取二”一律是“紧预算（K/D 有界）下至多取二”的简写；若预算增长快于需求，三项可以同时满格。</p><p><b>本版新增内容。</b>新增 §2.2b 与命题 2.0：有限性是必要前提，Q（三活动构成性且共享承载者）∧ R（ψ&gt;0）才是三角的实质；§2.7 命题 2.1 改为尺度相对形式；新增 §22.4b“第四性质的四道门”（构成性、可独立测量、非冗余、独立代价），审查成本、可计算性、可扩展性、鲁棒性、普遍性；第 5—10 章诊断块加入“紧约束”，第 11、13、16 章加入有限性诊断；O7/P9 的反例条件统一为“紧预算下同时满格”。</p><p><b>系列 / Series.</b> 同一作者的独立研究系列：六本学术专著 + 两本通俗读本。入口与外部登记库：<a href=\"https://github.com/lyp0746/knowledge-tradeoffs\">https://github.com/lyp0746/knowledge-tradeoffs</a>；源码与可复算脚本：<a href=\"https://github.com/lyp0746/impossibility-triangle\">https://github.com/lyp0746/impossibility-triangle</a>。首选预览文件：<code>impossibility-triangle-print.pdf</code>（印刷版）。</p><p><b>English.</b> Abstract (English). This work presents “The Price of Choice,” a diagnostic framework for the structural dilemma of any finite-complexity knowledge system. Core thesis: completeness (C), composability (A) and cross-scale transfer (T) can be fully held at most two at a time; choosing two leaves an identifiable gap at the third. Information submodularity, the discrete–continuous gap (1/3) and temporal mismatch τ serve as theoretical witnesses. Structure and evidence: 25 chapters, appendices A–Y, 38 figures; six domains — medicine, education, organisations, finance (LTCM 1998), software engineering and AI — are mapped onto one price list, with ten counterexamples and refutation conditions. Discipline: every claim carries an evidence grade (A/B/C) and a conceptual grade; 37 open questions (O1–O37) mark what is proved, assumed or untested, and failures are reported in the main text. Boundaries: the framework diagnoses failure modalities and directions, not novel configurations, and does not replace domain expertise. Edition: 2026-10-18, 279 pages, 25 chapters, 38 figures, appendices A–Y.</p><p><b>What is new in this edition (2026-10-18, Finitude Edition).</b> The common premise is now stated at the front: <b>there is no infinity in reality</b> — infinity appears only as a limit in models, never as a property of a real system. Finitude alone only says that there is a ceiling; to yield a trade-off it also needs three conditions: demand grows with scale, description/composition/transfer share one bearer, and maintaining two activities at once is more expensive (interaction penalty ψ&gt;0). “At most two” is therefore shorthand for “at most two under a tight budget (bounded K/D)”; if the budget grows faster than demand, all three can be full.</p><p><b>New in this edition.</b> New §2.2b and Proposition 2.0: finitude is necessary, while Q (constitutive triad sharing one bearer) ∧ R (ψ&gt;0) is the substance of the triangle; §2.7 restates the proposition in scale-relative form; new §22.4b gives four gates for a fourth property (constitutive, independently measurable, non-redundant, independent cost) and reviews cost, computability, scalability, robustness and universality; chapters 5–10 add a “tight constraint” line, chapters 11, 13 and 16 add finitude diagnoses; O7/P9 counterexample conditions now require a tight budget.</p>",
+  "title": "选择的代价：完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新 / 选择的代价: 完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新",
+  "description": "<p><b>中文摘要。</b>本书追问一个比任何单一学科都更靠下的问题：复杂知识系统如何形成、演化和更新？答案不是某个大一统机制，而是一条约束。作者此前三本书各自撞上了一次“无法弥合的矛盾”：《遗忘的边界》里是遗忘与更新的对立，《区分的语言》里是离散完备与连续传递之间差一个因子 1/3 的缺口，《错位的时间》里是效率与冗余、以及多尺度之间无法同步的时间错配。本书把这三处症状诊断为同一个结构性困境的三个投影，并把它命名为“选择的代价”：任何有限复杂度的知识系统都不能同时完整地拥有三个性质——局部完备性（每个部分有自洽的内部描述）、可组合性（部分的组合不产生新的非线性项）、跨尺度传递性（不同尺度的结论可以无损互推）。三者至多同时满足两个；选择哪两个，就会在第三个上留下一处可被定位的缺口。本书不把这条约束当作宿命，而当作交易的价目表：它先给出三角的形式陈述与三个见证（信息子模性、离散—连续断层、时间错配），再在生命、物理、社会、人工四个战场做现实诊断，然后把“形成—演化—更新”写成一部连续重新选择三角的历史（从少数大师的 C+T 知识，到教学化的 A+T 知识，到工程化的 C+A 知识，再在危机中重启），最后给出建设性的行动建议：分层有效性、制度化的失效预案、优雅降级、以及一种把选择与代价写在明处的书写方式。全书以 A/B/C 证据等级与可证伪登记簿组织，明确区分“已证”“框架”“猜想”，并把作者本人一次被证伪的强主张照实记录。卷首《总纲　现实中不存在无限》把地基写在最前面：有限性是三角的必要前提而非充分条件，三角的实质内容是描述、组合、传递的构成性与交互惩罚 ψ>0；第 2.2b 节与第 22.4b 节分别给出这一逻辑结构与“第四维”的资格审查。</p>\n<p><b>核心主张。</b>完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新。本书不把「选择的代价」写成一本无所不包的概论，而是把一个问题做深：一个有限的东西，怎样一边保持结构，一边还能变化。</p>\n<p><b>结构与证据。</b>5 部分、25 章、290 页、附录 A–E、27 幅图；每章保留证据分级（A/B/C 与甲/乙/丙）与可证伪登记，失败与撤回写在正文，不放进脚注。</p>\n<p><b>本版修订（2026-11-02）。</b>统一书名与副题、统一版式与页码；附录收束为 A–F；旧版残留的 DOI、系列计数与错字订正；本版以概念 DOI 归档，版本 DOI 指向 2026-11-02 这一版。</p>\n<p><b>诚实纪律。</b>结论强度不超过证据强度；能算的给出数，不能算的写明「判不了」；每一条硬约束都写清谁在承担代价，以及这条限制使什么成为可能。</p>\n<p><b>边界。</b>本书给坐标与判据，不给判决；它不替代领域专家的材料，也不把类比写成定理。具体边界见各章末与附录的登记簿。</p>\n<p><b>版本信息。</b>2026-11-02，290 页，25 章，附录 A–E；内容 CC BY 4.0，代码 MIT。</p>\n<p><b>Abstract.</b> 选择的代价: 完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新. The book does not attempt an all-encompassing survey; it works one problem through: how does something finite keep its structure while still being able to change? It is organised in 5 parts and 25 chapters, with appendices A–E and 27 figures; every chapter keeps its evidence grades (A/B/C) and falsifiability register, and reports failures and retractions in the body.</p>\n<p><b>Core thesis.</b> 完备、可组合与可传递的三维权衡——复杂知识系统如何形成、演化与更新. The book offers coordinates and criteria, not verdicts.</p>\n<p><b>Structure and evidence.</b> 5 parts, 25 chapters, 290 pages, appendices A–E, 27 figures. The apparatus is open: data, scripts and registers are in the repository; the prose keeps a single visible grade per claim rather than hedging every clause.</p>\n<p><b>This edition (2026-11-02).</b> Title and subtitle unified; layout and folios unified; appendices consolidated to A–F; residual DOI, series-count and typographic errors corrected; the concept DOI is stable and the version DOI points to this edition.</p>\n<p><b>Discipline.</b> Conclusion strength does not exceed evidence strength; what can be computed is computed, what cannot is marked as undecidable; every hard constraint names who pays for it and what it makes possible.</p>\n<p><b>Boundaries.</b> The book gives coordinates and criteria, not verdicts; it does not replace field expertise, and it does not dress an analogy as a theorem. See the chapter ends and the register appendices for specific limits.</p>\n<p><b>Edition.</b> 2026-11-02, 290 pages, 25 chapters, appendices A–E; content CC BY 4.0, code MIT.</p>",
   "creators": [
     {
       "name": "李毅芃",
@@ -57,13 +57,13 @@
       "scheme": "custom"
     }
   ],
-  "notes": "科目（中文）：复杂系统 Complex Systems、系统科学 Systems Science、知识论 Epistemology、信息论 Information Theory、科学哲学 Philosophy of Science、制度设计 Institutional Design、管理学 Management。语言：中文（含英文摘要）。结构：25 章，约 268 页。首选预览文件：impossibility-triangle-print.pdf（印刷版）。引用格式见 CITATION.cff。",
+  "notes": "学术专著/读本。2026-11-02，290 页，25 章，附录 A–E。",
   "license": "CC-BY-4.0",
   "upload_type": "publication",
   "publication_type": "book",
   "language": "zho",
   "access_right": "open",
-  "publication_date": "2026-10-18",
+  "publication_date": "2026-11-02",
   "related_identifiers": [
     {
       "identifier": "https://github.com/lyp0746/impossibility-triangle",
@@ -76,22 +76,22 @@
       "scheme": "url"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.23286403",
+      "identifier": "https://doi.org/10.5281/zenodo.23217100",
       "relation": "references",
       "scheme": "doi"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.23323277",
+      "identifier": "https://doi.org/10.5281/zenodo.23323276",
       "relation": "references",
       "scheme": "doi"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.23412033",
+      "identifier": "https://doi.org/10.5281/zenodo.23345012",
       "relation": "references",
       "scheme": "doi"
     },
     {
-      "identifier": "https://doi.org/10.5281/zenodo.23416220",
+      "identifier": "https://doi.org/10.5281/zenodo.23416219",
       "relation": "references",
       "scheme": "doi"
     },
@@ -116,5 +116,5 @@
       "scheme": "doi"
     }
   ],
-  "version": "2026-10-19"
+  "version": "2026-11-02"
 }
