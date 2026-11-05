@@ -9,10 +9,10 @@
 <b>4. 只追加，永不修改：</b>账本为 append-only。<br>
 机器可读版本见 <code>docs/preregistration/registry.json</code> 与 <code>checkups.csv</code>。</div>
 
-<h3>E.1　已登记命题</h3>
+<h3>D.6　已登记命题</h3>
 
 <table class="nat">
-<caption class="cap"><b>表 E.1　可证伪命题登记</b></caption>
+<caption class="cap"><b>表 D.6　可证伪命题登记</b></caption>
 <tr><th class="l">编号</th><th class="l">命题</th><th class="l">方向</th><th class="l">证伪条件</th><th class="l">状态</th></tr>
 <tr><td class="l">P1</td><td class="l">信息子模性（定理）</td><td class="l">—</td><td class="l">构造出 <span class="s">I(Z;X₁∪X₂) &gt; ΣI</span> 的反例</td><td class="l">已证，不可证伪</td></tr>
 <tr><td class="l">P2</td><td class="l">拉普拉斯谱方差恒等式</td><td class="l">—</td><td class="l">数值偏差 &gt; 1e−6</td><td class="l">已复算</td></tr>
@@ -28,30 +28,30 @@
 
 <div class="note"><b>关于 P9 的口径（阅读注，不改写登记行）：</b>第 2.2b 节与第 2.7 节把“有限”具体化为 <span class="s">K/D</span> 有界（预算被需求追平）。这不改变 P9 的反例条件，只是把“有限”从形容词变成可检查的比值。<b>若用一个“K 无限增长”的系统来反驳 P9，那不是反例，而是把前提换掉了。</b>登记行保持原样，是为了遵守本登记簿的 append-only 规则。</div>
 
-<h3>E.2　核销记录（append-only）</h3>
+<h3>D.19　核销记录（append-only）</h3>
 
 <table class="nat">
-<caption class="cap"><b>表 E.2　核销记录</b></caption>
+<caption class="cap"><b>表 D.19　核销记录</b></caption>
 <tr><th class="l">日期</th><th class="l">编号</th><th class="l">预测</th><th class="l">观察</th><th class="l">结论</th></tr>
 <tr><td class="l">2026-10-15</td><td class="l">P2</td><td class="l">κ_info = Var(λ)/2</td><td class="l">随机图数值误差 &lt; 1e−6</td><td class="l">支持</td></tr>
 <tr><td class="l">2026-10-15</td><td class="l">P3</td><td class="l">n=12,K=15 时三点不能同时逼近 1</td><td class="l">枚举 473721 种分配，符合</td><td class="l">支持（模型内）</td></tr>
 <tr><td class="l">2026-10-15</td><td class="l">P9</td><td class="l">未找到三点满格系统</td><td class="l">未找到（非证明）</td><td class="l">开放</td></tr>
 </table>
 
-<h3>E.3　已证伪/削弱的条目（见附录 增补：上游、边界与对话）</h3>
+<h3>D.32　已证伪/削弱的条目（见附录 增补：上游、边界与对话）</h3>
 
 <table class="nat">
-<caption class="cap"><b>表 E.3　被证伪或削弱的主张</b></caption>
+<caption class="cap"><b>表 D.32　被证伪或削弱的主张</b></caption>
 <tr><th class="l">编号</th><th class="l">原主张</th><th class="l">结果</th></tr>
 <tr><td class="l">F1</td><td class="l">"三角的坐标和存在普适上界 2"</td><td class="l">被证伪：模型 T 给出 2.16，依赖 n、K</td></tr>
 <tr><td class="l">F2</td><td class="l">"任何多尺度系统都恰好让出一个顶点"</td><td class="l">被削弱：模型 T 中多个顶点同时受挤压</td></tr>
 </table>
 
-<h3>E.4　如何追加</h3>
+<h3>D.7　如何追加</h3>
 
 <p>任何读者都可以按 <code>docs/preregistration/</code> 的格式追加一条登记或核销。追加时请遵守四条规则；<b>不要修改已有行</b>。一个被证伪的预测，比一个被重复的漂亮说法更有价值。</p>
 
-<h3 id="secE-5">E.5　系列级外部登记接口与杀手实验（审查补充）</h3>
+<h3 id="secB-5">B.5　系列级外部登记接口与杀手实验（审查补充）</h3>
 <p class="lead">为回应审查意见“缺乏外部、可公开评分的登记”，系列级外部登记已于 2026-10-16 建立；本书条目与之一一对应。</p>
 <ul>
 <li><b>外部登记库（系列级）：</b><a href="https://github.com/lyp0746/knowledge-tradeoffs">github.com/lyp0746/knowledge-tradeoffs</a></li>

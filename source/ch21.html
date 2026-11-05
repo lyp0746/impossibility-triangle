@@ -140,7 +140,7 @@ L2/L3 预测的是<b>缺口的类型</b>，不是具体数值或时刻。把"预
 <div class="datasrc"><b>性质：</b>强预测，等级 B—C。<b>F9 的等级最高</b>（子模性为 L2 已证），<b>F6/F7 次之</b>（可用公开数据检验），F8/F10 需更长窗口。<b>这些预测的价值在于可被具体证伪：</b>若 F9 显示分层标志物的边际增益不递减，则子模性在临床标志物上不成立（那将是一个重要反例）。</div>
 
 <table class="nat">
-<caption class="cap"><b>表 21.6b　强预测的参数化细节</b></caption>
+<caption class="cap"><b>表 21.7　强预测的参数化细节</b></caption>
 <tr><th class="l">预测</th><th class="l">函数形式</th><th class="l">参数预测</th><th class="l">反驳条件</th></tr>
 <tr><td class="l">F6</td><td class="l">Accuracy(n) = A₀ − B·n<sup>α</sup>（n=推理长度）</td><td class="l">α ∈ (1.2, 1.8)；转折点约 8k tokens</td><td class="l">若 α ≤ 1，或转折点不存在</td></tr>
 <tr><td class="l">F7</td><td class="l">BugRate(m) = c₀ + c₁·m<sup>β</sup>（m=模块数）</td><td class="l">β ∈ (1.5, 2.5)</td><td class="l">若 β ≤ 1</td></tr>
@@ -151,10 +151,10 @@ L2/L3 预测的是<b>缺口的类型</b>，不是具体数值或时刻。把"预
 <div class="datasrc"><b>性质：</b>参数化说明，等级 C／丙。<b>参数区间是启发式估计（C），不是拟合结果</b>（函数形式的灵感来自神经缩放律 Kaplan 等 2020、软件成本模型 Boehm 1981、过拟合修正 Bailey &amp; López de Prado 2014）——它们的作用是让预测<b>可被明确反驳</b>。若你有数据，请按附录 可证伪登记簿 登记并检验；<b>参数估计本身也应被更新（这是 append-only 账本的意义）。</b></div>
 
 <div class="warning"><span class="bt">警告 21.3　参数化预测的来源问题</span>
-表 21.6b 的参数区间来自不同领域（神经缩放律、软件成本、信息论）。<b>若参数误差与理论误差无法区分，则"可被证伪"的力度会削弱</b>——任何不符的结果都可能是"参数估错"而非"理论错"。<b>因此必须标注每个参数的来源强度。</b></div>
+表 21.7 的参数区间来自不同领域（神经缩放律、软件成本、信息论）。<b>若参数误差与理论误差无法区分，则"可被证伪"的力度会削弱</b>——任何不符的结果都可能是"参数估错"而非"理论错"。<b>因此必须标注每个参数的来源强度。</b></div>
 
 <table class="nat">
-<caption class="cap"><b>表 21.6c　参数来源强度</b></caption>
+<caption class="cap"><b>表 21.8　参数来源强度</b></caption>
 <tr><th class="l">预测</th><th class="l">参数来源</th><th class="l">强度</th></tr>
 <tr><td class="l">F9（子模性）</td><td class="l">直接从信息论推导</td><td class="l"><b>A</b>（理论）</td></tr>
 <tr><td class="l">F7（软件缺陷）</td><td class="l">软件缺陷标度（类 Boehm）</td><td class="l"><b>B</b>（相关领域）</td></tr>
@@ -165,7 +165,7 @@ L2/L3 预测的是<b>缺口的类型</b>，不是具体数值或时刻。把"预
 <div class="datasrc"><b>读法：</b>F9 的参数最硬（A，理论推导），因此<b>若 F9 被证伪，是理论问题而非参数问题</b>；F6/F8 的参数最软（C），若不符需先排除参数误差。<b>这正是第 21.7 节"L2—L3 而非 L4"的技术原因。</b></div>
 
 <table class="nat">
-<caption class="cap"><b>表 21.6d　强预测的验证清单（成功 / 失败 / 灰区）</b></caption>
+<caption class="cap"><b>表 21.9　强预测的验证清单（成功 / 失败 / 灰区）</b></caption>
 <tr><th class="l">预测</th><th class="l">成功</th><th class="l">失败（推翻）</th><th class="l">灰区</th></tr>
 <tr><td class="l">F6</td><td class="l">α∈(1.2,1.8) 且转折在 5—12k</td><td class="l">α≤1 或无转折</td><td class="l">α∈(1,1.2) 或转折不清</td></tr>
 <tr><td class="l">F7</td><td class="l">β∈(1.5,2.5)</td><td class="l">β≤1</td><td class="l">β∈(1,1.5)</td></tr>

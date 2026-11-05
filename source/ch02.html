@@ -19,8 +19,8 @@
 
 <div class="define"><span class="bt">定义 2.1　多尺度系统</span>
 一个多尺度系统记作四元组
-<div class="eq"><span class="body">Σ = (E, R, ℒ, K)</span></div>
-其中<br>
+<div class="eq"><span class="body">Σ = (E, R, ℒ, K)</span><span class="num">(2.1)</span></div>
+式 (2.1) 的四个分量各有分工：<br>
 <b>E</b> 是元素集合（子系统、单元、个体）；<br>
 <b>R</b> 是元素之间的关系集合（耦合、依赖、通信）；<br>
 <b>ℒ = {λ₁, …, λ_m}</b> 是系统运行的尺度集合（时间或空间分辨率的层级）；<br>
@@ -36,7 +36,7 @@
 
 <p>"多尺度"不是修辞：它意味着 <span class="s">|ℒ| ≥ 2</span> 且相邻尺度的周期之比的量级跨度足够大（在本书的诊断中通常要求 <span class="s">≥ 10²</span>，见第 20.2 节）。如果所有尺度都在同一数量级内，三角的张力通常不强——这一点会在第 9 章的金融—实体对照与第 7 章的气候表里反复出现。</p>
 
-<h3 id="sec2-3">2.3　b　有限性：三角的生成条件</h3>
+<h3 id="sec2-3">2.3　有限性：三角的生成条件</h3>
 
 <p class="lead">上一节把系统写成四元组，其中 K 是资源预算。<b>但“预算有限”这句话本身，还不足以推出三角。</b>本节把有限性的逻辑角色说清楚：它提供三角的必要前提，三角的充分条件另有所在。</p>
 
@@ -68,7 +68,7 @@
 
 <div class="define"><span class="bt">定义 2.2　复杂度预算 K</span>
 系统的资源预算由三个分量组成：
-<div class="eq"><span class="body">K = (K_desc, K_comp, K_res)</span></div>
+<div class="eq"><span class="body">K = (K_desc, K_comp, K_res)</span><span class="num">(2.2)</span></div>
 <b>K_desc（描述预算）</b>：可用于刻画系统的独立参数/基元数目上界。与 Kolmogorov 复杂度、最小描述长度（MDL）同源的量。<br>
 <b>K_comp（计算预算）</b>：从初值推出未来状态所允许的计算步骤/存储上界。与时间、空间复杂性同源的量。<br>
 <b>K_res（制度预算）</b>：可动员的注意力、算力、人力、财政与制度资源。与有限理性（bounded rationality）同源的量。<br>
@@ -134,7 +134,7 @@
 
 <div class="define"><span class="bt">定义 2.5　可组合缺口（可测量）</span>
 给定描述映射 <span class="s">f</span> 与容差 <span class="s">δ</span>，定义可组合性坐标
-<div class="eq"><span class="body">a := 1 − E[ max(0, (f(x₁)+f(x₂) − f(x₁∘x₂)) / (f(x₁)+f(x₂)) ) ] / δ₀</span></div>
+<div class="eq"><span class="body">a := 1 − E[ max(0, (f(x₁)+f(x₂) − f(x₁∘x₂)) / (f(x₁)+f(x₂)) ) ] / δ₀</span><span class="num">(2.3)</span></div>
 其中期望取遍被考察的组合对，<span class="s">δ₀</span> 为归一化常数。<br>
 <b>读法：</b><span class="s">a = 1</span> 表示组合收益可加；<span class="s">a &lt; 1</span> 表示存在系统性的次可加缺口。<b>a 的取值依赖组合对的选取与容差，因此必须连同它们一起报告。</b></div>
 
@@ -148,7 +148,7 @@
 
 <div class="define"><span class="bt">定义 2.7　传递性坐标（基于技能分数）</span>
 在尺度 <span class="s">λ₁</span> 上训练/拟合的模型，被提升（upscale）到尺度 <span class="s">λ₂</span> 后，定义
-<div class="eq"><span class="body">t := 1 − Err(提升预测) / Err(零模型)</span></div>
+<div class="eq"><span class="body">t := 1 − Err(提升预测) / Err(零模型)</span><span class="num">(2.4)</span></div>
 其中 <span class="s">Err</span> 为该尺度约定的误差（如 RMSE、校准误差、Brier 分数），零模型给出误差上界。<br>
 <b>读法：</b><span class="s">t = 1</span> 表示提升预测完美；<span class="s">t = 0</span> 表示提升后不优于零模型；<span class="s">t &lt; 0</span> 表示提升反而更差。<b>t 依赖尺度对与误差定义，必须连同它们报告。</b></div>
 
@@ -163,9 +163,9 @@
 
 <div class="define"><span class="bt">命题 2.1（三角命题，准形式）</span>
 给定系统 <span class="s">Σ = (E, R, ℒ, K)</span>，定义其完备—可组合—传递坐标为
-<div class="eq"><span class="body">(c, a, t) ∈ [0,1]³</span></div>
+<div class="eq"><span class="body">(c, a, t) ∈ [0,1]³</span><span class="num">(2.5)</span></div>
 其中 <span class="s">c</span> 为达到 <span class="s">C_i</span> 档的子系统的加权比例，<span class="s">a</span> 由定义 2.5、<span class="s">t</span> 由定义 2.7 给出。记 <span class="s">R(K) ⊆ [0,1]³</span> 为在预算 <span class="s">K</span> 下可达坐标的闭包。则<b>猜测</b>
-<div class="eq"><span class="body">(1, 1, 1) ∉ R(K)　当 K 不足以同时支付三项满格成本时成立</span></div>
+<div class="eq"><span class="body">(1, 1, 1) ∉ R(K)　当 K 不足以同时支付三项满格成本时成立</span><span class="num">(2.6)</span></div>
 且 <span class="s">R(K)</span> 随 <span class="s">K</span> 单调扩张。<br>
 <b>为什么不是同义反复：</b>“不足以支付”这句话本身很容易成立；本命题的经验内容在于，真实知识系统的需求随规模 <span class="s">n</span> 增长，<span class="s">K</span> 的增长被需求吃掉，因此“不足以同时支付”是常态而非例外。<b>若某系统的 <span class="s">K</span> 增长快于需求，三项可以同时逼近满格，三角对它不适用</b>——这不是漏洞，而是边界（附录 形式化与证明.6 的模型 T 也给出同一结论：坐标和上界随 <span class="s">K/n</span> 上升，不是普适常数）。<br>
 <b>状态：</b>这是全书的组织命题，等级 C／丙。<b>本书没有证明它的一般形式</b>；它由三条见证（第 5、7、12 章）、一条条件命题（命题 2.2）与一个可复算模型（附录 形式化与证明）支持。<br>
@@ -190,9 +190,9 @@
 
 <div class="define"><span class="bt">命题 2.2（记账不等式，条件性）B／乙</span>
 在 (A1)—(A3) 下，设三项支出满足
-<div class="eq"><span class="body">cost(c,a,t) = κ_c·c + κ_a·a + κ_t·t + λ·ψ(c,a,t) ≤ K</span></div>
+<div class="eq"><span class="body">cost(c,a,t) = κ_c·c + κ_a·a + κ_t·t + λ·ψ(c,a,t) ≤ K</span><span class="num">(2.7)</span></div>
 其中 <span class="s">ψ ≥ 0</span> 是<b>交互惩罚</b>（同时维持完备与可组合时所需的额外一致性成本），<span class="s">λ ≥ 0</span>。则
-<div class="eq"><span class="body">κ_c·c + κ_a·a + κ_t·t ≤ K − λ·ψ</span></div>
+<div class="eq"><span class="body">κ_c·c + κ_a·a + κ_t·t ≤ K − λ·ψ</span><span class="num">(2.8)</span></div>
 规一化 <span class="s">κ_c=κ_a=κ_t=1</span> 且 <span class="s">K=2</span>（预算恰好够满两个顶点）时：<br>
 <b>（i）</b>若 <span class="s">ψ ≡ 0</span>（无交互），三者相互独立，可同时接近各自上界——<b>此时三角不成立</b>；<br>
 <b>（ii）</b>若 <span class="s">ψ &gt; 0</span>，则坐标和 <span class="s">≤ 2 − λψ &lt; 2</span>。<br>
@@ -250,7 +250,7 @@
 <b>强度：</b><span class="s">L2 ⇒ L1 ⇒ L0</span>；反过来不成立。<b>只有 L2 才配得上"不可能"一词。</b></div>
 
 <table class="nat">
-<caption class="cap"><b>表 2.3b　会性的分层读数</b></caption>
+<caption class="cap"><b>表 2.4　会性的分层读数</b></caption>
 <tr><th class="l">系统</th><th class="l">冲突</th><th class="l">等级</th><th class="l">证据</th><th class="l">K 恒定时是否消失？</th></tr>
 <tr><td class="l">记忆</td><td class="l">共享编码 → 边际收益递减</td><td class="l"><b>L2</b></td><td class="l">子模性不等式（已证）</td><td class="l">否（L2）</td></tr>
 <tr><td class="l">数学（离散/连续）</td><td class="l">代数完备 → 连续极限缺口</td><td class="l"><b>L2</b></td><td class="l">离散曲率恒等式 + 1/3 缺口</td><td class="l">否（L2）</td></tr>
@@ -267,7 +267,7 @@
 
 
 <img class="fig" src="assets/svg/fig32-conflict-migration.svg" alt="冲突迁移示意">
-<div class="cap"><b>图 2.3　冲突迁移：知识进步把取舍推到另一条边</b>。医疗的个体异质若被知识进步消除，冲突会迁移到个体化知识难复制。</div>
+<div class="cap"><b>图 2.2　冲突迁移：知识进步把取舍推到另一条边</b>。医疗的个体异质若被知识进步消除，冲突会迁移到个体化知识难复制。</div>
 
 <div class="define"><span class="bt">命题 2.3（冲突迁移，启发式）</span>
 若以知识进步（而非扩大 <span class="s">K</span>）消除一个 L0 冲突，且总交互惩罚仍 <span class="s">ψ &gt; 0</span>，则取舍会<b>迁移到三角的另一个边上</b>重新出现。<br>
@@ -288,7 +288,7 @@
 <p>命题 2.3 说冲突"迁移"，但没说什么它迁到哪条边。三条边的数学结构其实很不相同。</p>
 
 <table class="nat">
-<caption class="cap"><b>表 2.3c　三条边的冲突本质与迁移方向</b></caption>
+<caption class="cap"><b>表 2.5　三条边的冲突本质与迁移方向</b></caption>
 <tr><th class="l">边</th><th class="l">冲突本质</th><th class="l">数学结构</th><th class="l">典型迁移方向</th></tr>
 <tr><td class="l">C–A</td><td class="l">个体异质性与可加性不兼容</td><td class="l">信息—组织（子模性/编码）</td><td class="l">→ A–T（个体化→复制难）</td></tr>
 <tr><td class="l">A–T</td><td class="l">灵活性与稳定性不兼容</td><td class="l">时间（时间错配 τ）</td><td class="l">→ C–A 或 C–T</td></tr>
@@ -319,7 +319,7 @@
 <h4>2.10.4　迁移方向可预测吗</h4>
 
 <div class="warning"><span class="bt">警告 2.5e　迁移方向的三种解释</span>
-表 2.3c 暗示迁移方向可能有规律（信息论系统倾向 C–A → A–T；拓扑系统倾向 C–T → C–A），但<b>样本太小（仅医疗、数学、部分教育）</b>。三种可能：<br>
+表 2.5 暗示迁移方向可能有规律（信息论系统倾向 C–A → A–T；拓扑系统倾向 C–T → C–A），但<b>样本太小（仅医疗、数学、部分教育）</b>。三种可能：<br>
 <b>（1）系统类型的函数：</b>生物系统（信息—组织约束）与形式系统（拓扑约束）迁移方向不同——<b>可预测</b>；<br>
 <b>（2）历史路径依赖：</b>不同领域的发展历程决定了各自"已占据的顶点"，新冲突自然落向不同的边——<b>半可预测</b>；<br>
 <b>（3）巧合：</b>没有方向偏好，只是样本太少——<b>不可预测</b>。<br>
@@ -330,7 +330,7 @@
 <p>命题 2.3 说冲突"迁移"，但没说什么它迁到哪条边。三条边的数学结构其实很不相同。</p>
 
 <table class="nat">
-<caption class="cap"><b>表 2.3c　三条边的冲突本质与迁移方向</b></caption>
+<caption class="cap"><b>表 2.6　三条边的冲突本质与迁移方向</b></caption>
 <tr><th class="l">边</th><th class="l">冲突本质</th><th class="l">数学结构</th><th class="l">典型迁移方向</th></tr>
 <tr><td class="l">C–A</td><td class="l">个体异质性与可加性不兼容</td><td class="l">信息—组织（子模性/编码）</td><td class="l">→ A–T（个体化→复制难）</td></tr>
 <tr><td class="l">A–T</td><td class="l">灵活性与稳定性不兼容</td><td class="l">时间（时间错配 τ）</td><td class="l">→ C–A 或 C–T</td></tr>
