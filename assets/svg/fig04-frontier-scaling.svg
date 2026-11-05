@@ -27,4 +27,4 @@
 <text x="934" y="195" text-anchor="end" font-size="15" fill="#009E73">α=1.8</text>
 <text x="515" y="606" text-anchor="middle" font-size="15" fill="#333">系统规模 n（对数刻度近似）</text>
 <text x="20" y="335" font-size="15" fill="#333" transform="rotate(-90 20 335)" text-anchor="middle">坐标和上界</text>
-<text x="40" y="612" font-size="13" fill="#888">结论：固定预算比下，坐标和上界随 n 增大而上升；模型 T 的三选二是有限规模 + 紧预算现象。复现：python analysis/frontier_scaling.py</text></svg>
+<text x="40" y="628" font-size="13" fill="#888">结论：固定预算比下，坐标和上界随 n 增大而上升；模型 T 的三选二是有限规模 + 紧预算现象。复现：python analysis/frontier_scaling.py</text></svg>

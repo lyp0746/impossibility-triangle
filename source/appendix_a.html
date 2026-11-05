@@ -138,7 +138,7 @@
 
 <h3>A.9　复杂度三分量的换算</h3>
 
-<p>定义 2.2 给出 <span class="s">K = (K_desc, K_comp, K_res)</span>，但未给出换算。本节说明：<b>不存在普适换算率；但在具体系统里，分量之间可以相互"交易"，交易率是可估的。</b></p>
+<p>定义 2.3 给出 <span class="s">K = (K_desc, K_comp, K_res)</span>，但未给出换算。本节说明：<b>不存在普适换算率；但在具体系统里，分量之间可以相互"交易"，交易率是可估的。</b></p>
 
 <table class="nat">
 <caption class="cap"><b>表 A.3　三分量的交易示例</b></caption>
@@ -148,7 +148,7 @@
 <tr><td class="l">制度惯例</td><td class="l">用书面规则（<span class="s">K_res</span> 的存储）换会议协调（<span class="s">K_res</span> 的时间）</td><td class="l">规则 ↔ 协调</td></tr>
 <tr><td class="l">模型压缩/蒸馏</td><td class="l">用小 <span class="s">K_desc</span> 换略低的 <span class="s">C₃</span></td><td class="l">存储 ↔ 精度</td></tr>
 </table>
-<div class="datasrc"><b>性质：</b>示例表，等级 B／乙。<b>推论：</b>把三分量压成标量会掩盖"哪种资源在交易"——这正是定义 2.2 保留三分量的理由。统一换算率是开放问题 O1。</div>
+<div class="datasrc"><b>性质：</b>示例表，等级 B／乙。<b>推论：</b>把三分量压成标量会掩盖"哪种资源在交易"——这正是定义 2.3 保留三分量的理由。统一换算率是开放问题 O1。</div>
 
 <h3>A.10　前沿如何随规模变化：一个大规模数值实验</h3>
 
@@ -166,7 +166,7 @@
 
 <img class="fig" src="assets/svg/fig04-frontier-scaling.svg" alt="前沿如何随规模变化">
 
-<div class="cap"><b>图 2.2　前沿如何随规模变化</b>。固定预算比 <span class="s">α = K/n</span> 时，坐标和上界随 <span class="s">n</span> 增大而缓慢上升，趋近解析值 <span class="s">α+1</span>：<b>模型 T 的"三选二"是有限规模 + 紧预算现象，不是结构强制。</b></div>
+<div class="cap"><b>图 A.2　前沿如何随规模变化</b>。固定预算比 <span class="s">α = K/n</span> 时，坐标和上界随 <span class="s">n</span> 增大而缓慢上升，趋近解析值 <span class="s">α+1</span>：<b>模型 T 的"三选二"是有限规模 + 紧预算现象，不是结构强制。</b></div>
 
 <div class="warning"><span class="bt">警告 A.2　这次实验削弱了见证 Ⅳ 的强度（书内自检）</span>
 大规模实验显示：在模型 T 中，只要预算比 <span class="s">α</span> 接近 2（预算足以让全部单元精确），三个坐标可以同时接近 1。<b>因此模型 T 展示的是"预算稀缺下的取舍"，而不是"结构性的三选二"。</b>结构性三选二需要正的交互惩罚 <span class="s">ψ</span>（A.7）——这正是三条见证（子模性、1/3 缺口、τ）各自提供的东西。<b>本实验因此把见证 Ⅳ 从"三角的独立见证"降级为"记账不等式的一个预算特例"，并登记在附录 增补：上游、边界与对话。</b></div>
@@ -221,7 +221,7 @@ IPCC AR6 对 1.5°C 的剩余碳预算给出一个区间（不同情景、不同
 <div class="define"><span class="bt">开放问题 O2 的补充陈述</span>
 是否存在一个模型架构，使可达域 <span class="s">R(K)</span> 包含大量靠近 <span class="s">(1,1,1)</span> 的点？<br>
 <b>已知线索：</b>（a）预算充分（α→2）时，模型 T 的三点可同时接近 1（A.10）；（b）动态/分时切换可能进一步放宽；（c）引入外部资源（外包、工具）可把部分坐标移出共享预算（第 5.3 节的反例一）。<br>
-<b>待答：</b>是否存在一个<b>有限、静态、无外部资源</b>的架构，使 <span class="s">(1,1,1)</span> 可达？<b>若存在，命题 2.1 被证伪。</b></div>
+<b>待答：</b>是否存在一个<b>有限、静态、无外部资源</b>的架构，使 <span class="s">(1,1,1)</span> 可达？<b>若存在，命题 2.2 被证伪。</b></div>
 
 <h3 class="appx-sub">附录 形式化与证明　与已有不可能定理的对照</h3>
 
@@ -230,7 +230,7 @@ IPCC AR6 对 1.5°C 的剩余碳预算给出一个区间（不同情景、不同
 <h3>A.14　CAP 定理</h3>
 
 <table class="nat">
-<caption class="cap"><b>表 A.14　CAP 与三角的逐项对照</b></caption>
+<caption class="cap"><b>表 A.7　CAP 与三角的逐项对照</b></caption>
 <tr><th class="l">项</th><th class="l">CAP</th><th class="l">本书三角</th></tr>
 <tr><td class="l">资源</td><td class="l">网络同步能力</td><td class="l">描述能力</td></tr>
 <tr><td class="l">三个坐标</td><td class="l">一致性 C / 可用性 A / 分区容忍 P</td><td class="l">完备 C / 组合 A / 传递 T</td></tr>
@@ -244,7 +244,7 @@ IPCC AR6 对 1.5°C 的剩余碳预算给出一个区间（不同情景、不同
 <h3>A.15　Arrow 不可能定理</h3>
 
 <table class="nat">
-<caption class="cap"><b>表 A.15　Arrow 与三角</b></caption>
+<caption class="cap"><b>表 A.8　Arrow 与三角</b></caption>
 <tr><th class="l">项</th><th class="l">Arrow</th><th class="l">本书三角</th></tr>
 <tr><td class="l">对象</td><td class="l">集体偏好排序</td><td class="l">多尺度知识系统的描述</td></tr>
 <tr><td class="l">取舍</td><td class="l">有序 / 尊重个体 / 非独裁</td><td class="l">C / A / T</td></tr>
@@ -256,7 +256,7 @@ IPCC AR6 对 1.5°C 的剩余碳预算给出一个区间（不同情景、不同
 <h3>A.16　Mundell–Fleming 三难</h3>
 
 <table class="nat">
-<caption class="cap"><b>表 A.16　Mundell–Fleming 与三角</b></caption>
+<caption class="cap"><b>表 A.9　Mundell–Fleming 与三角</b></caption>
 <tr><th class="l">项</th><th class="l">Mundell–Fleming</th><th class="l">本书三角</th></tr>
 <tr><td class="l">取舍</td><td class="l">固定汇率 / 资本流动 / 独立货币政策</td><td class="l">C / A / T</td></tr>
 <tr><td class="l">严格性</td><td class="l">已证（模型前提下）</td><td class="l">框架</td></tr>
@@ -266,7 +266,7 @@ IPCC AR6 对 1.5°C 的剩余碳预算给出一个区间（不同情景、不同
 <h3>A.17　无免费午餐（No Free Lunch）</h3>
 
 <table class="nat">
-<caption class="cap"><b>表 A.17　NFL 与三角</b></caption>
+<caption class="cap"><b>表 A.10　NFL 与三角</b></caption>
 <tr><th class="l">项</th><th class="l">NFL</th><th class="l">本书三角</th></tr>
 <tr><td class="l">陈述</td><td class="l">不存在对所有问题都优于其他算法的算法</td><td class="l">不存在对所有尺度都满格 C/A/T 的系统</td></tr>
 <tr><td class="l">共同形状</td><td class="l">平均意义上的不可超越</td><td class="l">有限资源下的取舍</td></tr>
@@ -276,7 +276,7 @@ IPCC AR6 对 1.5°C 的剩余碳预算给出一个区间（不同情景、不同
 <h3>A.18　差异总结</h3>
 
 <table class="nat">
-<caption class="cap"><b>表 A.18　本书与已有定理的三点差异</b></caption>
+<caption class="cap"><b>表 A.11　本书与已有定理的三点差异</b></caption>
 <tr><th class="l">差异</th><th class="l">已有定理</th><th class="l">本书三角</th></tr>
 <tr><td class="l">严格性</td><td class="l">在公理/模型前提下已证</td><td class="l">框架 + 三个可复算见证</td></tr>
 <tr><td class="l">覆盖</td><td class="l">领域特定</td><td class="l">跨领域（代价是更弱）</td></tr>
