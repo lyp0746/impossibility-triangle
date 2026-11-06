@@ -362,7 +362,7 @@ def build_part_page(part):
     导语回答三件事：上一部分留下了什么、这一部分怎么推进、让出了什么。
     数据来自 parts.json 的 `intro`，缺省回退 `desc`（避免旧数据空着）。
     """
-    title = part["part"]
+    title = __import__("re").sub(r"^第[一二三四五六七八九十]+部分[　 ]*", "", part["part"])
     intro = part.get("intro") or part.get("desc") or ""
     return (f'<div class="part-page">'
             f'<h1 class="part-title">{title}</h1>'
@@ -385,7 +385,7 @@ def build_chapter_opener(ch):
     if m:
         t = _re.sub(r"<[^>]+>", "", m.group(1)).strip()
         b = _re.search(r"<b>(.*?)</b>", m.group(1), _re.S)
-        quote = _re.sub(r"<[^>]+>", "", b.group(1)).strip() if b else t.split("。")[0] + "。"
+        quote = _re.sub(r"<[^>]+>", "", b.group(1)).strip().strip('“”" ').strip('“”\" ') if b else t.split("。")[0] + "。"
     if len(quote) > 90:
         quote = quote[:88] + "……"
     items = "".join(f"<li>{x}</li>" for x in ch.get("sections", [])[:12])
@@ -394,7 +394,7 @@ def build_chapter_opener(ch):
             f'<div class="co-num">{ch["no"]}</div>'
             f'<div class="co-title">{ch["title"]}</div>'
             f'<div class="co-quote">“{quote}”</div>'
-            f'<div class="co-map"><span>本章结构</span><ol>{items}</ol></div>'
+            f'<div class="co-map"><span>本章结构</span><ul>{items}</ul></div>'
             f'</div>')
 
 def build_part_summary(part):
