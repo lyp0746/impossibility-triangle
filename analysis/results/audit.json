@@ -958,7 +958,14 @@
     "23.1",
     "5.1"
   ],
-  "A2_formula_refs": {},
+  "A2_formula_refs": {
+    "1.1": [
+      "ch01.html"
+    ],
+    "2.1": [
+      "ch02.html"
+    ]
+  },
   "A2_refs_missing_def": [],
   "A2_continuity": {
     "ch01.html": {
