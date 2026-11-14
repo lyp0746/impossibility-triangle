@@ -1,105 +1,197 @@
-<h2 class="chapter">第3章　证据、断言与可证伪性：分级的纪律</h2>
-<p class="lead" data-story="1">同一个人说“我觉得”和说“数据显示”，听的人反应完全不同。可两句话后面，往往是同一个判断。<b>强度不是语气，是证据能撑到哪里。</b></p>
+<h2 class="chapter">第3章　与已有理论的对话：不可能定理、计算与系统论</h2>
+<p class="lead" data-story="1">三个人争论同一个问题，一个要“说清楚”，一个要“能合作”，一个要“能推广”。<b>他们不是意见不同，是各自站在价目表的不同角上。</b></p>
 
 
-<p class="lead">一份诊断性著作最危险的地方，是它的结论听起来永远对——因为“有代价”这个词几乎无法被反驳。<b>本章的纪律就是为了防止这种廉价：每一条强主张都必须带上等级、作用域与一个明确的证伪条件。</b></p>
+<p class="lead">“不可能三角”不是本书的发明。经济学、分布式系统、社会选择理论、项目管理里各有一个著名的“三难”或“不可能”。<b>本章逐条对照它们，并进一步与两个更上游的传统对话：计算论（可计算性、计算不可约性、P vs NP）与系统论（一般系统论、控制论、复杂系统、涌现）。</b>既借它们的权威，也划清本书与它们的界限。</p>
 
 <div class="scenario"><span class="bt">本章主张</span>
-一个好的诊断框架，必须烂在被指出错误上。<b>如果一条主张无论发生什么都能自圆其说，它就不是诊断，而是修辞。</b>本章给出两把尺子（证据等级、概念等级）、四类断言标记、三层结构与一份 append-only 的可证伪登记簿。</div>
+已有的不可能定理、计算论与系统论各自成立于一个特定层面，但它们共享一个更抽象的形状：<b>有限的、必须被分配的资源，在若干理想性质之间的取舍。</b>本书的三角是同一形状的一个更抽象、更弱、但覆盖更广的版本。［论证，B／乙］</div>
 
-<h3 id="sec3-1">3.1　导论：一份诊断性著作如何对读者负责</h3>
+<h3 id="sec3-1">3.1　导论：不可能定理为什么反复出现</h3>
 
-<p>本书讨论的是“被让出的顶点”——一种以损失为对象的判断。这类判断有一个特殊的诱惑：<b>它几乎总能在事后找到证据。</b>某个制度失败了？可以说它让出了完备性。某个理论卡住了？可以说它让出了传递性。这种“什么都能解释”的姿态，正是本书最想避免的。</p>
+<p>一个耐人寻味的现象是：不可能定理论证往往出奇地短。CAP 定理的核心论证可以用三句话说完（Brewer，2000 的证明给出了它最干净的形式）；Arrow 定理的核心是一个投票悖论的构造（Arrow，1951；1963 的修订版给出了完整条件）；Mundell–Fleming 的核心是一个利率平价方程；停机问题的核心是一个自我指涉的构造。<b>它们之所以强大，不是因为有复杂的证明，而是因为它们在极简的假设下指出了取舍或边界的会。</b></p>
 
-<p>避免它的办法只有一套：把每条强主张写到<b>能被事先反驳</b>的程度——指明它在什么条件下失败、用什么量来判断、由谁在什么时候核验。本章给出这套纪律，第 21 章与附录 可证伪登记簿 则按这套纪律逐条清点全书的主张。</p>
+<p>这提示我们：“不可能”往往不是某个领域的特殊困难，而是<b>资源约束或逻辑约束下的普遍现象</b>。本章要看的，正是这个现象在不同层面的四种表现：<b>分配三难</b>（CAP、Arrow、Mundell–Fleming）、<b>能力不可加</b>（子模性、NP 困难）、<b>预测的硬边界</b>（计算不可约性）、<b>跨尺度断裂</b>（重正化群、涌现）。</p>
 
-<h3 id="sec3-2">3.2　三级证据：A／B／C</h3>
 
-<div class="define"><span class="bt">定义 3.1　三级证据</span>
-<b>A 级（可复现）</b>：可独立复算、可证明，或用公开数据可重复得到的结论。<br>
-<b>B 级（有来源）</b>：有公开文献支持，受部分约束，方向可靠，但依赖至少一个未证前提或存在已知争议。<br>
-<b>C 级（方向性）</b>：稀疏证据、条件性构造或思辨推理；只用于给出方向，不得转引为经验事实。<br>
-<b>铁律：结论强度 ≤ 证据强度。</b>一个 C 级命题永不被写成定理。</div>
+<img class="fig" src="assets/svg/fig07-impossibility-family.svg" alt="CAP、Arrow、Mundell–Fleming、无免费午餐、停机问题共享同一形状：有限资源在若干理想性质之间的取舍。">
+<div class="cap"><b>图 3.1　不可能定理的家族</b>。CAP、Arrow、Mundell–Fleming、无免费午餐、停机问题共享同一形状：有限资源在若干理想性质之间的取舍。</div>
 
-<p>三级不是“可信度的连续谱”，而是三种不同的用法。A 级可以单独支撑一个结论；B 级只能支撑“在某个前提下的方向”；C 级只能用于把注意力引向某个方向，或组织一个研究纲领。</p>
+<div class="note"><b>全书关键符号速查（便于后续章节阅读）</b>
+<ul>
+<li><b>K = (K_desc, K_comp, K_res)</b>：复杂度预算（描述 / 计算 / 制度）；</li>
+<li><b>ψ</b>：交互惩罚；<b>ψ=∞</b> 为逻辑强制（L2），有限为经济权衡；</li>
+<li><b>(c, a, t) ∈ [0,1]³</b>：完备 / 可组合 / 传递的可测量坐标；</li>
+<li><b>Π = (π₁,…,π₄)</b>：各层级的配置向量；<b>τ = T_min/T_available</b>：时间错配；</li>
+<li><b>Δt</b>：观察窗口；适用范围为 <b>T_char ≤ Δt ≤ 10·T_char</b>；</li>
+<li><b>L0/L1/L2</b>：必然性等级（框架内 / 结构矛盾 / 已证）；<b>C₁—C₃, A₁—A₃, T₁—T₃</b>：配置档位。</li>
+</ul></div>
+
+<div class="note"><b>核心术语规范（新增）</b>
+<ul>
+<li><b>代理层级（agency level）</b>：同一系统中做选择的独立决策单位（如医疗中的监管/医生/支付方）。<b>注意：</b>与委托—代理理论的“代理人（agent）”含义不同——本书的“代理层级”不预设委托关系。</li>
+<li><b>被让出的顶点（surrendered vertex）</b>：为保住另外两个性质而会低效的那一个。<b>全书统一用“被让出的顶点”（不用“让出的顶点”）。</b></li>
+<li><b>失效形态（failure pattern）</b>：系统在被让出的顶点上的衰退类型。<b>三类：</b>缓慢退化（A 型）/ 阈值崩溃（C 型）/ 潜伏失效（T 型）。<b>全书统一用“失效形态”（不用“失效机制”）。</b></li>
+</ul></div>
+
+<h3 id="sec3-2">3.2　CAP 与分布式系统的三难</h3>
+
+<p>CAP 定理（Brewer 2000；Gilbert &amp; Lynch 2002）断言：一个分布式数据系统在网络可能分区（Partition）的前提下，不能同时保证一致性（Consistency）与可用性（Availability）。</p>
 
 <table class="nat">
-<caption class="cap"><b>表 3.1　本书中三级证据的典型位置</b></caption>
-<tr><th class="l">等级</th><th class="l">典型内容</th><th class="l">可以怎么用</th></tr>
-<tr><td class="l">A</td><td class="l">信息子模性；<span class="s">κ_info=Var(λ)/2</span>；说明性模型的复算</td><td class="l">直接引用或复现</td></tr>
-<tr><td class="l">B</td><td class="l">三角命题；四个战场的诊断；三阶段成长模式</td><td class="l">作为方向，注明前提</td></tr>
-<tr><td class="l">C</td><td class="l">更高维框架的可能；具体阈值猜测</td><td class="l">作为研究纲领</td></tr>
+<caption class="cap"><b>表 3.1　CAP 与本书三角的对照</b></caption>
+<tr><th class="l">CAP</th><th class="l">本书三角</th><th class="l">对照</th></tr>
+<tr><td class="l">一致性 C</td><td class="l">完备性 C</td><td class="l">名字巧合，含义不同：CAP 的 C 指所有节点看到同一份数据</td></tr>
+<tr><td class="l">可用性 A</td><td class="l">可组合性 A</td><td class="l">不同：CAP 的 A 指每个请求都得到响应</td></tr>
+<tr><td class="l">分区容忍 P</td><td class="l">传递性 T</td><td class="l">形似：都是在“跨节点/跨尺度能否贯通”上取舍</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>本书构造（C），无外部数据。<b>性质：</b>对照表。<b>注意：</b>三对缩写相同但含义不同，不可混用；对照的只是结构，不是内容。</div>
+
+<p><b>结构上的相似：</b>CAP 也在说“三选二”，而且那个被让出的顶点决定了系统在故障时的行为。<b>内容上的不同：</b>CAP 的资源是网络同步能力，本书的资源是描述能力；CAP 的取舍是设计选择，本书的取舍可能连选择者都不自知。CAP 给本书的最大启示是：<b>不可能定理的用处不在于哀叹，而在于给出一个设计坐标系。</b></p>
+
+<h3 id="sec3-3">3.3　Arrow 与 Mundell–Fleming：选择即失去</h3>
+
+<p><b>Arrow 不可能定理</b>（1951）说：一个满足若干“合理”公理的集体排序规则不存在（非独裁前提下）。<b>Mundell–Fleming 三难</b>（1960s）说：开放经济不能同时拥有固定汇率、资本自由流动与独立货币政策。</p>
+
+<div class="define"><span class="bt">共同形状</span>
+这些定理都满足同一个模板：<b>给定一组理想性质 <span class="s">{P₁, P₂, P₃}</span> 与有限资源，不存在同时满足全部性质的解；选择满足其中两个，第三个会以某种方式失效。</b>这个模板不保证第三个的失效有统一机制——它只保证取舍存在。</div>
+
+<p>本书与它们的区别在于：<b>Arrow 与 Mundell–Fleming 是定理（在公理前提下已证），本书的三角是框架。</b>本书把它们的“选择即失去”姿态借来，用在尚未被严格定理化的领域，同时如实标注：那里取舍是“论证/假说”，不是“已证”。<b>更精确地说，第 2 章的命题 2.3（记账不等式）就是本书对“选择即失去”的可证版本——但它是条件性的，依赖于预算重叠假设 (A2)。</b></p>
+
+<h3 id="sec3-4">3.4　子模性与 NP 困难：能力不能相加</h3>
+
+<p>第 1 章的第一处症状是子模性。<b>子模性是优化与信息论中普遍存在的结构</b>：特征选择的边际收益递减；博弈论里 Shapley 值的边际贡献递减；生态学里物种多样性与生态功能的非线性关系。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 3.2　能力不能相加的三种表现</b></caption>
+<tr><th class="l">领域</th><th class="l">表现</th><th class="l">机制</th><th class="l">对应坐标</th></tr>
+<tr><td class="l">信息论</td><td class="l"><span class="s">I(Z;X₁∪X₂) ≤ ΣI</span></td><td class="l">条件互信息非负</td><td class="l"><span class="s">a &lt; 1</span></td></tr>
+<tr><td class="l">优化</td><td class="l">边际收益递减</td><td class="l">子模函数</td><td class="l"><span class="s">a &lt; 1</span></td></tr>
+<tr><td class="l">计算</td><td class="l">组合问题难解</td><td class="l">NP 困难（在 P≠NP 前提下）</td><td class="l"><span class="s">a</span> 的可达性受限</td></tr>
 </table>
 
-<h3 id="sec3-3">3.3　四类断言：已知／论证／假说／待验证</h3>
+<p>与子模性相邻的是计算复杂性。许多“能力组合”问题（组合优化、验证）是 NP 困难的：<b>你可以写出完备的目标函数（C），却找不到可组合的求解算法（¬A）。</b>这不是工程问题，而是复杂性类的问题。更精确地说，它把第 2 章的 <span class="s">a</span> 从“连续性折扣”推向了“结构性不可达”：某些组合不仅收益递减，而且根本不能在预算 <span class="s">K_comp</span> 内求到最优。</p>
 
-<div class="define"><span class="bt">定义 3.2　四类断言</span>
-<b>［已知］</b>：已有文献支持的事实或普遍接受的结论。<br>
-<b>［论证］</b>：本书给出推理，推理依赖已声明的假设。<br>
-<b>［假说］</b>：可检验但目前证据不足的猜测，登记于附录 可证伪登记簿。<br>
-<b>［待验证］</b>：方向明确但缺少执行的检验。<br>
-断言标记与证据等级正交：一条 A 级结果配［已知］，一条 B 级推理配［论证］。</div>
+<h3 id="sec3-5">3.5　计算不可约性：预测的硬边界</h3>
 
-<p>把两条轴分开，是为了避免两类混淆。第一类混淆：把［论证］当成［已知］——“我推导出来了，所以它成立”（忽略了推导的前提）。第二类混淆：把［假说］当成［待验证］——“这是可以检验的”（其实还没设计出检验）。本书记录时严格区分。</p>
+<p>Wolfram 的“计算不可约性”（computational irreducibility）指出：对许多系统，<b>不存在比直接模拟更快的预测方法</b>——要得到第 <span class="s">n</span> 步的结果，唯一办法是走完 <span class="s">n</span> 步。这与三角的关系是直接而深刻的。</p>
 
-<h3 id="sec3-4">3.4　三层结构：硬核、诊断框架、可选工具</h3>
+<div class="define"><span class="bt">三角 × 计算不可约性</span>
+若一个系统是计算不可约的，则“预测完备 <span class="s">C₃</span>”不可能在不付出与模拟同等 <span class="s">K_comp</span> 的代价下获得。<br>
+于是：<b>在给定 <span class="s">K_comp</span> 时，<span class="s">C₃</span> 与“跨尺度传递 <span class="s">T</span>”直接冲突</b>——因为传递性的一个自然实现是“用粗尺度直接跳算细尺度”，而计算不可约性恰恰禁止跳算。<br>
+<b>读法：</b>计算不可约性是第 2 章命题 2.2 在“<span class="s">K_comp</span> 受限”情形下的一个硬实现。<b>但它不是三角的证明</b>：它只覆盖“以计算预算为主导”的系统。</div>
 
-<div class="define"><span class="bt">定义 3.3　本书的三层结构</span>
-<b>硬核层</b>：可证明或可复算的结果（信息子模性、离散曲率恒等式、说明性模型的数值前沿）。<br>
-<b>诊断框架层</b>：三角命题、四个战场的判别、三阶段成长模式。依赖硬核，但外推到各自领域时引入未证前提。<br>
-<b>可选工具层</b>：诊断手册、制度模板、降级清单。读者可以只取用其中一件，不必接受整体。<br>
-<b>攻击方式是分层的：</b>推翻硬核需要反例或复算失败；推翻框架层需要指出某个领域的诊断不成立；工具层不承载真值，只承载有用性。</div>
+<p>类似地，<b>P vs NP</b> 提供了另一条线索：如果 <span class="s">P ≠ NP</span>，那么“完备地刻画解空间（C）”与“在预算内找到可组合的解（A）”之间存在结构性鸿沟。本书不声称三角等价于 P vs NP——那是过度宣称；本书只声称：<b>这两者共享“有限预算下的取舍”这一形状</b>，且计算不可约性为三角的一个分量（<span class="s">K_comp</span>）提供了独立的支持。</p>
 
-<p>分层结构让读者可以“只接受其中一层”。这一点尤为重要：本书不要求你先相信三角，才能使用诊断手册；也不要求你先完成诊断，才能复算子模性。每一层的成立与失效都可以独立讨论。</p>
 
-<img class="fig" src="assets/svg/fig02-layers.svg" alt="本书的三层结构与各自独立的证伪方式">
+<img class="fig" src="assets/svg/fig08-computation.svg" alt="可计算性固定逻辑，计算不可约性固定 K_comp，P vs NP 固定计算复杂度；三者分别对应三角的一个受限分量。">
+<div class="cap"><b>图 3.2　计算论的三条边界与三角</b>。可计算性固定逻辑，计算不可约性固定 K_comp，P vs NP 固定计算复杂度；三者分别对应三角的一个受限分量。</div>
 
-<div class="cap"><b>图 3.1　三层结构与各自的证伪方式</b>。硬核层被反例或复算失败推翻；框架层被领域反例推翻；工具层只被“不好用”评价。三层之间只有单向依赖。</div>
+<h3 id="sec3-6">3.6　系统论的三次尝试：从一般系统论到复杂系统</h3>
 
-<h3 id="sec3-5">3.5　可证伪登记：把“将来可检验”写成账本</h3>
+<p>本书的三角必须与系统论传统对话，否则会显得像又一个“重新发明系统论”的框架。系统论大致经历了三次尝试，每次都撞上同一个位置。</p>
 
-<p>“这可以检验”是一句廉价的承诺。让它变贵的方式，是现在就把证伪条件写下来，并给它一个核验日期。本书的可证伪登记簿遵循四条规则：</p>
+<table class="nat">
+<caption class="cap"><b>表 3.3　系统论的三次尝试与它们的三角位置</b></caption>
+<tr><th class="l">传统</th><th class="l">核心主张</th><th class="l">保住的顶点</th><th class="l">被让出的顶点</th></tr>
+<tr><td class="l">一般系统论（Bertalanffy）</td><td class="l">存在适用于所有系统的同构律</td><td class="l">C+T（一般性 + 跨系统类比）</td><td class="l">A：同构律不能精确组合成预测</td></tr>
+<tr><td class="l">控制论（Wiener）</td><td class="l">反馈使系统可调节</td><td class="l">A+T（可组合的控制手段 + 动态）</td><td class="l">C：对具体系统无法完备预测</td></tr>
+<tr><td class="l">复杂系统（Santa Fe）</td><td class="l">涌现、自组织、适应</td><td class="l">C+A（机制 + 组合）</td><td class="l">T：跨尺度理论难以无损传递</td></tr>
+</table>
 
-<ol>
-<li><b>事前登记：</b>在检验之前写下命题、方向与阈值。</li>
-<li><b>以方向判定：</b>只判断“是否朝预测的方向发展”，而不是贴一个精确数字。</li>
-<li><b>预测与观察分开报告：</b>登记条目与核销条目分列，绝不改写旧行。</li>
-<li><b>只追加，永不修改：</b>账本是 append-only 的；被证伪的条目原样保留。</li>
-</ol>
+<p><b>一般系统论的困境</b>是它太抽象：同构律（如“开放系统趋向稳态”）确实跨越了领域，但它们太弱，无法组合成对具体系统的预测。<b>控制论的困境</b>是它太面向干预：反馈、稳定性、可观测性都是强大的可组合工具，但代价是无法对具体系统给出完备描述。<b>复杂系统进路的困境</b>是它最强的部分（涌现机制、组合规则）恰恰难以跨尺度无损传递——一个尺度上的涌现机制，到另一个尺度往往要重写。</p>
 
-<p>附录 可证伪登记簿 与 <code>docs/preregistration/</code> 保存这份账本。附录 增补：上游、边界与对话 则记录一次<b>已经发生的证伪</b>：作者曾在早期版本中提出一条强主张，后被脚本与反例推翻，本书照实保留它失败的过程，而不是悄悄删掉。</p>
+<div class="define"><span class="bt">本书与系统论的关系</span>
+本书不是要取代这些传统，而是给它们提供一个<b>定位工具</b>：<br>
+一般系统论站在 <span class="s">C+T</span>；控制论站在 <span class="s">A+T</span>；复杂系统站在 <span class="s">C+A</span>。<br>
+它们的“局限”并非失败，而是各自顶点的账单。<b>本书的贡献是把“系统论为什么从未统一”从一个遗憾，变成一个可定位的选择结果。</b></div>
 
-<h3 id="sec3-6">3.6　本书明确不做的事</h3>
+<p>这也解释了 Mitchel、Gleick 等复杂系统普及著作反复出现的张力：它们既想给出跨领域的统一图景（C+T 或 C+A），又想给出可操作的具体结论（A）；两者在三角里不可同时满格。</p>
 
-<ul>
-<li><b>不宣称证明了三角。</b>命题 2.2 是框架；通用证明所需的三档度量与复杂度 <span class="s">K</span> 尚未统一。</li>
-<li><b>不宣称统一了三本书。</b>本书提供定位，不提供合并（见前言）。</li>
-<li><b>不外推经验数字。</b>凡 C 级数字，只用于展示结构，不用于推断现实。</li>
-<li><b>不替代领域判断。</b>第二部分与第四部分的具体建议须由领域专家检验。</li>
-<li><b>不隐藏失败。</b>失败记录（附录 增补：上游、边界与对话）与开放问题（第 21 章）是本书的正式部分。</li>
-</ul>
+<h4>4.6.1　三角 vs 系统论：诊断能力对比</h4>
 
-<div class="case"><span class="ct">人的尺度</span><p>一位教授把学生的稿子退回去，只批了一句：“你说这条结论‘一定成立’，请你写出它在什么情况下不成立。”学生写不出来，改了三个月。分级与可证伪性的训练，本质上是<b>把“我相信”换成“我知道它会在哪里错”。</b></p></div>
-<h3 id="sec3-7">3.7　本章小结</h3>
+<p>那么，三角比系统论“更好”吗？本节给出一个分维度的对比。</p>
 
-<p>本书用两把尺子（证据、概念）、四类断言、三层结构与一份 append-only 账本来约束自己。这些纪律的用处不在于显得严谨，而在于让读者知道<b>在哪里可以安全地相信、在哪里必须自己下判断、在哪里应该要求更多证据</b>。下一章把三角放进一个更大的家族：已有的不可能定理。</p>
+<table class="nat">
+<caption class="cap"><b>表 3.4　三角与系统论的诊断能力对比</b></caption>
+<tr><th class="l">能力</th><th class="l">系统论</th><th class="l">本书三角</th></tr>
+<tr><td class="l">能预测什么会失败</td><td class="l">系统会“分崩离析”（笼统）</td><td class="l">当前顶点配置会失效（可定位）</td></tr>
+<tr><td class="l">能指出缺口在哪</td><td class="l">模糊（“反馈不足”？）</td><td class="l">精确到 C/A/T 中哪一个</td></tr>
+<tr><td class="l">能给出改进方向</td><td class="l">增加反馈/冗余</td><td class="l">换顶点 / 扩大 K / 设飞地</td></tr>
+<tr><td class="l">可操作性</td><td class="l">低</td><td class="l">中—高（有模板）</td></tr>
+<tr><td class="l">理论严格性</td><td class="l">中（部分形式化）</td><td class="l">硬核 A／框架 C</td></tr>
+</table>
+<div class="datasrc"><b>数据来源：</b>公共文献与本书整理的结合（B—C），框架部分为本书构造（C）。<b>性质：</b>对比表，等级 B／乙。<b>结论：</b>三角不是“更好的系统论”，而是<b>更窄、更可操作</b>的一个诊断切片。系统论回答“系统为什么会自我维持”，三角只回答“它在三个顶点上如何取舍”。<b>后者覆盖面小，但落点更精确。</b></div>
+
+<h3 id="sec3-7">3.7　涌现：三角与“多则异”</h3>
+
+<p>Anderson 的名文《More Is Different》指出：<b>在一个尺度上成立的基本定律，不能简单地“还原”或“外推”到另一个尺度</b>；每一个新的复杂度层次都可能出现新的规律。这几乎就是传递性 <span class="s">T</span> 被让出的教科书式陈述。</p>
+
+<div class="define"><span class="bt">涌现的三角读法</span>
+若系统存在“多则异”式的涌现，则存在一对尺度 <span class="s">(λ₁, λ₂)</span>，使从 <span class="s">λ₁</span> 提升到 <span class="s">λ₂</span> 的预测显著差于该尺度的零模型——即第 2 章的传递坐标 <span class="s">t(λ₁→λ₂)</span> 很低甚至为负。<br>
+<b>三角因此给出“涌现”的可操作标记：<span class="s">t</span> 显著下降处，就是涌现发生处。</b>这不是涌现的定义（涌现主义者会反对），而是它的一个可测量后果。</div>
+
+<p>第 11.5 节的离散—连续缺口，在这个读法下就是一个“离散 → 连续”的涌现标记：离散情形的传递坐标 <span class="s">t</span> 接近 1，提升到连续后发生断裂（<span class="s">R</span> 随 <span class="s">n<sup>2</sup></span> 发散、连续侧没有 <span class="s">λ<sub>n</sub></span>；第一版写的“1/3 常数”已撤回）。<b>因此，“离散与连续之间的墙”不是数学不成熟的证据，而是“离散尺度上的完备 + 可组合（C+A）”在跨到连续尺度时会让出传递（T）的证据。</b></p>
+
+<div class="warning"><span class="bt">警告 4.1　不要用三角“解释掉”涌现</span>
+说“涌现 = t 下降”是危险的简化。涌现还涉及不可预测性、不可还原性、下向因果等更丰富的概念；<span class="s">t</span> 只是一个坐标，不是全部。本书的主张是定性的：<b>“多则异”是传递性账单的一种表现，而不是说三角替涌现理论给出了完整答案。</b></div>
+
+<h3 id="sec3-8">3.8　重正化群与尺度分离：被默认的前提</h3>
+
+<p>理论物理里最强大的尺度工具是重正化群。它允许我们从一个尺度上的有效理论推演出另一个尺度上的有效理论。<b>但它的前提是“尺度分离”</b>：快过程可以被积分掉，慢过程近似恒定。</p>
+
+<p>当尺度分离成立时，传递性 <span class="s">T₁</span> 可以很强。当它不成立时——强耦合、记忆效应、非马尔可夫——重正化群的干净结论失效。<b>本书的第三处症状（时间错配）正是尺度分离不成立的社会版本。</b>金融与政治没有足够的时间差来“积分掉”对方。</p>
+
+<div class="warning"><span class="bt">警告 4.2　被默认的前提往往最贵</span>
+一个理论越成功，它的前提越容易被遗忘。重正化群的“尺度分离”、经济学模型的“代表性代理人”、医学指南的“平均病人”——这些前提一旦失效，结论的失效会以最意想不到的方式出现。<b>三角诊断的很大一部分工作，就是把被默认的前提重新写成可见的取舍。</b></div>
+
+<h3 id="sec3-9">3.9　本书与它们的区别：诊断，而非同一</h3>
+
+<p>必须直说：<b>本书不是要宣布“CAP、Arrow、停机问题、计算不可约性都是三角的特例”。</b>那样做会把它们的严格性拉低到框架的严格性，是一种降格。本书的正确姿态是相反的：把它们的严格性作为标杆，同时承认三角（在它们之外）的严格性更低。</p>
+
+<table class="nat">
+<caption class="cap"><b>表 3.5　本书与已有结果的关系</b></caption>
+<tr><th class="l">维度</th><th class="l">已有结果</th><th class="l">本书三角</th></tr>
+<tr><td class="l">严格性</td><td class="l">已证（在公理/模型前提下）</td><td class="l">框架 + 条件命题 + 可复算模型</td></tr>
+<tr><td class="l">资源</td><td class="l">领域特定（同步、偏好、货币、计算）</td><td class="l">描述能力（三分量 <span class="s">K</span>）</td></tr>
+<tr><td class="l">作用</td><td class="l">设计/证明坐标</td><td class="l">诊断坐标</td></tr>
+<tr><td class="l">证伪方式</td><td class="l">公理矛盾 / 反例</td><td class="l">领域反例 / 见证复算失败 / 命题 2.3 假设失效</td></tr>
+</table>
+
+<p>最准确的说法是：<b>本书把“不可能”从一个又一个领域定理，抽象成一种可以在新领域里先行施加的诊断姿态；这个抽象降低了严格性，换来了覆盖面。</b>读清楚这笔交易的方向，是阅读全书的前提。</p>
+
+<div class="case"><span class="ct">人的尺度</span><p>一位系统论学者说：“我们这一行最大的诱惑，是把所有东西都说成系统。”他后来在自己的书里加了一章“不适用的地方”。<b>与已有理论对话最难的部分，不是找相同，是承认“这件事我这里解释不了”。</b></p></div>
+<h3 id="sec3-10">3.10　本章小结</h3>
+
+<p>已有的不可能定理共享一个形状：有限资源在理想性质之间的取舍。本章进一步把三角与三个更上游的传统对接：<b>计算论</b>（计算不可约性为 <span class="s">K_comp</span> 受限的三角提供支持）、<b>系统论</b>（其三次尝试分别站在三个顶点上）、<b>涌现</b>（“多则异”是传递性账单的可测量表现）。下一章进入第一个战场：生命系统里的记忆与遗忘。</p>
 
 <div class="note"><b>本章清单</b>
 <ul>
-<li><b>⊕ 有论证（B）：</b>三级证据与四类断言的划分；三层结构。</li>
-<li><b>⊗ 可引用（A）：</b>本章为纪律，无 A 级结果。</li>
-<li><b>○ 启发（C）：</b>多数框架主张的等级是 B 或 C。</li>
-<li><b>？ 未解决：</b>附录 可证伪登记簿 中的若干登记项尚无核验结果。</li>
-<li><b>↔ 连接：</b>本章的纪律由第 21 章与附录 可证伪登记簿、J 执行。</li>
-</ul></div>
+<li><b>⊕ 有论证（B）：</b>已有不可能定理的共同形状；系统论三次尝试的三角定位；涌现的三角读法；本书与它们的区别。</li>
+<li><b>⊗ 可引用（A）：</b>CAP、Arrow、Mundell–Fleming、子模性、NP 困难、计算不可约性、重正化群均为已知结果（在各自前提下）。</li>
+<li><b>○ 启发（C）：</b>三角可以覆盖尚无定理的领域；<span class="s">t</span> 作为涌现标记。</li>
+<li><b>？ 未解决：</b>是否存在一个统一形式化，使这些结果成为它的实例（第 21 章）。</li>
+<li><b>↔ 连接：</b>本章是第 2 章三角的外部校准；附录 形式化与证明 给出更细的逐条对照；附录 增补：上游、边界与对话 展开计算与系统论对话。</li>
+<li><b>若这条判据错了，会看到什么：</b>若三角能被写成与 Arrow 同样硬的定理（即从公理推出、无需经验前提），本章“它是家族里最软的一个”就该收回。</li></ul></div>
 
-<div class="box box-takeaway"><p><b>一句话带走：</b>两把尺子、四类断言、一条 append-only 账本，是这本书的地板。</p></div>
+<div class="box box-takeaway"><p><b>一句话带走：</b>与阿罗、CAP、哥德尔对照之后：三角是不可能性定理家族里最软的那一个。</p></div>
 
-<h3>3　本章文献（引用与延伸）</h3>
+<h3>4　本章文献（引用与延伸）</h3>
 <div class="refs">
+<p class="refh">本章引用</p>
+<p>★ Brewer, E. (2000). Towards Robust Distributed Systems. PODC Keynote.</p>
+<p>★ Gilbert, S., &amp; Lynch, N. (2002). Brewer's Conjecture and the Feasibility of Consistent, Available, Partition-Tolerant Web Services. ACM SIGACT News, 33(2), 51–59.</p>
+<p>★ Arrow, K. J. (1951). Social Choice and Individual Values. Wiley.</p>
 <p class="refh">延伸阅读</p>
-<p>Popper, K. (1959). The Logic of Scientific Discovery. Hutchinson.</p>
-<p>Lakatos, I. (1978). The Methodology of Scientific Research Programmes. Cambridge University Press.</p>
-<p>Meehl, P. E. (1978). Theoretical Risks and Tabular Asterisks. Journal of Consulting and Clinical Psychology, 46(4), 806–834.</p>
-<p>Nosek, B. A., Ebersole, C. R., DeHaven, A. C., &amp; Mellor, D. T. (2018). The Preregistration Revolution. PNAS, 115(11), 2600–2606.</p>
+<p>Mundell, R. A. (1963). Capital Mobility and Stabilization Policy under Fixed and Flexible Exchange Rates. Canadian Journal of Economics and Political Science, 29(4), 475–485.</p>
+<p>Fleming, J. M. (1962). Domestic Financial Policies under Fixed and Floating Exchange Rates. IMF Staff Papers, 9, 369–379.</p>
+<p>Nemhauser, G. L., Wolsey, L. A., &amp; Fisher, M. L. (1978). An Analysis of Approximations for Maximizing Submodular Set Functions. Mathematical Programming, 14(1), 265–294.</p>
+<p>Wolfram, S. (2002). A New Kind of Science. Wolfram Media.</p>
+<p>Cook, S. A. (1971). The Complexity of Theorem-Proving Procedures. STOC, 151–158.</p>
+<p>von Bertalanffy, L. (1968). General System Theory. George Braziller.</p>
+<p>Wiener, N. (1948). Cybernetics. MIT Press.</p>
+<p>Anderson, P. W. (1972). More Is Different. Science, 177(4047), 393–410.</p>
+<p>Holland, J. H. (1995). Hidden Order. Addison-Wesley.</p>
+<p>Mitchell, M. (2009). Complexity: A Guided Tour. Oxford University Press.</p>
+<p>Gleick, J. (1987). Chaos: Making a New Science. Viking.</p>
 </div>
