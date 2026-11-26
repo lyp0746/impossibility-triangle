@@ -51,6 +51,7 @@ PY
 fi
 copy assets/svg/cover.svg     "$REL/cover.svg"
 copy assets/impossibility-triangle-explorer.html  "$REL/impossibility-triangle-explorer.html"
+copy assets/impossibility-triangle-reader.html    "$REL/impossibility-triangle-reader.html"
 
 copy docs/READERS.md          "$REL/README.md"
 copy docs/RELEASE-NOTES.md    "$REL/修订说明.md"
